@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boolean numpy arrays &mdash; MTH 337 - Spring 2022  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://jllottes.github.io/PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Image processing" href="../PT-image_processing/PT-image_processing.html" />
+    <link rel="prev" title="Multidimensional numpy arrays" href="../PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">MTH 337 Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../python_tools.html">Python tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../PT-importing_modules.html">Importing modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-lists.html">Lists, ranges, and &quot;for&quot; loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-mutable_vs_immutable/PT-mutable_vs_immutable.html">Mutable vs immutable objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-list_comprehensions/PT-list_comprehensions.html">List comprehensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-matplotlib_plots/PT-matplotlib_plots.html">Matplotlib plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-matplotlib_subplots/PT-matplotlib_subplots.html">Matplotlib subplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-matplotlib_slider/PT-matplotlib_slider.html">The slider widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-numpy_arrays/PT-numpy_arrays.html">Numpy arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays.html">Multidimensional arrays</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Boolean numpy arrays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#boolean-arrays">Boolean arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logical-operations-on-boolean-arrays">Logical operations on boolean arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#indexing-with-boolean-arrays">Indexing with boolean arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-image_processing/PT-image_processing.html">Image processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-networkx_graphs/PT-networkx_graphs.html">NetworkX library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../master.html">MTH 337 - Spring 2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../master.html">MTH 337</a> &raquo;</li>
+        
+          <li><a href="../../python_tools.html">Python tools</a> &raquo;</li>
+        
+      <li>Boolean numpy arrays</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="boolean-numpy-arrays">
+<h1>Boolean numpy arrays<a class="headerlink" href="#boolean-numpy-arrays" title="Permalink to this headline"></a></h1>
+<section id="boolean-arrays">
+<h2>Boolean arrays<a class="headerlink" href="#boolean-arrays" title="Permalink to this headline"></a></h2>
+<p>A boolean array is a numpy array with boolean (True/False) values. Such
+array can be obtained by applying a logical operator to another numpy
+array:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="c1"># create a 4x4 array of integers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">large_values</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># test which elements of a are greated than 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">large_values</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[False False False False]
+ [False False False False]
+ [False False False  True]
+ [ True  True  True  True]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">even_values</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># test which elements of a are even</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">even_values</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[ True False  True False]
+ [ True False  True False]
+ [ True False  True False]
+ [ True False  True False]]</p>
+</div>
+</section>
+<section id="logical-operations-on-boolean-arrays">
+<h2>Logical operations on boolean arrays<a class="headerlink" href="#logical-operations-on-boolean-arrays" title="Permalink to this headline"></a></h2>
+<p>Boolean arrays can be combined using logical operators:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>operator</p></th>
+<th class="head"><p>meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
+<td><p>negation (logical “not”)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>logical “and”</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">|</span></code></p></td>
+<td><p>logical “or”</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># test which elements of a are not divisible by 3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array a:</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array b:</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>array a:
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]</p>
+<p>array b:
+[[False  True  True False]
+ [ True  True False  True]
+ [ True False  True  True]
+ [False  True  True False]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># test which elements of a are divisible by either 2 or 3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array a:</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array c:</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>array a:
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]</p>
+<p>array c:
+[[ True False  True  True]
+ [ True False  True False]
+ [ True  True  True False]
+ [ True False  True  True]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># test which elements of a are divisible by both 2 and 3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array a:</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array d:</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>array a:
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]</p>
+<p>array d:
+[[ True False False False]
+ [False False  True False]
+ [False False False False]
+ [ True False False False]]</p>
+</div>
+</section>
+<section id="indexing-with-boolean-arrays">
+<h2>Indexing with boolean arrays<a class="headerlink" href="#indexing-with-boolean-arrays" title="Permalink to this headline"></a></h2>
+<p>Boolean arrays can be used to select elements of other numpy arrays. If
+<code class="docutils literal notranslate"><span class="pre">a</span></code> is any numpy array and <code class="docutils literal notranslate"><span class="pre">b</span></code> is a boolean array of the same
+dimensions then <code class="docutils literal notranslate"><span class="pre">a[b]</span></code> selects all elements of <code class="docutils literal notranslate"><span class="pre">a</span></code> for which the
+corresponding value of <code class="docutils literal notranslate"><span class="pre">b</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="c1"># create a 4x4 array of integers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># test which elements of a are even</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[ True False  True False]
+ [ True False  True False]
+ [ True False  True False]
+ [ True False  True False]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">b</span><span class="p">])</span> <span class="c1"># select all even elements of the array a</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[ 0  2  4  6  8 10 12 14]</p>
+</div>
+<p>We can use this to modify elements of an array that satisfy a logical
+condition:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="n">a</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># set values of all even elements of the array a to 100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[100   1 100   3]
+ [100   5 100   7]
+ [100   9 100  11]
+ [100  13 100  15]]</p>
+</div>
+<p>In the next example we create two numpy arrays, <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, and set
+all values of <code class="docutils literal notranslate"><span class="pre">x</span></code> that are smaller that the corresponding values of
+<code class="docutils literal notranslate"><span class="pre">y</span></code> to -1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> <span class="c1"># create a 3x3 array of random numbers</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array x:</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array y:</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>array x:
+[[ 0.76755354  0.39784664  0.60511187]
+ [ 0.9584705   0.42498244  0.71316056]
+ [ 0.30123811  0.2202371   0.64291291]]</p>
+<p>array y:
+[[ 0.58221015  0.09077814  0.26814573]
+ [ 0.91636671  0.41542893  0.07005894]
+ [ 0.83128003  0.81483812  0.56582282]]</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>[[ 0.76755354  0.39784664  0.60511187]
+ [ 0.9584705   0.42498244  0.71316056]
+ [-1.         -1.          0.64291291]]</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../PT-image_processing/PT-image_processing.html" class="btn btn-neutral float-right" title="Image processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays.html" class="btn btn-neutral float-left" title="Multidimensional numpy arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="width: 100px; border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg" /></a>  <a href="mailto:jllottes@buffalo.edu">Jonathan Lottes</a>
+      <span class="lastupdated"><br/>
+        Last updated on Jan 30, 2022.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

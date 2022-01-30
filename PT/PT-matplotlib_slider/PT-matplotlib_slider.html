@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matplotlib slider widget &mdash; MTH 337 - Spring 2022  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://jllottes.github.io/PT/PT-matplotlib_slider/PT-matplotlib_slider.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Numpy arrays" href="../PT-numpy_arrays/PT-numpy_arrays.html" />
+    <link rel="prev" title="Matplotlib subplots and axes objects" href="../PT-matplotlib_subplots/PT-matplotlib_subplots.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">MTH 337 Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../python_tools.html">Python tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../PT-importing_modules.html">Importing modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-lists.html">Lists, ranges, and &quot;for&quot; loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-mutable_vs_immutable/PT-mutable_vs_immutable.html">Mutable vs immutable objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-list_comprehensions/PT-list_comprehensions.html">List comprehensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-matplotlib_plots/PT-matplotlib_plots.html">Matplotlib plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-matplotlib_subplots/PT-matplotlib_subplots.html">Matplotlib subplots</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The slider widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-numpy_arrays/PT-numpy_arrays.html">Numpy arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays.html">Multidimensional arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-boolean_numpy_arrays/PT-boolean_numpy_arrays.html">Boolean numpy arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-image_processing/PT-image_processing.html">Image processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PT-networkx_graphs/PT-networkx_graphs.html">NetworkX library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../master.html">MTH 337 - Spring 2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../master.html">MTH 337</a> &raquo;</li>
+        
+          <li><a href="../../python_tools.html">Python tools</a> &raquo;</li>
+        
+      <li>Matplotlib slider widget</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="matplotlib-slider-widget">
+<h1>Matplotlib slider widget<a class="headerlink" href="#matplotlib-slider-widget" title="Permalink to this headline"></a></h1>
+<p>Using matplotlib we can create not only static graphs, but also graphs
+that can be modified interactively. Tools for this are contained in the
+<code class="docutils literal notranslate"><span class="pre">widgets</span></code> submodule. Here we will use the <code class="docutils literal notranslate"><span class="pre">Slider</span></code> widget to create
+a plot of a function with a scroll bar that can be used to modify the plot:</p>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib-slider-1.gif"><img alt="../../_images/PT-matplotlib-slider-1.gif" class="align-center" src="../../_images/PT-matplotlib-slider-1.gif" style="width: 500px;" /></a>
+<p>This animation shows the graph of the function <span class="math notranslate nohighlight">\(y = sin(ax)\)</span>
+for various values of a parameter <span class="math notranslate nohighlight">\(a\)</span>. The value of the
+parameter is modified by scrolling the slider. Here is the code that
+creates this interactive plot:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.widgets</span> <span class="kn">import</span> <span class="n">Slider</span>  <span class="c1"># import the Slider widget</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+
+<span class="n">a_min</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># the minimial value of the paramater a</span>
+<span class="n">a_max</span> <span class="o">=</span> <span class="mi">10</span>   <span class="c1"># the maximal value of the paramater a</span>
+<span class="n">a_init</span> <span class="o">=</span> <span class="mi">1</span>   <span class="c1"># the value of the parameter a to be used initially, when the graph is created</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># first we create the general layount of the figure</span>
+<span class="c1"># with two axes objects: one for the plot of the function</span>
+<span class="c1"># and the other for the slider</span>
+<span class="n">sin_ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">])</span>
+<span class="n">slider_ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">])</span>
+
+
+<span class="c1"># in plot_ax we plot the function with the initial value of the parameter a</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">sin_ax</span><span class="p">)</span> <span class="c1"># select sin_ax</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;y = sin(ax)&#39;</span><span class="p">)</span>
+<span class="n">sin_plot</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a_init</span><span class="o">*</span><span class="n">x</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+
+<span class="c1"># here we create the slider</span>
+<span class="n">a_slider</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">slider_ax</span><span class="p">,</span>      <span class="c1"># the axes object containing the slider</span>
+                  <span class="s1">&#39;a&#39;</span><span class="p">,</span>            <span class="c1"># the name of the slider parameter</span>
+                  <span class="n">a_min</span><span class="p">,</span>          <span class="c1"># minimal value of the parameter</span>
+                  <span class="n">a_max</span><span class="p">,</span>          <span class="c1"># maximal value of the parameter</span>
+                  <span class="n">valinit</span><span class="o">=</span><span class="n">a_init</span>  <span class="c1"># initial value of the parameter</span>
+                 <span class="p">)</span>
+
+<span class="c1"># Next we define a function that will be executed each time the value</span>
+<span class="c1"># indicated by the slider changes. The variable of this function will</span>
+<span class="c1"># be assigned the value of the slider.</span>
+<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">sin_plot</span><span class="o">.</span><span class="n">set_ydata</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="p">))</span> <span class="c1"># set new y-coordinates of the plotted points</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw_idle</span><span class="p">()</span>          <span class="c1"># redraw the plot</span>
+
+<span class="c1"># the final step is to specify that the slider needs to</span>
+<span class="c1"># execute the above function when its value changes</span>
+<span class="n">a_slider</span><span class="o">.</span><span class="n">on_changed</span><span class="p">(</span><span class="n">update</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Note.</strong> Code similar to the one above will work fine for plots with one slider,
+but if we want two have two (or more) sliders controlling various parameters of
+the plot, it will require a modification. The problem is that in such situation we
+may need to use in the <code class="docutils literal notranslate"><span class="pre">update()</span></code> function values coming from different
+sliders, but this function must have exactly one argument. This can be fixed as follows.
+A slider <code class="docutils literal notranslate"><span class="pre">slider_name</span></code> has an associated variable <code class="docutils literal notranslate"><span class="pre">slider_name.val</span></code> that stores
+the current value of the slider. This variable can be used in the <code class="docutils literal notranslate"><span class="pre">update()</span></code> function
+to get the value of the slider and modify the plot.  For example, in the code above the
+<code class="docutils literal notranslate"><span class="pre">update()</span></code> function can be changed as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">sin_plot</span><span class="o">.</span><span class="n">set_ydata</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a_slider</span><span class="o">.</span><span class="n">val</span><span class="o">*</span><span class="n">x</span><span class="p">))</span> <span class="c1"># set new y-coordinates of the plotted points</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw_idle</span><span class="p">()</span>          <span class="c1"># redraw the plot</span>
+</pre></div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">a_slider</span></code> is the name of the slider, so <code class="docutils literal notranslate"><span class="pre">a_slider.val</span></code> gives the
+the current value of this slider. If the plot had another slider <code class="docutils literal notranslate"><span class="pre">b_slider</span></code>
+then we could use <code class="docutils literal notranslate"><span class="pre">b_slider.val</span></code> to the get the value of that slider and use it
+in the <code class="docutils literal notranslate"><span class="pre">update()</span></code> function.</p>
+<p><strong>Exercise 1.</strong> Lissajous curves are curves given by the parametric
+equations</p>
+<div class="math notranslate nohighlight">
+\[x = \sin(at)\]</div>
+<div class="math notranslate nohighlight">
+\[y = \cos(bt)\]</div>
+<p>Create an interactive plot of Lissaous curves with two sliders: one
+controlling the paramater <span class="math notranslate nohighlight">\(a\)</span> and the other controlling <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">widgets</span></code> submodule of matplotlib contains many other tools,
+beside slider, that can be used to add interactive features to plots
+(buttons, radio buttons, check boxes etc.). See <a class="reference external" href="http://matplotlib.org/api/widgets_api.html">matplotlib
+documentation</a> for
+details.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../PT-numpy_arrays/PT-numpy_arrays.html" class="btn btn-neutral float-right" title="Numpy arrays" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../PT-matplotlib_subplots/PT-matplotlib_subplots.html" class="btn btn-neutral float-left" title="Matplotlib subplots and axes objects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="width: 100px; border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg" /></a>  <a href="mailto:jllottes@buffalo.edu">Jonathan Lottes</a>
+      <span class="lastupdated"><br/>
+        Last updated on Jan 30, 2022.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
