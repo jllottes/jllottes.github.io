@@ -3,10 +3,7 @@
 MTH 337 Syllabus
 =============================
 
-
-Class meetings
---------------
-
+| **MTH 337 Introduction to Scientific and Mathematical Computing**
 | Mon Wed 11:00 AM - 12:50 PM
 | 150 Mathematics Building 
 
