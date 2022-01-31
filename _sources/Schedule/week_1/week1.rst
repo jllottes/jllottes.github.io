@@ -34,3 +34,9 @@ Python
 Mathematics
 ~~~~~~~~~~~
 * Prime numbers
+
+Week 1 notebook
+~~~~~~~~~~~~~~~
+
+- `View online <week1_notebook.html>`_
+- `Download <week1_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
