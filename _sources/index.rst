@@ -1,6 +1,6 @@
 
 =============================
-MTH 337 Syllabus
+Syllabus
 =============================
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
@@ -80,6 +80,16 @@ Class participation will be evaluated weekly.
 Useful Information
 ------------------
 
+COVID-19 Information
+====================
+Due to the continuing COVID-19 pandemic, high-quality masks must be worn at all times during class.  
+If I notice that you do not have a mask on, I will ask you to either put one on or leave the classroom.  
+Please make sure your mask covers both your mouth and nose and fits tightly on your face without gaps between your mask and your
+face.  
+I may ask you to leave the classroom if your mask does not fit tightly.  
+For more information at the pandemic health and safety policies, please see the
+`Health and Safety Guidelines <https://www.buffalo.edu/coronavirus/health-and-safety/health-safety-guidelines.html>`_.
+
 Important Dates
 ===============
 
@@ -99,12 +109,45 @@ See the UB Catalog for the `UB Incomplete Policy <https://catalog.buffalo.edu/po
 Academic Integrity
 ==================
 
-See the UB Catalog for the `UB Academic Integrity Policy <https://catalog.buffalo.edu/policies/integrity.html>`_.
+Academic integrity is critical to the learning process. 
+It is your responsibility as a student to complete your work in an honest fashion, upholding the expectations your individual instructors have for you in this regard. 
+The ultimate goal is to ensure that you learn the content in your courses in accordance with UB’s academic integrity principles, regardless of whether instruction is in-person or remote. 
+Thank you for upholding your own personal integrity and ensuring UB’s tradition of academic excellence. 
+The academic integrity policy is available at:
 
+    `Academic Integrity <https://www.buffalo.edu/academic-integrity.html>`_
+
+While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. Any outside resource that is used during the project (this includes code taken from class notes or other sources) or while writing the report must be properly cited in the report.
+
+Collaboration of any kind on the quizzes is forbidden, as is the use of any materials not approved of by the instructor.
 
 Accessibility Resources
 =======================
 
-If you need accommodations due to a physical or learning disability please contact the
-`UB Accessibility Resources Office <https://www.buffalo.edu/studentlife/who-we-are/departments/accessibility.html>`_
-to make appropriate arrangements.
+If you have any disability which requires reasonable accommodations to enable you to participate in this course, please contact the Office of Accessibility Resources in 60 Capen Hall, 716-645-2608 and also the instructor of this course during the first week of class. 
+The office will provide you with information and review appropriate arrangements for reasonable accommodations, which can be found on the web at:
+
+    `Accessibility Resources <http://www.buffalo.edu/studentlife/who-we-are/departments/accessibility.html>`_
+
+
+Critical Campus Resources
+=========================
+
+**Sexual Violence.**
+UB is committed to providing a safe learning environment free of all forms of discrimination and sexual harassment, including sexual assault, domestic and dating violence and stalking. If you have experienced gender-based violence (intimate partner violence, attempted or completed sexual assault, harassment, coercion, stalking, etc.), UB has resources to help. This includes academic accommodations, health and counseling services, housing accommodations, helping with legal protective orders, and assistance with reporting the incident to police or other UB officials if you so choose. Please contact UB’s Title IX Coordinator at 716-645-2266 for more information. For confidential assistance, you may also contact a Crisis Services Campus Advocate at 716-796-4399.
+
+**Mental Health.**
+As a student you may experience a range of issues that can cause barriers to learning or reduce your ability to participate in daily activities. These might include strained relationships, anxiety, high levels of stress, alcohol/drug problems, feeling down, health concerns, or unwanted sexual experiences. Counseling, Health Services, and Health Promotion are here to help with these or other issues you may experience. You can learn more about these programs and services by contacting:
+
+Counseling Services:
+
+	* 120 Richmond Quad (North Campus), 716-645-2720
+	* 202 Michael Hall (South Campus), 716-829-5800  
+    
+Health Services:
+
+	* Michael Hall (South Campus), 716-829-3316
+    
+Health Promotion:
+
+	* 114 Student Union (North Campus), 716-645-2837
