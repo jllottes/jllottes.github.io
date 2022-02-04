@@ -9,3 +9,5 @@ Weekly Schedule
    Schedule/week_0
    
    Schedule/week_1
+   
+   Schedule/week_2

@@ -56,7 +56,7 @@ The outcome of your work on each project will be a project report that you will 
 
 Each report will be graded on the A-F scale. 
 Extra credit (a grade of A+) will be assigned for an outstanding work. 
-Reports will be submitted via UBLearns. The submission deadline will be 11:59 PM on Mondays.
+Reports will be submitted via UBLearns.
 Late reports will not be accepted. 
 Your project report must be original, even if you worked on some components of the project in a group.
 More information about project reports is posted :doc:`here <report_guide>`.

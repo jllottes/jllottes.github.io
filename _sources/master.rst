@@ -15,8 +15,7 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    :maxdepth: 3
    :caption: Projects
 
-..
-   Projects/prime_or_not !
+   Projects/prime_or_not/prime_or_not
 
 .. Indices and tables
 .. ==================
