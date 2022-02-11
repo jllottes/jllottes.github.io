@@ -18,13 +18,6 @@ What is covered:
 * Importing modules.
 * The ``if`` statement.
 
-
-Logistics
-~~~~~~~~~
-
-* Project Report Guide
-
-
 Python
 ~~~~~~
 
@@ -34,7 +27,7 @@ Python
 * ``while`` loops
 * Fine-tuning loops: ``break`` and ``continue``
 * :doc:`Functions </PT/PT-functions>`
-* Logical operators: ``not``, ``and``, ``or``
+* Documenting code: comments and docstrings
 
 
 Mathematics
