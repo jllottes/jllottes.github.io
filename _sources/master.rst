@@ -16,6 +16,7 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    :caption: Projects
 
    Projects/prime_or_not/prime_or_not
+   Projects/pythagorean_triples/pythagorean_triples
 
 .. Indices and tables
 .. ==================
