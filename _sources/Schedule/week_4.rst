@@ -35,3 +35,9 @@ Project 2
 .. rubric:: Due: Saturday, March 5, 11:59 PM.
 
 * :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
+
+Week 4 notebook
+~~~~~~~~~~~~~~~
+
+- `View online <../_static/weekly_notebooks/week4_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week4_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
