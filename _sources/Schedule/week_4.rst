@@ -16,6 +16,7 @@ What is covered:
 Logistics
 ~~~~~~~~~
 
+* `Example: Project 1 - A prime or not a prime <../../_static/projects/Project1_example>`_
 * Project 1 feedback
 
 Python
