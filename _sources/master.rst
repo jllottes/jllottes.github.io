@@ -17,6 +17,7 @@ MTH 337 Introduction to Scientific and Mathematical Computing
 
    Projects/prime_or_not/prime_or_not
    Projects/pythagorean_triples/pythagorean_triples
+   Projects/mayfly_model/mayfly_model
 
 .. Indices and tables
 .. ==================
