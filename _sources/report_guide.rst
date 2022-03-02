@@ -75,6 +75,8 @@ A+ or A++.
 .. |Bonus| replace:: Extra credit for excellent work that exceeds
    expectations.
 
+* A more detailed breakdown for each element can be found here: :download:`Project Rubrics <./_static/project_rubrics.pdf>`
+
 
 Report Style Guide
 ------------------
