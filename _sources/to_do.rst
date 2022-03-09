@@ -3,5 +3,4 @@
 Current Tasks
 =============
 
-* Work on Project 2, :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`
-* Prepare for Quiz 4 (see :doc:`Week 4 </Schedule/week_5>` for topics and sample)
+* Work on Project 3, :doc:`Mayfly model </Projects/mayfly_model/mayfly_model>`
