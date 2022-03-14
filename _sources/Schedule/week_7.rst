@@ -24,3 +24,9 @@ Project 4
 ~~~~~~~~~
 
 * :doc:`Tartans </Projects/tartans/tartans>`
+
+Week 7 notebook
+~~~~~~~~~~~~~~~
+
+- `View online <../_static/weekly_notebooks/week7_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week7_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
