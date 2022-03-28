@@ -21,3 +21,5 @@ Weekly Schedule
    Schedule/week_6
    
    Schedule/week_7
+   
+   Schedule/week_8
