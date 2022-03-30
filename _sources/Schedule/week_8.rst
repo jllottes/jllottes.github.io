@@ -13,8 +13,8 @@ Project 5
 
 * :doc:`Image denoising </Projects/image_denoising/image_denoising>`
 
-Week 7 notebook
+Week 8 notebook
 ~~~~~~~~~~~~~~~
 
 - `View online <../_static/weekly_notebooks/week8_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week7\8_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+- `Download <../_static/weekly_notebooks/week8_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
