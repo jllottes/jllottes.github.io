@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code breakers &mdash; MTH 337 - Spring 2022  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://jllottes.github.io/Projects/code_breakers/code_breakers.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Image denoising" href="../image_denoising/image_denoising.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mayfly_model/mayfly_model.html">Mayfly model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image_denoising/image_denoising.html">Image denoising</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code breakers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ascii-codes">ASCII codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text-encryption">Text encryption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../master.html">MTH 337 - Spring 2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../master.html">MTH 337</a> &raquo;</li>
+        
+      <li>Code breakers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Projects/code_breakers/code_breakers.rst" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="code-breakers">
+<h1>Code breakers<a class="headerlink" href="#code-breakers" title="Permalink to this headline"></a></h1>
+<p class="rubric">due: Saturday, April  16, 11:59 PM</p>
+<section id="ascii-codes">
+<h2>ASCII codes<a class="headerlink" href="#ascii-codes" title="Permalink to this headline"></a></h2>
+<p>Each character on a computer keyboard is assigned an <a class="reference external" href="http://www.theasciicode.com.ar">ASCII code</a>, which
+is an integer in the range 0-127. The ASCII code of a character can be
+obtained using the <code class="docutils literal notranslate"><span class="pre">ord()</span></code> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;This is MTH 337&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:&gt;3}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="s2">&quot;&#39;&quot;</span><span class="o">+</span><span class="n">c</span><span class="o">+</span><span class="s2">&quot;&#39;&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p> 84 ‘T’
+104 ‘h’
+105 ‘i’
+115 ‘s’
+ 32 ‘ ‘
+105 ‘i’
+115 ‘s’
+ 32 ‘ ‘
+ 77 ‘M’
+ 84 ‘T’
+ 72 ‘H’
+ 32 ‘ ‘
+ 51 ‘3’
+ 51 ‘3’
+ 55 ‘7’</p>
+</div>
+<p>Conversely, the function <code class="docutils literal notranslate"><span class="pre">chr()</span></code> converts ASCII codes into characters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">char_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">104</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">111</span><span class="p">]:</span>
+    <span class="n">char_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="n">txt</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output docutils container">
+<p>hello</p>
+</div>
+</section>
+<section id="text-encryption">
+<h2>Text encryption<a class="headerlink" href="#text-encryption" title="Permalink to this headline"></a></h2>
+<p>In order to securely send a confidential message one usually needs to
+encrypt it in some way to conceal its content. Here we consider the following
+encryption scheme:</p>
+<ul class="simple">
+<li><p>One selects a secret key, which is sequence of characters. This key is used
+to both encrypt and decrypt the message.</p></li>
+<li><p>Characters of the secret key and characters of the message are converted
+into ASCII codes. In this way the key is transformed into a
+sequence of integers <span class="math notranslate nohighlight">\((k_1, k_2, \dots, k_r)\)</span>, and the message becomes
+another sequence of integers <span class="math notranslate nohighlight">\((m_1, m_2, \dots, m_s)\)</span>. If <span class="math notranslate nohighlight">\(r &lt; s\)</span>
+then the secret key sequence is extended by repeating it as many times as
+necessary until it matches the length of the message.</p></li>
+<li><p>Let <span class="math notranslate nohighlight">\(c_i\)</span> be the reminder from the division of
+<span class="math notranslate nohighlight">\(m_i+k_i\)</span> by 128. The sequence of numbers
+<span class="math notranslate nohighlight">\((c_1, c_2, \dots, c_s)\)</span> is the encrypted message.</p></li>
+</ul>
+<p>For example, if the message is ‘Top secret!’ and the secret key is ‘buffalo’
+then the encrypted message is:</p>
+<div class="math notranslate nohighlight">
+\[\tt{54,100,86,6,84,81,82,84,90,90,7}\]</div>
+<p>In order to decrypt the message we work backwards: for each number <span class="math notranslate nohighlight">\(c_i\)</span>
+we compute the reminder from the division of <span class="math notranslate nohighlight">\(c_i-k_i\)</span> by 128. This
+number is equal to <span class="math notranslate nohighlight">\(m_i\)</span>, so converting it into a character
+we get the <span class="math notranslate nohighlight">\(i\)</span>-th letter of the message.</p>
+</section>
+<section id="project">
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
+<p>Each file listed below contains text (a fragment of a book in English)
+encrypted using the method described above. The secret key used to encrypt
+the text is a word, different for each file. A dictionary of over 60,000 English
+words is available <a class="reference external" href="https://raw.githubusercontent.com/en-wl/wordlist/master/alt12dicts/5desk.txt">here</a>,
+and all words used as secret keys are listed in this dictionary. Write
+code that decrypts the file assigned to you.</p>
+<p><strong>Note.</strong>  This is a programming project. Your project report does not need
+include narrative, beyond comments explaining how your code works. The project will
+be graded according to the following rubrics:</p>
+<ul class="simple">
+<li><p>Code that successfully decrypts the text file: 70%</p></li>
+<li><p>Report organization and code documentation: 30%</p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../../_downloads/41ae4d12049faa89e8a5fce079809230/aacampbe.txt"><code class="xref download docutils literal notranslate"><span class="pre">aacampbe.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/13e60d0cc9f86bebabe7bd6fd3632802/ahau.txt"><code class="xref download docutils literal notranslate"><span class="pre">ahau.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/49cfaa4e05e6c242c33224d2a2ab84d8/aidandav.txt"><code class="xref download docutils literal notranslate"><span class="pre">aidandav.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/2f028c0b8a802d1169ab7b22ed3c5b5c/alandiak.txt"><code class="xref download docutils literal notranslate"><span class="pre">alandiak.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/d9431de275d8fb391406b3834efd4775/ambrigan.txt"><code class="xref download docutils literal notranslate"><span class="pre">ambrigan.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/d8598fc0c13b51e54bca96dd82976546/amnaaura.txt"><code class="xref download docutils literal notranslate"><span class="pre">amnaaura.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/87c3c394d1f554602d205a6f03248722/enkangli.txt"><code class="xref download docutils literal notranslate"><span class="pre">enkangli.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/85243033042c86ce2050fdb77ea53693/gracepat.txt"><code class="xref download docutils literal notranslate"><span class="pre">gracepat.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/cff5b9ddaea39a6ead64dbda27715df9/hpfedro.txt"><code class="xref download docutils literal notranslate"><span class="pre">hpfedro.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/0c4e22c2df109dcb699b8aef247ee61c/jli424.txt"><code class="xref download docutils literal notranslate"><span class="pre">jli424.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/6f1cf172856dee8b53ce331e1ce2307f/jlvella.txt"><code class="xref download docutils literal notranslate"><span class="pre">jlvella.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/d3a898e8980dd80dd4fe17f0fc1a678f/jnwolf.txt"><code class="xref download docutils literal notranslate"><span class="pre">jnwolf.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/5be89e4a8fa25ea5f749abe1b2570d8c/johnsto3.txt"><code class="xref download docutils literal notranslate"><span class="pre">johnsto3.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/69b17da156b5ce88386f1ab63b61f354/jwang287.txt"><code class="xref download docutils literal notranslate"><span class="pre">jwang287.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/55f7b121ec5d85b7cbc1ae9ab06840d2/kaixinzo.txt"><code class="xref download docutils literal notranslate"><span class="pre">kaixinzo.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/adeb3df07460808203c537e5991d6c1f/kroman2.txt"><code class="xref download docutils literal notranslate"><span class="pre">kroman2.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/065ffd78bcb3154f138a13ee1ac29043/mariabea.txt"><code class="xref download docutils literal notranslate"><span class="pre">mariabea.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/a891830a9eac29b8fe377b3012c663b5/mvwarsaw.txt"><code class="xref download docutils literal notranslate"><span class="pre">mvwarsaw.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/944fa4455ad57a443550618e3a003fee/nacruz.txt"><code class="xref download docutils literal notranslate"><span class="pre">nacruz.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/74a264955584e02b5437d5728b8ebb82/ncolan.txt"><code class="xref download docutils literal notranslate"><span class="pre">ncolan.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/abbc24b84d13300593f3b9f909aea56f/ntlisman.txt"><code class="xref download docutils literal notranslate"><span class="pre">ntlisman.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/8741dda1536e2e2067d281ed16060006/peijunqu.txt"><code class="xref download docutils literal notranslate"><span class="pre">peijunqu.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/cbf10ea6892592648b7a79268b7787c3/phetsana.txt"><code class="xref download docutils literal notranslate"><span class="pre">phetsana.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/a9d8aafaa2928fd2b4ff5ec506640daf/tamacphe.txt"><code class="xref download docutils literal notranslate"><span class="pre">tamacphe.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/f7e8c9d4dfa652b41dcac4cf30935399/tiyarong.txt"><code class="xref download docutils literal notranslate"><span class="pre">tiyarong.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/475ce1209bbdc43bdc92bc57b4d087e9/tpkolasn.txt"><code class="xref download docutils literal notranslate"><span class="pre">tpkolasn.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/8edc96c769f5ba0b8e87b18f98cdc991/vivendra.txt"><code class="xref download docutils literal notranslate"><span class="pre">vivendra.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/0dc0ab8d14e2967193c603bd9c2dee08/yanchenx.txt"><code class="xref download docutils literal notranslate"><span class="pre">yanchenx.txt</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/ee23f40217ac606e687e34dfc7df8681/yebinwu.txt"><code class="xref download docutils literal notranslate"><span class="pre">yebinwu.txt</span></code></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../image_denoising/image_denoising.html" class="btn btn-neutral float-left" title="Image denoising" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated"><br/>
+        Last updated on Apr 04, 2022.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
