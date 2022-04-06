@@ -31,7 +31,7 @@ Project 6
 
 * :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
-Week 8 notebook
+Week 9 notebook
 ~~~~~~~~~~~~~~~
 
 - `View online <../_static/weekly_notebooks/week9_notebook.html>`_
