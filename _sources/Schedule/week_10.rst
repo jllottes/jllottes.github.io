@@ -27,3 +27,9 @@ Project 7
 ~~~~~~~~~
 
 * :doc:`Computing with text </Projects/computing_with_text/computing_with_text>`
+
+Week 10 notebook
+~~~~~~~~~~~~~~~~
+
+- `View online <../_static/weekly_notebooks/week10_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week10_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
