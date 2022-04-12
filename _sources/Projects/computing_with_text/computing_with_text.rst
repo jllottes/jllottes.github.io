@@ -1,5 +1,5 @@
 
-Computing with Text
+Computing with text
 ===================
 
 .. rubric:: (due: Saturday, April 23, 11:59 PM)
