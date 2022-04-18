@@ -2,7 +2,7 @@
 Computing with text
 ===================
 
-.. rubric:: (due: Saturday, April 23, 11:59 PM)
+.. rubric:: due: Saturday, April 23, 11:59 PM
 
 For this project you will work with text files of a few classical books that were obtained from the website of
 `Project Gutenberg <http://www.gutenberg.org/wiki/Main_Page>`__:

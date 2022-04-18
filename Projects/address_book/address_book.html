@@ -4,13 +4,13 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Computing with text &mdash; MTH 337 - Spring 2022  documentation</title>
+  <title>Address Book &mdash; MTH 337 - Spring 2022  documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="https://jllottes.github.io/Projects/computing_with_text/computing_with_text.html" />
+    <link rel="canonical" href="https://jllottes.github.io/Projects/address_book/address_book.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -25,8 +25,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Address Book" href="../address_book/address_book.html" />
-    <link rel="prev" title="Code breakers" href="../code_breakers/code_breakers.html" /> 
+    <link rel="prev" title="Computing with text" href="../computing_with_text/computing_with_text.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -60,11 +59,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_denoising/image_denoising.html">Image denoising</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../code_breakers/code_breakers.html">Code breakers</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Computing with text</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../computing_with_text/computing_with_text.html">Computing with text</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Address Book</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../address_book/address_book.html">Address Book</a></li>
 </ul>
 
         </div>
@@ -100,13 +99,13 @@
     
       <li><a href="../../master.html">MTH 337</a> &raquo;</li>
         
-      <li>Computing with text</li>
+      <li>Address Book</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/Projects/computing_with_text/computing_with_text.rst" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Projects/address_book/address_book.rst" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -143,30 +142,72 @@
     text-align: unset;
 }
 </style>
-<section id="computing-with-text">
-<h1>Computing with text<a class="headerlink" href="#computing-with-text" title="Permalink to this headline"></a></h1>
-<p class="rubric">due: Saturday, April 23, 11:59 PM</p>
-<p>For this project you will work with text files of a few classical books that were obtained from the website of
-<a class="reference external" href="http://www.gutenberg.org/wiki/Main_Page">Project Gutenberg</a>:</p>
-<ul class="simple">
-<li><p><a class="reference download internal" download="" href="../../_downloads/58e66eb33ff8fbf7872fbfb57be3f12c/around_world.txt"><code class="xref download docutils literal notranslate"><span class="pre">around_world.txt</span></code></a>  - J.Verne, <em>Around the World in Eighty Days</em></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/eab27d9178a30da5d59f566929d006f3/republic.txt"><code class="xref download docutils literal notranslate"><span class="pre">republic.txt</span></code></a> - Plato, <em>The Republic</em></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/e2dacfb2d873f996f1bd5f09000f6c56/walden.txt"><code class="xref download docutils literal notranslate"><span class="pre">walden.txt</span></code></a> - H.D.Thoreau, <em>Walden</em></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/ed06ac0092f5c4e720dc05b7946edc27/three_musketeers.txt"><code class="xref download docutils literal notranslate"><span class="pre">three_musketeers.txt</span></code></a> - A.Dumas, <em>The Three Musketeers</em></p></li>
-</ul>
+<section id="address-book">
+<h1>Address Book<a class="headerlink" href="#address-book" title="Permalink to this headline"></a></h1>
+<p class="rubric">due: Saturday, April 30, 11:59 PM</p>
+<p>The <a class="reference external" href="http://pharmacy.buffalo.edu/faculty-staff.html">Faculty and Staff Directory</a>
+webpage of the UB School of Pharmacy lists names of faculty and staff members of
+the school. The name of each person is linked to a webpage with information about
+that person.</p>
 <section id="project">
 <h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
-<p><strong>Part 1.</strong> For each of these texts perform the following tasks:</p>
+<p>Using requests and regular expressions write code that retrieves name, office
+address, phone number, and e-mail of each person listed in the staff and faculty
+directory. Your code should print this information for each person (in alphabetical
+order) in a format similar to the following:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="output docutils container">
+<p>Brown, Alice
+B5-123A NYS Center of Excellence
+Buffalo, NY
+(716) 555-1234
+abrown123&#64;buffalo.edu</p>
+<p>Chase, Joseph
+555 Kapoor Hall
+Buffalo, NY 14214-8033
+(716) 555-3210
+josech&#64;buffalo.edu</p>
+</div>
+<p>The sample listings above are made up, they do not correspond to the real information
+posted on the School of Pharmacy website.</p>
+<p><strong>Note 1.</strong>  Reports that print contact information that was manually entered into
+the report code are not acceptable.</p>
+<p><strong>Note 2.</strong> Your code needs to handle the following issues:</p>
 <ul class="simple">
-<li><p>Create a list of several (20 or so) words most frequently appearing in the text.</p></li>
-<li><p>Plot frequencies of all words appearing in the text against their ranks in
-the frequency order.</p></li>
+<li><p>Individual pages of some people are missing some or all contact information.
+In such cases the listing you produce should indicate it e.g. as follows:</p></li>
 </ul>
-<p><strong>Part 2.</strong> Analyze differences and similarities between lists of most frequent words
-and plots of words frequencies for all of these texts. Describe any patterns you see.</p>
-<p>If you want to expand your research to additional texts you can use
-Project Guthenberg files or other online resources. Use <code class="docutils literal notranslate"><span class="pre">requests</span></code> to retrieve
-these additional files so they are accessible when you submit the report.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="output docutils container">
+<p>Brown, Alice
+No Address
+(716) 555-1234
+abrown123&#64;buffalo.edu</p>
+<p>Chase, Joseph
+No Address
+No Phone
+No E-mail</p>
+</div>
+<ul class="simple">
+<li><p>The number of lines in the office address can vary, depending on a person.</p></li>
+<li><p>Phone numbers are listed on web pages in different formats:
+<a class="reference external" href="http://pharmacy.buffalo.edu/faculty-staff.html?CFC__target=nTCQYXcvSDinYfrnhrtEjjKQCI-http%3A%2F%2Fwww.pharm.buffalo.edu%2FFaculty_Directory%2Fpages%2Fubcms_profile.php%3FID%3D8">(716) 555-1234</a>,
+or <a class="reference external" href="http://pharmacy.buffalo.edu/faculty-staff.html?CFC__target=6J6Cs5aGiYNipNG6RNe71qCSgU-http%3A%2F%2Fwww.pharm.buffalo.edu%2FFaculty_Directory%2Fpages%2Fubcms_profile.php%3FID%3D247">716-555-1234</a>,
+or <a class="reference external" href="http://pharmacy.buffalo.edu/faculty-staff.html?CFC__target=kdUKUu4pX7WVGJqbfZ69anCX1g-http%3A%2F%2Fwww.pharm.buffalo.edu%2FFaculty_Directory%2Fpages%2Fubcms_profile.php%3FID%3D227">7165551234</a>
+etc. Your code should capture all phone numbers regardless how they were entered,
+and print them out in the format (716) 555-1234.</p></li>
+</ul>
+<p><strong>Note 3.</strong>  This is a programming project. Your project report does not need
+include narrative, beyond comments explaining how your code works. The project will
+be graded according to the following rubrics:</p>
+<ul class="simple">
+<li><p>Code that successfully decrypts the text file: 70%</p></li>
+<li><p>Report organization and code documentation: 30%</p></li>
+</ul>
 </section>
 </section>
 
@@ -177,10 +218,8 @@ these additional files so they are accessible when you submit the report.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../address_book/address_book.html" class="btn btn-neutral float-right" title="Address Book" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="../code_breakers/code_breakers.html" class="btn btn-neutral float-left" title="Code breakers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../computing_with_text/computing_with_text.html" class="btn btn-neutral float-left" title="Computing with text" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
