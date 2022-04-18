@@ -19,8 +19,6 @@ Python
 
 * Dictionaries
 * List sorting
-* Plots: ``semilogx``, ``semilogy``, ``loglog``
-
 
 
 Project 7
