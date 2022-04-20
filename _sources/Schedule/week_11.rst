@@ -26,3 +26,9 @@ Project 8
 ~~~~~~~~~
 
 * :doc:`Address book </Projects/address_book/address_book>`
+
+Week 11 notebook
+~~~~~~~~~~~~~~~~
+
+- `View online <../_static/weekly_notebooks/week11_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week11_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
