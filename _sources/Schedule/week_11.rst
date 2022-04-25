@@ -20,7 +20,6 @@ Python
 * List sorting
 * Plots: ``semilogx``, ``semilogy``, ``loglog``
 * `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
-* Json.
 
 Project 8
 ~~~~~~~~~
