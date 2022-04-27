@@ -16,7 +16,7 @@ Python
 ~~~~~~
 
 * Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
-* Numpy linalg
+* Pandas
 
 
 Project 8
