@@ -15,7 +15,7 @@ What is covered:
 Python
 ~~~~~~
 
-* Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
+* `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
 * Pandas
 
 
