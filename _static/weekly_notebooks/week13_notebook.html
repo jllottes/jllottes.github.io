@@ -18973,6 +18973,1095 @@ United States
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">7.123</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;7&#39;, &#39;.&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="o">-</span><span class="mf">7.0123</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">n</span> <span class="ow">in</span> <span class="s1">&#39;0.-&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>7
+1
+2
+3
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Note.</strong> The <code>airports.csv</code> file requires a special encoding to properly read. We can use <code>Latin</code> to read it:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">airports_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;airports.csv&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;Latin&#39;</span><span class="p">,</span><span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">airports_df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>ident</th>
+      <th>type</th>
+      <th>name</th>
+      <th>latitude_deg</th>
+      <th>longitude_deg</th>
+      <th>elevation_ft</th>
+      <th>continent</th>
+      <th>iso_country</th>
+      <th>iso_region</th>
+      <th>municipality</th>
+      <th>scheduled_service</th>
+      <th>gps_code</th>
+      <th>iata_code</th>
+      <th>local_code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6523</td>
+      <td>00A</td>
+      <td>heliport</td>
+      <td>Total Rf Heliport</td>
+      <td>40.070801</td>
+      <td>-74.933601</td>
+      <td>11.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-PA</td>
+      <td>Bensalem</td>
+      <td>no</td>
+      <td>00A</td>
+      <td>NaN</td>
+      <td>00A</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6524</td>
+      <td>00AK</td>
+      <td>small_airport</td>
+      <td>Lowell Field</td>
+      <td>59.949200</td>
+      <td>-151.695999</td>
+      <td>450.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AK</td>
+      <td>Anchor Point</td>
+      <td>no</td>
+      <td>00AK</td>
+      <td>NaN</td>
+      <td>00AK</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6525</td>
+      <td>00AL</td>
+      <td>small_airport</td>
+      <td>Epps Airpark</td>
+      <td>34.864799</td>
+      <td>-86.770302</td>
+      <td>820.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AL</td>
+      <td>Harvest</td>
+      <td>no</td>
+      <td>00AL</td>
+      <td>NaN</td>
+      <td>00AL</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6526</td>
+      <td>00AR</td>
+      <td>heliport</td>
+      <td>Newport Hospital &amp; Clinic Heliport</td>
+      <td>35.608700</td>
+      <td>-91.254898</td>
+      <td>237.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AR</td>
+      <td>Newport</td>
+      <td>no</td>
+      <td>00AR</td>
+      <td>NaN</td>
+      <td>00AR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6527</td>
+      <td>00AZ</td>
+      <td>small_airport</td>
+      <td>Cordes Airport</td>
+      <td>34.305599</td>
+      <td>-112.165001</td>
+      <td>3810.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AZ</td>
+      <td>Cordes</td>
+      <td>no</td>
+      <td>00AZ</td>
+      <td>NaN</td>
+      <td>00AZ</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>47531</th>
+      <td>27244</td>
+      <td>ZYYJ</td>
+      <td>medium_airport</td>
+      <td>Yanji Chaoyangchuan Airport</td>
+      <td>42.882801</td>
+      <td>129.451004</td>
+      <td>624.0</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-22</td>
+      <td>Yanji</td>
+      <td>yes</td>
+      <td>ZYYJ</td>
+      <td>YNJ</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47532</th>
+      <td>32753</td>
+      <td>ZYYY</td>
+      <td>medium_airport</td>
+      <td>Shenyang Dongta Airport</td>
+      <td>41.784401</td>
+      <td>123.496002</td>
+      <td>NaN</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-21</td>
+      <td>Shenyang</td>
+      <td>no</td>
+      <td>ZYYY</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47533</th>
+      <td>46378</td>
+      <td>ZZ-0001</td>
+      <td>heliport</td>
+      <td>Sealand Helipad</td>
+      <td>51.894444</td>
+      <td>1.482500</td>
+      <td>40.0</td>
+      <td>EU</td>
+      <td>GB</td>
+      <td>GB-ENG</td>
+      <td>Sealand</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47534</th>
+      <td>307326</td>
+      <td>ZZ-0002</td>
+      <td>small_airport</td>
+      <td>Glorioso Islands Airstrip</td>
+      <td>-11.584278</td>
+      <td>47.296389</td>
+      <td>11.0</td>
+      <td>AF</td>
+      <td>TF</td>
+      <td>TF-U-A</td>
+      <td>Grande Glorieuse</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47535</th>
+      <td>313629</td>
+      <td>ZZZZ</td>
+      <td>small_airport</td>
+      <td>Satsuma Iwo-jima Airport</td>
+      <td>30.784722</td>
+      <td>130.270556</td>
+      <td>338.0</td>
+      <td>AS</td>
+      <td>JP</td>
+      <td>JP-46</td>
+      <td>Mishima-Mura</td>
+      <td>yes</td>
+      <td>RJX7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>47536 rows × 15 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can apply functions to values in a dataframe using the <code>.apply</code> method:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">classify_height</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Low elevation&#39;</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3000</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Medium elevation&#39;</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="s1">&#39;High elevation&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">airports_df</span><span class="p">[</span><span class="s1">&#39;Height classification&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">airports_df</span><span class="p">[</span><span class="s1">&#39;elevation_ft&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">classify_height</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">airports_df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>ident</th>
+      <th>type</th>
+      <th>name</th>
+      <th>latitude_deg</th>
+      <th>longitude_deg</th>
+      <th>elevation_ft</th>
+      <th>continent</th>
+      <th>iso_country</th>
+      <th>iso_region</th>
+      <th>municipality</th>
+      <th>scheduled_service</th>
+      <th>gps_code</th>
+      <th>iata_code</th>
+      <th>local_code</th>
+      <th>Height classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6523</td>
+      <td>00A</td>
+      <td>heliport</td>
+      <td>Total Rf Heliport</td>
+      <td>40.070801</td>
+      <td>-74.933601</td>
+      <td>11.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-PA</td>
+      <td>Bensalem</td>
+      <td>no</td>
+      <td>00A</td>
+      <td>NaN</td>
+      <td>00A</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6524</td>
+      <td>00AK</td>
+      <td>small_airport</td>
+      <td>Lowell Field</td>
+      <td>59.949200</td>
+      <td>-151.695999</td>
+      <td>450.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AK</td>
+      <td>Anchor Point</td>
+      <td>no</td>
+      <td>00AK</td>
+      <td>NaN</td>
+      <td>00AK</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6525</td>
+      <td>00AL</td>
+      <td>small_airport</td>
+      <td>Epps Airpark</td>
+      <td>34.864799</td>
+      <td>-86.770302</td>
+      <td>820.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AL</td>
+      <td>Harvest</td>
+      <td>no</td>
+      <td>00AL</td>
+      <td>NaN</td>
+      <td>00AL</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6526</td>
+      <td>00AR</td>
+      <td>heliport</td>
+      <td>Newport Hospital &amp; Clinic Heliport</td>
+      <td>35.608700</td>
+      <td>-91.254898</td>
+      <td>237.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AR</td>
+      <td>Newport</td>
+      <td>no</td>
+      <td>00AR</td>
+      <td>NaN</td>
+      <td>00AR</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6527</td>
+      <td>00AZ</td>
+      <td>small_airport</td>
+      <td>Cordes Airport</td>
+      <td>34.305599</td>
+      <td>-112.165001</td>
+      <td>3810.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AZ</td>
+      <td>Cordes</td>
+      <td>no</td>
+      <td>00AZ</td>
+      <td>NaN</td>
+      <td>00AZ</td>
+      <td>High elevation</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>47531</th>
+      <td>27244</td>
+      <td>ZYYJ</td>
+      <td>medium_airport</td>
+      <td>Yanji Chaoyangchuan Airport</td>
+      <td>42.882801</td>
+      <td>129.451004</td>
+      <td>624.0</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-22</td>
+      <td>Yanji</td>
+      <td>yes</td>
+      <td>ZYYJ</td>
+      <td>YNJ</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47532</th>
+      <td>32753</td>
+      <td>ZYYY</td>
+      <td>medium_airport</td>
+      <td>Shenyang Dongta Airport</td>
+      <td>41.784401</td>
+      <td>123.496002</td>
+      <td>NaN</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-21</td>
+      <td>Shenyang</td>
+      <td>no</td>
+      <td>ZYYY</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>High elevation</td>
+    </tr>
+    <tr>
+      <th>47533</th>
+      <td>46378</td>
+      <td>ZZ-0001</td>
+      <td>heliport</td>
+      <td>Sealand Helipad</td>
+      <td>51.894444</td>
+      <td>1.482500</td>
+      <td>40.0</td>
+      <td>EU</td>
+      <td>GB</td>
+      <td>GB-ENG</td>
+      <td>Sealand</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47534</th>
+      <td>307326</td>
+      <td>ZZ-0002</td>
+      <td>small_airport</td>
+      <td>Glorioso Islands Airstrip</td>
+      <td>-11.584278</td>
+      <td>47.296389</td>
+      <td>11.0</td>
+      <td>AF</td>
+      <td>TF</td>
+      <td>TF-U-A</td>
+      <td>Grande Glorieuse</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47535</th>
+      <td>313629</td>
+      <td>ZZZZ</td>
+      <td>small_airport</td>
+      <td>Satsuma Iwo-jima Airport</td>
+      <td>30.784722</td>
+      <td>130.270556</td>
+      <td>338.0</td>
+      <td>AS</td>
+      <td>JP</td>
+      <td>JP-46</td>
+      <td>Mishima-Mura</td>
+      <td>yes</td>
+      <td>RJX7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+  </tbody>
+</table>
+<p>47536 rows × 16 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">airports_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">airports_df</span><span class="p">[</span><span class="s1">&#39;Height classification&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Low elevation&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>ident</th>
+      <th>type</th>
+      <th>name</th>
+      <th>latitude_deg</th>
+      <th>longitude_deg</th>
+      <th>elevation_ft</th>
+      <th>continent</th>
+      <th>iso_country</th>
+      <th>iso_region</th>
+      <th>municipality</th>
+      <th>scheduled_service</th>
+      <th>gps_code</th>
+      <th>iata_code</th>
+      <th>local_code</th>
+      <th>Height classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6523</td>
+      <td>00A</td>
+      <td>heliport</td>
+      <td>Total Rf Heliport</td>
+      <td>40.070801</td>
+      <td>-74.933601</td>
+      <td>11.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-PA</td>
+      <td>Bensalem</td>
+      <td>no</td>
+      <td>00A</td>
+      <td>NaN</td>
+      <td>00A</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6524</td>
+      <td>00AK</td>
+      <td>small_airport</td>
+      <td>Lowell Field</td>
+      <td>59.949200</td>
+      <td>-151.695999</td>
+      <td>450.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AK</td>
+      <td>Anchor Point</td>
+      <td>no</td>
+      <td>00AK</td>
+      <td>NaN</td>
+      <td>00AK</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6525</td>
+      <td>00AL</td>
+      <td>small_airport</td>
+      <td>Epps Airpark</td>
+      <td>34.864799</td>
+      <td>-86.770302</td>
+      <td>820.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AL</td>
+      <td>Harvest</td>
+      <td>no</td>
+      <td>00AL</td>
+      <td>NaN</td>
+      <td>00AL</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6526</td>
+      <td>00AR</td>
+      <td>heliport</td>
+      <td>Newport Hospital &amp; Clinic Heliport</td>
+      <td>35.608700</td>
+      <td>-91.254898</td>
+      <td>237.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-AR</td>
+      <td>Newport</td>
+      <td>no</td>
+      <td>00AR</td>
+      <td>NaN</td>
+      <td>00AR</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>6531</td>
+      <td>00FA</td>
+      <td>small_airport</td>
+      <td>Grass Patch Airport</td>
+      <td>28.645500</td>
+      <td>-82.219002</td>
+      <td>53.0</td>
+      <td>NaN</td>
+      <td>US</td>
+      <td>US-FL</td>
+      <td>Bushnell</td>
+      <td>no</td>
+      <td>00FA</td>
+      <td>NaN</td>
+      <td>00FA</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>47530</th>
+      <td>27243</td>
+      <td>ZYTX</td>
+      <td>large_airport</td>
+      <td>Taoxian Airport</td>
+      <td>41.639801</td>
+      <td>123.483002</td>
+      <td>198.0</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-21</td>
+      <td>Shenyang</td>
+      <td>yes</td>
+      <td>ZYTX</td>
+      <td>SHE</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47531</th>
+      <td>27244</td>
+      <td>ZYYJ</td>
+      <td>medium_airport</td>
+      <td>Yanji Chaoyangchuan Airport</td>
+      <td>42.882801</td>
+      <td>129.451004</td>
+      <td>624.0</td>
+      <td>AS</td>
+      <td>CN</td>
+      <td>CN-22</td>
+      <td>Yanji</td>
+      <td>yes</td>
+      <td>ZYYJ</td>
+      <td>YNJ</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47533</th>
+      <td>46378</td>
+      <td>ZZ-0001</td>
+      <td>heliport</td>
+      <td>Sealand Helipad</td>
+      <td>51.894444</td>
+      <td>1.482500</td>
+      <td>40.0</td>
+      <td>EU</td>
+      <td>GB</td>
+      <td>GB-ENG</td>
+      <td>Sealand</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47534</th>
+      <td>307326</td>
+      <td>ZZ-0002</td>
+      <td>small_airport</td>
+      <td>Glorioso Islands Airstrip</td>
+      <td>-11.584278</td>
+      <td>47.296389</td>
+      <td>11.0</td>
+      <td>AF</td>
+      <td>TF</td>
+      <td>TF-U-A</td>
+      <td>Grande Glorieuse</td>
+      <td>no</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+    <tr>
+      <th>47535</th>
+      <td>313629</td>
+      <td>ZZZZ</td>
+      <td>small_airport</td>
+      <td>Satsuma Iwo-jima Airport</td>
+      <td>30.784722</td>
+      <td>130.270556</td>
+      <td>338.0</td>
+      <td>AS</td>
+      <td>JP</td>
+      <td>JP-46</td>
+      <td>Mishima-Mura</td>
+      <td>yes</td>
+      <td>RJX7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Low elevation</td>
+    </tr>
+  </tbody>
+</table>
+<p>27482 rows × 16 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can count the number of rows for each value using the <code>.value_counts()</code> method:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="n">airports_df</span><span class="p">[</span><span class="s1">&#39;Height classification&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">counts</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Low elevation       27482
+Medium elevation    11453
+High elevation       8601
+Name: Height classification, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can easily generate plots with pandas:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Height classification counts&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 </body>
 
