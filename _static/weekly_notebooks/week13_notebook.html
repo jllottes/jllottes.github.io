@@ -17862,6 +17862,1118 @@ United States
 </div>
 
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="May-4,-2022">May 4, 2022<a class="anchor-link" href="#May-4,-2022">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#country_areas = pd.read_csv(&#39;https://jllottes.github.io/_downloads/0f06d32b6f3a7250f190cd627087c8b5/country_areas.csv&#39;)</span>
+<span class="n">country_areas</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;country_areas.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_areas</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>Area (sq km)</th>
+      <th>Area (sq miles)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>652860.0</td>
+      <td>252071</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>ALB</td>
+      <td>28750.0</td>
+      <td>11100</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>DZA</td>
+      <td>2381740.0</td>
+      <td>919595</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>American Samoa</td>
+      <td>ASM</td>
+      <td>200.0</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Andorra</td>
+      <td>AND</td>
+      <td>470.0</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>Virgin Islands (U.S.)</td>
+      <td>VIR</td>
+      <td>350.0</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>West Bank and Gaza</td>
+      <td>PSE</td>
+      <td>6020.0</td>
+      <td>2324</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>Yemen</td>
+      <td>YEM</td>
+      <td>527970.0</td>
+      <td>203850</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>Zambia</td>
+      <td>ZMB</td>
+      <td>752610.0</td>
+      <td>290584</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>390760.0</td>
+      <td>150873</td>
+    </tr>
+  </tbody>
+</table>
+<p>210 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_populations</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;country_populations.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_populations</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>1966</th>
+      <th>1967</th>
+      <th>...</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>8994793.0</td>
+      <td>9164945.0</td>
+      <td>9343772.0</td>
+      <td>9531555.0</td>
+      <td>9728645.0</td>
+      <td>9935358.0</td>
+      <td>10148841.0</td>
+      <td>10368600.0</td>
+      <td>...</td>
+      <td>24399948</td>
+      <td>25183615</td>
+      <td>25877544</td>
+      <td>26528741</td>
+      <td>27207291</td>
+      <td>27962207</td>
+      <td>28809167</td>
+      <td>29726803</td>
+      <td>30682500</td>
+      <td>31627506</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>ALB</td>
+      <td>1608800.0</td>
+      <td>1659800.0</td>
+      <td>1711319.0</td>
+      <td>1762621.0</td>
+      <td>1814135.0</td>
+      <td>1864791.0</td>
+      <td>1914573.0</td>
+      <td>1965598.0</td>
+      <td>...</td>
+      <td>3011487</td>
+      <td>2992547</td>
+      <td>2970017</td>
+      <td>2947314</td>
+      <td>2927519</td>
+      <td>2913021</td>
+      <td>2904780</td>
+      <td>2900489</td>
+      <td>2897366</td>
+      <td>2894475</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>DZA</td>
+      <td>11124892.0</td>
+      <td>11404859.0</td>
+      <td>11690152.0</td>
+      <td>11985130.0</td>
+      <td>12295973.0</td>
+      <td>12626953.0</td>
+      <td>12980269.0</td>
+      <td>13354197.0</td>
+      <td>...</td>
+      <td>33267887</td>
+      <td>33749328</td>
+      <td>34261971</td>
+      <td>34811059</td>
+      <td>35401790</td>
+      <td>36036159</td>
+      <td>36717132</td>
+      <td>37439427</td>
+      <td>38186135</td>
+      <td>38934334</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>American Samoa</td>
+      <td>ASM</td>
+      <td>20012.0</td>
+      <td>20478.0</td>
+      <td>21118.0</td>
+      <td>21883.0</td>
+      <td>22701.0</td>
+      <td>23518.0</td>
+      <td>24320.0</td>
+      <td>25116.0</td>
+      <td>...</td>
+      <td>59117</td>
+      <td>58648</td>
+      <td>57904</td>
+      <td>57031</td>
+      <td>56226</td>
+      <td>55636</td>
+      <td>55316</td>
+      <td>55227</td>
+      <td>55302</td>
+      <td>55434</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Andorra</td>
+      <td>AND</td>
+      <td>13414.0</td>
+      <td>14376.0</td>
+      <td>15376.0</td>
+      <td>16410.0</td>
+      <td>17470.0</td>
+      <td>18551.0</td>
+      <td>19646.0</td>
+      <td>20755.0</td>
+      <td>...</td>
+      <td>81223</td>
+      <td>83373</td>
+      <td>84878</td>
+      <td>85616</td>
+      <td>85474</td>
+      <td>84419</td>
+      <td>82326</td>
+      <td>79316</td>
+      <td>75902</td>
+      <td>72786</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>Vietnam</td>
+      <td>VNM</td>
+      <td>34743000.0</td>
+      <td>35428000.0</td>
+      <td>36123000.0</td>
+      <td>36836000.0</td>
+      <td>37574000.0</td>
+      <td>38341000.0</td>
+      <td>39142000.0</td>
+      <td>39980000.0</td>
+      <td>...</td>
+      <td>82392100</td>
+      <td>83311200</td>
+      <td>84218500</td>
+      <td>85118700</td>
+      <td>86025000</td>
+      <td>86932500</td>
+      <td>87840000</td>
+      <td>88772900</td>
+      <td>89708900</td>
+      <td>90730000</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>Virgin Islands (U.S.)</td>
+      <td>VIR</td>
+      <td>32000.0</td>
+      <td>34100.0</td>
+      <td>36300.0</td>
+      <td>38700.0</td>
+      <td>41300.0</td>
+      <td>44000.0</td>
+      <td>47300.0</td>
+      <td>50800.0</td>
+      <td>...</td>
+      <td>107863</td>
+      <td>107700</td>
+      <td>107423</td>
+      <td>107091</td>
+      <td>106707</td>
+      <td>106267</td>
+      <td>105784</td>
+      <td>105275</td>
+      <td>104737</td>
+      <td>104170</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>Yemen, Rep.</td>
+      <td>YEM</td>
+      <td>5166311.0</td>
+      <td>5251663.0</td>
+      <td>5339285.0</td>
+      <td>5429501.0</td>
+      <td>5522690.0</td>
+      <td>5619170.0</td>
+      <td>5720538.0</td>
+      <td>5827223.0</td>
+      <td>...</td>
+      <td>20504385</td>
+      <td>21093973</td>
+      <td>21701105</td>
+      <td>22322699</td>
+      <td>22954226</td>
+      <td>23591972</td>
+      <td>24234940</td>
+      <td>24882792</td>
+      <td>25533217</td>
+      <td>26183676</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>Zambia</td>
+      <td>ZMB</td>
+      <td>3049586.0</td>
+      <td>3142848.0</td>
+      <td>3240664.0</td>
+      <td>3342894.0</td>
+      <td>3449266.0</td>
+      <td>3559687.0</td>
+      <td>3674088.0</td>
+      <td>3792864.0</td>
+      <td>...</td>
+      <td>12043591</td>
+      <td>12381509</td>
+      <td>12738676</td>
+      <td>13114579</td>
+      <td>13507849</td>
+      <td>13917439</td>
+      <td>14343526</td>
+      <td>14786581</td>
+      <td>15246086</td>
+      <td>15721343</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>3752390.0</td>
+      <td>3876638.0</td>
+      <td>4006262.0</td>
+      <td>4140804.0</td>
+      <td>4279561.0</td>
+      <td>4422132.0</td>
+      <td>4568320.0</td>
+      <td>4718612.0</td>
+      <td>...</td>
+      <td>12984418</td>
+      <td>13127942</td>
+      <td>13297798</td>
+      <td>13495462</td>
+      <td>13720997</td>
+      <td>13973897</td>
+      <td>14255592</td>
+      <td>14565482</td>
+      <td>14898092</td>
+      <td>15245855</td>
+    </tr>
+  </tbody>
+</table>
+<p>211 rows × 57 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's suppose we want to look at population densities. We'll the area data from the <code>country_areas</code> dataframe along with the population data from the <code>country_populations</code> dataframe.</p>
+<p>We'll use the <code>.merge</code> method.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_data</span> <span class="o">=</span> <span class="n">country_populations</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">country_areas</span><span class="p">,</span>
+                                         <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span><span class="s1">&#39;Country Code&#39;</span><span class="p">],</span>
+                                         <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">country_data</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>1966</th>
+      <th>1967</th>
+      <th>...</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>Area (sq km)</th>
+      <th>Area (sq miles)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>8994793.0</td>
+      <td>9164945.0</td>
+      <td>9343772.0</td>
+      <td>9531555.0</td>
+      <td>9728645.0</td>
+      <td>9935358.0</td>
+      <td>10148841.0</td>
+      <td>10368600.0</td>
+      <td>...</td>
+      <td>25877544</td>
+      <td>26528741</td>
+      <td>27207291</td>
+      <td>27962207</td>
+      <td>28809167</td>
+      <td>29726803</td>
+      <td>30682500</td>
+      <td>31627506</td>
+      <td>652860.0</td>
+      <td>252071</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>ALB</td>
+      <td>1608800.0</td>
+      <td>1659800.0</td>
+      <td>1711319.0</td>
+      <td>1762621.0</td>
+      <td>1814135.0</td>
+      <td>1864791.0</td>
+      <td>1914573.0</td>
+      <td>1965598.0</td>
+      <td>...</td>
+      <td>2970017</td>
+      <td>2947314</td>
+      <td>2927519</td>
+      <td>2913021</td>
+      <td>2904780</td>
+      <td>2900489</td>
+      <td>2897366</td>
+      <td>2894475</td>
+      <td>28750.0</td>
+      <td>11100</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>DZA</td>
+      <td>11124892.0</td>
+      <td>11404859.0</td>
+      <td>11690152.0</td>
+      <td>11985130.0</td>
+      <td>12295973.0</td>
+      <td>12626953.0</td>
+      <td>12980269.0</td>
+      <td>13354197.0</td>
+      <td>...</td>
+      <td>34261971</td>
+      <td>34811059</td>
+      <td>35401790</td>
+      <td>36036159</td>
+      <td>36717132</td>
+      <td>37439427</td>
+      <td>38186135</td>
+      <td>38934334</td>
+      <td>2381740.0</td>
+      <td>919595</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>American Samoa</td>
+      <td>ASM</td>
+      <td>20012.0</td>
+      <td>20478.0</td>
+      <td>21118.0</td>
+      <td>21883.0</td>
+      <td>22701.0</td>
+      <td>23518.0</td>
+      <td>24320.0</td>
+      <td>25116.0</td>
+      <td>...</td>
+      <td>57904</td>
+      <td>57031</td>
+      <td>56226</td>
+      <td>55636</td>
+      <td>55316</td>
+      <td>55227</td>
+      <td>55302</td>
+      <td>55434</td>
+      <td>200.0</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Andorra</td>
+      <td>AND</td>
+      <td>13414.0</td>
+      <td>14376.0</td>
+      <td>15376.0</td>
+      <td>16410.0</td>
+      <td>17470.0</td>
+      <td>18551.0</td>
+      <td>19646.0</td>
+      <td>20755.0</td>
+      <td>...</td>
+      <td>84878</td>
+      <td>85616</td>
+      <td>85474</td>
+      <td>84419</td>
+      <td>82326</td>
+      <td>79316</td>
+      <td>75902</td>
+      <td>72786</td>
+      <td>470.0</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>Vanuatu</td>
+      <td>VUT</td>
+      <td>63701.0</td>
+      <td>65708.0</td>
+      <td>67806.0</td>
+      <td>69962.0</td>
+      <td>72131.0</td>
+      <td>74287.0</td>
+      <td>76410.0</td>
+      <td>78518.0</td>
+      <td>...</td>
+      <td>219956</td>
+      <td>225335</td>
+      <td>230782</td>
+      <td>236299</td>
+      <td>241876</td>
+      <td>247498</td>
+      <td>253165</td>
+      <td>258883</td>
+      <td>12190.0</td>
+      <td>4707</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>Vietnam</td>
+      <td>VNM</td>
+      <td>34743000.0</td>
+      <td>35428000.0</td>
+      <td>36123000.0</td>
+      <td>36836000.0</td>
+      <td>37574000.0</td>
+      <td>38341000.0</td>
+      <td>39142000.0</td>
+      <td>39980000.0</td>
+      <td>...</td>
+      <td>84218500</td>
+      <td>85118700</td>
+      <td>86025000</td>
+      <td>86932500</td>
+      <td>87840000</td>
+      <td>88772900</td>
+      <td>89708900</td>
+      <td>90730000</td>
+      <td>330972.0</td>
+      <td>127789</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>Virgin Islands (U.S.)</td>
+      <td>VIR</td>
+      <td>32000.0</td>
+      <td>34100.0</td>
+      <td>36300.0</td>
+      <td>38700.0</td>
+      <td>41300.0</td>
+      <td>44000.0</td>
+      <td>47300.0</td>
+      <td>50800.0</td>
+      <td>...</td>
+      <td>107423</td>
+      <td>107091</td>
+      <td>106707</td>
+      <td>106267</td>
+      <td>105784</td>
+      <td>105275</td>
+      <td>104737</td>
+      <td>104170</td>
+      <td>350.0</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>Zambia</td>
+      <td>ZMB</td>
+      <td>3049586.0</td>
+      <td>3142848.0</td>
+      <td>3240664.0</td>
+      <td>3342894.0</td>
+      <td>3449266.0</td>
+      <td>3559687.0</td>
+      <td>3674088.0</td>
+      <td>3792864.0</td>
+      <td>...</td>
+      <td>12738676</td>
+      <td>13114579</td>
+      <td>13507849</td>
+      <td>13917439</td>
+      <td>14343526</td>
+      <td>14786581</td>
+      <td>15246086</td>
+      <td>15721343</td>
+      <td>752610.0</td>
+      <td>290584</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>3752390.0</td>
+      <td>3876638.0</td>
+      <td>4006262.0</td>
+      <td>4140804.0</td>
+      <td>4279561.0</td>
+      <td>4422132.0</td>
+      <td>4568320.0</td>
+      <td>4718612.0</td>
+      <td>...</td>
+      <td>13297798</td>
+      <td>13495462</td>
+      <td>13720997</td>
+      <td>13973897</td>
+      <td>14255592</td>
+      <td>14565482</td>
+      <td>14898092</td>
+      <td>15245855</td>
+      <td>390760.0</td>
+      <td>150873</td>
+    </tr>
+  </tbody>
+</table>
+<p>196 rows × 59 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Here, the merged dataframe contains 196 rows. The <code>country_areas</code> has 210 rows, while the <code>country_populations</code> has 211 rows. By default, the merged dataframe will only contain rows that exist in both dataframes.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;country_data.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's create a new dataframe, for now consisting only of the country and country code.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_densities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">country_data</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span><span class="s1">&#39;Country Code&#39;</span><span class="p">]])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We'll then iterate through the population columns in <code>country_data</code> to compute the country population density, and store the result in <code>country_densities</code>:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">year_columns</span> <span class="o">=</span> <span class="n">country_data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">year_columns</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;1960&#39;, &#39;1961&#39;, &#39;1962&#39;, &#39;1963&#39;, &#39;1964&#39;, &#39;1965&#39;, &#39;1966&#39;, &#39;1967&#39;, &#39;1968&#39;,
+       &#39;1969&#39;, &#39;1970&#39;, &#39;1971&#39;, &#39;1972&#39;, &#39;1973&#39;, &#39;1974&#39;, &#39;1975&#39;, &#39;1976&#39;, &#39;1977&#39;,
+       &#39;1978&#39;, &#39;1979&#39;, &#39;1980&#39;, &#39;1981&#39;, &#39;1982&#39;, &#39;1983&#39;, &#39;1984&#39;, &#39;1985&#39;, &#39;1986&#39;,
+       &#39;1987&#39;, &#39;1988&#39;, &#39;1989&#39;, &#39;1990&#39;, &#39;1991&#39;, &#39;1992&#39;, &#39;1993&#39;, &#39;1994&#39;, &#39;1995&#39;,
+       &#39;1996&#39;, &#39;1997&#39;, &#39;1998&#39;, &#39;1999&#39;, &#39;2000&#39;, &#39;2001&#39;, &#39;2002&#39;, &#39;2003&#39;, &#39;2004&#39;,
+       &#39;2005&#39;, &#39;2006&#39;, &#39;2007&#39;, &#39;2008&#39;, &#39;2009&#39;, &#39;2010&#39;, &#39;2011&#39;, &#39;2012&#39;, &#39;2013&#39;,
+       &#39;2014&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">year_column</span> <span class="ow">in</span> <span class="n">year_columns</span><span class="p">:</span>
+    <span class="n">country_densities</span><span class="p">[</span><span class="n">year_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">country_data</span><span class="p">[</span><span class="n">year_column</span><span class="p">]</span> <span class="o">/</span> <span class="n">country_data</span><span class="p">[</span><span class="s1">&#39;Area (sq miles)&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_densities</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span><span class="s1">&#39;2014&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;2014&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>2014</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>116</th>
+      <td>Monaco</td>
+      <td>37623.000000</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>Singapore</td>
+      <td>19746.209386</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Bahrain</td>
+      <td>4585.622896</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>Maldives</td>
+      <td>3456.896552</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>Malta</td>
+      <td>3446.806452</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>Iceland</td>
+      <td>8.237295</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Australia</td>
+      <td>7.859322</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>Namibia</td>
+      <td>7.549984</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>Mongolia</td>
+      <td>4.818385</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Greenland</td>
+      <td>0.355227</td>
+    </tr>
+  </tbody>
+</table>
+<p>196 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 </body>
 
 
