@@ -24,6 +24,7 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    Projects/computing_with_text/computing_with_text
    Projects/address_book/address_book
    Projects/first_digits_last_digits/first_digits_last_digits
+   Projects/wordle/wordle
 
 .. Indices and tables
 .. ==================

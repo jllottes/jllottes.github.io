@@ -16,8 +16,6 @@ Python
 ~~~~~~
 
 * `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
-* Pandas
-
 
 Project 8
 ~~~~~~~~~
