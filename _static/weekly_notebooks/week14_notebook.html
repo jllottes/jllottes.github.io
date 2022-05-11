@@ -14122,9 +14122,9 @@ Greek government, racing to secure financial aid and avoid debt default, agrees 
 
 
 
-<div id="0883a64a-7abc-4277-ab2f-c6d93e5e8397" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="671ba7ef-4977-4434-a30e-cc1554491cde" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('0883a64a-7abc-4277-ab2f-c6d93e5e8397');
+var element = document.getElementById('671ba7ef-4977-4434-a30e-cc1554491cde');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -15546,9 +15546,9 @@ if (IPython.notebook.kernel !== null) {
 
 
 
-<div id="0883a64a-7abc-4277-ab2f-c6d93e5e8397" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="671ba7ef-4977-4434-a30e-cc1554491cde" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('0883a64a-7abc-4277-ab2f-c6d93e5e8397');
+var element = document.getElementById('671ba7ef-4977-4434-a30e-cc1554491cde');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -16591,9 +16591,9 @@ The correct word was &#34;TABLE&#34;
 
 
 
-<div id="0883a64a-7abc-4277-ab2f-c6d93e5e8397" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="671ba7ef-4977-4434-a30e-cc1554491cde" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('0883a64a-7abc-4277-ab2f-c6d93e5e8397');
+var element = document.getElementById('671ba7ef-4977-4434-a30e-cc1554491cde');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -17866,10 +17866,74 @@ The correct word was &#34;CURRY&#34;
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">words</span><span class="p">):</span>
+    
+    <span class="n">known_letters_known_positions</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">letter</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">letter</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">guess_word</span><span class="p">)</span> <span class="k">if</span> <span class="n">evaluation</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="n">known_letters_unknown_positions</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">letter</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">letter</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">guess_word</span><span class="p">)</span> <span class="k">if</span> <span class="n">evaluation</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">known_missing_letters</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">letter</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">guess_word</span><span class="p">)</span> <span class="k">if</span> <span class="n">evaluation</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+    
+    <span class="n">possible_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="n">remaining_letters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+        <span class="n">removed</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">known_letters_known_positions</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">letter</span><span class="p">:</span>
+                <span class="n">possible_words</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+                <span class="n">removed</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">remaining_letters</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">removed</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">known_letters_unknown_positions</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">remaining_letters</span> <span class="ow">and</span> <span class="n">word</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">letter</span><span class="p">):</span>
+                    <span class="n">possible_words</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+                    <span class="n">removed</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">remaining_letters</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">removed</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">known_missing_letters</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">remaining_letters</span><span class="p">:</span>
+                    <span class="n">possible_words</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+                    <span class="n">removed</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">break</span>
+    <span class="k">return</span> <span class="n">possible_words</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">correct_word</span> <span class="o">=</span> <span class="s1">&#39;MARRY&#39;</span>
+<span class="n">guess_word</span> <span class="o">=</span> <span class="s1">&#39;BREAK&#39;</span>
+<span class="n">evaluation</span> <span class="o">=</span> <span class="n">evaluate_guess</span><span class="p">(</span><span class="n">correct_word</span><span class="p">,</span><span class="n">guess_word</span><span class="p">)</span>
+
+<span class="n">possible_words</span> <span class="o">=</span> <span class="n">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">words</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">possible_words</span>
@@ -17888,23 +17952,95 @@ The correct word was &#34;CURRY&#34;
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[76]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;ADOBE&#39;,
- &#39;AMBLE&#39;,
- &#39;ABIDE&#39;,
- &#39;ABUSE&#39;,
- &#39;TABLE&#39;,
- &#39;FABLE&#39;,
- &#39;ABODE&#39;,
- &#39;ABLED&#39;,
- &#39;MAYBE&#39;,
- &#39;ABOVE&#39;,
- &#39;CABLE&#39;]</pre>
+<pre>[&#39;DWARF&#39;,
+ &#39;MAJOR&#39;,
+ &#39;MARRY&#39;,
+ &#39;PARRY&#39;,
+ &#39;START&#39;,
+ &#39;SMART&#39;,
+ &#39;RADIO&#39;,
+ &#39;TAPIR&#39;,
+ &#39;FAVOR&#39;,
+ &#39;SHARD&#39;,
+ &#39;ULTRA&#39;,
+ &#39;AGORA&#39;,
+ &#39;HOARD&#39;,
+ &#39;HARRY&#39;,
+ &#39;STAIR&#39;,
+ &#39;FLAIR&#39;,
+ &#39;CARGO&#39;,
+ &#39;LARVA&#39;,
+ &#39;HAIRY&#39;,
+ &#39;TIARA&#39;,
+ &#39;MANOR&#39;,
+ &#39;APRON&#39;,
+ &#39;AUGUR&#39;,
+ &#39;ANGRY&#39;,
+ &#39;QUART&#39;,
+ &#39;CHARM&#39;,
+ &#39;MARSH&#39;,
+ &#39;CARRY&#39;,
+ &#39;SNARL&#39;,
+ &#39;RAINY&#39;,
+ &#39;WHARF&#39;,
+ &#39;FAIRY&#39;,
+ &#39;VALOR&#39;,
+ &#39;AWARD&#39;,
+ &#39;VAPOR&#39;,
+ &#39;ACORN&#39;,
+ &#39;OVARY&#39;,
+ &#39;MARCH&#39;,
+ &#39;HARDY&#39;,
+ &#39;RAZOR&#39;,
+ &#39;DAIRY&#39;,
+ &#39;ADORN&#39;,
+ &#39;ROAST&#39;,
+ &#39;PARTY&#39;,
+ &#39;TARDY&#39;,
+ &#39;ROACH&#39;,
+ &#39;SWARM&#39;,
+ &#39;DIARY&#39;,
+ &#39;ACRID&#39;,
+ &#39;MAYOR&#39;,
+ &#39;RANDY&#39;,
+ &#39;TAROT&#39;,
+ &#39;NADIR&#39;,
+ &#39;CAROL&#39;,
+ &#39;CHAIR&#39;,
+ &#39;SHARP&#39;,
+ &#39;RADII&#39;,
+ &#39;FLORA&#39;,
+ &#39;SCARF&#39;,
+ &#39;ALARM&#39;,
+ &#39;WARTY&#39;,
+ &#39;ACTOR&#39;,
+ &#39;HARPY&#39;,
+ &#39;CAIRN&#39;,
+ &#39;APART&#39;,
+ &#39;CHARD&#39;,
+ &#39;HARSH&#39;,
+ &#39;CHART&#39;,
+ &#39;SAVOR&#39;,
+ &#39;RATIO&#39;,
+ &#39;MACRO&#39;,
+ &#39;SATYR&#39;,
+ &#39;RASPY&#39;,
+ &#39;RALLY&#39;,
+ &#39;SCARY&#39;,
+ &#39;CIRCA&#39;,
+ &#39;RALPH&#39;,
+ &#39;RANCH&#39;,
+ &#39;RAPID&#39;,
+ &#39;RATTY&#39;,
+ &#39;GUARD&#39;,
+ &#39;RAYON&#39;,
+ &#39;AORTA&#39;]</pre>
 </div>
 
 </div>
@@ -17913,18 +18049,208 @@ The correct word was &#34;CURRY&#34;
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Part 2.</strong> Write a function that solves the Wordle puzzle.</p>
+<p><em>Hints:</em></p>
+<ol>
+<li>Start with some initial guess, and compute its evaluation.</li>
+<li>Find the list of possible words based on the guess and evaluation.</li>
+<li>Choose one word out of the list of possible words as the new guess.</li>
+<li>Compute the evaluation of the new guess, then find a new list of possible words using this evaluation (as a subset of the first list of possible words).</li>
+</ol>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">guess_word</span> <span class="o">=</span> <span class="s1">&#39;BURNT&#39;</span>
+<span class="n">possible_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+<span class="n">evaluation</span> <span class="o">=</span> <span class="n">evaluate_guess</span><span class="p">(</span><span class="n">correct_word</span><span class="p">,</span><span class="n">guess_word</span><span class="p">)</span>
+
+<span class="n">possible_words</span> <span class="o">=</span> <span class="n">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">possible_words</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_words</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>75
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">guess_word</span> <span class="o">=</span> <span class="n">possible_words</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">evaluation</span> <span class="o">=</span> <span class="n">evaluate_guess</span><span class="p">(</span><span class="n">correct_word</span><span class="p">,</span><span class="n">guess_word</span><span class="p">)</span>
+<span class="n">possible_words</span> <span class="o">=</span> <span class="n">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">possible_words</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_words</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>28
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">guess_word</span> <span class="o">=</span> <span class="n">possible_words</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">evaluation</span> <span class="o">=</span> <span class="n">evaluate_guess</span><span class="p">(</span><span class="n">correct_word</span><span class="p">,</span><span class="n">guess_word</span><span class="p">)</span>
+<span class="n">possible_words</span> <span class="o">=</span> <span class="n">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">possible_words</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_words</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">guess_word</span> <span class="o">=</span> <span class="n">possible_words</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">evaluation</span> <span class="o">=</span> <span class="n">evaluate_guess</span><span class="p">(</span><span class="n">correct_word</span><span class="p">,</span><span class="n">guess_word</span><span class="p">)</span>
+<span class="n">possible_words</span> <span class="o">=</span> <span class="n">get_possible_words</span><span class="p">(</span><span class="n">guess_word</span><span class="p">,</span><span class="n">evaluation</span><span class="p">,</span><span class="n">possible_words</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_words</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">possible_words</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[89]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;MARRY&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
