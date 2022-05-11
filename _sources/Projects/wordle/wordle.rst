@@ -62,7 +62,7 @@ Write a function :code:`get_possible_words(guess_word,evaluation,words)` that ta
 Write a function :code:`solve_wordle(correct_word,guess_word,words)` that will automatically solve a Wordle puzzle given a designated correct word and an initial guess along with a list of permissible words. 
 The correct word should only be used to generate the evaluations, **NOT** to solve the puzzle. 
 Your function should return the solution, along with the number of guesses made before the answer was obtained.
-You can test the function by inputting a randomly selected correct word using the `wordle_game` class:
+You can test the function by inputting a randomly selected correct word using the :code:`wordle_game` class:
 
 .. code:: python
     
