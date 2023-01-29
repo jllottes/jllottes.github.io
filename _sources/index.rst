@@ -4,7 +4,7 @@ Syllabus
 =============================
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
-| Mon Wed 11:00 AM - 12:50 PM
+| Mon Wed 10:00 AM - 11:50 AM
 | 150 Mathematics Building 
 
 
@@ -14,7 +14,7 @@ Instructor
 | Jonathan Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** Wed 3:00 PM - 5:00 PM and by appointment.
+| **Office Hours:** Fri 10:00 AM - 12:00 PM and by appointment.
 
 
 Course Resources
@@ -80,24 +80,26 @@ Class participation will be evaluated weekly.
 Useful Information
 ------------------
 
-COVID-19 Information
-====================
-Due to the continuing COVID-19 pandemic, high-quality masks must be worn at all times during class.  
-If I notice that you do not have a mask on, I will ask you to either put one on or leave the classroom.  
-Please make sure your mask covers both your mouth and nose and fits tightly on your face without gaps between your mask and your
-face.  
-I may ask you to leave the classroom if your mask does not fit tightly.  
-For more information at the pandemic health and safety policies, please see the
-`Health and Safety Guidelines <https://www.buffalo.edu/coronavirus/health-and-safety/health-safety-guidelines.html>`_.
+..
+    Comment:
+    COVID-19 Information
+    ====================
+    Due to the continuing COVID-19 pandemic, high-quality masks must be worn at all times during class.  
+    If I notice that you do not have a mask on, I will ask you to either put one on or leave the classroom.  
+    Please make sure your mask covers both your mouth and nose and fits tightly on your face without gaps between your mask and your
+    face.  
+    I may ask you to leave the classroom if your mask does not fit tightly.  
+    For more information at the pandemic health and safety policies, please see the
+    `Health and Safety Guidelines <https://www.buffalo.edu/coronavirus/health-and-safety/health-safety-guidelines.html>`_.
 
 Important Dates
 ===============
 
-    * Jan 31: first day of classes
-    * Feb 7: last day to drop/add
-    * Mar 21 - 25: Spring Recess
-    * Apr 22: last day to resign
-    * May 13: last day of classes
+    * Jan 30: first day of classes
+    * Feb 6: last day to drop/add
+    * Mar 20 - 24: Spring Recess
+    * Apr 21: last day to resign
+    * May 12: last day of classes
 
 
 Incomplete Grades

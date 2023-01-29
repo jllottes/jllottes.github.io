@@ -1,4 +1,4 @@
-Week 1: Jan 31 - Feb 4
+Week 1: Jan 30 - Feb 3
 =======================
 
 Logistics
@@ -14,8 +14,6 @@ Jupyter Notebook
 * Code cells and markdown cells
 * Markdown basics
 * LaTeX
-
-
 
 Python
 ~~~~~~
@@ -35,8 +33,9 @@ Mathematics
 ~~~~~~~~~~~
 * Prime numbers
 
-Week 1 notebook
-~~~~~~~~~~~~~~~
-
-- `View online <../_static/weekly_notebooks/week1_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week1_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+   Comment:
+    Week 1 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week1_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week1_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).

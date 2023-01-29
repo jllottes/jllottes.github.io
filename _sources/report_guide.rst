@@ -44,22 +44,14 @@ A+ or A++.
 +----------------------+-----------+--------------------------------------------+
 | Element              | Weight    |  What will be graded                       |
 +======================++==========+============================================+
-| Introduction Section | 10%       | |Intro|                                    |
+| Report Content       | 40%       | |Content|                                  |
 +----------------------+-----------+--------------------------------------------+
-| Conclusions Section  | 10%       | |Conclusions|                              |
-+----------------------+-----------+--------------------------------------------+
-| Report Content       | 30%       | |Content|                                  |
-+----------------------+-----------+--------------------------------------------+
-| Python Code          | 30%       | |Code|                                     |
+| Python Code          | 40%       | |Code|                                     |
 +----------------------+-----------+--------------------------------------------+
 | Presentation         | 20%       | |Presentation|                             |
 +----------------------+-----------+--------------------------------------------+
 | Bonus                |           | |Bonus|                                    |
 +----------------------+-----------+--------------------------------------------+
-
-.. |Intro| replace:: Quality of the narrative.
-
-.. |Conclusions| replace:: Quality of the narrative.
 
 .. |Content| replace:: Work done on developing the project. Your analysis, insights,
    observations, and interpretations. Quality of the narrative of the report.
