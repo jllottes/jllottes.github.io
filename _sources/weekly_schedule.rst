@@ -6,41 +6,41 @@ Weekly Schedule
 .. toctree::
    :maxdepth: 4
 
-   Schedule/week_0
+   Schedule/week_00
    
-   Schedule/week_1
+   Schedule/week_01
 
 ..
    Comment:
-   Schedule/week_2
+   Schedule/week_02
 
 ..
    Comment:  
-   Schedule/week_3
+   Schedule/week_03
 
 ..
    Comment:  
-   Schedule/week_4
+   Schedule/week_04
 
 ..
    Comment:   
-   Schedule/week_5
+   Schedule/week_05
 
 ..
    Comment:   
-   Schedule/week_6
+   Schedule/week_06
 
 ..
    Comment:   
-   Schedule/week_7
+   Schedule/week_07
 
 ..
    Comment:   
-   Schedule/week_8
+   Schedule/week_08
 
 ..
    Comment:   
-   Schedule/week_9
+   Schedule/week_09
 
 ..
    Comment:   
