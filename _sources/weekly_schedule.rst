@@ -10,8 +10,6 @@ Weekly Schedule
    
    Schedule/week_01
 
-..
-   Comment:
    Schedule/week_02
 
 ..
