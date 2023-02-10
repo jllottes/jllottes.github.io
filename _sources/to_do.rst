@@ -3,7 +3,8 @@
 Current Tasks
 =============
 
-This page will contain information about current tasks you need to complete.
+ * Study for Quiz 2
+ * Work on Project 1, :doc:`Prime or not a prime</Projects/prime_or_not/prime_or_not>`
 
 ..
     Comment: 
