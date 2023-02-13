@@ -2,8 +2,7 @@
 =============
 Current Tasks
 =============
-
- * Study for Quiz 2
+ * Read the :doc:`Project Report Guide<report_guide>`
  * Work on Project 1, :doc:`Prime or not a prime</Projects/prime_or_not/prime_or_not>`
 
 ..
