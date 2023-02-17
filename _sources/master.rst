@@ -16,10 +16,10 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    :caption: Projects
 
    Projects/prime_or_not/prime_or_not
+   Projects/pythagorean_triples/pythagorean_triples
    
 ..
     Comment:
-       Projects/pythagorean_triples/pythagorean_triples
        Projects/mayfly_model/mayfly_model
        Projects/tartans/tartans
        Projects/image_denoising/image_denoising
