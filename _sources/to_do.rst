@@ -2,12 +2,7 @@
 =============
 Current Tasks
 =============
- * Read the :doc:`Project Report Guide<report_guide>`
- * Submit Project 1, :doc:`Prime or not a prime</Projects/prime_or_not/prime_or_not>`
-
-..
-    Comment: 
-    * Finish on Project 9, :doc:`First digits, last digits </Projects/first_digits_last_digits/first_digits_last_digits>`
+ * Work on Project 2, :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`
 
 ..
     Comment:

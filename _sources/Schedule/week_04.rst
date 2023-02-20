@@ -38,9 +38,7 @@ Project 2
 
 * :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
 
-.. 
-    Comment:
-    Week 4 notebook
-    ~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week4_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week4_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+Week 4 notebook
+~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week04_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week04_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
