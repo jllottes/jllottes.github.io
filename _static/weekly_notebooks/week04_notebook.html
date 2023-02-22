@@ -16564,13 +16564,559 @@ height=277
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Wednesday,-February-22nd-2023">Wednesday, February 22nd 2023<a class="anchor-link" href="#Wednesday,-February-22nd-2023">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Work on <code>ptriples</code> function for Project 2.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">range</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Help on class range in module builtins:
+
+class range(object)
+ |  range(stop) -&gt; range object
+ |  range(start, stop[, step]) -&gt; range object
+ |  
+ |  Return an object that produces a sequence of integers from start (inclusive)
+ |  to stop (exclusive) by step.  range(i, j) produces i, i+1, i+2, ..., j-1.
+ |  start defaults to 0, and stop is omitted!  range(4) produces 0, 1, 2, 3.
+ |  These are exactly the valid indices for a list of 4 elements.
+ |  When step is given, it specifies the increment (or decrement).
+ |  
+ |  Methods defined here:
+ |  
+ |  __bool__(self, /)
+ |      self != 0
+ |  
+ |  __contains__(self, key, /)
+ |      Return key in self.
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self&gt;=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getitem__(self, key, /)
+ |      Return self[key].
+ |  
+ |  __gt__(self, value, /)
+ |      Return self&gt;value.
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __le__(self, value, /)
+ |      Return self&lt;=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self&lt;value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __reduce__(...)
+ |      Helper for pickle.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __reversed__(...)
+ |      Return a reverse iterator.
+ |  
+ |  count(...)
+ |      rangeobject.count(value) -&gt; integer -- return number of occurrences of value
+ |  
+ |  index(...)
+ |      rangeobject.index(value) -&gt; integer -- return index of value.
+ |      Raise ValueError if the value is not present.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  start
+ |  
+ |  step
+ |  
+ |  stop
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>True
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>    <span class="c1"># This is the closest integer to sqrt(a**2 + b**2)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>False
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">triples</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">)]</span>
+
+<span class="n">triples</span> <span class="o">+=</span> <span class="p">[(</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="ow">in</span> <span class="n">triples</span> <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="ow">in</span> <span class="n">triples</span><span class="p">]</span>
+<span class="n">b_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">b</span> <span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="ow">in</span> <span class="n">triples</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span><span class="n">b_list</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&lt;matplotlib.lines.Line2D at 0x1a3e6c79070&gt;]</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can set the $x$ and $y$ bounds of a figure using <code>plt.xlim</code> and <code>plt.ylim</code>.</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ptriples_list</span> <span class="o">=</span> <span class="n">ptriples</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1">#a_list, b_list = ....</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span><span class="n">b_list</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span><span class="n">b_list</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Primitive-Pythagorean-triples">Primitive Pythagorean triples<a class="anchor-link" href="#Primitive-Pythagorean-triples">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="The-greatest-common-divisor">The greatest common divisor<a class="anchor-link" href="#The-greatest-common-divisor">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The greatest common divisor of two integers $a$ and $b$ is the largest integer that divides both $a$ and $b$. We denote this number by $\gcd(a,b)$.</p>
+<p>Ex. $\gcd(6,8) = 2$.</p>
+<p>If $\gcd(a,b) = 1$, then we say $a$ and $b$ are relatively prime.
+We call a Pythogrean triple <strong>primitive</strong> if $a$ and $b$ are relatively prime.</p>
+<p>We might be interested in studying the primitive Pythagorean triples.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>One method of finding $\gcd(a,b)$ is by brute-force checking for divisors, then taking the largest:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">divisors</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>   <span class="c1"># If d divides both a and b</span>
+            <span class="n">divisors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+            
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">divisors</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gcd</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="The-Euclidean-algorithm-for-computing-the-gcd">The Euclidean algorithm for computing the gcd<a class="anchor-link" href="#The-Euclidean-algorithm-for-computing-the-gcd">&#182;</a></h2><ul>
+<li>Start with two integers $a$ and $b$</li>
+<li>Subtract the smaller number for the larger and replace the larger with this new number</li>
+<li>Repeat the above step until one of the numbers is 0</li>
+<li>The other number is the $\gcd(a,b)$</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Exercise.</strong> Create a function <code>gcd(a,b)</code> that implements the above algorithm.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">6</span>
+
+<span class="k">if</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">:</span> 
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span><span class="n">a</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>6 8
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Help on built-in function gcd in module math:
+
+gcd(*integers)
+    Greatest Common Divisor.
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ptriples</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">include_repeats</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="k">return</span> <span class="n">ptriples_list</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ptriples_list</span> <span class="k">if</span> <span class="n">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
