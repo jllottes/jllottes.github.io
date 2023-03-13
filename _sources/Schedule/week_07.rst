@@ -1,17 +1,17 @@
-Week 7: Mar 14 - Mar 18
+Week 7: Mar 13 - Mar 17
 =======================
 
 Quiz 6
 ~~~~~~
 
-.. rubric:: Monday, March 14
+.. rubric:: Wednesday, March 15
 
 * :download:`Sample Quiz 6 <../Quizzes/quiz06_sample.pdf>`
 
 What is covered:
 
-* Lists and numpy arrays.
-
+* List unpacking
+* Numpy arrays
 
 Python
 ~~~~~~
@@ -20,13 +20,15 @@ Python
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
 
 
-Project 4
-~~~~~~~~~
+..
+	Comment:
+	Project 4
+	~~~~~~~~~
+	* :doc:`Tartans </Projects/tartans/tartans>`
 
-* :doc:`Tartans </Projects/tartans/tartans>`
-
-Week 7 notebook
-~~~~~~~~~~~~~~~
-
-- `View online <../_static/weekly_notebooks/week7_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week7_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+	Comment:
+	Week 7 notebook
+	~~~~~~~~~~~~~~~
+	- `View online <../_static/weekly_notebooks/week7_notebook.html>`_
+	- `Download <../_static/weekly_notebooks/week7_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
