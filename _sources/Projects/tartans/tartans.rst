@@ -104,27 +104,27 @@ be graded according to the following rubrics:
 +---------------------------+------------------------------------------------------------------------+
 | Tartan                    | Description                                                            |
 +===========================+========================================================================+
-| .. image:: amnaaura.png   | | **Aurangzeb, Amna**                                                  |
+| .. image:: frankadl.png   | | **Adler, Noah**                                                      |
 |    :width:  150px         | | R4 K2 R56 K48 R2 K12 R2 K48 R56 K2 R4                                |
 |                           |                                                                        |
 |                           | | R : [200, 0, 0]                                                      |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: ambrigan.png   | | **Brigante, Anthony**                                                |
+| .. image:: calebaye.png   | | **Ayers, Caleb**                                                     |
 |    :width:  150px         | | B2 K8 B8 G18 K4 G18 B8 K8 B2                                         |
 |                           |                                                                        |
 |                           | | B : [44, 44, 128]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | G : [0, 104, 24]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: aacampbe.png   | | **Campbell, Adrian**                                                 |
+| .. image:: sacapozz.png   | | **Capozzi, Skyler**                                                  |
 |    :width:  150px         | | T4 W44 T40 LT6 T6 LT6 T6 LT48 T6 LT6 T6 LT6 T40 W44 T4               |
 |                           |                                                                        |
 |                           | | T : [96, 64, 0]                                                      |
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | LT : [160, 136, 88]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: ncolan.png     | | **Colan, Nicholas**                                                  |
+| .. image:: nacaussi.png   | | **Caussin, Natalie**                                                 |
 |    :width:  150px         | | N2 T4 N30 T4 W20 LT30 T4 LT4 T4 LT30 W20 T4 N30 T4 N2                |
 |                           |                                                                        |
 |                           | | W : [224, 224, 224]                                                  |
@@ -132,21 +132,21 @@ be graded according to the following rubrics:
 |                           | | LT : [160, 136, 88]                                                  |
 |                           | | N : [136, 136, 136]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: nacruz.png     | | **Cruz, Nicholas**                                                   |
+| .. image:: pjcorbel.png   | | **Corbelli, Pierce**                                                 |
 |    :width:  150px         | | WY5 DY64 AK64 DY10 AK64 DY64 WY5                                     |
 |                           |                                                                        |
 |                           | | WY : [224, 224, 224]                                                 |
 |                           | | AK : [28, 28, 28]                                                    |
 |                           | | DY : [232, 192, 0]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: aidandav.png   | | **Davis, Aidan**                                                     |
+| .. image:: tjdrozdo.png   | | **Drozdowski, Tyler**                                                |
 |    :width:  150px         | | C128 B36 C4 B6 C4 B6 C28 L16 C4 L8 C4 L8 C4 L16 C28 B6 C4 B6 C4 B36  |
 |                           |                                                                        |
 |                           | | L : [40, 136, 196]                                                   |
 |                           | | B : [32, 32, 96]                                                     |
 |                           | | C : [160, 0, 72]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: alandiak.png   | | **Diakov, Alan**                                                     |
+| .. image:: hehr.png       | | **Hehr, Keith**                                                      |
 |    :width:  150px         | | XR8 A6 DY52 DB8 DY4 DB10 XR6 DB18 DY10 DB18 XR6 DB10 DY4 DB8 DY52 A6 |
 |                           |                                                                        |
 |                           | | DY : [232, 192, 0]                                                   |
@@ -154,20 +154,20 @@ be graded according to the following rubrics:
 |                           | | DB : [32, 32, 96]                                                    |
 |                           | | A : [92, 140, 168]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: hpfedro.png    | | **Fedro, Harrison**                                                  |
+| .. image:: amhemmer.png   | | **Hemmerling, Ashley**                                               |
 |    :width:  150px         | | K5 R60 K28 Y2 K28 R10 K28 Y2 K28 R60 K5                              |
 |                           |                                                                        |
 |                           | | R : [220, 0, 0]                                                      |
 |                           | | Y : [232, 192, 0]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: mariabea.png   | | **Ferraz de Oliveira Ataide da S, Beatriz**                          |
+| .. image:: bmhill3.png    | | **Hill, Breanna**                                                    |
 |    :width:  150px         | | K8 W8 K64 W64 K8 W64 K64 W8 K8                                       |
 |                           |                                                                        |
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: tiyarong.png   | | **Gurung, Tiyarong**                                                 |
+| .. image:: hopejohn.png   | | **Johnson, Hope**                                                    |
 |    :width:  150px         | | YT44 DR6 YT6 DR6 YT6 DR6 YT6 DR6 YT44 FSB3 YT3 G3 YT3 LN3            |
 |                           |                                                                        |
 |                           | | DR : [136, 0, 0]                                                     |
@@ -176,7 +176,7 @@ be graded according to the following rubrics:
 |                           | | FSB : [36, 116, 232]                                                 |
 |                           | | G : [0, 104, 24]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: ahau.png       | | **Hau, Anthony**                                                     |
+| .. image:: wasifkha.png   | | **Khan, Wasif**                                                      |
 |    :width:  150px         | | K2 R54 G8 R4 G8 R8 G18 W2 G18 R16 G18 W2 G18 R8 G8 R4 G8 R54 K2      |
 |                           |                                                                        |
 |                           | | G : [0, 104, 24]                                                     |
@@ -184,7 +184,7 @@ be graded according to the following rubrics:
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: yanchenx.png   | | **Jiang, Yanchenxi**                                                 |
+| .. image:: wli3539.png    | | **Li, Wei**                                                          |
 |    :width:  150px         | | R6 K6 LSB14 RY52 K52 WW10 K52 RY52 LSB14 K6                          |
 |                           |                                                                        |
 |                           | | WW : [252, 252, 252]                                                 |
@@ -193,14 +193,14 @@ be graded according to the following rubrics:
 |                           | | RY : [188, 140, 0]                                                   |
 |                           | | R : [200, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: johnsto3.png   | | **Johnston, Riley**                                                  |
+| .. image:: mnlopez.png    | | **Lopez, Matthew**                                                   |
 |    :width:  150px         | | K6 R2 K60 R56 K2 R2 W6 R2 K2 R56 K60 R2 K6                           |
 |                           |                                                                        |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | R : [220, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: tpkolasn.png   | | **Kolasny, Thomas**                                                  |
+| .. image:: huixinlu.png   | | **Luo, Huixin**                                                      |
 |    :width:  150px         | | O3 Y24 O24 WW6 Y4 FG52 O6 Y2 O6 FG52 Y4 WW6 O24 Y24 O3               |
 |                           |                                                                        |
 |                           | | WW : [248, 248, 248]                                                 |
@@ -208,7 +208,7 @@ be graded according to the following rubrics:
 |                           | | O : [248, 132, 16]                                                   |
 |                           | | Y : [232, 192, 0]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: jli424.png     | | **Li, Junzhuo**                                                      |
+| .. image:: jasonmig.png   | | **Mighty, Jason**                                                    |
 |    :width:  150px         | | R4 B24 R8 G24 R48 W8 R48 G24 R8 B24 R4                               |
 |                           |                                                                        |
 |                           | | G : [0, 104, 24]                                                     |
@@ -216,14 +216,14 @@ be graded according to the following rubrics:
 |                           | | R : [220, 0, 0]                                                      |
 |                           | | W : [224, 224, 224]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: enkangli.png   | | **Lin, Enkang**                                                      |
+| .. image:: amm245.png     | | **Miller, Alexandria**                                               |
 |    :width:  150px         | | B10 R4 B20 R32 W4 R32 B20 R4 B10                                     |
 |                           |                                                                        |
 |                           | | B : [44, 44, 128]                                                    |
 |                           | | R : [220, 0, 0]                                                      |
 |                           | | W : [184, 184, 184]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: ntlisman.png   | | **Lisman, Nick**                                                     |
+| .. image:: jrmills2.png   | | **Mills, Jack**                                                      |
 |    :width:  150px         | | D50 B4 R50 G20 R8 D50 R4 G4 R50 G4 R4 G4 R50 G4 R4 D50 R8 G20 R50 B4 |
 |                           |                                                                        |
 |                           | | B : [44, 44, 128]                                                    |
@@ -231,7 +231,7 @@ be graded according to the following rubrics:
 |                           | | D : [32, 32, 96]                                                     |
 |                           | | G : [0, 104, 24]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: tamacphe.png   | | **MacPhee, Trevor**                                                  |
+| .. image:: jamurall.png   | | **Muralles, Jonathan**                                               |
 |    :width:  150px         | | DR3 R6 LN46 R6 DR6 R46 K4 R6 K4 R46 DR6 R6 LN46 R6 DR3               |
 |                           |                                                                        |
 |                           | | K : [16, 16, 16]                                                     |
@@ -239,34 +239,34 @@ be graded according to the following rubrics:
 |                           | | R : [200, 0, 0]                                                      |
 |                           | | DR : [136, 0, 0]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: phetsana.png   | | **Outhoummanilat, Phetsana**                                         |
+| .. image:: dallasmu.png   | | **Murawski, Dallas**                                                 |
 |    :width:  150px         | | K3 W32 K32 DN4 K4 DN4 K4 DN44 K4 DN4 K4 DN4 K32 W32 K3               |
 |                           |                                                                        |
 |                           | | DN : [92, 92, 92]                                                    |
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: gracepat.png   | | **Patterson, Grace**                                                 |
+| .. image:: tjryan5.png    | | **Ryan, Tim**                                                        |
 |    :width:  150px         | | B4 LB8 B20 LB20 W4 LB20 B10 LB20 W4 LB20 B20 LB8 B4                  |
 |                           |                                                                        |
 |                           | | LB : [40, 136, 196]                                                  |
 |                           | | B : [44, 44, 128]                                                    |
 |                           | | W : [224, 224, 224]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: peijunqu.png   | | **Qu, Peijun**                                                       |
+| .. image:: giacomos.png   | | **Scilla, Giacomo**                                                  |
 |    :width:  150px         | | K6 Y4 K42 Y4 K12 Y48 K4 Y12 K4 Y48 K12 Y4 K42 Y4 K6                  |
 |                           |                                                                        |
 |                           | | Y : [232, 192, 0]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: kroman2.png    | | **Roman, Khandoker**                                                 |
+| .. image:: etsmith3.png   | | **Smith, Eric**                                                      |
 |    :width:  150px         | | K16 Y4 K32 Y48 R4 Y48 K32 Y4 K16                                     |
 |                           |                                                                        |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | Y : [216, 176, 0]                                                    |
 |                           | | R : [200, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: vivendra.png   | | **Tulsee, Vivendra**                                                 |
+| .. image:: tssmith8.png   | | **Smith, Taylor**                                                    |
 |    :width:  150px         | | A2 K24 A24 B8 R48 A8 R48 B8 A24 K24 A2                               |
 |                           |                                                                        |
 |                           | | A : [60, 130, 175]                                                   |
@@ -274,7 +274,7 @@ be graded according to the following rubrics:
 |                           | | R : [220, 0, 0]                                                      |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: jlvella.png    | | **Vella, Jonathan**                                                  |
+| .. image:: tstrade.png    | | **Strade, Thomas**                                                   |
 |    :width:  150px         | | DG56 W8 DB12 LG28 DG8 LG28 DB12 W8 DG56 A8                           |
 |                           |                                                                        |
 |                           | | W : [224, 224, 224]                                                  |
@@ -283,7 +283,7 @@ be graded according to the following rubrics:
 |                           | | LG : [152, 180, 128]                                                 |
 |                           | | DG : [0, 56, 32]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: jwang287.png   | | **Wang, Jingyan**                                                    |
+| .. image:: vnwalker.png   | | **Walker, Veronica**                                                 |
 |    :width:  150px         | | Y2 DG48 DB14 DR52 DB14 DR52 DB14 DG48 Y2                             |
 |                           |                                                                        |
 |                           | | DB : [32, 32, 96]                                                    |
@@ -300,7 +300,7 @@ be graded according to the following rubrics:
 |                           | | DB : [0, 0, 80]                                                      |
 |                           | | DR : [140, 0, 0]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: jnwolf.png     | | **Wolf, Joshua**                                                     |
+| .. image:: jiexing.png    | | **Xing, Jie**                                                        |
 |    :width:  150px         | | RB8 MY4 RB24 DR4 RB8 DR8 K8 G24 A4 G8 A4 G24 K8 DR8 RB8 DR4 RB24 MY4 |
 |                           |                                                                        |
 |                           | | A : [92, 140, 168]                                                   |
@@ -310,7 +310,7 @@ be graded according to the following rubrics:
 |                           | | RB : [28, 0, 112]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: yebinwu.png    | | **Wu, Yebin**                                                        |
+| .. image:: zhuoweix.png   | | **Xu, Zhuowei**                                                      |
 |    :width:  150px         | | B3 K4 T32 O50 B12 O50 T32 K4 B3                                      |
 |                           |                                                                        |
 |                           | | B : [44, 44, 128]                                                    |
@@ -318,7 +318,7 @@ be graded according to the following rubrics:
 |                           | | T : [96, 64, 0]                                                      |
 |                           | | O : [216, 124, 0]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: kaixinzo.png   | | **Zou, Kaixin**                                                      |
+| .. image:: gaozhou.png    | | **Zhou, Gao**                                                        |
 |    :width:  150px         | | R4 G4 R4 K10 NB44 W4 NB44 K10 R4 G4 R4                               |
 |                           |                                                                        |
 |                           | | G : [0, 104, 24]                                                     |
@@ -326,4 +326,12 @@ be graded according to the following rubrics:
 |                           | | R : [200, 0, 0]                                                      |
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | K : [16, 16, 16]                                                     |
++---------------------------+------------------------------------------------------------------------+
+| .. image:: kaixinzo.png   | | **Zou, Kaixin**                                                      |
+|    :width:  150px         | | G4 R64 B18 R12 B4 R6 B4 R24 WW6 R24 B4 R6 B4 R12 B18 R64 G4          |
+|                           |                                                                        |
+|                           | | WW : [252, 252, 252]                                                 |
+|                           | | B : [44, 44, 128]                                                    |
+|                           | | G : [0, 104, 24]                                                     |
+|                           | | R : [200, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+

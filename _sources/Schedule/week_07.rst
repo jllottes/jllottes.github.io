@@ -20,11 +20,9 @@ Python
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
 
 
-..
-	Comment:
-	Project 4
-	~~~~~~~~~
-	* :doc:`Tartans </Projects/tartans/tartans>`
+Project 4
+~~~~~~~~~
+* :doc:`Tartans </Projects/tartans/tartans>`
 
 Week 7 notebook
 ~~~~~~~~~~~~~~~
