@@ -1,4 +1,4 @@
-Week 8: Mar 28 - Apr 1
+Week 8: Mar 27 - Mar 31
 =======================
 
 Python
@@ -13,8 +13,9 @@ Project 5
 
 * :doc:`Image denoising </Projects/image_denoising/image_denoising>`
 
-Week 8 notebook
-~~~~~~~~~~~~~~~
-
-- `View online <../_static/weekly_notebooks/week8_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week8_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+.. 
+    Comment:
+    Week 8 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week8_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week8_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
