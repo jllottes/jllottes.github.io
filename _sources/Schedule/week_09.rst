@@ -36,9 +36,7 @@ Python
 	~~~~~~~~~
 	* :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
-.. 
-	Comment:
-	Week 9 notebook
-	~~~~~~~~~~~~~~~
-	- `View online <../_static/weekly_notebooks/week09_notebook.html>`_
-	- `Download <../_static/weekly_notebooks/week09_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+Week 9 notebook
+~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week09_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week09_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
