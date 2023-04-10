@@ -2,9 +2,10 @@
 =============
 Current Tasks
 =============
- * Finish Project 3, :doc:`Mayfly model </Projects/mayfly_model/mayfly_model>`
- * Work on Project 4, :doc:`Tartans </Projects/tartans/tartans>`
+
+* Finish Project 5, :doc:`Image denoising </Projects/image_denoising/image_denoising>`
+* Work on Project 6, :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
 ..
     Comment:
-    * Work on Project 10, :doc:`Wordle </Projects/wordle/wordle>`
+    
