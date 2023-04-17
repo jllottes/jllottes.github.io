@@ -18,14 +18,18 @@ Python
 
 * Animation with Matplotlib
 
+Mathematics
+~~~~~~~~~~~
+
+* `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
+
 Project 7
 ~~~~~~~~~
 
 * :doc:`Epidemic </Projects/epidemic/epidemic>`
 
-..
-    Comment:
-    Week 11 notebook
-    ~~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week11_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week11_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+
+Week 11 notebook
+~~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week11_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week11_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).

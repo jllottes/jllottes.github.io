@@ -75,7 +75,7 @@ Develop a functions `update_spread` that takes a 200x200 grid of cells with give
 	x = np.zeros((200,200), dtype = int)
 
 	fig = plt.figure()
-	im = plt.imshow(x)
+	im = plt.imshow(x,vmin=0,vmax=1)
     
 	def animate(i):    
 	    global x
@@ -83,7 +83,7 @@ Develop a functions `update_spread` that takes a 200x200 grid of cells with give
 	    im.set_data(x)
 	    return im
 
-	anim = FuncAnimation(fig=fig, func=animate,  interval=100, blit=True, repeat=False)
+	anim = FuncAnimation(fig,animate)
 	plt.show()
     
 Modify the code to produce an animation of the evolving epidemic.
