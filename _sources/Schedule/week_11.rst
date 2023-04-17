@@ -1,33 +1,31 @@
-Week 11: Apr 18 - Apr 22
+Week 11: Apr 17 - Apr 21
 ========================
 
-Quiz 9
+Quiz 8
 ~~~~~~~
 
-.. rubric:: Wednesday, April 20
+.. rubric:: Wednesday, April 19
 
-* :download:`Sample Quiz 9 <../Quizzes/quiz09_sample.pdf>`
+* :download:`Sample Quiz 8 <../Quizzes/quiz08_sample.pdf>`
 
 What is covered:
 
-* Dictionaries.
-* List sorting.
-
+* Working with strings
+* Reading from files
 
 Python
 ~~~~~~
 
-* List sorting
-* Plots: ``semilogx``, ``semilogy``, ``loglog``
-* `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
+* Animation with Matplotlib
 
-Project 8
+Project 7
 ~~~~~~~~~
 
-* :doc:`Address book </Projects/address_book/address_book>`
+* :doc:`Epidemic </Projects/epidemic/epidemic>`
 
-Week 11 notebook
-~~~~~~~~~~~~~~~~
-
-- `View online <../_static/weekly_notebooks/week11_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week11_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+    Comment:
+    Week 11 notebook
+    ~~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week11_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week11_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
