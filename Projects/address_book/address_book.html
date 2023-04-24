@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Address book &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,7 +18,6 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -33,15 +32,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -118,15 +113,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="address-book">
-<h1>Address book<a class="headerlink" href="#address-book" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="address-book">
+<h1>Address book<a class="headerlink" href="#address-book" title="Permalink to this headline"></a></h1>
 <p class="rubric">due: Tuesday, May 3, 11:59 PM</p>
 <p>The <a class="reference external" href="http://pharmacy.buffalo.edu/faculty-staff.html">Faculty and Staff Directory</a>
 webpage of the UB School of Pharmacy lists names of faculty and staff members of
 the school. The name of each person is linked to a webpage with information about
 that person.</p>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
 <p>Using requests and regular expressions write code that retrieves name, office
 address, phone number, and e-mail of each person listed in the staff and faculty
 directory. Your code should print this information for each person (in alphabetical

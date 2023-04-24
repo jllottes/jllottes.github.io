@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pythagorean triples &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,13 +18,12 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -37,15 +36,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -125,8 +120,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pythagorean-triples">
-<h1>Pythagorean triples<a class="headerlink" href="#pythagorean-triples" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="pythagorean-triples">
+<h1>Pythagorean triples<a class="headerlink" href="#pythagorean-triples" title="Permalink to this headline"></a></h1>
 <p class="rubric">due: Saturday, March 4, 11:59 PM</p>
 <p>The Pythagorean Theorem says that positive numbers <span class="math notranslate nohighlight">\(a\)</span>,
 <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> are lengths of sides of a right triangle if and
@@ -147,7 +166,7 @@ Pythagorean triple <span class="math notranslate nohighlight">\((a, b, c)\)</spa
 <p>The goal of this project is to investigate the structure of Pythagorean
 triples.</p>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
 <p><strong>Part 1.</strong> Write a function <code class="docutils literal notranslate"><span class="pre">ptriples(n)</span></code> that takes as its argument
 a number <span class="math notranslate nohighlight">\(n\)</span> and returns a list of all  Pythagorean triples <span class="math notranslate nohighlight">\((a, b, c)\)</span>
 where <span class="math notranslate nohighlight">\(1 \leq a, b \leq n\)</span>:</p>

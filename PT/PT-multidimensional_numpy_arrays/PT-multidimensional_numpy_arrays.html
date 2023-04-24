@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multidimensional numpy arrays &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,7 +18,6 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -35,15 +34,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -142,10 +137,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="multidimensional-numpy-arrays">
-<h1>Multidimensional numpy arrays<a class="headerlink" href="#multidimensional-numpy-arrays" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="multidimensional-numpy-arrays">
+<h1>Multidimensional numpy arrays<a class="headerlink" href="#multidimensional-numpy-arrays" title="Permalink to this headline"></a></h1>
 <section id="creating-arrays-with-more-than-one-dimension">
-<h2>Creating arrays with more than one dimension<a class="headerlink" href="#creating-arrays-with-more-than-one-dimension" title="Permalink to this heading"></a></h2>
+<h2>Creating arrays with more than one dimension<a class="headerlink" href="#creating-arrays-with-more-than-one-dimension" title="Permalink to this headline"></a></h2>
 <p>So far we have encountered numpy arrays that have one dimension - their
 elements are arranged as a list and they can be accessed using a single index:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -209,7 +228,7 @@ used to create arrays with more than one dimension:</p>
 </div>
 </section>
 <section id="mathematical-operations-on-multidimensional-arrays">
-<h2>Mathematical operations on multidimensional arrays<a class="headerlink" href="#mathematical-operations-on-multidimensional-arrays" title="Permalink to this heading"></a></h2>
+<h2>Mathematical operations on multidimensional arrays<a class="headerlink" href="#mathematical-operations-on-multidimensional-arrays" title="Permalink to this headline"></a></h2>
 <p>Mathematical operations on multidimensional arrays work similarly as for
 1-dimensional arrays.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -270,7 +289,7 @@ multidimensional arrays:</p>
 </div>
 </section>
 <section id="slicing-multidimensional-arrays">
-<h2>Slicing multidimensional arrays<a class="headerlink" href="#slicing-multidimensional-arrays" title="Permalink to this heading"></a></h2>
+<h2>Slicing multidimensional arrays<a class="headerlink" href="#slicing-multidimensional-arrays" title="Permalink to this headline"></a></h2>
 <p>In order to create a slice of a multidimensional array we need to
 specify which part of each dimension we want to select.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span> <span class="c1"># create a 5x6 array</span>

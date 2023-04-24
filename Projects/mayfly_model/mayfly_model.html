@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mayfly model &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,13 +18,12 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -37,15 +36,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -128,11 +123,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mayfly-model">
-<h1>Mayfly model<a class="headerlink" href="#mayfly-model" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="mayfly-model">
+<h1>Mayfly model<a class="headerlink" href="#mayfly-model" title="Permalink to this headline"></a></h1>
 <p class="rubric">due: Monday, March 27, 11:59 PM</p>
 <section id="population-models">
-<h2>Population models<a class="headerlink" href="#population-models" title="Permalink to this heading"></a></h2>
+<h2>Population models<a class="headerlink" href="#population-models" title="Permalink to this headline"></a></h2>
 <p>An interesting problem in mathematics is to try to predict changes in
 populations of people, animals, insects, bacteria etc. How many people
 will live in the United States in 20 years? If a cell culture in a lab
@@ -155,7 +174,7 @@ depend on <span class="math notranslate nohighlight">\(x_{n-1}\)</span>). Proper
 course on what the function <span class="math notranslate nohighlight">\(g(x)\)</span> is.</p>
 </section>
 <section id="the-simplest-case-constant-growth-rate">
-<h2>The simplest case: constant growth rate<a class="headerlink" href="#the-simplest-case-constant-growth-rate" title="Permalink to this heading"></a></h2>
+<h2>The simplest case: constant growth rate<a class="headerlink" href="#the-simplest-case-constant-growth-rate" title="Permalink to this headline"></a></h2>
 <p>The simplest model is obtained by assuming that <span class="math notranslate nohighlight">\(g\)</span> is a constant
 function: <span class="math notranslate nohighlight">\(g(x) = a\)</span> for some fixed number <span class="math notranslate nohighlight">\(a\)</span>. In such case
 we get:</p>
@@ -171,7 +190,7 @@ realistic in a long range since it predicts that a population will
 either grow to infinity, or it will collapse to zero.</p>
 </section>
 <section id="mayfly-model-linear-growth-rate">
-<h2>Mayfly model: linear growth rate<a class="headerlink" href="#mayfly-model-linear-growth-rate" title="Permalink to this heading"></a></h2>
+<h2>Mayfly model: linear growth rate<a class="headerlink" href="#mayfly-model-linear-growth-rate" title="Permalink to this headline"></a></h2>
 <p>In order to improve on the exponential model we can reason as follows.</p>
 <ul class="simple">
 <li><p>In a small population there is little competition for resources such
@@ -226,7 +245,7 @@ the value of the initial population <span class="math notranslate nohighlight">\
 </ol>
 </section>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
 <p>Analyze behavior of the mayfly model for various values of <span class="math notranslate nohighlight">\(b\)</span> and
 <span class="math notranslate nohighlight">\(y_0\)</span>. Describe your findings, observations and conclusions.</p>
 </section>

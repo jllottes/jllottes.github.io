@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Syllabus &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,7 +18,6 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
@@ -35,15 +34,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -138,15 +133,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="syllabus">
-<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="syllabus">
+<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 <div class="line-block">
 <div class="line"><strong>MTH 337 Introduction to Scientific and Mathematical Computing</strong></div>
 <div class="line">Mon Wed 10:00 AM - 11:50 AM</div>
 <div class="line">150 Mathematics Building</div>
 </div>
 <section id="instructor">
-<h2>Instructor<a class="headerlink" href="#instructor" title="Permalink to this heading"></a></h2>
+<h2>Instructor<a class="headerlink" href="#instructor" title="Permalink to this headline"></a></h2>
 <div class="line-block">
 <div class="line">Jonathan Lottes</div>
 <div class="line"><strong>Office:</strong> 211 Mathematics Building</div>
@@ -155,7 +174,7 @@
 </div>
 </section>
 <section id="course-resources">
-<h2>Course Resources<a class="headerlink" href="#course-resources" title="Permalink to this heading"></a></h2>
+<h2>Course Resources<a class="headerlink" href="#course-resources" title="Permalink to this headline"></a></h2>
 <p><strong>Laptop.</strong> We will be programming during all class meetings, so you should bring a laptop to every class.
 Any operating system (Windows/Mac/Linux) is fine.</p>
 <p><strong>Software.</strong> We will be using the <a class="reference external" href="https://www.anaconda.com/products/individual#Downloadstarget=&quot;_blank&quot;">Anaconda distribution of Python 3.9</a>.
@@ -166,7 +185,7 @@ If you have a previous version of Python installed, please upgrade it so you don
 <p><strong><a href="https://ublearns.buffalo.edu">UBLearns</a> </strong> will be used mainly for submitting project reports.</p>
 </section>
 <section id="grading">
-<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this heading"></a></h2>
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline"></a></h2>
 <p>There will be no exams in this course. Instead, grades will be assigned based on the following components:</p>
 <blockquote>
 <div><ul class="simple">
@@ -176,7 +195,7 @@ If you have a previous version of Python installed, please upgrade it so you don
 </ul>
 </div></blockquote>
 <section id="project-reports">
-<h3>Project Reports<a class="headerlink" href="#project-reports" title="Permalink to this heading"></a></h3>
+<h3>Project Reports<a class="headerlink" href="#project-reports" title="Permalink to this headline"></a></h3>
 <p>One the main components of this course will be exploratory projects.
 You will be working on them largely independently, using mathematical and computing tools.
 The outcome of your work on each project will be a project report that you will submit for grading.</p>
@@ -189,21 +208,21 @@ More information about project reports is posted <a class="reference internal" h
 The lowest project score will be dropped at the end of the semester.</p>
 </section>
 <section id="quizzes">
-<h3>Quizzes<a class="headerlink" href="#quizzes" title="Permalink to this heading"></a></h3>
+<h3>Quizzes<a class="headerlink" href="#quizzes" title="Permalink to this headline"></a></h3>
 <p>Each Monday there will be a short quiz testing your knowledge of Python.
 Sample quizzes will be posted ahead of time with the <a class="reference internal" href="weekly_schedule.html"><span class="doc">weekly class schedule</span></a>.
 The lowest two quiz scores will be dropped.</p>
 </section>
 <section id="class-participation">
-<h3>Class Participation<a class="headerlink" href="#class-participation" title="Permalink to this heading"></a></h3>
+<h3>Class Participation<a class="headerlink" href="#class-participation" title="Permalink to this headline"></a></h3>
 <p>This includes class attendance, asking and answering questions in class and during office hours.
 Class participation will be evaluated weekly.</p>
 </section>
 </section>
 <section id="useful-information">
-<h2>Useful Information<a class="headerlink" href="#useful-information" title="Permalink to this heading"></a></h2>
+<h2>Useful Information<a class="headerlink" href="#useful-information" title="Permalink to this headline"></a></h2>
 <section id="important-dates">
-<h3>Important Dates<a class="headerlink" href="#important-dates" title="Permalink to this heading"></a></h3>
+<h3>Important Dates<a class="headerlink" href="#important-dates" title="Permalink to this headline"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Jan 30: first day of classes</p></li>
@@ -215,11 +234,11 @@ Class participation will be evaluated weekly.</p>
 </div></blockquote>
 </section>
 <section id="incomplete-grades">
-<h3>Incomplete Grades<a class="headerlink" href="#incomplete-grades" title="Permalink to this heading"></a></h3>
+<h3>Incomplete Grades<a class="headerlink" href="#incomplete-grades" title="Permalink to this headline"></a></h3>
 <p>See the UB Catalog for the <a class="reference external" href="https://catalog.buffalo.edu/policies/explanation.html">UB Incomplete Policy</a>.</p>
 </section>
 <section id="academic-integrity">
-<h3>Academic Integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this heading"></a></h3>
+<h3>Academic Integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this headline"></a></h3>
 <p>Academic integrity is critical to the learning process.
 It is your responsibility as a student to complete your work in an honest fashion, upholding the expectations your individual instructors have for you in this regard.
 The ultimate goal is to ensure that you learn the content in your courses in accordance with UB’s academic integrity principles, regardless of whether instruction is in-person or remote.
@@ -232,7 +251,7 @@ The academic integrity policy is available at:</p>
 <p>Collaboration of any kind on the quizzes is forbidden, as is the use of any materials not approved of by the instructor.</p>
 </section>
 <section id="accessibility-resources">
-<h3>Accessibility Resources<a class="headerlink" href="#accessibility-resources" title="Permalink to this heading"></a></h3>
+<h3>Accessibility Resources<a class="headerlink" href="#accessibility-resources" title="Permalink to this headline"></a></h3>
 <p>If you have any disability which requires reasonable accommodations to enable you to participate in this course, please contact the Office of Accessibility Resources in 60 Capen Hall, 716-645-2608 and also the instructor of this course during the first week of class.
 The office will provide you with information and review appropriate arrangements for reasonable accommodations, which can be found on the web at:</p>
 <blockquote>
@@ -240,7 +259,7 @@ The office will provide you with information and review appropriate arrangements
 </div></blockquote>
 </section>
 <section id="critical-campus-resources">
-<h3>Critical Campus Resources<a class="headerlink" href="#critical-campus-resources" title="Permalink to this heading"></a></h3>
+<h3>Critical Campus Resources<a class="headerlink" href="#critical-campus-resources" title="Permalink to this headline"></a></h3>
 <p><strong>Sexual Violence.</strong>
 UB is committed to providing a safe learning environment free of all forms of discrimination and sexual harassment, including sexual assault, domestic and dating violence and stalking. If you have experienced gender-based violence (intimate partner violence, attempted or completed sexual assault, harassment, coercion, stalking, etc.), UB has resources to help. This includes academic accommodations, health and counseling services, housing accommodations, helping with legal protective orders, and assistance with reporting the incident to police or other UB officials if you so choose. Please contact UB’s Title IX Coordinator at 716-645-2266 for more information. For confidential assistance, you may also contact a Crisis Services Campus Advocate at 716-796-4399.</p>
 <p><strong>Mental Health.</strong>

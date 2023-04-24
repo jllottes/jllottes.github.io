@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boolean numpy arrays &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,7 +18,6 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -35,15 +34,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -142,10 +137,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="boolean-numpy-arrays">
-<h1>Boolean numpy arrays<a class="headerlink" href="#boolean-numpy-arrays" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="boolean-numpy-arrays">
+<h1>Boolean numpy arrays<a class="headerlink" href="#boolean-numpy-arrays" title="Permalink to this headline"></a></h1>
 <section id="boolean-arrays">
-<h2>Boolean arrays<a class="headerlink" href="#boolean-arrays" title="Permalink to this heading"></a></h2>
+<h2>Boolean arrays<a class="headerlink" href="#boolean-arrays" title="Permalink to this headline"></a></h2>
 <p>A boolean array is a numpy array with boolean (True/False) values. Such
 array can be obtained by applying a logical operator to another numpy
 array:</p>
@@ -183,9 +202,13 @@ array:</p>
 </div>
 </section>
 <section id="logical-operations-on-boolean-arrays">
-<h2>Logical operations on boolean arrays<a class="headerlink" href="#logical-operations-on-boolean-arrays" title="Permalink to this heading"></a></h2>
+<h2>Logical operations on boolean arrays<a class="headerlink" href="#logical-operations-on-boolean-arrays" title="Permalink to this headline"></a></h2>
 <p>Boolean arrays can be combined using logical operators:</p>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>operator</p></th>
 <th class="head"><p>meaning</p></th>
@@ -259,7 +282,7 @@ array:</p>
 </div>
 </section>
 <section id="indexing-with-boolean-arrays">
-<h2>Indexing with boolean arrays<a class="headerlink" href="#indexing-with-boolean-arrays" title="Permalink to this heading"></a></h2>
+<h2>Indexing with boolean arrays<a class="headerlink" href="#indexing-with-boolean-arrays" title="Permalink to this headline"></a></h2>
 <p>Boolean arrays can be used to select elements of other numpy arrays. If
 <code class="docutils literal notranslate"><span class="pre">a</span></code> is any numpy array and <code class="docutils literal notranslate"><span class="pre">b</span></code> is a boolean array of the same
 dimensions then <code class="docutils literal notranslate"><span class="pre">a[b]</span></code> selects all elements of <code class="docutils literal notranslate"><span class="pre">a</span></code> for which the

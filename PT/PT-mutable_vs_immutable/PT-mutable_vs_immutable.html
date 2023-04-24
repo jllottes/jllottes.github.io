@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mutable vs. immutable objects &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,7 +18,6 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -35,15 +34,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../master.html" class="icon icon-home">
-            MTH 337 - Spring 2023
+            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -143,10 +138,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mutable-vs-immutable-objects">
-<h1>Mutable vs. immutable objects<a class="headerlink" href="#mutable-vs-immutable-objects" title="Permalink to this heading"></a></h1>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="mutable-vs-immutable-objects">
+<h1>Mutable vs. immutable objects<a class="headerlink" href="#mutable-vs-immutable-objects" title="Permalink to this headline"></a></h1>
 <section id="two-examples">
-<h2>Two examples<a class="headerlink" href="#two-examples" title="Permalink to this heading"></a></h2>
+<h2>Two examples<a class="headerlink" href="#two-examples" title="Permalink to this headline"></a></h2>
 <p>Objects used in Python can be separated into two major categories: some
 objects are <em>mutable</em> while other objects are <em>immutable</em>. The
 difference between these categories is illustrated by the following two
@@ -207,7 +226,7 @@ comes from the fact that integers are immutable objects while lists are
 mutable.</p>
 </section>
 <section id="how-this-works">
-<h2>How this works<a class="headerlink" href="#how-this-works" title="Permalink to this heading"></a></h2>
+<h2>How this works<a class="headerlink" href="#how-this-works" title="Permalink to this headline"></a></h2>
 <p>When a variable is a assigned to some object (a number, string, list
 etc.) the variable does not store this object, but rather a computer memory
 address  where the object resides. We can use the <code class="docutils literal notranslate"><span class="pre">id()</span></code>
@@ -293,7 +312,7 @@ id(m) = 400004</p>
 <a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable4.svg"><img alt="../../_images/PT-mutable_vs_immutable4.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable4.svg" width="400px" /></a>
 </section>
 <section id="why-it-works-this-way">
-<h2>Why it works this way<a class="headerlink" href="#why-it-works-this-way" title="Permalink to this heading"></a></h2>
+<h2>Why it works this way<a class="headerlink" href="#why-it-works-this-way" title="Permalink to this headline"></a></h2>
 <p>Lists are often very large objects, consisting of thousands or millions
 of elements. If lists were immutable changing even a single element of a
 list would require copying the whole list which could slow a program a
@@ -306,7 +325,7 @@ way, and it assures that by changing value of one integer variable we
 will not inadvertently change some other variable.</p>
 </section>
 <section id="additional-remarks">
-<h2>Additional remarks<a class="headerlink" href="#additional-remarks" title="Permalink to this heading"></a></h2>
+<h2>Additional remarks<a class="headerlink" href="#additional-remarks" title="Permalink to this headline"></a></h2>
 <p><strong>1)</strong> Some examples of immutable objects are:</p>
 <ul class="simple">
 <li><p>integers</p></li>
