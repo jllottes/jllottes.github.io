@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Epidemic &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,12 +18,13 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -35,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -119,32 +124,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="epidemic">
-<h1>Epidemic<a class="headerlink" href="#epidemic" title="Permalink to this headline"></a></h1>
+  <section id="epidemic">
+<h1>Epidemic<a class="headerlink" href="#epidemic" title="Permalink to this heading"></a></h1>
 <p class="rubric">due: Saturday, May 6, 11:59pm</p>
 <p>In this project we will be working with the following model of a spread of
 a contagious disease.</p>
@@ -152,10 +133,6 @@ a contagious disease.</p>
 Each cell has an associated numerical value, which indicates the status
 of the cell:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 77%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Value</p></th>
 <th class="head"><p>Meaning</p></th>
@@ -205,7 +182,7 @@ the next day is <span class="math notranslate nohighlight">\(p_R\)</span>.</p></
 <li><p>if a cell is healed, then it stays healed - it won’t get sick again.</p></li>
 </ul>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
 <p><strong>Part 1.</strong> Consider a 200x200 cells grid, starting with 16 (4x4 grid) infected cells at its center.
 Develop a functions <cite>update_spread</cite> that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.</p>
 <p><strong>Part 2.</strong> The following code produces an animation.</p>
@@ -263,7 +240,7 @@ of randomly selected cells in the population gets vaccinated.</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>

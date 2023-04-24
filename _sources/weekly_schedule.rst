@@ -30,9 +30,9 @@ Weekly Schedule
    
    Schedule/week_11
    
+   Schedule/week_12
+   
 ..
    Comment:  
-   
-   Schedule/week_12
    Schedule/week_13
    Schedule/week_14

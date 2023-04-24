@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A prime or not a prime &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,12 +18,13 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -36,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -126,35 +131,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="a-prime-or-not-a-prime">
-<h1>A prime or not a prime<a class="headerlink" href="#a-prime-or-not-a-prime" title="Permalink to this headline"></a></h1>
+  <section id="a-prime-or-not-a-prime">
+<h1>A prime or not a prime<a class="headerlink" href="#a-prime-or-not-a-prime" title="Permalink to this heading"></a></h1>
 <p class="rubric">due: Saturday, February 18, 11:59 PM</p>
 <section id="prime-numbers">
-<h2>Prime numbers<a class="headerlink" href="#prime-numbers" title="Permalink to this headline"></a></h2>
+<h2>Prime numbers<a class="headerlink" href="#prime-numbers" title="Permalink to this heading"></a></h2>
 <p>A <em>prime number</em> is an integer greater than 1 which is divisible only by
 1 and by itself. For example, 5 is a prime but 6 is not since 6 is
 divisible by 1, 2, 3, and 6. There are infinitely many prime numbers.
@@ -206,7 +187,7 @@ integer <code class="docutils literal notranslate"><span class="pre">n</span></c
 </div>
 </section>
 <section id="primes-and-false-primes">
-<h2>Primes and false primes<a class="headerlink" href="#primes-and-false-primes" title="Permalink to this headline"></a></h2>
+<h2>Primes and false primes<a class="headerlink" href="#primes-and-false-primes" title="Permalink to this heading"></a></h2>
 <p>Prime numbers are important in mathematics as well as in some practical
 applications. For example, they are used to encrypt data (credit card
 numbers etc.) so that it can be transmitted securely. For this reason it
@@ -214,7 +195,7 @@ is interesting to look for new methods that can help us recognize which
 numbers are prime and which are not. Here we will explore one such
 possible method.</p>
 <section id="congruences">
-<h3>Congruences<a class="headerlink" href="#congruences" title="Permalink to this headline"></a></h3>
+<h3>Congruences<a class="headerlink" href="#congruences" title="Permalink to this heading"></a></h3>
 <p>Given integers <span class="math notranslate nohighlight">\(m, n\)</span> and <span class="math notranslate nohighlight">\(k\)</span> we say that <span class="math notranslate nohighlight">\(m\)</span> and
 <span class="math notranslate nohighlight">\(n\)</span> are <em>congruent modulo</em> <span class="math notranslate nohighlight">\(k\)</span> if the reminder from dividing
 <span class="math notranslate nohighlight">\(m\)</span> by <span class="math notranslate nohighlight">\(k\)</span> is the same as the reminder from dividing
@@ -231,7 +212,7 @@ operations: if <span class="math notranslate nohighlight">\(m_{1} \equiv n_{1} \
 <span class="math notranslate nohighlight">\(m_{1}m_{2} \equiv n_{1}n_{2} \ (\text{mod } k)\)</span>.</p>
 </section>
 <section id="congruences-and-prime-numbers">
-<h3>Congruences and prime numbers<a class="headerlink" href="#congruences-and-prime-numbers" title="Permalink to this headline"></a></h3>
+<h3>Congruences and prime numbers<a class="headerlink" href="#congruences-and-prime-numbers" title="Permalink to this heading"></a></h3>
 <p>Here is a basic fact in number theory that relates prime numbers and
 congruences:</p>
 <p><strong>Theorem</strong> (Fermat’s little theorem). If <span class="math notranslate nohighlight">\(p\)</span> is a prime number then</p>
@@ -266,7 +247,7 @@ false prime is 561.</p>
 </section>
 </section>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
 <p><strong>Part 1.</strong> Write a Python script to find the first 20 false primes.</p>
 <p><strong>Hint.</strong> Call a number <span class="math notranslate nohighlight">\(p\)</span> <em>prime-like</em> if <span class="math notranslate nohighlight">\(p\geq 2\)</span> and the formula
 <span class="math notranslate nohighlight">\(a^{p} \equiv a \ (\text{mod } p)\)</span> holds for all <span class="math notranslate nohighlight">\(0 \leq a &lt; p\)</span>.
@@ -329,7 +310,7 @@ as that of <code class="docutils literal notranslate"><span class="pre">(a**n)%k
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>

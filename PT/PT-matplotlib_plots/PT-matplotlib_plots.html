@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plots with matplotlib &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,12 +18,13 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -36,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -140,34 +145,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="plots-with-matplotlib">
-<h1>Plots with matplotlib<a class="headerlink" href="#plots-with-matplotlib" title="Permalink to this headline"></a></h1>
+  <section id="plots-with-matplotlib">
+<h1>Plots with matplotlib<a class="headerlink" href="#plots-with-matplotlib" title="Permalink to this heading"></a></h1>
 <section id="basic-plotting">
-<h2>Basic plotting<a class="headerlink" href="#basic-plotting" title="Permalink to this headline"></a></h2>
+<h2>Basic plotting<a class="headerlink" href="#basic-plotting" title="Permalink to this heading"></a></h2>
 <p>We can create plots with Python using <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> module.
 First we import the module:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -178,10 +159,6 @@ First we import the module:</p>
 <p>Here are the main functions we will use. Click on the function
 description to see its full documentation:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 77%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>function</p></th>
 <th class="head"><p>usage</p></th>
@@ -246,7 +223,7 @@ documentation</a>
 for details.</p>
 </section>
 <section id="more-plotting-options">
-<h2>More plotting options<a class="headerlink" href="#more-plotting-options" title="Permalink to this headline"></a></h2>
+<h2>More plotting options<a class="headerlink" href="#more-plotting-options" title="Permalink to this heading"></a></h2>
 <p>By default the <code class="docutils literal notranslate"><span class="pre">plot</span></code> function joins the specified points by straight
 lines. If, instead, we want to plot individual points as red circles we
 can add the <code class="docutils literal notranslate"><span class="pre">'ro'</span></code> option (<code class="docutils literal notranslate"><span class="pre">'r'</span></code> specifies the color, and <code class="docutils literal notranslate"><span class="pre">'o'</span></code>
@@ -260,12 +237,6 @@ the shape of markers):</p>
 <a class="reference internal image-reference" href="../../_images/PT-matplotlib-3.svg"><img alt="../../_images/PT-matplotlib-3.svg" class="align-center" src="../../_images/PT-matplotlib-3.svg" width="450px" /></a>
 <p>Here are same other options for shapes and colors of markers:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 38%" />
-<col style="width: 17%" />
-<col style="width: 25%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>shape</p></th>
 <th class="head"><p>meaning</p></th>
@@ -367,7 +338,7 @@ size of markers:</p>
 <a class="reference internal image-reference" href="../../_images/PT-matplotlib-6.svg"><img alt="../../_images/PT-matplotlib-6.svg" class="align-center" src="../../_images/PT-matplotlib-6.svg" width="450px" /></a>
 </section>
 <section id="plot-legend">
-<h2>Plot legend<a class="headerlink" href="#plot-legend" title="Permalink to this headline"></a></h2>
+<h2>Plot legend<a class="headerlink" href="#plot-legend" title="Permalink to this heading"></a></h2>
 <p>If more than one graph is plotted on a single figure a legend can be
 used to label graphs:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_list</span> <span class="o">=</span>  <span class="p">[</span><span class="mf">0.01</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">201</span><span class="p">)]</span>
@@ -399,7 +370,7 @@ used to label graphs:</p>
 </div>
 </section>
 <section id="further-reading">
-<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading"></a></h2>
 <p>Matplotlib is a very large module with a lot of uses. Here are a
 couple links that can be helpful for exploring it further:</p>
 <ul class="simple">
@@ -431,7 +402,7 @@ scipy-lectures.org</a></p></li>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>

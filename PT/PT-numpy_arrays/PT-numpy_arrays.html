@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Numpy arrays &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,6 +18,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -34,11 +35,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -139,34 +144,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="numpy-arrays">
-<h1>Numpy arrays<a class="headerlink" href="#numpy-arrays" title="Permalink to this headline"></a></h1>
+  <section id="numpy-arrays">
+<h1>Numpy arrays<a class="headerlink" href="#numpy-arrays" title="Permalink to this heading"></a></h1>
 <section id="numpy-array-basics">
-<h2>Numpy array basics<a class="headerlink" href="#numpy-array-basics" title="Permalink to this headline"></a></h2>
+<h2>Numpy array basics<a class="headerlink" href="#numpy-array-basics" title="Permalink to this heading"></a></h2>
 <p>Numpy is the standard module for doing numerical computations
 in Python. It provides tools for writing code which is both easier to
 develop and usually a lot faster than it would be without numpy.</p>
@@ -284,7 +265,7 @@ loops work with numpy arrays as usual:</p>
 </div>
 </section>
 <section id="some-differences-between-lists-and-numpy-arrays">
-<h2>Some differences between lists and numpy arrays<a class="headerlink" href="#some-differences-between-lists-and-numpy-arrays" title="Permalink to this headline"></a></h2>
+<h2>Some differences between lists and numpy arrays<a class="headerlink" href="#some-differences-between-lists-and-numpy-arrays" title="Permalink to this heading"></a></h2>
 <p><strong>1.</strong> Lists can contain objects of different types, but in numpy arrays all
 objects must be of the same type (integers, floats, strings, booleans
 etc).</p>
@@ -331,7 +312,7 @@ a = [1 2 3 4]</p>
 </div>
 </section>
 <section id="how-to-create-a-numpy-array">
-<h2>How to create a numpy array<a class="headerlink" href="#how-to-create-a-numpy-array" title="Permalink to this headline"></a></h2>
+<h2>How to create a numpy array<a class="headerlink" href="#how-to-create-a-numpy-array" title="Permalink to this heading"></a></h2>
 <p>Numpy arrays can be created in several ways:</p>
 <p><strong>1.</strong> The <code class="docutils literal notranslate"><span class="pre">np.array()</span></code> function converts a list into a numpy array:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
@@ -424,7 +405,7 @@ points between the numbers <code class="docutils literal notranslate"><span clas
 </div>
 </section>
 <section id="numpy-and-matplotlib">
-<h2>Numpy and matplotlib<a class="headerlink" href="#numpy-and-matplotlib" title="Permalink to this headline"></a></h2>
+<h2>Numpy and matplotlib<a class="headerlink" href="#numpy-and-matplotlib" title="Permalink to this heading"></a></h2>
 <p>matplotlib works directly with numpy arrays:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -437,7 +418,7 @@ points between the numbers <code class="docutils literal notranslate"><span clas
 <a class="reference internal image-reference" href="../../_images/PT-numpy_arrays-1.svg"><img alt="../../_images/PT-numpy_arrays-1.svg" class="align-center" src="../../_images/PT-numpy_arrays-1.svg" width="400px" /></a>
 </section>
 <section id="further-reading">
-<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<h2>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://docs.scipy.org/doc/numpy/">Numpy documentation</a> provides a
 comprehensive numpy reference and a <a class="reference external" href="https://docs.scipy.org/doc/numpy/user/quickstart.html">quickstart
 tutorial</a>.</p>
@@ -464,7 +445,7 @@ tutorial</a>.</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wordle &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,6 +18,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -32,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -113,32 +118,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="wordle">
-<h1>Wordle<a class="headerlink" href="#wordle" title="Permalink to this headline"></a></h1>
+  <section id="wordle">
+<h1>Wordle<a class="headerlink" href="#wordle" title="Permalink to this heading"></a></h1>
 <p class="rubric">due: Saturday, May 21, 11:59 PM</p>
 <p>Wordle is a word puzzle game where players have six attempts to guess a five-letter word. With each guess, the player is given feedback in the form of colored tiles that indicate which letters occur in the word and which letters are in the correct position.</p>
 <blockquote>
@@ -178,7 +159,7 @@
 </div>
 <p>The <code class="code docutils literal notranslate"><span class="pre">wordle_game</span></code> function takes in a list of acceptable words, randomly selects one to be the correct answer, and returns an object that will play the Wordle game using the <code class="code docutils literal notranslate"><span class="pre">.play()</span></code> method.</p>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h2>
 <p><strong>Part 1.</strong>
 We will first assume that no letter is ever repeated in any Wordle word.
 Write a function <code class="code docutils literal notranslate"><span class="pre">get_possible_words(guess_word,evaluation,words)</span></code> that takes in a word guess and it’s evaluation (obtained from the function <code class="code docutils literal notranslate"><span class="pre">evaluate_guess</span></code>) along with a list of permissible words, and returns a list of all words that could possibly be correct (assuming no letter is ever duplicated). The correct word should only be used to generate the evaluation, <strong>NOT</strong> to generate the list of possible words.</p>
@@ -213,7 +194,7 @@ For inspiration, you may wish to view this excellent video by YouTuber 3Blue1Bro
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>

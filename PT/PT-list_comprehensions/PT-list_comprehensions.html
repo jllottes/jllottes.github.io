@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>List comprehensions &mdash; MTH 337 - Spring 2023  documentation</title>
@@ -18,12 +18,13 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -36,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Spring 2023
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -139,34 +144,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="list-comprehensions">
-<h1>List comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline"></a></h1>
+  <section id="list-comprehensions">
+<h1>List comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this heading"></a></h1>
 <section id="basic-comprehensions">
-<h2>Basic comprehensions<a class="headerlink" href="#basic-comprehensions" title="Permalink to this headline"></a></h2>
+<h2>Basic comprehensions<a class="headerlink" href="#basic-comprehensions" title="Permalink to this heading"></a></h2>
 <p>List comprehensions are a tool that in many cases makes it easier to
 create a list of elements. For example, if we want to create a list of
 squares of the first few positive integers, we can do it using the
@@ -210,7 +191,7 @@ characters of a string:</p>
 </div>
 </section>
 <section id="generalized-comprehensions">
-<h2>Generalized comprehensions<a class="headerlink" href="#generalized-comprehensions" title="Permalink to this headline"></a></h2>
+<h2>Generalized comprehensions<a class="headerlink" href="#generalized-comprehensions" title="Permalink to this heading"></a></h2>
 <p>In a more general form list comprehensions can include an <code class="docutils literal notranslate"><span class="pre">if</span></code>
 statement. For example, in order to create a list of squares of odd
 integers we can use the following code:</p>
@@ -254,7 +235,7 @@ consisting of all vowels in a string:</p>
 </div>
 </section>
 <section id="nested-comprehensions">
-<h2>Nested comprehensions<a class="headerlink" href="#nested-comprehensions" title="Permalink to this headline"></a></h2>
+<h2>Nested comprehensions<a class="headerlink" href="#nested-comprehensions" title="Permalink to this heading"></a></h2>
 <p>List comprehensions can be nested to involve more than one variable. For
 example, the following code takes values from two different lists of
 strings and produces a list of combined strings:</p>
@@ -332,7 +313,7 @@ divides <span class="math notranslate nohighlight">\(a\)</span>:</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 19, 2023.
+        Last updated on Apr 24, 2023.
       </span>
 
     </p>
