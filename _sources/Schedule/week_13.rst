@@ -19,9 +19,7 @@ Project 8
 
 * :doc:`Address book </Projects/address_book/address_book>`
 
-..
-	Comment:
-	Week 13 notebook
-	~~~~~~~~~~~~~~~~
-	- `View online <../_static/weekly_notebooks/week13_notebook.html>`_
-	- `Download <../_static/weekly_notebooks/week13_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+Week 13 notebook
+~~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week13_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week13_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
