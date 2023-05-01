@@ -1,7 +1,7 @@
 Week 12: Apr 24 - Apr 28
 ========================
 
-Quiz 10
+Quiz 9
 ~~~~~~~
 
 .. rubric:: Wednesday, April 26

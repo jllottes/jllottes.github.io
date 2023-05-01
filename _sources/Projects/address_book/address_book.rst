@@ -2,7 +2,7 @@
 Address book
 ============
 
-.. rubric:: due: Tuesday, May 3, 11:59 PM
+.. rubric:: due: Saturday, May 20, 11:59 PM
 
 The `Faculty and Staff Directory <http://pharmacy.buffalo.edu/faculty-staff.html>`_
 webpage of the UB School of Pharmacy lists names of faculty and staff members of
