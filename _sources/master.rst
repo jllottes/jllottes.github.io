@@ -22,11 +22,11 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    Projects/image_denoising/image_denoising
    Projects/code_breakers/code_breakers
    Projects/epidemic/epidemic
+   Projects/address_book/address_book
    
 ..
     Comment:
        Projects/computing_with_text/computing_with_text
-       Projects/address_book/address_book
        Projects/first_digits_last_digits/first_digits_last_digits
        Projects/wordle/wordle
 
