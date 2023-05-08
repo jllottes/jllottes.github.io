@@ -1,15 +1,10 @@
-Week 14: May 9 - May 13
+Week 14: May 8 - May 12
 ========================
 
 Python
 ~~~~~~
 
 * Pandas
-
-Project 10
-~~~~~~~~~~
-
-* :doc:`Wordle </Projects/wordle/wordle>`
 
 Week 14 notebook
 ~~~~~~~~~~~~~~~~
