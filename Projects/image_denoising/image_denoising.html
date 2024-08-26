@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image denoising &mdash; MTH 337 - Spring 2023  documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <title>Image denoising &mdash; MTH 337 - Fall 2024  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7c08d473" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://jllottes.github.io/Projects/image_denoising/image_denoising.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/clipboard.min.js"></script>
-        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Code breakers" href="../code_breakers/code_breakers.html" />
-    <link rel="prev" title="Tartans" href="../tartans/tartans.html" /> 
+    <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -36,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Fall 2024
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,30 +53,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mayfly_model/mayfly_model.html">Mayfly model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Image denoising</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#image-noise">Image noise</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mean-filter">Mean filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#median-filter">Median filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#edge-pixels">Edge pixels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#extra-credit">Extra credit</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../code_breakers/code_breakers.html">Code breakers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../epidemic/epidemic.html">Epidemic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../address_book/address_book.html">Address book</a></li>
 </ul>
 
         </div>
@@ -80,7 +66,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../master.html">MTH 337 - Spring 2023</a>
+          <a href="../../master.html">MTH 337 - Fall 2024</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -126,35 +112,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="image-denoising">
-<h1>Image denoising<a class="headerlink" href="#image-denoising" title="Permalink to this headline"></a></h1>
+  <section id="image-denoising">
+<h1>Image denoising<a class="headerlink" href="#image-denoising" title="Link to this heading"></a></h1>
 <p class="rubric">due: Saturday, April 15, 11:59 PM</p>
 <section id="image-noise">
-<h2>Image noise<a class="headerlink" href="#image-noise" title="Permalink to this headline"></a></h2>
+<h2>Image noise<a class="headerlink" href="#image-noise" title="Link to this heading"></a></h2>
 <p>Image noise is a random distortion in the brightness or color in an
 image. Noise appears to some extent in every image and can be created by
 imperfections in cameras, random light fluctuations, errors occurring
@@ -166,7 +128,7 @@ replaced by black.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/image_denoising-1.png"><img alt="../../_images/image_denoising-1.png" src="../../_images/image_denoising-1.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text"><em>Image with salt and pepper noise.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Image with salt and pepper noise.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>The main objective of this project is to experiment with tools that can
@@ -176,7 +138,7 @@ tools are the mean filter and the median filter.</p>
 Color of each pixel will be described by a single number between 0 (black) and 1 (white).</p>
 </section>
 <section id="mean-filter">
-<h2>Mean filter<a class="headerlink" href="#mean-filter" title="Permalink to this headline"></a></h2>
+<h2>Mean filter<a class="headerlink" href="#mean-filter" title="Link to this heading"></a></h2>
 <p>Recall that the <em>mean</em> (or average) of numbers
 <span class="math notranslate nohighlight">\((x_1, x_2, \dots, x_n)\)</span> is the number</p>
 <div class="math notranslate nohighlight">
@@ -196,7 +158,7 @@ image that has <span class="math notranslate nohighlight">\(P[i,j]\)</span> at t
 photo with a 3 <span class="math notranslate nohighlight">\(\times\)</span> 3 square of pixels selected. The
 right side shows enlargement of the selected square with color value of
 each pixel. <span class="math notranslate nohighlight">\(P[i, j]\)</span> is the pixel at the center of the square.</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-2.svg"><img alt="../../_images/image_denoising-2.svg" class="align-center" src="../../_images/image_denoising-2.svg" width="650px" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-2.svg"><img alt="../../_images/image_denoising-2.svg" class="align-center" src="../../_images/image_denoising-2.svg" style="width: 650px;" /></a>
 <p>The value of <span class="math notranslate nohighlight">\(F[i,j]\)</span>, the pixel of the filtered image, is given by
 the mean of the array</p>
 <div class="math notranslate nohighlight">
@@ -220,7 +182,7 @@ the mean of the array</p>
 <p>Thus <span class="math notranslate nohighlight">\(F[i,j]\)</span> = 0.455555555556.</p>
 </section>
 <section id="median-filter">
-<h2>Median filter<a class="headerlink" href="#median-filter" title="Permalink to this headline"></a></h2>
+<h2>Median filter<a class="headerlink" href="#median-filter" title="Link to this heading"></a></h2>
 <p>The median filter is similar to the mean filter, but instead of using
 the mean of values of pixels in a square it takes the median of these
 values. Recall that if <span class="math notranslate nohighlight">\(n\)</span> is odd then the <em>median</em> of a
@@ -263,12 +225,12 @@ must be an odd number, so that there is a pixel in the center of the
 square.</p>
 </section>
 <section id="edge-pixels">
-<h2>Edge pixels<a class="headerlink" href="#edge-pixels" title="Permalink to this headline"></a></h2>
+<h2>Edge pixels<a class="headerlink" href="#edge-pixels" title="Link to this heading"></a></h2>
 <p>While implementing mean and median filters we need to deal
 with the issue of pixels that are close to image edges, since for such
 pixels the square used to calculate mean or median may go outside the
 image:</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-3.svg"><img alt="../../_images/image_denoising-3.svg" class="align-center" src="../../_images/image_denoising-3.svg" width="312px" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-3.svg"><img alt="../../_images/image_denoising-3.svg" class="align-center" src="../../_images/image_denoising-3.svg" style="width: 312px;" /></a>
 <p>One way to deal with this problem is to enlarge the image adding a
 border on each side of some fixed color (say, white). The width of the
 border will depend on the size of the squares used by the filter: for
@@ -276,10 +238,10 @@ border will depend on the size of the squares used by the filter: for
 for 5 <span class="math notranslate nohighlight">\(\times\)</span> 5 squares the width should be 2 pixels and so on.
 In this way a square centered at any pixel of the original image will fit
 inside the enlarged image, and we will be able to compute its mean or median.</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-4.svg"><img alt="../../_images/image_denoising-4.svg" class="align-center" src="../../_images/image_denoising-4.svg" width="312px" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-4.svg"><img alt="../../_images/image_denoising-4.svg" class="align-center" src="../../_images/image_denoising-4.svg" style="width: 312px;" /></a>
 </section>
 <section id="project">
-<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline"></a></h2>
+<h2>Project<a class="headerlink" href="#project" title="Link to this heading"></a></h2>
 <p><strong>Part 1.</strong> Write a function <code class="docutils literal notranslate"><span class="pre">sp_noise(img,</span> <span class="pre">noise)</span></code> that adds salt
 and pepper noise to an image. Its first argument <code class="docutils literal notranslate"><span class="pre">img</span></code> should be
 a 2-dimensional numpy array representing the image and the second argument
@@ -327,7 +289,7 @@ function <code class="docutils literal notranslate"><span class="pre">sp_noise()
 </ul>
 </section>
 <section id="extra-credit">
-<h2>Extra credit<a class="headerlink" href="#extra-credit" title="Permalink to this headline"></a></h2>
+<h2>Extra credit<a class="headerlink" href="#extra-credit" title="Link to this heading"></a></h2>
 <p>Below are links to four photos taken at various places on
 campus, which were obscured by salt and pepper noise. For extra credit
 (grade increase to the next higher grade for this report: A- to A etc.) reduce
@@ -365,22 +327,13 @@ photo file:</p></li>
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../code_breakers/code_breakers.html" class="btn btn-neutral float-right" title="Code breakers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../tartans/tartans.html" class="btn btn-neutral float-left" title="Tartans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on May 10, 2023.
+        Last updated on Aug 25, 2024.
       </span>
 
     </p>

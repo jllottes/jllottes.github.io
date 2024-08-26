@@ -1,4 +1,4 @@
-Week 1: Jan 30 - Feb 3
+Week 1: Aug 26 - Aug 30
 =======================
 
 Logistics
@@ -33,7 +33,9 @@ Mathematics
 ~~~~~~~~~~~
 * Prime numbers
 
-Week 1 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week01_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week01_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+    Comment
+    Week 1 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week01_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week01_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).

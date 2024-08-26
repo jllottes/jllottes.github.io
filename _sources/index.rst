@@ -4,7 +4,7 @@ Syllabus
 =============================
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
-| Mon Wed 10:00 AM - 11:50 AM
+| Mon Wed 3:00 PM - 4:50 PM
 | 150 Mathematics Building 
 
 
@@ -14,7 +14,7 @@ Instructor
 | Jonathan Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** Fri 10:00 AM - 12:00 PM and by appointment.
+| **Office Hours:** Fri 9:30 AM - 10:50 AM and by appointment.
 
 
 Course Resources
@@ -23,14 +23,18 @@ Course Resources
 **Laptop.** We will be programming during all class meetings, so you should bring a laptop to every class. 
 Any operating system (Windows/Mac/Linux) is fine.
 
-**Software.** We will be using the `Anaconda distribution of Python 3.9 <https://www.anaconda.com/products/individual#Downloads target="_blank">`_.
+.. |Anaconda_link| raw:: html
+
+    <a href="https://www.anaconda.com/download/success" target="_blank">Anaconda distribution of Python 3.12</a>
+
+**Software.** We will be using the |Anaconda_link|.
 This is free software. 
 Even if you have Python already installed on your computer you should install this distribution since it includes Jupyter Notebook and several Python libraries we will need.
 If you have a previous version of Python installed, please upgrade it so you don't run into possible compatibility issues.
 
 **Textbook.** There is no required textbook. There are a lot of online resources (documentation of Python libraries etc.) that may be helpful in this course. Some of them are listed on the :doc:`Useful Links <useful_links>` page.
 
-|UBLearns| will be used mainly for submitting project reports.
+|UBLearns| will be used mainly for submitting Jupyter Notebook files and project reports.
 
 .. |UBLearns| raw:: html
 
@@ -44,18 +48,18 @@ There will be no exams in this course. Instead, grades will be assigned based on
 
     * Project Reports 70%
     * Quizzes 20%
-    * Class Participation, 10%
+    * Class Participation 10%
 
 
 Project Reports
 ===============
 
-One the main components of this course will be exploratory projects. 
+The main component of this course will be exploratory projects. 
 You will be working on them largely independently, using mathematical and computing tools.
 The outcome of your work on each project will be a project report that you will submit for grading.
 
 Each report will be graded on the A-F scale. 
-Extra credit (a grade of A+) will be assigned for an outstanding work. 
+Extra credit will be assigned for outstanding work. 
 Reports will be submitted via UBLearns.
 Late reports will not be accepted. 
 Your project report must be original, even if you worked on some components of the project in a group.
@@ -73,7 +77,7 @@ The lowest two quiz scores will be dropped.
 Class Participation
 ===================
 
-This includes class attendance, asking and answering questions in class and during office hours.
+This includes class attendance, asking and answering questions in class and during office hours, and submitting weekly notebook files.
 Class participation will be evaluated weekly.
 
 
@@ -95,11 +99,10 @@ Useful Information
 Important Dates
 ===============
 
-    * Jan 30: first day of classes
-    * Feb 6: last day to drop/add
-    * Mar 20 - 24: Spring Recess
-    * Apr 21: last day to resign
-    * May 12: last day of classes
+    * August 26: first day of classes
+    * September 3: last day to drop/add
+    * November 13: last day to resign
+    * December 9: last day of classes
 
 
 Incomplete Grades

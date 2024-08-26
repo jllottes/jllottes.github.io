@@ -1,3 +1,5 @@
+:orphan:
+
 A prime or not a prime
 ======================
 

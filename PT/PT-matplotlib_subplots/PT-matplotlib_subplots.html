@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matplotlib subplots and axes objects &mdash; MTH 337 - Spring 2023  documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <title>Matplotlib subplots and axes objects &mdash; MTH 337 - Fall 2024  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7c08d473" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://jllottes.github.io/PT/PT-matplotlib_subplots/PT-matplotlib_subplots.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/clipboard.min.js"></script>
-        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -34,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../master.html" class="icon icon-home"> MTH 337 - Spring 2023
+
+          
+          
+          <a href="../../master.html" class="icon icon-home">
+            MTH 337 - Fall 2024
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -46,6 +53,8 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../python_tools.html">Python tools</a><ul class="current">
@@ -68,19 +77,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../PT-networkx_graphs/PT-networkx_graphs.html">NetworkX library</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../weekly_schedule.html">Weekly Schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../to_do.html">Current Tasks</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/mayfly_model/mayfly_model.html">Mayfly model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/tartans/tartans.html">Tartans</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/image_denoising/image_denoising.html">Image denoising</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/code_breakers/code_breakers.html">Code breakers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/epidemic/epidemic.html">Epidemic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Projects/address_book/address_book.html">Address book</a></li>
 </ul>
 
         </div>
@@ -89,7 +85,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../master.html">MTH 337 - Spring 2023</a>
+          <a href="../../master.html">MTH 337 - Fall 2024</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -137,34 +133,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="matplotlib-subplots-and-axes-objects">
-<h1>Matplotlib subplots and axes objects<a class="headerlink" href="#matplotlib-subplots-and-axes-objects" title="Permalink to this headline"></a></h1>
+  <section id="matplotlib-subplots-and-axes-objects">
+<h1>Matplotlib subplots and axes objects<a class="headerlink" href="#matplotlib-subplots-and-axes-objects" title="Link to this heading"></a></h1>
 <section id="subplots">
-<h2>Subplots<a class="headerlink" href="#subplots" title="Permalink to this headline"></a></h2>
+<h2>Subplots<a class="headerlink" href="#subplots" title="Link to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">subplot</span></code> function of the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> module is a tool for
 plotting several graphs on a single figure. By calling
 <code class="docutils literal notranslate"><span class="pre">subplot(n,m,k)</span></code> we subdidive the figure into <code class="docutils literal notranslate"><span class="pre">n</span></code> rows and <code class="docutils literal notranslate"><span class="pre">m</span></code>
@@ -187,7 +159,7 @@ columns and specify that plotting should be done on the subplot number
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-1.svg"><img alt="../../_images/PT-matplotlib_subplots-1.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-1.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-1.svg"><img alt="../../_images/PT-matplotlib_subplots-1.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-1.svg" style="width: 600px;" /></a>
 <p><strong>Note.</strong> If the numbers <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">j</span></code>, <code class="docutils literal notranslate"><span class="pre">k</span></code> are all smaller than 10 we
 can specify a subplot by typing <code class="docutils literal notranslate"><span class="pre">subplot(ijk)</span></code> instead of
 <code class="docutils literal notranslate"><span class="pre">subplot(i,j,k)</span></code>:</p>
@@ -215,7 +187,7 @@ can specify a subplot by typing <code class="docutils literal notranslate"><span
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-2.svg"><img alt="../../_images/PT-matplotlib_subplots-2.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-2.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-2.svg"><img alt="../../_images/PT-matplotlib_subplots-2.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-2.svg" style="width: 600px;" /></a>
 <p>It is possible to combine subplots of different sizes as long as they do
 not overlap:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -238,7 +210,7 @@ not overlap:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-3.svg"><img alt="../../_images/PT-matplotlib_subplots-3.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-3.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-3.svg"><img alt="../../_images/PT-matplotlib_subplots-3.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-3.svg" style="width: 600px;" /></a>
 <p>Spacing between subplots can be controlled using the <code class="docutils literal notranslate"><span class="pre">subplots_adjust</span></code>
 function:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -263,10 +235,10 @@ function:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-4.svg"><img alt="../../_images/PT-matplotlib_subplots-4.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-4.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-4.svg"><img alt="../../_images/PT-matplotlib_subplots-4.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-4.svg" style="width: 600px;" /></a>
 </section>
 <section id="axes-objects">
-<h2>Axes objects<a class="headerlink" href="#axes-objects" title="Permalink to this headline"></a></h2>
+<h2>Axes objects<a class="headerlink" href="#axes-objects" title="Link to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">subplot</span></code> function returns an <code class="docutils literal notranslate"><span class="pre">axes</span></code> object. We can use it to
 specify which subplot is active at any time:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -291,7 +263,7 @@ specify which subplot is active at any time:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-5.svg"><img alt="../../_images/PT-matplotlib_subplots-5.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-5.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-5.svg"><img alt="../../_images/PT-matplotlib_subplots-5.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-5.svg" style="width: 600px;" /></a>
 <p>The <code class="docutils literal notranslate"><span class="pre">axes</span></code> function that we used above to select an existing axes
 object can be also used to create such objects. This is a useful
 alternative to the <code class="docutils literal notranslate"><span class="pre">subplot</span></code> function since it gives more flexibility
@@ -334,7 +306,7 @@ graphs within the figure any way we want:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-6.svg"><img alt="../../_images/PT-matplotlib_subplots-6.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-6.svg" width="600px" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-matplotlib_subplots-6.svg"><img alt="../../_images/PT-matplotlib_subplots-6.svg" class="align-center" src="../../_images/PT-matplotlib_subplots-6.svg" style="width: 600px;" /></a>
 </section>
 </section>
 
@@ -358,7 +330,7 @@ graphs within the figure any way we want:</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on May 10, 2023.
+        Last updated on Aug 25, 2024.
       </span>
 
     </p>
