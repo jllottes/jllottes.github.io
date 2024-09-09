@@ -4,6 +4,7 @@ Current Tasks
 =============
 
 * Read the :doc:`Project Report Guide </report_guide>`
+* Work on Project 1, :doc:`A prime or not a prime </Projects/prime_or_not/prime_or_not>`
 
 ..
     Comment:

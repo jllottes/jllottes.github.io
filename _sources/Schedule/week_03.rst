@@ -1,12 +1,10 @@
-:orphan:
-
-Week 3: Feb 13 - 17
+Week 3: Sep 9 - 13
 ====================
 
 Quiz 2
 ~~~~~~
 
-.. rubric:: Monday, February 13
+.. rubric:: Wednesday, September 11th
 
 * :download:`Sample Quiz 2 <../Quizzes/quiz02_sample.pdf>`
 
@@ -43,11 +41,15 @@ Mathematics
 Project 1
 ~~~~~~~~~
 
-.. rubric:: Due: Saturday, February 18, 11:59 PM.
+.. 
+    Comment
+    .. rubric:: Due: Saturday, February 18, 11:59 PM.
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
-Week 3 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week03_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+    Comment
+    Week 3 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week03_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
