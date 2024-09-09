@@ -45,9 +45,8 @@ Project 1
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
-..
-    Comment
-    Week 3 notebook
-    ~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week03_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+
+Week 3 notebook
+~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week03_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
