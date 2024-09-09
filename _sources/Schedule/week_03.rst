@@ -41,9 +41,7 @@ Mathematics
 Project 1
 ~~~~~~~~~
 
-.. 
-    Comment
-    .. rubric:: Due: Saturday, February 18, 11:59 PM.
+.. rubric:: due: Friday, September 20th at 11:59 PM
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 

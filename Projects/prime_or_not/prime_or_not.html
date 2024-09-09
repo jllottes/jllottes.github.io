@@ -128,6 +128,7 @@
              
   <section id="a-prime-or-not-a-prime">
 <h1>A prime or not a prime<a class="headerlink" href="#a-prime-or-not-a-prime" title="Link to this heading"></a></h1>
+<p class="rubric">due: Friday, September 20th at 11:59 PM</p>
 <section id="prime-numbers">
 <h2>Prime numbers<a class="headerlink" href="#prime-numbers" title="Link to this heading"></a></h2>
 <p>A <em>prime number</em> is an integer greater than 1 which is divisible only by
@@ -145,7 +146,7 @@ primes</p>
 product called the <em>primary decomposition</em> of <span class="math notranslate nohighlight">\(n\)</span>. For example:
 <span class="math notranslate nohighlight">\(12 = 2\cdot 2\cdot 3\)</span>, <span class="math notranslate nohighlight">\(25 = 5\cdot 5\)</span>,
 <span class="math notranslate nohighlight">\(90 = 2\cdot 3\cdot 3\cdot 5\)</span>.</p>
-<p><strong>Exercise 1.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">myprimes(n)</span></code> that returns the
+<p><strong>Exercise 1.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">my_primes(n)</span></code> that returns the
 list of all primes smaller or equal to <code class="docutils literal notranslate"><span class="pre">n</span></code>, ordered from the smallest
 to the largest:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myprimes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -236,7 +237,7 @@ prime. It turns out, however, that there are numbers <span class="math notransla
 <li><p>the formula <span class="math notranslate nohighlight">\(a^{p} \equiv a \ (\text{mod } p)\)</span> holds for all
 <span class="math notranslate nohighlight">\(0 \leq a &lt; p\)</span></p></li>
 </ul>
-<p>We will call such numbers <em>false primes</em>. The smallest number which is a
+<p>We will call such numbers <em>false primes</em>. The smallest number (besides 1) which is a
 false prime is 561.</p>
 </section>
 </section>
@@ -245,7 +246,7 @@ false prime is 561.</p>
 <p><strong>Part 1.</strong> Write a Python script to find the first 20 false primes.</p>
 <p><strong>Hint.</strong> Call a number <span class="math notranslate nohighlight">\(p\)</span> <em>prime-like</em> if <span class="math notranslate nohighlight">\(p\geq 2\)</span> and the formula
 <span class="math notranslate nohighlight">\(a^{p} \equiv a \ (\text{mod } p)\)</span> holds for all <span class="math notranslate nohighlight">\(0 \leq a &lt; p\)</span>.
-You can start your work on part 1  by writing a function <code class="docutils literal notranslate"><span class="pre">isprimelike(n)</span></code> that returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code> is
+You can start your work on part 1  by writing a function <code class="docutils literal notranslate"><span class="pre">is_prime_like(n)</span></code> that returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code> is
 prime-like and returns <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.</p>
 <p><strong>Part 2.</strong> Compute the primary decomposition of each false prime you found.</p>
