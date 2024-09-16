@@ -31,7 +31,7 @@ to the largest:
 
 .. code:: python
 
-    myprimes(10)
+    my_primes(10)
 
 
 .. container:: output
@@ -41,7 +41,7 @@ to the largest:
 
 .. code:: python
 
-    myprimes(29)
+    my_primes(29)
 
 .. container:: output
 

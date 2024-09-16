@@ -1,12 +1,10 @@
-:orphan:
-
-Week 4: Feb 20 - 24
+Week 4: Sep 16 - 20
 ====================
 
 Quiz 3
 ~~~~~~
 
-.. rubric:: Monday, February 20
+.. rubric:: Wednesday, September 18th
 
 * :download:`Sample Quiz 3 </Quizzes/quiz03_sample.pdf>`
 
@@ -15,10 +13,10 @@ What is covered:
 * Logical operators ``not``, ``and``, ``or``
 * Functions: positional, keyword, and default arguments.
 
-Logistics
-~~~~~~~~~
-
-* Project 1 feedback
+.. Comment
+    Logistics
+    ~~~~~~~~~
+    * Project 1 feedback
 
 Python
 ~~~~~~
@@ -36,11 +34,14 @@ Mathematics
 Project 2
 ~~~~~~~~~
 
-.. rubric:: Due: Saturday, March 4, 11:59 PM.
+.. Comment    
+    .. rubric:: Due: Saturday, March 4, 11:59 PM.
 
 * :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
 
-Week 4 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week04_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week04_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+
+.. Comment
+    Week 4 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week04_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week04_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
