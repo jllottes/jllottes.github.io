@@ -1,6 +1,17 @@
 Project Report Guide
 ====================
 
+Checklist
+---------
+
+Before submitting your report, please check the following list.
+
+ * You have restarted the kernel and run all cells top-to-bottom with no errors.
+ * You have included markdown cells before each code cell that explains (i) what the code does, (ii) how it serves the needs of the report, and (iii) how it works.
+ * You have used LaTeX ($) for math equations and variables in your markdown cells.
+ * You have used backticks (`) when referring to Python functions and variables in your markdown cells.
+ * You have defined any relevant terms that are necessary for the report.
+ * You have included an Introduction and Conclusion, with additional sections as appropriate to make up the body.
 
 Collaboration
 --------------
