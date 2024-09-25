@@ -3,8 +3,7 @@
 Current Tasks
 =============
 
-* Read the :doc:`Project Report Guide </report_guide>`
-* Finish Project 1, :doc:`A prime or not a prime </Projects/prime_or_not/prime_or_not>`
+* Work on Project 2, :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`
 
 ..
     Comment:
