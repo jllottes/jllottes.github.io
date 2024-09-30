@@ -1,11 +1,9 @@
-:orphan:
-
 Mayfly model
 ============
 
-.. rubric:: due: Monday, March 27, 11:59 PM
-
-
+..
+    Comment:
+    .. rubric:: due: Monday, March 27, 11:59 PM
 
 Population models
 -----------------
