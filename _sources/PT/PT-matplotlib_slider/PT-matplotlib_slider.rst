@@ -12,7 +12,7 @@ a plot of a function with a scroll bar that can be used to modify the plot:
    :align: center
 
 
-This animation shows the graph of the function :math:`y = sin(ax)`
+This animation shows the graph of the function :math:`y = \sin(ax)`
 for various values of a parameter :math:`a`. The value of the
 parameter is modified by scrolling the slider. Here is the code that
 creates this interactive plot:
