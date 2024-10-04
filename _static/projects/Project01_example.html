@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Project 1 example</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Project 1 - A Prime or Not a Prime - example</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14919,11 +14919,12 @@ The reasoning for this is two-fold:</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>It is clear that $3$ is not a false prime, since it is itself prime.
 To verify the remaining cases, we look at the following table of calculations:</p>
+<p>For $n=1$:</p>
 <table>
 <thead><tr>
-<th style="text-align:center"><code>a</code></th>
-<th style="text-align:center"><code>a**1</code></th>
-<th style="text-align:center"><code>a**1 % 1</code></th>
+<th style="text-align:center">$$\quad a\quad$$</th>
+<th style="text-align:center">$$\quad a^1\quad$$</th>
+<th style="text-align:center">$$\quad a^1 \,\,(\text{mod }1)\quad$$</th>
 </tr>
 </thead>
 <tbody>
@@ -14934,11 +14935,12 @@ To verify the remaining cases, we look at the following table of calculations:</
 </tr>
 </tbody>
 </table>
+<p>For $n=4$:</p>
 <table>
 <thead><tr>
-<th style="text-align:center"><code>a</code></th>
-<th style="text-align:center"><code>a**4</code></th>
-<th style="text-align:center"><code>a**4 % 4</code></th>
+<th style="text-align:center">$$\quad a\quad$$</th>
+<th style="text-align:center">$$\quad a^4\quad$$</th>
+<th style="text-align:center">$$\quad a^4 \,\,(\text{mod }4)\quad$$</th>
 </tr>
 </thead>
 <tbody>
@@ -14967,7 +14969,7 @@ To verify the remaining cases, we look at the following table of calculations:</
 <p>From the tables, we see that</p>
 <ul>
 <li>$1$ is prime-like (but it is not prime),</li>
-<li>$4$ is not prime-like, since $a=2$ and $a=3$ do not satisfy $a^4 \equiv a \, (\text{mod }p)$,</li>
+<li>$4$ is not prime-like, since $a=2$ and $a=3$ do not satisfy $a^4 \equiv a \,\, (\text{mod }4)$,</li>
 </ul>
 <p>which is supported by the output from the <code>is_false_prime</code> function.</p>
 
@@ -15098,13 +15100,12 @@ With this in mind, we make use of a <code>while</code> loop that will continue t
 <p>One immediate observation is that each of these false primes are odd. 
 This might suggest that this is true for all false primes, though these 20 cases are not enough to confirm this conjecture.
 However, a simple argument shows that this is indeed the case:</p>
-<p>Suppose that $n$ is an even false prime, so that $n = 2m$ for some integer $m$.
-Then</p>
-$$(-1)^n = (-1)^{2m} = [(-1)^2]^m = 1^m = 1.$$<p>Consequently,</p>
-$$(n-1)^n \equiv (-1)^n \equiv 1 \quad (\text{mod } n).$$<p>On the other hand, we cannot have $n-1 \equiv 1 \,(\text{mod } n)$ unless $n = 1$ or $n=2$, since this is equivalent to
-$0 \equiv 2 \, (\text{mod } n)$. 
-We must then have $n=2$ since $n$ was assumed to be even.
-But $2$ is not a false prime, which is a contradiction.
+<p>Suppose that $n$ is an even false prime. Since $n$ is prime-like, we have</p>
+$$n-1 \equiv (n-1)^n \,\, (\text{mod } n).$$<p>On the other hand, the properties of modular arithmetic tell us that</p>
+$$(n-1)^n \equiv (-1)^n \,\,(\text{mod }n).$$<p>Since $n$ is even, we know that $(-1)^n = 1$. Connecting these statements, we have</p>
+$$n-1 \equiv 1\,\,(\text{mod } n),$$<p>which can be equivalently stated as $0 \equiv 2 \,\,(\text{mod }n)$.
+This cannot happen unless $n = 1$ or $n=2$. But $n$ cannot be $1$ since $n$ was assumed to be even, and $n$ cannot be $2$ since $n$ was assumed to be a false prime (and so, not a prime number).</p>
+<p>We have reached a contradiction, which means that $n$ can not be a even false prime.
 Thus every false prime must be odd.</p>
 
 </div>
