@@ -14648,7 +14648,7 @@ If this check fails for any $a$, then the number $n$ is not prime.
 If however the check succeeds for every $2 \leq a \leq n-1$, then the number $n$ is prime.</p>
 <p>While it is sufficient to check each of the possible factors $2, 3,...,$ and $n-1$ when testing for primality, we can greatly speed up our algorithm with a simple observation.
 Namely, if a number $n$ is not prime, then it must have at least one factor $q \leq \sqrt{n}$. 
-Otherwise, $n$ would necessarily have at least two factors $q$ and $r$ with $q,r &gt; \sqrt{n}$, so that $n \geq q\cdot r &gt; n$, which is a contradiction. Incorproting this observation into our algorithm means that we need only check the possible factors which are no larger than $\sqrt{n}$.</p>
+Otherwise, $n$ would necessarily have at least two factors $q$ and $r$ with $q,r &gt; \sqrt{n}$, so that $n \geq q\cdot r &gt; n$, which is a contradiction. Incorporating this observation into our algorithm means that we need only check the possible factors which are no larger than $\sqrt{n}$.</p>
 <p>The function <code>is_prime(n)</code>, defined below, returns the <code>True</code> if <code>n</code> is prime and <code>False</code> if <code>n</code> is not prime, using the ideas discussed above.</p>
 
 </div>
