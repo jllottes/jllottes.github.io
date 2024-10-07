@@ -21,8 +21,6 @@ Python
 * methods of creating a numpy arrays creation
 * vectorization
 * numpy arrays and matplotlib
-* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
-* :doc:`The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>`
 
 
 Mathematics
