@@ -1,7 +1,7 @@
 Mayfly model
 ============
 
-.. rubric:: due: Wednesday, October 16th at 11:59 PM
+.. rubric:: due: Friday, October 18th at 11:59 PM
 
 Population models
 -----------------
