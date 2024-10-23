@@ -23,9 +23,10 @@ MTH 337 Introduction to Scientific and Mathematical Computing
 
    Projects/tartans/tartans
 
+   Projects/image_denoising/image_denoising
+   
 ..
     Comment:
-       Projects/image_denoising/image_denoising
        Projects/code_breakers/code_breakers
        Projects/epidemic/epidemic
        Projects/address_book/address_book

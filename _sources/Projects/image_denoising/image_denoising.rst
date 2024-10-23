@@ -1,9 +1,9 @@
-:orphan:
-
 Image denoising
 ===============
 
-.. rubric:: due: Saturday, April 15, 11:59 PM
+..
+    Comment:
+    .. rubric:: due: Saturday, April 15, 11:59 PM
 
 Image noise
 -----------
@@ -243,11 +243,14 @@ campus, which were obscured by salt and pepper noise. For extra credit
 noise in these images, find locations where the photos were taken, take photos
 showing you at the same locations, and include these photos in your report.
 
+(To be added)
 
--  :download:`ub\_noisy1.png <ub_noisy1.png>`
--  :download:`ub\_noisy2.png <ub_noisy2.png>`
--  :download:`ub\_noisy3.png <ub_noisy3.png>`
--  :download:`ub\_noisy4.png <ub_noisy4.png>`
+..
+    Comment:
+    -  :download:`ub\_noisy1.png <ub_noisy1.png>`
+    -  :download:`ub\_noisy2.png <ub_noisy2.png>`
+    -  :download:`ub\_noisy3.png <ub_noisy3.png>`
+    -  :download:`ub\_noisy4.png <ub_noisy4.png>`
 
 **Note 1.** To qualify for the extra credit your report must include
 both code producing images with noise removed to the extent that they are
