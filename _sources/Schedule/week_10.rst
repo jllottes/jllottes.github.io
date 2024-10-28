@@ -1,12 +1,19 @@
-:orphan:
-
-Week 10: Apr 10 - Apr 14
+Week 10: Oct 28 - Nov 1
 ========================
+
+Quiz 7
+~~~~~~
+
+.. rubric:: Wednesday, October 30th
+
+* :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
 
 What is covered:
 
-* String processing.
-* File operations.
+* Multidimemsional arrays
+* Boolean arrays
+* Random arrays
+* RGB-arrays and `plt.imshow`
 
 Python
 ~~~~~~
@@ -15,13 +22,20 @@ Python
 * Dictionaries
 * List sorting
 
-
-Project 6
+Project 5
 ~~~~~~~~~
-* :doc:`Code breakers </Projects/code_breakers/code_breakers>`
+* :doc:`Image denoising </Projects/image_denoising/image_denoising>`
+
+.. 
+    Comment:
+    Project 6
+    ~~~~~~~~~
+    * :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
 
-Week 10 notebook
-~~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week10_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week10_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+    Comment:
+    Week 10 notebook
+    ~~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week10_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week10_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
