@@ -1,9 +1,9 @@
-:orphan:
-
 Code breakers
 =============
 
-.. rubric:: due: Saturday, April  22, 11:59 PM
+..
+    Comment:
+    .. rubric:: due: Saturday, April  22, 11:59 PM
 
 
 ASCII codes
@@ -104,33 +104,31 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-- :download:`amhemmer.txt<amhemmer.txt>`
-- :download:`amm245.txt<amm245.txt>`
-- :download:`bmhill3.txt<bmhill3.txt>`
-- :download:`calebaye.txt<calebaye.txt>`
-- :download:`dallasmu.txt<dallasmu.txt>`
-- :download:`etsmith3.txt<etsmith3.txt>`
-- :download:`frankadl.txt<frankadl.txt>`
-- :download:`gaozhou.txt<gaozhou.txt>`
-- :download:`giacomos.txt<giacomos.txt>`
-- :download:`hehr.txt<hehr.txt>`
-- :download:`hopejohn.txt<hopejohn.txt>`
-- :download:`huixinlu.txt<huixinlu.txt>`
-- :download:`jamurall.txt<jamurall.txt>`
-- :download:`jasonmig.txt<jasonmig.txt>`
-- :download:`jiexing.txt<jiexing.txt>`
-- :download:`jrmills2.txt<jrmills2.txt>`
-- :download:`kaixinzo.txt<kaixinzo.txt>`
-- :download:`mnlopez.txt<mnlopez.txt>`
-- :download:`mvwarsaw.txt<mvwarsaw.txt>`
-- :download:`nacaussi.txt<nacaussi.txt>`
-- :download:`pjcorbel.txt<pjcorbel.txt>`
-- :download:`sacapozz.txt<sacapozz.txt>`
-- :download:`tjdrozdo.txt<tjdrozdo.txt>`
-- :download:`tjryan5.txt<tjryan5.txt>`
-- :download:`tssmith8.txt<tssmith8.txt>`
-- :download:`tstrade.txt<tstrade.txt>`
-- :download:`vnwalker.txt<vnwalker.txt>`
-- :download:`wasifkha.txt<wasifkha.txt>`
-- :download:`wli3539.txt<wli3539.txt>`
-- :download:`zhuoweix.txt<zhuoweix.txt>`
+- :download:`akuhn.txt<akuhn.txt>`
+- :download:`changcha.txt<changcha.txt>`
+- :download:`colinhen.txt<colinhen.txt>`
+- :download:`ctobrien.txt<ctobrien.txt>`
+- :download:`cwmccann.txt<cwmccann.txt>`
+- :download:`dsbyrnes.txt<dsbyrnes.txt>`
+- :download:`dsmalsch.txt<dsmalsch.txt>`
+- :download:`eeheintz.txt<eeheintz.txt>`
+- :download:`elyhfenn.txt<elyhfenn.txt>`
+- :download:`gentigas.txt<gentigas.txt>`
+- :download:`huazhouq.txt<huazhouq.txt>`
+- :download:`hyeonseo.txt<hyeonseo.txt>`
+- :download:`hzahra.txt<hzahra.txt>`
+- :download:`hzhuang2.txt<hzhuang2.txt>`
+- :download:`ianmcivo.txt<ianmcivo.txt>`
+- :download:`jfatorma.txt<jfatorma.txt>`
+- :download:`jiongliu.txt<jiongliu.txt>`
+- :download:`jjkim35.txt<jjkim35.txt>`
+- :download:`kaczmar3.txt<kaczmar3.txt>`
+- :download:`lucyhene.txt<lucyhene.txt>`
+- :download:`maungoma.txt<maungoma.txt>`
+- :download:`milaniai.txt<milaniai.txt>`
+- :download:`mortalak.txt<mortalak.txt>`
+- :download:`ogrich.txt<ogrich.txt>`
+- :download:`peterlov.txt<peterlov.txt>`
+- :download:`rileytot.txt<rileytot.txt>`
+- :download:`tjiang24.txt<tjiang24.txt>`
+- :download:`yuhanhu.txt<yuhanhu.txt>`
