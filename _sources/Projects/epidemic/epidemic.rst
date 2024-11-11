@@ -1,9 +1,9 @@
-:orphan:
-
 Epidemic
 ========
 
-.. rubric:: due: Saturday, May 6, 11:59pm
+..
+    Comment:
+    .. rubric:: due: Saturday, May 6, 11:59pm
 
 In this project we will be working with the following model of a spread of
 a contagious disease.
@@ -68,7 +68,7 @@ Develop a functions `update_spread` that takes a 200x200 grid of cells with give
 .. code:: python
 
 
-	%matplotlib notebook
+	%matplotlib qt
 
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -80,8 +80,7 @@ Develop a functions `update_spread` that takes a 200x200 grid of cells with give
 	im = plt.imshow(x,vmin=0,vmax=1)
     
 	def animate(i):    
-	    global x
-	    x=np.random.random(x.shape)
+	    x[:,:] = np.random.random(x.shape)
 	    im.set_data(x)
 	    return im
 

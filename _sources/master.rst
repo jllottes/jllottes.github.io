@@ -27,9 +27,10 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    
    Projects/code_breakers/code_breakers
    
+   Projects/epidemic/epidemic
+   
 ..
     Comment:
-       Projects/epidemic/epidemic
        Projects/address_book/address_book
        Projects/computing_with_text/computing_with_text
        Projects/first_digits_last_digits/first_digits_last_digits

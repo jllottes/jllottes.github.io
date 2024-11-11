@@ -29,7 +29,8 @@
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Code breakers" href="../code_breakers/code_breakers.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -60,13 +61,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mayfly_model/mayfly_model.html">Mayfly model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_denoising/image_denoising.html">Image denoising</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../code_breakers/code_breakers.html">Code breakers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Epidemic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -123,7 +128,6 @@
              
   <section id="epidemic">
 <h1>Epidemic<a class="headerlink" href="#epidemic" title="Link to this heading"></a></h1>
-<p class="rubric">due: Saturday, May 6, 11:59pm</p>
 <p>In this project we will be working with the following model of a spread of
 a contagious disease.</p>
 <p>We start with a rectangular grid of cells (i.e. small squares).
@@ -183,7 +187,7 @@ the next day is <span class="math notranslate nohighlight">\(p_R\)</span>.</p></
 <p><strong>Part 1.</strong> Consider a 200x200 cells grid, starting with 16 (4x4 grid) infected cells at its center.
 Develop a functions <cite>update_spread</cite> that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.</p>
 <p><strong>Part 2.</strong> The following code produces an animation.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">notebook</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -195,8 +199,7 @@ Develop a functions <cite>update_spread</cite> that takes a 200x200 grid of cell
 <span class="n">im</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">x</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[:,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
     <span class="n">im</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">im</span>
 
@@ -223,6 +226,13 @@ of randomly selected cells in the population gets vaccinated.</p>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../code_breakers/code_breakers.html" class="btn btn-neutral float-left" title="Code breakers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
