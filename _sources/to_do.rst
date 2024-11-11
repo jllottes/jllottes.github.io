@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Finish Project 2, :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`
+* Finish Project 6, :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
 ..
     Comment:

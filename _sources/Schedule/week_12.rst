@@ -1,31 +1,26 @@
-:orphan:
-
-Week 12: Apr 24 - Apr 28
+Week 12: Nov 11 - Nov 15
 ========================
 
-Quiz 9
+Quiz 8
 ~~~~~~~
 
-.. rubric:: Wednesday, April 26
+.. rubric:: Wednesday, November 13th
 
-* :download:`Sample Quiz 9 <../Quizzes/quiz09_sample.pdf>`
+* :download:`Sample Quiz 8 <../Quizzes/quiz08_sample.pdf>`
 
 What is covered:
 
-* Dictionaries
+* String operations
+* File operations
 
 Python
 ~~~~~~
+* Animation with Python
 
-* Dictionaries
-* Requests
-* `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
+Mathematics
+~~~~~~~~~~~
+* `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
 
-..
-	Comment:
-	Project 8
-	~~~~~~~~~
-	* :doc:`Address book </Projects/address_book/address_book>`
     
 Week 12 notebook
 ~~~~~~~~~~~~~~~~
