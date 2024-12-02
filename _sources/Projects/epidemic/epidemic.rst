@@ -1,9 +1,7 @@
 Epidemic
 ========
 
-..
-    Comment:
-    .. rubric:: due: Saturday, May 6, 11:59pm
+.. rubric:: due: Saturday, December 7th, 11:59pm
 
 In this project we will be working with the following model of a spread of
 a contagious disease.
