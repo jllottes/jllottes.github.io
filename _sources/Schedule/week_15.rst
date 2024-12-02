@@ -4,8 +4,8 @@ Week 15: Dec 2 - Dec 6
 Python
 ~~~~~~
 
-* Requests
 * `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
+* Pandas
 
 Project 7
 ~~~~~~~~~~
