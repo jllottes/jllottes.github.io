@@ -6,6 +6,7 @@ Python
 
 * `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
 * Pandas
+* `Everton.csv <../_static/downloads/Everton.csv>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
 
 Project 7
 ~~~~~~~~~~
