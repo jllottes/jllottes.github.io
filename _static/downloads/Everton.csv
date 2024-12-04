@@ -1,0 +1,25 @@
+,Name,Number,Position,Birthdate,Age,Nationality,Height,Preferred foot,Date signed,Transfer fee,Contract expiration,Market value
+0,Jordan Pickford,1,Goalkeeper,"Mar 7, 1994",30,England,"1,85m",left,"Jul 1, 2017",€28.50m,"Jun 30, 2027",€22.00m
+1,João Virgínia,12,Goalkeeper,"Oct 10, 1999",25,Portugal,"1,92m",left,"Jul 1, 2020",-,"Jun 30, 2027",€800k
+2,Asmir Begovic,31,Goalkeeper,"Jun 20, 1987",37,Canada,"1,99m",right,"Aug 23, 2024",free transfer,"Jun 30, 2027",€300k
+3,Jarrad Branthwaite,32,Centre-Back,"Jun 27, 2002",22,England,"1,95m",left,"Jan 13, 2020",€1.10m,"Jun 30, 2027",€42.00m
+4,Jake O'Brien,15,Centre-Back,"May 15, 2001",23,Ireland,"1,97m",right,"Jul 30, 2024",€19.50m,"Jun 30, 2027",€15.00m
+5,James Tarkowski,6,Centre-Back,"Nov 19, 1992",32,England,"1,85m",right,"Jul 2, 2022",free transfer,"Jun 30, 2027",€13.00m
+6,Michael Keane,5,Centre-Back,"Jan 11, 1993",31,England,"1,88m",right,"Jul 3, 2017",€28.50m,"Jun 30, 2027",€6.00m
+7,Vitaliy Mykolenko,19,Left-Back,"May 29, 1999",25,Ukraine,"1,80m",left,"Jan 1, 2022",€23.50m,"Jun 30, 2027",€28.00m
+8,Ashley Young,18,Left-Back,"Jul 9, 1985",39,England,"1,75m",both,"Jul 13, 2023",free transfer,"Jun 30, 2027",€500k
+9,Nathan Patterson,2,Right-Back,"Oct 16, 2001",23,Scotland,"1,89m",right,"Jan 4, 2022",€14.00m,"Jun 30, 2027",€15.00m
+10,Séamus Coleman,23,Right-Back,"Oct 11, 1988",36,Ireland,"1,77m",right,"Jan 1, 2009",€70k,"Jun 30, 2027",€500k
+11,James Garner,37,Defensive Midfield,"Mar 13, 2001",23,England,"1,82m",right,"Sep 1, 2022",€10.40m,"Jun 30, 2027",€22.00m
+12,Orel Mangala,8,Defensive Midfield,"Mar 18, 1998",26,Belgium,"1,78m",right,"Aug 30, 2024",?,"Jun 30, 2027",€20.00m
+13,Abdoulaye Doucouré,16,Central Midfield,"Jan 1, 1993",31,Mali,"1,83m",right,"Sep 8, 2020",€22.00m,"Jun 30, 2027",€10.00m
+14,Tim Iroegbunam,42,Central Midfield,"Jun 30, 2003",21,England,"1,83m",right,"Jul 1, 2024",€10.70m,"Jun 30, 2027",€10.00m
+15,Idrissa Gueye,27,Central Midfield,"Sep 26, 1989",35,Senegal,"1,74m",right,"Sep 1, 2022",€4.00m,"Jun 30, 2027",€2.00m
+16,Dwight McNeil,7,Left Winger,"Nov 22, 1999",25,England,"1,83m",left,"Jul 28, 2022",€17.00m,"Jun 30, 2027",€22.00m
+17,Iliman Ndiaye,10,Left Winger,"Mar 6, 2000",24,Senegal,"1,80m",right,"Jul 3, 2024",€18.00m,"Jun 30, 2027",€15.00m
+18,Jesper Lindstrøm,29,Right Winger,"Feb 29, 2000",24,Denmark,"1,82m",right,"Jul 26, 2024",€2.00m,"Jun 30, 2027",€22.00m
+19,Jack Harrison,11,Right Winger,"Nov 20, 1996",28,England,"1,75m",left,"Aug 14, 2023",?,"Jun 30, 2027",€18.00m
+20,Dominic Calvert-Lewin,9,Centre-Forward,"Mar 16, 1997",27,England,"1,89m",right,"Aug 31, 2016",€1.80m,"Jun 30, 2027",€22.00m
+21,Beto,14,Centre-Forward,"Jan 31, 1998",26,Portugal,"1,94m",right,"Aug 29, 2023",€25.00m,"Jun 30, 2027",€20.00m
+22,Armando Broja,22,Centre-Forward,"Sep 10, 2001",23,Albania,"1,91m",right,"Aug 30, 2024",?,"Jun 30, 2027",€18.00m
+23,Chermiti,17,Centre-Forward,"May 24, 2004",20,Portugal,"1,92m",right,"Aug 11, 2023",€12.50m,"Jun 30, 2027",€9.00m
