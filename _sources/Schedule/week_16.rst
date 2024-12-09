@@ -18,8 +18,7 @@ Python
 * `primary_features.csv <../_static/downloads/primary_features.csv>`_
 * `fuel.csv <../_static/downloads/fuel.csv>`_
 
-.. Comment:
-    Week 15 notebook
-    ~~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week15_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week15_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+Week 16 notebook
+~~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week16_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week16_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
