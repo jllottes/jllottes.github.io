@@ -14,6 +14,9 @@ Python
 * Pandas
 * Analyzing `datasets <https://www.kaggle.com/datasets>`_
 * `students.csv <../_static/downloads/students.csv>`_
+* `price.csv <../_static/downloads/price.csv>`_
+* `primary_features.csv <../_static/downloads/primary_features.csv>`_
+* `fuel.csv <../_static/downloads/fuel.csv>`_
 
 .. Comment:
     Week 15 notebook
