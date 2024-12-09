@@ -12,6 +12,7 @@ Python
 ~~~~~~
 
 * Pandas
+* Analyzing `datasets <https://www.kaggle.com/datasets>`_
 
 .. Comment:
     Week 15 notebook
