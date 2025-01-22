@@ -11,7 +11,7 @@ Syllabus
 Instructor
 ----------
 
-| Jonathan Lottes
+| Jon Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
 | **Office Hours:** Fri 11:00 AM - 11:50 AM and by appointment.
