@@ -14,7 +14,7 @@ Instructor
 | Jonathan Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** Fri 9:30 AM - 10:50 AM and by appointment.
+| **Office Hours:** Fri 11:00 AM - 11:50 AM and by appointment.
 
 
 Course Resources
@@ -23,14 +23,17 @@ Course Resources
 **Laptop.** We will be programming during all class meetings, so you should bring a laptop to every class. 
 Any operating system (Windows/Mac/Linux) is fine.
 
-.. |Anaconda_link| raw:: html
-
-    <a href="https://www.anaconda.com/download/success" target="_blank">Anaconda distribution of Python 3.12</a>
-
-**Software.** We will be using the |Anaconda_link|.
+**Software.** We will be using a slightly older version of the Anaconda distribution of Python.
 This is free software. 
 Even if you have Python already installed on your computer you should install this distribution since it includes Jupyter Notebook and several Python libraries we will need.
-If you have a previous version of Python installed, please upgrade it so you don't run into possible compatibility issues.
+If you have a different version of Python installed, please replace it with the version below so you don't run into possible compatibility issues.
+
+ - `Anaconda distribution for Windows (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-Windows-x86_64.exe>`_
+ - `Anaconda distribution for MacOSX (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-MacOSX-x86_64.pkg>`_
+ - `Anaconda distribution for Linux (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-Linux-x86_64.sh>`_
+
+
+
 
 **Textbook.** There is no required textbook. There are a lot of online resources (documentation of Python libraries etc.) that may be helpful in this course. Some of them are listed on the :doc:`Useful Links <useful_links>` page.
 
@@ -99,10 +102,10 @@ Useful Information
 Important Dates
 ===============
 
-    * August 26: first day of classes
-    * September 3: last day to drop/add
-    * November 13: last day to resign
-    * December 9: last day of classes
+    * January 22: first day of classes
+    * January 29: last day to drop/add
+    * April 15: last day to resign
+    * May 5: last day of classes
 
 
 Incomplete Grades
