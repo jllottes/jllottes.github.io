@@ -73,7 +73,7 @@ The lowest project score will be dropped at the end of the semester.
 Quizzes
 =======
 
-Each Monday there will be a short quiz testing your knowledge of Python.
+Each Wednesday there will be a short quiz testing your knowledge of Python.
 Sample quizzes will be posted ahead of time with the :doc:`weekly class schedule <weekly_schedule>`.
 The lowest two quiz scores will be dropped.
 
