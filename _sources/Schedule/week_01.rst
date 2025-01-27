@@ -1,4 +1,4 @@
-Week 1: Jan 22
+Week 1: Jan 22 - Jan 24
 =======================
 
 Logistics
@@ -13,7 +13,6 @@ Jupyter Notebook
 * Copying/deleting/moving cells
 * Code cells and markdown cells
 * Markdown basics
-* LaTeX
 
 Python
 ~~~~~~
@@ -21,17 +20,6 @@ Python
 * Basic mathematical operations
 * Numbers in Python: integers and floats
 * Variable assignment
-* The ``print()`` function
-* Strings and string formatting
-* :doc:`Importing modules </PT/PT-importing_modules>`
-* Boolean expressions
-* The ``if`` statement
-* :doc:`Lists and "for" loops </PT/PT-lists>`
-
-
-Mathematics
-~~~~~~~~~~~
-* Prime numbers
 
 Week 1 notebook
 ~~~~~~~~~~~~~~~

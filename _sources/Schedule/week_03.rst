@@ -25,12 +25,12 @@ Logistics
 
 Python
 ~~~~~~
-
 * :doc:`List indexing and slicing </PT/PT-lists>`
 * :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
 * :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 * :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
+* Documenting code: comments and docstrings
 
 
 Mathematics
