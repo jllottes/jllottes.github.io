@@ -10,10 +10,12 @@ Quiz 1
 
 What is covered:
 
-* The ``if`` statement
-* ``for`` loops and ``while`` loops
-* ``break`` and ``continue``
-* The ``range()`` function
+* Mathematical operations on integers and floats.
+* Variable assignment.
+* The ``print()`` function.
+* The ``if`` statement.
+* ``for`` loops, ``while`` loops and ``break``.
+* The ``range()`` function.
 
 Logistics
 ~~~~~~~~~
@@ -22,12 +24,13 @@ Logistics
 
 Python
 ~~~~~~
+* :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
+* :doc:`Importing modules </PT/PT-importing_modules>`
+* Logical operators ``not``, ``and``, ``or``
+* Documenting code: comments and docstrings
 * :doc:`List indexing and slicing </PT/PT-lists>`
 * :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
-* :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
-* :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 * :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
-* Documenting code: comments and docstrings
 
 
 Mathematics
