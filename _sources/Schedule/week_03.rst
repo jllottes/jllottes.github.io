@@ -1,14 +1,12 @@
-:orphan:
+Week 3: Feb 3 - Feb 7
+=====================
 
-Week 3: Sep 9 - 13
-====================
-
-Quiz 2
+Quiz 1
 ~~~~~~
 
-.. rubric:: Wednesday, September 11th
+.. rubric:: Wednesday, February 5th
 
-* :download:`Sample Quiz 2 <../Quizzes/quiz02_sample.pdf>`
+* :download:`Sample Quiz 1 <../Quizzes/quiz01_sample.pdf>`
 
 What is covered:
 
@@ -16,7 +14,6 @@ What is covered:
 * ``for`` loops and ``while`` loops
 * ``break`` and ``continue``
 * The ``range()`` function
-* Defining functions.
 
 Logistics
 ~~~~~~~~~
@@ -38,17 +35,18 @@ Mathematics
 
 * Primary decomposition of integers
 * Congruences
-* Sieve of Eratosthenes
 
 Project 1
 ~~~~~~~~~
 
-.. rubric:: due: Friday, September 20th at 11:59 PM
+.. rubric:: due: Friday, February 14th at 11:59 PM
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
+..
+    Comment:
 
-Week 3 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week03_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+    Week 3 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week03_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).

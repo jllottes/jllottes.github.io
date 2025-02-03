@@ -18874,7 +18874,7 @@ class range(object)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We can use an <code>if</code> statemenet to perform some operations only when a Boolean expression is <code>True</code>.</p>
+<p>We can use an <code>if</code> statement to perform some operations only when a Boolean expression is <code>True</code>.</p>
 
 </div>
 </div>
@@ -19064,6 +19064,1244 @@ Done
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Wednesday,-January-29th">Wednesday, January 29th<a class="anchor-link" href="#Wednesday,-January-29th">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cubes</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859, 8000, 9261, 10648, 12167, 13824, 15625, 17576, 19683, 21952, 24389, 27000, 29791, 32768, 35937, 39304, 42875, 46656, 50653, 54872, 59319, 64000, 68921, 74088, 79507, 85184, 91125, 97336, 103823, 110592, 117649, 125000]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes_that_end_in_1</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">**</span><span class="mi">3</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">cubes_that_end_in_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes_that_end_in_1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[1, 1331, 9261, 29791, 68921]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Some thoughts about efficiency:</p>
+<ul>
+<li>In the previous calculation, we compute <code>n**3</code> twice. It would be better to compute it once and store it, then reuse the stored result.</li>
+<li>We are also reconstructing the first 50 cubes, even though we've already computed all of them.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes_that_end_in_1</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">n</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">cubes_that_end_in_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes_that_end_in_1</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">cubes_that_end_in_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cubes_that_end_in_1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[1, 1331, 9261, 29791, 68921]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's explore how the number of cubes that end in 1 grows as we look at larger cubes:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+<span class="n">last_digit</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">cubes_that_end_in_last_digit</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">last_digit</span><span class="p">:</span>
+        <span class="n">cubes_that_end_in_last_digit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can use the <code>len</code> function to get the length of a list.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">cubes_that_end_in_last_digit</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>10000</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Modify the previous code cell to iterate through all digits <code>0</code>, <code>1</code>, <code>2</code>, ..., <code>9</code> and print the number cubes that end in each digit.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+
+<span class="k">for</span> <span class="n">last_digit</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">cubes_that_end_in_last_digit</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">last_digit</span><span class="p">:</span>
+            <span class="n">cubes_that_end_in_last_digit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+            
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cubes_that_end_in_last_digit</span><span class="p">),</span><span class="s1">&#39;cubes that end in&#39;</span><span class="p">,</span><span class="n">last_digit</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>There are 10000 cubes that end in 0
+There are 10000 cubes that end in 1
+There are 10000 cubes that end in 2
+There are 10000 cubes that end in 3
+There are 10000 cubes that end in 4
+There are 10000 cubes that end in 5
+There are 10000 cubes that end in 6
+There are 10000 cubes that end in 7
+There are 10000 cubes that end in 8
+There are 10000 cubes that end in 9
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+
+<span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">last_digit</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> 
+    <span class="n">cubes_that_end_in_last_digit</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="n">last_digit</span><span class="p">:</span>
+            <span class="n">cubes_that_end_in_last_digit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+            
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cubes_that_end_in_last_digit</span><span class="p">),</span><span class="s1">&#39;cubes that end in&#39;</span><span class="p">,</span><span class="n">last_digit</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>There are 10000 cubes that end in 0
+There are 10000 cubes that end in 1
+There are 10000 cubes that end in 2
+There are 10000 cubes that end in 3
+There are 10000 cubes that end in 4
+There are 10000 cubes that end in 5
+There are 10000 cubes that end in 6
+There are 10000 cubes that end in 7
+There are 10000 cubes that end in 8
+There are 10000 cubes that end in 9
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Modify the previous cell to count the number of cubes whose remainder after dividing by 4 is <code>0</code>, <code>1</code>, <code>2</code>, or <code>3</code>.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;For the first&#39;</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="s1">&#39;cubes:&#39;</span><span class="p">)</span>
+<span class="n">divisor</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">last_digit</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">divisor</span><span class="p">):</span> 
+    <span class="n">cubes_that_end_in_last_digit</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="n">divisor</span> <span class="o">==</span> <span class="n">last_digit</span><span class="p">:</span>
+            <span class="n">cubes_that_end_in_last_digit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+            
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cubes_that_end_in_last_digit</span><span class="p">),</span><span class="s1">&#39;cubes that have remainder&#39;</span><span class="p">,</span>
+          <span class="n">last_digit</span><span class="p">,</span><span class="s1">&#39;after division by&#39;</span><span class="p">,</span><span class="n">divisor</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>For the first 100000 cubes:
+There are 50000 cubes that have remainder 0 after division by 4
+There are 25000 cubes that have remainder 1 after division by 4
+There are 0 cubes that have remainder 2 after division by 4
+There are 25000 cubes that have remainder 3 after division by 4
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Suppose that we want to find the first 100 cubes that have remainder 1 after division by 4.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Problem: We don't know ahead of time how many numbers we'd have to check before we find 100 such cubes.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For these types of problems, it makes sense to use a <code>while</code> loop. With <code>while</code> loops, we will iteratiavely perform some operations as long as some Boolean expression is <code>True</code>.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">found_cubes</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">found_cubes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">n</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">found_cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">found_cubes</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 125, 729, 2197, 4913, 9261, 15625, 24389, 35937, 50653, 68921, 91125, 117649, 148877, 185193, 226981, 274625, 328509, 389017, 456533, 531441, 614125, 704969, 804357, 912673, 1030301, 1157625, 1295029, 1442897, 1601613, 1771561, 1953125, 2146689, 2352637, 2571353, 2803221, 3048625, 3307949, 3581577, 3869893, 4173281, 4492125, 4826809, 5177717, 5545233, 5929741, 6331625, 6751269, 7189057, 7645373, 8120601, 8615125, 9129329, 9663597, 10218313, 10793861, 11390625, 12008989, 12649337, 13312053, 13997521, 14706125, 15438249, 16194277, 16974593, 17779581, 18609625, 19465109, 20346417, 21253933, 22188041, 23149125, 24137569, 25153757, 26198073, 27270901, 28372625, 29503629, 30664297, 31855013, 33076161, 34328125, 35611289, 36926037, 38272753, 39651821, 41063625, 42508549, 43986977, 45499293, 47045881, 48627125, 50243409, 51895117, 53582633, 55306341, 57066625, 58863869, 60698457, 62570773]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Unlike with <code>for</code> loops, it is very easy to end up with a <code>while</code> loop that runs forever.</li>
+<li>Always make sure that your Boolean expression will eventually be <code>False</code> so that the <code>while</code> loop can terminate</li>
+<li>Check that you are incrementing any necessary variables with each iteration</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>There are some shortcuts for incrementing variables. In particular:</p>
+<ul>
+<li><code>n += 1</code> is equivalent to <code>n = n + 1</code></li>
+<li><code>n -= 3</code> is equivalent to <code>n = n - 3</code></li>
+<li><code>n *= 7</code> is equivalent to <code>n = n * 7</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">found_cubes</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">found_cubes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">n</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">if</span> <span class="n">cube</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">found_cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Project-1">Project 1<a class="anchor-link" href="#Project-1">&#182;</a></h2><p>This project deals with prime numbers and numbers that share some properties with primes. It will be useful if we can develop some code to decide whether a given integer is prime or not.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To check for primality, we can check all positive integers between <code>2</code> and our number (excluding the number) to see if any divide the number.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">/</span> <span class="n">d</span> <span class="o">==</span> <span class="n">n</span> <span class="o">//</span> <span class="n">d</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not prime, it is divisible by </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>15 is not prime, it is divisible by 3
+15 is not prime, it is divisible by 5
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Instead of printing out these statements, can we define a Boolean variable that will <code>True</code> is <code>n</code> is prime and <code>False</code> if <code>n</code> is not prime?</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">127</span>
+
+<span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+        
+<span class="k">if</span> <span class="n">n_is_prime</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>127 is a prime number
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Another way to deal with this problem is to use a <code>break</code> command. The <code>break</code> will immediately terminate a loop.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">128</span>
+
+<span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Checking if </span><span class="si">{}</span><span class="s1"> divides </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+        
+<span class="k">if</span> <span class="n">n_is_prime</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Checking if 2 divides 128
+Checking if 3 divides 128
+Checking if 4 divides 128
+Checking if 5 divides 128
+Checking if 6 divides 128
+Checking if 7 divides 128
+Checking if 8 divides 128
+Checking if 9 divides 128
+Checking if 10 divides 128
+Checking if 11 divides 128
+Checking if 12 divides 128
+Checking if 13 divides 128
+Checking if 14 divides 128
+Checking if 15 divides 128
+Checking if 16 divides 128
+Checking if 17 divides 128
+Checking if 18 divides 128
+Checking if 19 divides 128
+Checking if 20 divides 128
+Checking if 21 divides 128
+Checking if 22 divides 128
+Checking if 23 divides 128
+Checking if 24 divides 128
+Checking if 25 divides 128
+Checking if 26 divides 128
+Checking if 27 divides 128
+Checking if 28 divides 128
+Checking if 29 divides 128
+Checking if 30 divides 128
+Checking if 31 divides 128
+Checking if 32 divides 128
+Checking if 33 divides 128
+Checking if 34 divides 128
+Checking if 35 divides 128
+Checking if 36 divides 128
+Checking if 37 divides 128
+Checking if 38 divides 128
+Checking if 39 divides 128
+Checking if 40 divides 128
+Checking if 41 divides 128
+Checking if 42 divides 128
+Checking if 43 divides 128
+Checking if 44 divides 128
+Checking if 45 divides 128
+Checking if 46 divides 128
+Checking if 47 divides 128
+Checking if 48 divides 128
+Checking if 49 divides 128
+Checking if 50 divides 128
+Checking if 51 divides 128
+Checking if 52 divides 128
+Checking if 53 divides 128
+Checking if 54 divides 128
+Checking if 55 divides 128
+Checking if 56 divides 128
+Checking if 57 divides 128
+Checking if 58 divides 128
+Checking if 59 divides 128
+Checking if 60 divides 128
+Checking if 61 divides 128
+Checking if 62 divides 128
+Checking if 63 divides 128
+Checking if 64 divides 128
+Checking if 65 divides 128
+Checking if 66 divides 128
+Checking if 67 divides 128
+Checking if 68 divides 128
+Checking if 69 divides 128
+Checking if 70 divides 128
+Checking if 71 divides 128
+Checking if 72 divides 128
+Checking if 73 divides 128
+Checking if 74 divides 128
+Checking if 75 divides 128
+Checking if 76 divides 128
+Checking if 77 divides 128
+Checking if 78 divides 128
+Checking if 79 divides 128
+Checking if 80 divides 128
+Checking if 81 divides 128
+Checking if 82 divides 128
+Checking if 83 divides 128
+Checking if 84 divides 128
+Checking if 85 divides 128
+Checking if 86 divides 128
+Checking if 87 divides 128
+Checking if 88 divides 128
+Checking if 89 divides 128
+Checking if 90 divides 128
+Checking if 91 divides 128
+Checking if 92 divides 128
+Checking if 93 divides 128
+Checking if 94 divides 128
+Checking if 95 divides 128
+Checking if 96 divides 128
+Checking if 97 divides 128
+Checking if 98 divides 128
+Checking if 99 divides 128
+Checking if 100 divides 128
+Checking if 101 divides 128
+Checking if 102 divides 128
+Checking if 103 divides 128
+Checking if 104 divides 128
+Checking if 105 divides 128
+Checking if 106 divides 128
+Checking if 107 divides 128
+Checking if 108 divides 128
+Checking if 109 divides 128
+Checking if 110 divides 128
+Checking if 111 divides 128
+Checking if 112 divides 128
+Checking if 113 divides 128
+Checking if 114 divides 128
+Checking if 115 divides 128
+Checking if 116 divides 128
+Checking if 117 divides 128
+Checking if 118 divides 128
+Checking if 119 divides 128
+Checking if 120 divides 128
+Checking if 121 divides 128
+Checking if 122 divides 128
+Checking if 123 divides 128
+Checking if 124 divides 128
+Checking if 125 divides 128
+Checking if 126 divides 128
+Checking if 127 divides 128
+128 is not a prime number
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In the above cell, we immediately realize that <code>128</code> is not prime when we check <code>d=2</code>, so there's no need to run the rest of the checks. We can use a <code>break</code> to terminate the loop early.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">128</span>
+
+<span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Checking if </span><span class="si">{}</span><span class="s1"> divides </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">n_is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">break</span>
+        
+<span class="k">if</span> <span class="n">n_is_prime</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not a prime number&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Checking if 2 divides 128
+128 is not a prime number
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="More-about-Markdown:-LaTeX">More about Markdown: LaTeX<a class="anchor-link" href="#More-about-Markdown:-LaTeX">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>LaTeX is a tool for writing math expressions. To enter LaTeX mode in a markdown cell, we use dollar signs <code>$</code>.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Plain-text:<ul>
+<li>123456</li>
+<li>123^456</li>
+<li>123_456</li>
+</ul>
+</li>
+<li>LaTeX:<ul>
+<li>$123456$</li>
+<li>$123^{456}$</li>
+<li>$123_{456}$</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Some common LaTeX commands:</p>
+<ul>
+<li>Exponents: <code>$x^2 + y^$</code> renders as $x^2 + y^2$</li>
+<li>Fractions: <code>\frac{numerator}{denominator}$</code> renders as $\frac{numerator}{denominator}$</li>
+<li>Integrals and trig functions: <code>\int_0^x \cos(t) dt$</code> renders as $\int_0^x \cos(t) dt$</li>
+</ul>
+<p>Using a single dollar sign writes LaTeX in in-line mode. We can use two dollar signs (<code>$$</code>) to write in display mode, which gives a centered equation. For example, <code>$$\int_0^x \cos(t) dt$$</code> renders as:</p>
+$$\int_0^x \cos(t) dt$$<ul>
+<li>Subscripts and superscripts: <code>$a_n$, $2^n$</code> renders as $a_n$, $2^n$</li>
+<li>Square roots and other roots: <code>$\sqrt{7}$</code>, <code>$\sqrt[10]{x^2-5}$</code> renders as $\sqrt{7}$, $\sqrt[10]{x^2 - 5}$</li>
+<li>Greek letters: <code>$\alpha$, $\beta$, $\gamma$, $\sigma$, $\omega$, $\pi$</code> renders as $\alpha$, $\beta$, $\gamma$, $\sigma$, $\omega$, $\pi$</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+$$(\frac{1}{2} + 4)$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can have LaTeX adjust the size of parantheses using <code>\left(</code> and <code>\right)</code>. For example, <code>$$\left(\frac{1}{2} + 4\right)$$</code> renders as:</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+$$\left(\frac{1}{2} + 4\right)$$
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
