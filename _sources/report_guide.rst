@@ -1,6 +1,8 @@
 Project Report Guide
 ====================
 
+    `Example report <../../_static/projects/twin_primes.html>`_
+
 Checklist
 ---------
 

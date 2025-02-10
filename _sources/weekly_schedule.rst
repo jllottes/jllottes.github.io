@@ -14,9 +14,9 @@ Weekly Schedule
    
    Schedule/week_03
   
+   Schedule/week_04
 ..
    Comment:  
-       Schedule/week_04
        
        Schedule/week_05
        

@@ -1,21 +1,20 @@
-:orphan:
-
-Week 4: Sep 16 - 20
-====================
+Week 4: Feb 10 - Feb 14
+=======================
 
 Quiz 3
 ~~~~~~
 
-.. rubric:: Wednesday, September 18th
+.. rubric:: Wednesday, February 12th
 
-* :download:`Sample Quiz 3 </Quizzes/quiz03_sample.pdf>`
+* :download:`Sample Quiz 2 </Quizzes/quiz02_sample.pdf>`
 
 What is covered:
 
 * Logical operators ``not``, ``and``, ``or``
 * Functions: positional, keyword, and default arguments.
 
-.. Comment
+.. 
+    Comment
     Logistics
     ~~~~~~~~~
     * Project 1 feedback
@@ -24,8 +23,9 @@ Python
 ~~~~~~
 * :doc:`List indexing and slicing </PT/PT-lists>`
 * :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
-* :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 * :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
+* :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
+* :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 
 Mathematics
 ~~~~~~~~~~~
@@ -33,16 +33,19 @@ Mathematics
 * Pythagorean triples
 * The greatest common divisor
 
-Project 2
-~~~~~~~~~
+..
+    Comment:
+    Project 2
+    ~~~~~~~~~
 
-.. Comment    
-    .. rubric:: Due: Saturday, March 4, 11:59 PM.
+    .. Comment    
+        .. rubric:: Due: Saturday, March 4, 11:59 PM.
 
-* :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
+    * :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
 
-
-Week 4 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week04_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week04_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+..
+    Comment:
+    Week 4 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week04_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week04_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
