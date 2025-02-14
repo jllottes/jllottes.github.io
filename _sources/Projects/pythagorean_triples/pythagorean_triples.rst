@@ -1,9 +1,7 @@
-:orphan:
-
 Pythagorean triples
 ===================
 
-.. rubric:: due: Sunday, October 6th at 11:59 PM
+.. rubric:: due: Friday, February 28th at 11:59 PM
 
 The Pythagorean Theorem says that positive numbers :math:`a`,
 :math:`b`, :math:`c` are lengths of sides of a right triangle if and
@@ -72,3 +70,5 @@ where :math:`1 \leq a, b \leq n`:
 :math:`1\leq a, b \leq n` for various values of :math:`n`.
 
 **Part 3.** Describe and analyze the structure of Pythagorean tuples.
+
+**Note.** There are many possible directions to take to analyze the structure of Pythagorean tuples. One possibility is to look into "primitive Pythagorean tuples", which we will discuss in class.
