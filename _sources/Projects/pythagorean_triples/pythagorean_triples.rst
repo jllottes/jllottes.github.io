@@ -34,7 +34,7 @@ triples.
 Project
 -------
 
-**Part 1.** Write a function ``ptriples(n)`` that takes as its argument
+**Part 1.** Write a function ``get_ptriples(n)`` that takes as its argument
 a number :math:`n` and returns a list of all  Pythagorean triples :math:`(a, b, c)`
 where :math:`1 \leq a, b \leq n`:
 
@@ -42,7 +42,7 @@ where :math:`1 \leq a, b \leq n`:
 
 .. code:: python
 
-    ptriples(20)
+    get_ptriples(20)
 
 
 
