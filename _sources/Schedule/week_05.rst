@@ -19,7 +19,7 @@ Python
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 * :doc:`numpy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
-* methods of creating a numpy arrays creation
+* methods of creating numpy arrays
 * vectorization
 
 Mathematics
