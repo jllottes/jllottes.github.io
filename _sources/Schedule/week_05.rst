@@ -1,7 +1,7 @@
 Week 5: Feb 17 - Feb 21
 =======================
 
-Quiz 4
+Quiz 3
 ~~~~~~
 
 .. rubric:: Wednesday, February 19th
