@@ -1,32 +1,30 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image processing &mdash; MTH 337 - Spring 2025  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7c08d473" />
 
   
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://jllottes.github.io/PT/PT-image_processing/PT-image_processing.html" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../../_static/copybutton.js?v=f281be69"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -188,7 +186,7 @@ array element and the color map used by <code class="docutils literal notranslat
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing1.svg"><img alt="../../_images/PT-image_processing1.svg" class="align-center" src="../../_images/PT-image_processing1.svg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing1.svg"><img alt="../../_images/PT-image_processing1.svg" class="align-center" src="../../_images/PT-image_processing1.svg" width="600px" /></a>
 <p><strong>Note.</strong> Color maps assign colors to numbers from the range [0, 1].
 By default <code class="docutils literal notranslate"><span class="pre">imshow()</span></code> scales elements of the numpy array so that the smallest element
 becomes 0, the largest becomes 1, and intermediate values are mapped to the interval
@@ -220,7 +218,7 @@ function does not have the <code class="docutils literal notranslate"><span clas
 computer screens. RGB uses three basic colors: red, green, and blue.
 Other colors are obtained by mixing these basic components in various
 proportions.</p>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing2.svg"><img alt="../../_images/PT-image_processing2.svg" class="align-center" src="../../_images/PT-image_processing2.svg" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing2.svg"><img alt="../../_images/PT-image_processing2.svg" class="align-center" src="../../_images/PT-image_processing2.svg" width="250px" /></a>
 <p>In the RGB model each color is described by three numbers that give
 intensities of red, green, and blue. In matplotlib these numbers are
 between 0 (full off) to 1 (full on), but in many other computer
@@ -255,7 +253,7 @@ functions:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing3.svg"><img alt="../../_images/PT-image_processing3.svg" class="align-center" src="../../_images/PT-image_processing3.svg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing3.svg"><img alt="../../_images/PT-image_processing3.svg" class="align-center" src="../../_images/PT-image_processing3.svg" width="600px" /></a>
 </section>
 <section id="imshow-and-imsave-with-rgb-colors">
 <h2>imshow and imsave with RGB colors<a class="headerlink" href="#imshow-and-imsave-with-rgb-colors" title="Link to this heading"></a></h2>
@@ -309,9 +307,9 @@ the image.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing4.svg"><img alt="../../_images/PT-image_processing4.svg" class="align-center" src="../../_images/PT-image_processing4.svg" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing4.svg"><img alt="../../_images/PT-image_processing4.svg" class="align-center" src="../../_images/PT-image_processing4.svg" width="700px" /></a>
 <p><strong>Exercise.</strong> Recreate the following image:</p>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing8.svg"><img alt="../../_images/PT-image_processing8.svg" class="align-center" src="../../_images/PT-image_processing8.svg" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing8.svg"><img alt="../../_images/PT-image_processing8.svg" class="align-center" src="../../_images/PT-image_processing8.svg" width="200px" /></a>
 </section>
 <section id="imread">
 <h2>imread<a class="headerlink" href="#imread" title="Link to this heading"></a></h2>
@@ -433,7 +431,7 @@ entries of <code class="docutils literal notranslate"><span class="pre">img_arra
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing5.svg"><img alt="../../_images/PT-image_processing5.svg" class="align-center" src="../../_images/PT-image_processing5.svg" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing5.svg"><img alt="../../_images/PT-image_processing5.svg" class="align-center" src="../../_images/PT-image_processing5.svg" width="450px" /></a>
 <p>The image can be modified by changing the numpy array. For example,
 if we multiply the array by a number <span class="math notranslate nohighlight">\(0\leq x \leq 1\)</span> we will darken
 the image:</p>
@@ -449,7 +447,7 @@ the image:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing6.svg"><img alt="../../_images/PT-image_processing6.svg" class="align-center" src="../../_images/PT-image_processing6.svg" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing6.svg"><img alt="../../_images/PT-image_processing6.svg" class="align-center" src="../../_images/PT-image_processing6.svg" width="550px" /></a>
 <p>We can crop the image by taking a slice of the array:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">tiger</span><span class="p">[:</span><span class="mi">300</span><span class="p">,</span><span class="mi">100</span><span class="p">:</span><span class="mi">400</span><span class="p">,:])</span>
@@ -457,7 +455,7 @@ the image:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing7.svg"><img alt="../../_images/PT-image_processing7.svg" class="align-center" src="../../_images/PT-image_processing7.svg" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing7.svg"><img alt="../../_images/PT-image_processing7.svg" class="align-center" src="../../_images/PT-image_processing7.svg" width="300px" /></a>
 <p>If we set elements of the array that give green and blue coordinates
 of RGB colors to 0, we will get the red part of the image:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">red_tiger</span> <span class="o">=</span> <span class="n">tiger</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -470,7 +468,7 @@ of RGB colors to 0, we will get the red part of the image:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-image_processing9.svg"><img alt="../../_images/PT-image_processing9.svg" class="align-center" src="../../_images/PT-image_processing9.svg" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-image_processing9.svg"><img alt="../../_images/PT-image_processing9.svg" class="align-center" src="../../_images/PT-image_processing9.svg" width="450px" /></a>
 </section>
 </section>
 
@@ -494,7 +492,7 @@ of RGB colors to 0, we will get the red part of the image:</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Feb 19, 2025.
+        Last updated on Feb 24, 2025.
       </span>
 
     </p>

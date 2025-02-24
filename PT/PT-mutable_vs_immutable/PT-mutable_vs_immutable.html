@@ -1,30 +1,28 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mutable vs. immutable objects &mdash; MTH 337 - Spring 2025  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7c08d473" />
 
   
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://jllottes.github.io/PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable.html" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../../_static/copybutton.js?v=f281be69"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -225,7 +223,7 @@ as <code class="docutils literal notranslate"><span class="pre">m</span></code>,
 <div class="output docutils container">
 <p>id(n) = 400004</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable1.svg"><img alt="../../_images/PT-mutable_vs_immutable1.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable1.svg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable1.svg"><img alt="../../_images/PT-mutable_vs_immutable1.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable1.svg" width="400px" /></a>
 <p>Immutable objects (e.g. integers) are objects that cannot be modified
 without copying them to a new memory location. Thus, if we change the
 value of <code class="docutils literal notranslate"><span class="pre">n</span></code> its memory address will also change:</p>
@@ -248,7 +246,7 @@ variable points to the same object as before:</p>
 <p>m = 2
 id(m) = 400004</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable2.svg"><img alt="../../_images/PT-mutable_vs_immutable2.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable2.svg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable2.svg"><img alt="../../_images/PT-mutable_vs_immutable2.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable2.svg" width="400px" /></a>
 <p>Next, we perform the same operations using lists instead of integers:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">n</span> <span class="o">=</span> <span class="n">m</span>
@@ -262,7 +260,7 @@ id(n) = 400004</p>
 </div>
 <p>As before we get two variables that store the same memory location, and
 so point to the same object.</p>
-<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable3.svg"><img alt="../../_images/PT-mutable_vs_immutable3.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable3.svg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable3.svg"><img alt="../../_images/PT-mutable_vs_immutable3.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable3.svg" width="400px" /></a>
 <p>The difference is that a list is a mutable object, which means that it can
 be modified “in place” i.e. without changing its memory location. If we
 change one element of the list <code class="docutils literal notranslate"><span class="pre">n</span></code> then the list will change, but its
@@ -287,7 +285,7 @@ value of <code class="docutils literal notranslate"><span class="pre">n</span></
 <p>m = [100, 2, 3]
 id(m) = 400004</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable4.svg"><img alt="../../_images/PT-mutable_vs_immutable4.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable4.svg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PT-mutable_vs_immutable4.svg"><img alt="../../_images/PT-mutable_vs_immutable4.svg" class="align-center" src="../../_images/PT-mutable_vs_immutable4.svg" width="400px" /></a>
 </section>
 <section id="why-it-works-this-way">
 <h2>Why it works this way<a class="headerlink" href="#why-it-works-this-way" title="Link to this heading"></a></h2>
@@ -386,7 +384,7 @@ locations in the computer memory:</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Feb 19, 2025.
+        Last updated on Feb 24, 2025.
       </span>
 
     </p>

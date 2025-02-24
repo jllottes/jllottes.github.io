@@ -1,32 +1,30 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image denoising &mdash; MTH 337 - Spring 2025  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7c08d473" />
 
   
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://jllottes.github.io/Projects/image_denoising/image_denoising.html" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../../_static/copybutton.js?v=f281be69"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -163,7 +161,7 @@ image that has <span class="math notranslate nohighlight">\(P[i,j]\)</span> at t
 photo with a 3 <span class="math notranslate nohighlight">\(\times\)</span> 3 square of pixels selected. The
 right side shows enlargement of the selected square with color value of
 each pixel. <span class="math notranslate nohighlight">\(P[i, j]\)</span> is the pixel at the center of the square.</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-2.svg"><img alt="../../_images/image_denoising-2.svg" class="align-center" src="../../_images/image_denoising-2.svg" style="width: 650px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-2.svg"><img alt="../../_images/image_denoising-2.svg" class="align-center" src="../../_images/image_denoising-2.svg" width="650px" /></a>
 <p>The value of <span class="math notranslate nohighlight">\(F[i,j]\)</span>, the pixel of the filtered image, is given by
 the mean of the array</p>
 <div class="math notranslate nohighlight">
@@ -235,7 +233,7 @@ square.</p>
 with the issue of pixels that are close to image edges, since for such
 pixels the square used to calculate mean or median may go outside the
 image:</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-3.svg"><img alt="../../_images/image_denoising-3.svg" class="align-center" src="../../_images/image_denoising-3.svg" style="width: 312px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-3.svg"><img alt="../../_images/image_denoising-3.svg" class="align-center" src="../../_images/image_denoising-3.svg" width="312px" /></a>
 <p>One way to deal with this problem is to enlarge the image adding a
 border on each side of some fixed color (say, white). The width of the
 border will depend on the size of the squares used by the filter: for
@@ -243,7 +241,7 @@ border will depend on the size of the squares used by the filter: for
 for 5 <span class="math notranslate nohighlight">\(\times\)</span> 5 squares the width should be 2 pixels and so on.
 In this way a square centered at any pixel of the original image will fit
 inside the enlarged image, and we will be able to compute its mean or median.</p>
-<a class="reference internal image-reference" href="../../_images/image_denoising-4.svg"><img alt="../../_images/image_denoising-4.svg" class="align-center" src="../../_images/image_denoising-4.svg" style="width: 312px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image_denoising-4.svg"><img alt="../../_images/image_denoising-4.svg" class="align-center" src="../../_images/image_denoising-4.svg" width="312px" /></a>
 </section>
 <section id="project">
 <h2>Project<a class="headerlink" href="#project" title="Link to this heading"></a></h2>
@@ -338,7 +336,7 @@ photo file:</p></li>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Feb 19, 2025.
+        Last updated on Feb 24, 2025.
       </span>
 
     </p>

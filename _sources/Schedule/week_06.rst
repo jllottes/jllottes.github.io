@@ -8,19 +8,20 @@ Quiz 5
 
 .. rubric:: Wednesday, October 2nd
 
-* :download:`Sample Quiz 5 <../Quizzes/quiz05_sample.pdf>`
+* :download:`Sample Quiz 4 <../Quizzes/quiz04_sample.pdf>`
 
 What is covered:
 
-* Matplotlib plots and subplots
+* NumPy arrays
+* Matplotlib plots
 
 Python
 ~~~~~~
 
-* :doc:`numpy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
-* methods of creating a numpy arrays creation
-* vectorization
-* numpy arrays and matplotlib
+* :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
+* :doc:`The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>`
+* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
+* :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
 
 
 Mathematics
@@ -29,13 +30,19 @@ Mathematics
 * Population models
 
 
-Project 3
-~~~~~~~~~
+.. 
+    Comment
 
-* :doc:`The mayfly model </Projects/mayfly_model/mayfly_model>`
+    Project 3
+    ~~~~~~~~~
+
+    * :doc:`The mayfly model </Projects/mayfly_model/mayfly_model>`
 
 
-Week 6 notebook
-~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week06_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week06_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+.. 
+    Comment
+
+    Week 6 notebook
+    ~~~~~~~~~~~~~~~
+    - `View online <../_static/weekly_notebooks/week06_notebook.html>`_
+    - `Download <../_static/weekly_notebooks/week06_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
