@@ -2,8 +2,7 @@
 =============
 Current Tasks
 =============
- * Work on Project 2, :doc:`A prime or not a prime</Projects/pythagorean_triples/pythagorean_triples>`
-
+ * Work on Project 3, :doc:`Mayfly model</Projects/mayfly_model/mayfly_model>`
 
 ..
     Comment:

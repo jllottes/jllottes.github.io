@@ -25,7 +25,6 @@ Python
 * :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
 * :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
-* :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 
 Mathematics
 ~~~~~~~~~~~

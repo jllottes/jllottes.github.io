@@ -28,9 +28,6 @@ Python
 * :doc:`Importing modules </PT/PT-importing_modules>`
 * Logical operators ``not``, ``and``, ``or``
 * Documenting code: comments and docstrings
-* :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
-* :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
 
 
 Mathematics

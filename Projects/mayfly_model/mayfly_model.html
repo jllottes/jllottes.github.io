@@ -125,6 +125,7 @@
              
   <section id="mayfly-model">
 <h1>Mayfly model<a class="headerlink" href="#mayfly-model" title="Link to this heading"></a></h1>
+<p class="rubric">due: Friday, March 14th at 11:59 PM</p>
 <section id="population-models">
 <h2>Population models<a class="headerlink" href="#population-models" title="Link to this heading"></a></h2>
 <p>An interesting problem in mathematics is to try to predict changes in
@@ -175,10 +176,9 @@ well, and we can expect that the growth rate will go down. This means
 that the function <span class="math notranslate nohighlight">\(g(x)\)</span> describing the growth rate should be a
 decreasing function.</p></li>
 <li><p>It is also reasonable to assume that the population can grow only up
-to some maximal size <span class="math notranslate nohighlight">\(M\)</span> which is the largest population that
-the environment can support. As the population size approaches
+to some maximal size <span class="math notranslate nohighlight">\(M\)</span>. As the population size approaches
 <span class="math notranslate nohighlight">\(M\)</span> the growth rate should approach <span class="math notranslate nohighlight">\(0\)</span>. In effect we can
-assume that <span class="math notranslate nohighlight">\(g(M) = 0\)</span>.</p></li>
+assume that <span class="math notranslate nohighlight">\(g(M) = 0\)</span> (meaning that there will be no new generation).</p></li>
 </ul>
 <p>The simplest function satisfying the above conditions is the linear
 function</p>
@@ -218,11 +218,27 @@ avoid such problems we will assume that <span class="math notranslate nohighligh
 <li><p>Notice that beside the choice of <span class="math notranslate nohighlight">\(b\)</span> the model depends also on
 the value of the initial population <span class="math notranslate nohighlight">\(y_0\)</span>.</p></li>
 </ol>
+<p><strong>Exercise 1.</strong> Modify the Lissajous curve slider code (from class, see
+<a class="reference external" href="../_static/weekly_notebooks/week06_notebook.html">week06_notebook</a>) to
+plot the mayfly population with sliders for the initial population <span class="math notranslate nohighlight">\(y0\)</span>
+and growth rate <span class="math notranslate nohighlight">\(b\)</span>. This interactive plot does not need to appear in
+your project report, but it is useful for exploring the mayfly model dynamics.</p>
 </section>
 <section id="project">
 <h2>Project<a class="headerlink" href="#project" title="Link to this heading"></a></h2>
 <p>Analyze behavior of the mayfly model for various values of <span class="math notranslate nohighlight">\(b\)</span> and
 <span class="math notranslate nohighlight">\(y_0\)</span>. Describe your findings, observations and conclusions.</p>
+<p><strong>Suggestions:</strong></p>
+<p>1. It will be helpful to look for equilibrium populations, that is, populations
+where <span class="math notranslate nohighlight">\(y_n\)</span> is constant. How do these depend on <span class="math notranslate nohighlight">\(y_0\)</span> and <span class="math notranslate nohighlight">\(b\)</span>?
+How do they relate to our observations?</p>
+<p>2. If you decide to include an interactive plot in your report, then you should
+explain clearly in markdown cells what you want the reader to see. That is,
+you should explain how the sliders should be manipulated to lead the reader in
+making specific observations and conclusions. Alternatively, you can write code
+to animate an interactive plot so that the reader doesn’t need to manually move
+the sliders, or you can simply use subplots to compare between different choices
+of <span class="math notranslate nohighlight">\(y_0\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.</p>
 </section>
 </section>
 
@@ -244,7 +260,7 @@ the value of the initial population <span class="math notranslate nohighlight">\
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Feb 27, 2025.
+        Last updated on Mar 03, 2025.
       </span>
 
     </p>

@@ -1,9 +1,7 @@
 Mayfly model
 ============
 
-..
-    Comment
-    .. rubric:: due: Friday, October 18th at 11:59 PM
+.. rubric:: due: Friday, March 14th at 11:59 PM
 
 Population models
 -----------------
@@ -66,10 +64,9 @@ In order to improve on the exponential model we can reason as follows.
    decreasing function.
 
 -  It is also reasonable to assume that the population can grow only up
-   to some maximal size :math:`M` which is the largest population that
-   the environment can support. As the population size approaches
+   to some maximal size :math:`M`. As the population size approaches
    :math:`M` the growth rate should approach :math:`0`. In effect we can
-   assume that :math:`g(M) = 0`.
+   assume that :math:`g(M) = 0` (meaning that there will be no new generation).
 
 The simplest function satisfying the above conditions is the linear
 function
@@ -123,10 +120,28 @@ model*.
 3. Notice that beside the choice of :math:`b` the model depends also on
    the value of the initial population :math:`y_0`.
 
-
+**Exercise 1.** Modify the Lissajous curve slider code (from class, see 
+`week06_notebook <../_static/weekly_notebooks/week06_notebook.html>`_) to 
+plot the mayfly population with sliders for the initial population :math:`y0`
+and growth rate :math:`b`. This interactive plot does not need to appear in
+your project report, but it is useful for exploring the mayfly model dynamics.
 
 Project
 -------
 
 Analyze behavior of the mayfly model for various values of :math:`b` and
 :math:`y_0`. Describe your findings, observations and conclusions.
+
+**Suggestions:** 
+
+1. It will be helpful to look for equilibrium populations, that is, populations 
+where :math:`y_n` is constant. How do these depend on :math:`y_0` and :math:`b`?
+How do they relate to our observations?
+
+2. If you decide to include an interactive plot in your report, then you should
+explain clearly in markdown cells what you want the reader to see. That is,
+you should explain how the sliders should be manipulated to lead the reader in
+making specific observations and conclusions. Alternatively, you can write code
+to animate an interactive plot so that the reader doesn't need to manually move
+the sliders, or you can simply use subplots to compare between different choices
+of :math:`y_0` and :math:`b`.
