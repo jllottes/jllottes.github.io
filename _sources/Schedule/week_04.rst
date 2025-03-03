@@ -1,7 +1,7 @@
 Week 4: Feb 10 - Feb 14
 =======================
 
-Quiz 3
+Quiz 2
 ~~~~~~
 
 .. rubric:: Wednesday, February 12th
