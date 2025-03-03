@@ -1,7 +1,7 @@
 Week 6: Feb 24 - Feb 28
 =======================
 
-Quiz 5
+Quiz 4
 ~~~~~~
 
 .. rubric:: Wednesday, October 2nd
@@ -20,13 +20,6 @@ Python
 * :doc:`The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>`
 * :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
-
-
-Mathematics
-~~~~~~~~~~~
-
-* Population models
-
 
 .. 
     Comment

@@ -1,7 +1,7 @@
 Week 7: Mar 3 - Mar 7
 =======================
 
-Quiz 6
+Quiz 5
 ~~~~~~
 
 .. rubric:: Wednesday, March 5th
@@ -20,6 +20,11 @@ Python
 * :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
+
+Mathematics
+~~~~~~~~~~~
+
+* Population models
 
 Project 3
 ~~~~~~~~~
