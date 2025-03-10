@@ -1,24 +1,10 @@
 Week 7: Mar 3 - Mar 7
 =======================
 
-Quiz 5
-~~~~~~
-
-.. rubric:: Wednesday, March 5th
-
-* :download:`Sample Quiz 5 <../Quizzes/quiz06_sample.pdf>`
-
-What is covered:
-
-* Subplots
-* Multidimensional arrays
-* Boolean numpy arrays
-
 Python
 ~~~~~~
 
-* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
-* :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
+* Colors in Matplotlib
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
 
 Mathematics
@@ -30,7 +16,6 @@ Project 3
 ~~~~~~~~~
 
 * :doc:`The mayfly model </Projects/mayfly_model/mayfly_model>`
-
 
 ..
     Comment:
