@@ -30,7 +30,7 @@ Vertical and horizontal stripes of a tartan have the same pattern:
 
 In order to combine these pictures into an image of a tartan we can use
 a checkerboard that alternates between showing vertical and horizontal stripes.
-In the image below vertical stripes were given slightly darker colors to show
+In the image below, horizontal stripes were given slightly lighter colors to show
 this pattern more clearly:
 
  .. image:: campbell_sample1.png
@@ -47,7 +47,7 @@ A more realistic image of a tartan can be obtained by modifying the way in which
 vertical and horizontal stripes are combined. Instead of using the checkerboard
 pattern, each column of pixels shows two pixels of vertical stripes, then
 two pixels of horizontal stripes and so on. In each subsequent column this pattern
-gets shifted down by one pixel:
+gets shifted down by one pixel. In the image below, horizontal stripes were again given slightly lighter colors to show this pattern more clearly:
 
  .. image:: campbell_sample3.png
        :width: 250px
@@ -98,6 +98,17 @@ be graded according to the following rubrics:
 
 * Reproduction of the assigned tartan (with the more realistic stripe combination): 70%
 * Report organization and code documentation: 30%
+
+
+Extra credit
+------------
+
+Write a function ``recover_tartan_pattern`` that takes in an array ``tartan`` (with shape ``(N,N,3)``) depicting
+an authentic tartan pattern. The function should output the "recipe" for the input tartan. You can test this on
+your own assigned tartan, or the example tartan shown above, or with any of the tartans assigned to your classmates.
+Note: your function will need some way to give labels to the colors that it finds. This labeling does not need to
+coincide with the labeling choices made in this page.
+
 
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: eliascol.png   | | **Collins, Eli**                                                     |
