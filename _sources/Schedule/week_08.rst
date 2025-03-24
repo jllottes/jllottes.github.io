@@ -19,6 +19,7 @@ Python
 
 * Broadcasting for numpy arrays.
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
+* String processing
 
 Project 4
 ~~~~~~~~~

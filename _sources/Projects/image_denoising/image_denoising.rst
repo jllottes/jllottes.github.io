@@ -1,9 +1,8 @@
-:orphan:
-
 Image denoising
 ===============
 
-.. rubric:: due: Sunday, November 10th at 11:59 PM
+.. Comment:
+    .. rubric:: due: Sunday, November 10th at 11:59 PM
 
 Image noise
 -----------
@@ -210,15 +209,13 @@ some questions you may consider:
 -  Which filter, mean or median works better for reducing noise and why?
 -  What happens as the value of ``s`` in these filters is increased?
 -  What happens as the level of noise in an image is increased?
--  You can also include ideas how the process of noise reduction could be improved.
 
-**Part 5.** The general scheme behind the mean and median filters is to take
-a small square centered at a pixel, and use some formula involving values
-of pixels in the square to compute a single number. This number is then taken
-as the new value of the pixel at the center of the square.
-Design new image filters by choosing formulas, other then mean and median,
-for these computation. Apply these filters to some photographs and describe
-what effects they produce.
+**Part 5.** Write your own filter to try and improve the noise reduction performance
+of the mean/median filter. Here are some ideas to try:
+
+-  Following the general scheme of the mean/median filter, you can try using other formulas to produce a new pixel value at the center of each square.
+-  You can try to be selective about which pixels will be filtered.
+-  You can come up with new ways to filter the edge pixels that don't involve an arbitrary choice of padding color.
 
 
 **Note.** Below are links to black and white photos that you can use in

@@ -27,7 +27,8 @@
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Tartans" href="../tartans/tartans.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,11 +59,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mayfly_model/mayfly_model.html">Mayfly model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Image denoising</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#image-noise">Image noise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mean-filter">Mean filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#median-filter">Median filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edge-pixels">Edge pixels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extra-credit">Extra credit</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -119,7 +129,6 @@
              
   <section id="image-denoising">
 <h1>Image denoising<a class="headerlink" href="#image-denoising" title="Link to this heading"></a></h1>
-<p class="rubric">due: Sunday, November 10th at 11:59 PM</p>
 <section id="image-noise">
 <h2>Image noise<a class="headerlink" href="#image-noise" title="Link to this heading"></a></h2>
 <p>Image noise is a random distortion in the brightness or color in an
@@ -272,15 +281,14 @@ some questions you may consider:</p>
 <li><p>Which filter, mean or median works better for reducing noise and why?</p></li>
 <li><p>What happens as the value of <code class="docutils literal notranslate"><span class="pre">s</span></code> in these filters is increased?</p></li>
 <li><p>What happens as the level of noise in an image is increased?</p></li>
-<li><p>You can also include ideas how the process of noise reduction could be improved.</p></li>
 </ul>
-<p><strong>Part 5.</strong> The general scheme behind the mean and median filters is to take
-a small square centered at a pixel, and use some formula involving values
-of pixels in the square to compute a single number. This number is then taken
-as the new value of the pixel at the center of the square.
-Design new image filters by choosing formulas, other then mean and median,
-for these computation. Apply these filters to some photographs and describe
-what effects they produce.</p>
+<p><strong>Part 5.</strong> Write your own filter to try and improve the noise reduction performance
+of the mean/median filter. Here are some ideas to try:</p>
+<ul class="simple">
+<li><p>Following the general scheme of the mean/median filter, you can try using other formulas to produce a new pixel value at the center of each square.</p></li>
+<li><p>You can try to be selective about which pixels will be filtered.</p></li>
+<li><p>You can come up with new ways to filter the edge pixels that don’t involve an arbitrary choice of padding color.</p></li>
+</ul>
 <p><strong>Note.</strong> Below are links to black and white photos that you can use in
 your work. You can add salt and pepper noise to these images using the
 function <code class="docutils literal notranslate"><span class="pre">sp_noise()</span></code> defined in Part 1 of the project.</p>
@@ -332,13 +340,20 @@ photo file:</p></li>
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../tartans/tartans.html" class="btn btn-neutral float-left" title="Tartans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Mar 13, 2025.
+        Last updated on Mar 24, 2025.
       </span>
 
     </p>
