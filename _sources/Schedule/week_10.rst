@@ -1,28 +1,28 @@
-:orphan:
-
-Week 10: Oct 28 - Nov 1
+Week 10: Mar 31 - Apr 4
 ========================
 
-Quiz 7
-~~~~~~
+.. Comment
+    Quiz 7
+    ~~~~~~
 
-.. rubric:: Wednesday, October 30th
+    .. rubric:: Wednesday, October 30th
 
-* :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
+    * :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
 
-What is covered:
+    What is covered:
 
-* Multidimemsional arrays
-* Boolean arrays
-* Random arrays
-* RGB-arrays and `plt.imshow`
+    * Multidimemsional arrays
+    * Boolean arrays
+    * Random arrays
+    * RGB-arrays and `plt.imshow`
 
-Python
-~~~~~~
-* String operations
-* File operations
-* Dictionaries
-* List sorting
+.. Comment
+    Python
+    ~~~~~~
+    * String operations
+    * File operations
+    * Dictionaries
+    * List sorting
 
 Project 5
 ~~~~~~~~~

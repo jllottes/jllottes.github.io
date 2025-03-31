@@ -1,8 +1,7 @@
 Image denoising
 ===============
 
-.. Comment:
-    .. rubric:: due: Sunday, November 10th at 11:59 PM
+.. rubric:: due: Friday, April 11th at 11:59 PM
 
 Image noise
 -----------
@@ -247,7 +246,7 @@ showing you at the same locations, and include these photos in your report.
 
 **Note 1.** To qualify for the extra credit your report must include
 both code producing images with noise removed to the extent that they are
-recognizable, and your own photos.
+recognizable, and your own photos. You must successfully denoise all four images.
 
 **Note 2.** In order to include your photos in the report do the following:
 
