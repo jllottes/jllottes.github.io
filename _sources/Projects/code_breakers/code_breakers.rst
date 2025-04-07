@@ -1,9 +1,9 @@
-:orphan:
-
 Code breakers
 =============
 
-.. rubric:: due: Sunday, November 17th ats 11:59 PM
+.. 
+    Comment:
+    .. rubric:: due: Sunday, November 17th ats 11:59 PM
 
 
 ASCII codes
@@ -92,9 +92,8 @@ Project
 Each file listed below contains text (a fragment of a book in English)
 encrypted using the method described above. The secret key used to encrypt
 the text is a word, different for each file. A dictionary of over 60,000 English
-words is available `here <https://raw.githubusercontent.com/en-wl/wordlist/master/alt12dicts/5desk.txt>`__,
-and all words used as secret keys are listed in this dictionary. Write
-code that decrypts the file assigned to you.
+words is available here (:download:`dictionary.txt<dictionary.txt>`) and all words used as secret keys are listed in this dictionary. 
+Write code that decrypts the file assigned to you.
 
 
 **Note.**  This is a programming project. Your project report does not need
@@ -104,31 +103,34 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-- :download:`akuhn.txt<akuhn.txt>`
-- :download:`changcha.txt<changcha.txt>`
-- :download:`colinhen.txt<colinhen.txt>`
-- :download:`ctobrien.txt<ctobrien.txt>`
-- :download:`cwmccann.txt<cwmccann.txt>`
-- :download:`dsbyrnes.txt<dsbyrnes.txt>`
-- :download:`dsmalsch.txt<dsmalsch.txt>`
-- :download:`eeheintz.txt<eeheintz.txt>`
-- :download:`elyhfenn.txt<elyhfenn.txt>`
-- :download:`gentigas.txt<gentigas.txt>`
-- :download:`huazhouq.txt<huazhouq.txt>`
-- :download:`hyeonseo.txt<hyeonseo.txt>`
-- :download:`hzahra.txt<hzahra.txt>`
-- :download:`hzhuang2.txt<hzhuang2.txt>`
-- :download:`ianmcivo.txt<ianmcivo.txt>`
-- :download:`jfatorma.txt<jfatorma.txt>`
-- :download:`jiongliu.txt<jiongliu.txt>`
-- :download:`jjkim35.txt<jjkim35.txt>`
-- :download:`kaczmar3.txt<kaczmar3.txt>`
-- :download:`lucyhene.txt<lucyhene.txt>`
-- :download:`maungoma.txt<maungoma.txt>`
-- :download:`milaniai.txt<milaniai.txt>`
-- :download:`mortalak.txt<mortalak.txt>`
-- :download:`ogrich.txt<ogrich.txt>`
-- :download:`peterlov.txt<peterlov.txt>`
-- :download:`rileytot.txt<rileytot.txt>`
-- :download:`tjiang24.txt<tjiang24.txt>`
-- :download:`yuhanhu.txt<yuhanhu.txt>`
+- :download:`aevicker.txt<txtfiles/aevicker.txt>`
+- :download:`alecjens.txt<txtfiles/alecjens.txt>`
+- :download:`amritaga.txt<txtfiles/amritaga.txt>`
+- :download:`anrao4.txt<txtfiles/anrao4.txt>`
+- :download:`asnewbur.txt<txtfiles/asnewbur.txt>`
+- :download:`azumpano.txt<txtfiles/azumpano.txt>`
+- :download:`cmpretna.txt<txtfiles/cmpretna.txt>`
+- :download:`cr226.txt<txtfiles/cr226.txt>`
+- :download:`ctrennel.txt<txtfiles/ctrennel.txt>`
+- :download:`dheredia.txt<txtfiles/dheredia.txt>`
+- :download:`eliascol.txt<txtfiles/eliascol.txt>`
+- :download:`elifelds.txt<txtfiles/elifelds.txt>`
+- :download:`emilytap.txt<txtfiles/emilytap.txt>`
+- :download:`gsrich.txt<txtfiles/gsrich.txt>`
+- :download:`ianmcmee.txt<txtfiles/ianmcmee.txt>`
+- :download:`jiongliu.txt<txtfiles/jiongliu.txt>`
+- :download:`msmith37.txt<txtfiles/msmith37.txt>`
+- :download:`omarjaff.txt<txtfiles/omarjaff.txt>`
+- :download:`qmgibbon.txt<txtfiles/qmgibbon.txt>`
+- :download:`ramateja.txt<txtfiles/ramateja.txt>`
+- :download:`rmortiz2.txt<txtfiles/rmortiz2.txt>`
+- :download:`rtsaucke.txt<txtfiles/rtsaucke.txt>`
+- :download:`ryansaab.txt<txtfiles/ryansaab.txt>`
+- :download:`skylagre.txt<txtfiles/skylagre.txt>`
+- :download:`sswu2.txt<txtfiles/sswu2.txt>`
+- :download:`xichenzh.txt<txtfiles/xichenzh.txt>`
+- :download:`xtstanto.txt<txtfiles/xtstanto.txt>`
+- :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
+
+
+
