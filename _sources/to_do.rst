@@ -3,7 +3,8 @@
 Current Tasks
 =============
 
- * Work on Project 5, :doc:`Image denoisingl</Projects/image_denoising/image_denoising>` 
+ * Finish Project 5, :doc:`Image denoising</Projects/image_denoising/image_denoising>` 
+ * Work on Project 6, :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
 ..
     Comment:
