@@ -14293,6 +14293,7 @@ findall(pattern, string, flags=0)
 <li><code>\w</code> can be used to represent any word character</li>
 <li><code>\d</code> can be used to represent any digit character</li>
 <li><code>\s</code> can be used to represent any white space character</li>
+<li><code>\b</code> can be used to represent the boundary of a word (either the start or the end)</li>
 </ul>
 
 </div>
@@ -14363,731 +14364,13 @@ findall(pattern, string, flags=0)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;\s\w\w\ws\s&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#re.findall(&#39;\s\w\w\ws\s&#39;, text)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[97]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; laws &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this\n&#39;,
- &#39; This &#39;,
- &#39; seas &#39;,
- &#39; this\n&#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; pass &#39;,
- &#39;\neyes &#39;,
- &#39; this &#39;,
- &#39; This\n&#39;,
- &#39; owes &#39;,
- &#39; pass &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; pass &#39;,
- &#39; Thus &#39;,
- &#39; pass &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; does &#39;,
- &#39; woes &#39;,
- &#39; dogs &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; foes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\ndoes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; This &#39;,
- &#39; This\n&#39;,
- &#39; eyes &#39;,
- &#39; days &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; ages &#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; lips &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; laws &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; laws &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nThus &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; laws &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; ties &#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; uses &#39;,
- &#39; days &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; keys &#39;,
- &#39; eyes &#39;,
- &#39; uses &#39;,
- &#39;\nThus &#39;,
- &#39; this &#39;,
- &#39; less &#39;,
- &#39; ways\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; days &#39;,
- &#39; this\n&#39;,
- &#39; does &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes\n&#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; kiss &#39;,
- &#39; eyes &#39;,
- &#39; jaws &#39;,
- &#39;\nthis &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39; eyes\n&#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39;\nbuds &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39;\nasks &#39;,
- &#39; This &#39;,
- &#39; less\n&#39;,
- &#39; does &#39;,
- &#39; thus &#39;,
- &#39; does &#39;,
- &#39; This &#39;,
- &#39; pass &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; Miss &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; thus &#39;,
- &#39; eyes &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; joys &#39;,
- &#39; dews &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; news &#39;,
- &#39; eyes &#39;,
- &#39; thus &#39;,
- &#39; less &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; pass &#39;,
- &#39; pass &#39;,
- &#39; this &#39;,
- &#39; Alps &#39;,
- &#39; lies &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39;\nThis &#39;,
- &#39; says &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; lips &#39;,
- &#39;\nThis &#39;,
- &#39; eyes &#39;,
- &#39;\nThis &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; lies &#39;,
- &#39; this &#39;,
- &#39; pass\n&#39;,
- &#39;\nThus &#39;,
- &#39; hers &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; Thus &#39;,
- &#39; This &#39;,
- &#39; bids &#39;,
- &#39; thus &#39;,
- &#39;\nThus &#39;,
- &#39;\nThis &#39;,
- &#39; eyes &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39;\ndays &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nThus &#39;,
- &#39; this &#39;,
- &#39; less\n&#39;,
- &#39; This\n&#39;,
- &#39; this\n&#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; joys &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; ties &#39;,
- &#39; thus &#39;,
- &#39; does &#39;,
- &#39; this\n&#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; This\n&#39;,
- &#39; dews &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; nuts &#39;,
- &#39; this &#39;,
- &#39;\nloss &#39;,
- &#39;\nthis &#39;,
- &#39; days &#39;,
- &#39; This\n&#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; pass &#39;,
- &#39; thus &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39;\nthus &#39;,
- &#39;\neyes &#39;,
- &#39; thus &#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; thus\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; arts &#39;,
- &#39; rays &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39;\neyes &#39;,
- &#39; airs &#39;,
- &#39; days &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; wars &#39;,
- &#39; laws &#39;,
- &#39;\nless &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; airs &#39;,
- &#39; this &#39;,
- &#39; news &#39;,
- &#39; news &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; loss\n&#39;,
- &#39; news &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; lips\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; this\n&#39;,
- &#39; eyes &#39;,
- &#39; eyes &#39;,
- &#39;\nthis &#39;,
- &#39; pass\n&#39;,
- &#39; eyes &#39;,
- &#39; vows &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; Thus\n&#39;,
- &#39; eyes &#39;,
- &#39; hers &#39;,
- &#39; laws &#39;,
- &#39; days &#39;,
- &#39; This &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39;\nThis &#39;,
- &#39; mass &#39;,
- &#39; this &#39;,
- &#39; ties &#39;,
- &#39;\nThus &#39;,
- &#39; thus &#39;,
- &#39; pass &#39;,
- &#39; this &#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; thus\n&#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; thus &#39;,
- &#39; This &#39;,
- &#39;\nthis &#39;,
- &#39; eyes &#39;,
- &#39; days &#39;,
- &#39; days &#39;,
- &#39; this\n&#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; Pays &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; Does &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this\n&#39;,
- &#39; lips\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; days &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; Alps &#39;,
- &#39; thus &#39;,
- &#39; pass &#39;,
- &#39; This &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes\n&#39;,
- &#39;\nThus &#39;,
- &#39; eyes &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; ages &#39;,
- &#39; lips &#39;,
- &#39; oars &#39;,
- &#39; pass &#39;,
- &#39; pass &#39;,
- &#39; eyes &#39;,
- &#39; ears &#39;,
- &#39; This &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; Thus &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; thus &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; eyes\n&#39;,
- &#39; less &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39;\nthis &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; eyes &#39;,
- &#39;\norbs &#39;,
- &#39; lids &#39;,
- &#39; eyes &#39;,
- &#39; fits &#39;,
- &#39; this &#39;,
- &#39; acts &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; less &#39;,
- &#39; This &#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; news &#39;,
- &#39;\nlips &#39;,
- &#39; this &#39;,
- &#39;\nThis &#39;,
- &#39; hers &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; eyes &#39;,
- &#39; ties &#39;,
- &#39; loss &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; rays &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; lies &#39;,
- &#39;\nThus &#39;,
- &#39; Alps &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; arms &#39;,
- &#39; This\n&#39;,
- &#39; arms &#39;,
- &#39; this &#39;,
- &#39; arms &#39;,
- &#39; nets &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nThis &#39;,
- &#39; dens &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; lips &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\neyes &#39;,
- &#39; ears &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39;\nthis &#39;,
- &#39; arms &#39;,
- &#39; ices &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; furs &#39;,
- &#39; this &#39;,
- &#39; dogs &#39;,
- &#39; thus\n&#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; ices &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; dogs &#39;,
- &#39;\nthus &#39;,
- &#39; this &#39;,
- &#39; dogs &#39;,
- &#39; seas &#39;,
- &#39;\nwoes &#39;,
- &#39; this &#39;,
- &#39; eyes\n&#39;,
- &#39; this &#39;,
- &#39; does &#39;,
- &#39;\nThus &#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; days\n&#39;,
- &#39; thus &#39;,
- &#39; This &#39;,
- &#39; less &#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nseas &#39;,
- &#39; ties &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nThis &#39;,
- &#39;\neyes &#39;,
- &#39;\nThis &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39;\nthus &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nThus &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; days &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\nthis &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this\n&#39;,
- &#39; this\n&#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; does &#39;,
- &#39; this &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; thus &#39;,
- &#39; eyes &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; pass &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39;\neyes &#39;,
- &#39; owns &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; owns &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; laws &#39;,
- &#39; this &#39;,
- &#39; laws &#39;,
- &#39; laws &#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; This &#39;,
- &#39; this &#39;,
- &#39; laws\n&#39;,
- &#39; this &#39;,
- &#39; fees &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; this\n&#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; days &#39;,
- &#39; does &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; days &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this &#39;,
- &#39; this\n&#39;,
- &#39; laws &#39;,
- &#39; laws &#39;,
- &#39; laws &#39;,
- &#39; fees &#39;,
- &#39; laws &#39;,
- &#39;\nways &#39;,
- &#39;\nThis &#39;]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -15567,18 +14850,1381 @@ sub(pattern, repl, string, count=0, flags=0)
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Wednesday,-April-16th">Wednesday, April 16th<a class="anchor-link" href="#Wednesday,-April-16th">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Last time, we starting looking at using the Regular Expressions package (<code>re</code>) to process text data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a sample string. It has some numbers: 1, 2, 100, 5000.&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suppose we want to find any numbers that are in the string <code>s</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We would like to find as many adjacent digit characters as possible. We can use <code>\d</code> for a digit character along with the quantifier <code>+</code> to seek as many digit characters as possible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;\d&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000.
+[&#39;1&#39;, &#39;2&#39;, &#39;1&#39;, &#39;0&#39;, &#39;0&#39;, &#39;5&#39;, &#39;0&#39;, &#39;0&#39;, &#39;0&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;\d+&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000.
+[&#39;1&#39;, &#39;2&#39;, &#39;100&#39;, &#39;5000&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also create groups of acceptable characters for matching by using square brackets <code>[]</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's try to find any word that has only lowercase letters.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Warning</strong>: Whenever we constructs patterns for use with regular expressions, it is advisable to use "raw" strings. Python won't do any special interpretation of characters in raw strings. We can define a raw string by prepending the quotes with an <code>r</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\b[abcdefghijklmnopqrstuvwxyz]+\b&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000.
+[&#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;string&#39;, &#39;has&#39;, &#39;some&#39;, &#39;numbers&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: We can use hyphens to designate a range of letters:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\b[a-z]+\b&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000.
+[&#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;string&#39;, &#39;has&#39;, &#39;some&#39;, &#39;numbers&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\b[A-Z]+\b&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!
+[&#39;NOW&#39;, &#39;I&#39;, &#39;AM&#39;, &#39;YELLING&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\b[A-m]+\b&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!
+[&#39;a&#39;, &#39;NOW&#39;, &#39;I&#39;, &#39;AM&#39;, &#39;YELLING&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's find all words that start with a capital letter and are otherwise lowercase:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\b[A-Z][a-z]*\b&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a sample string. It has some numbers: 1, 2, 100, 5000. NOW I AM YELLING!
+[&#39;This&#39;, &#39;It&#39;, &#39;I&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's get some more "interesting" text data to work with. We'll use the <code>requests</code> package to download information from the Math Department's webpage.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Requests">Requests<a class="anchor-link" href="#Requests">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on function get in module requests.api:
+
+get(url, params=None, **kwargs)
+    Sends a GET request.
+    
+    :param url: URL for the new :class:`Request` object.
+    :param params: (optional) Dictionary, list of tuples or bytes to send
+        in the query string for the :class:`Request`.
+    :param \*\*kwargs: Optional arguments that ``request`` takes.
+    :return: :class:`Response &lt;Response&gt;` object
+    :rtype: requests.Response
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://www.buffalo.edu/cas/math/people/faculty.html&#39;</span>
+<span class="n">webpage</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can use the <code>.text</code> attribute on the object returned by <code>requests.get</code> to get the text:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">webpage</span><span class="o">.</span><span class="n">text</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">,</span><span class="s1">&#39;&gt;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To make the text a little more readable, let's replace any <code>&gt;</code> with <code>&gt;\n</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[122]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#print(text)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Can we find my name somewhere in this HTML code?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;Jonathan Lottes&#39;</span>
+
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;,
+ &#39;Jonathan Lottes&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Looking through the HTML code, it looks like we can identify faculty members based on the following:</p>
+<p><code>&lt;a aria-label="Faculty:FACULTY MEMBER"</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;a aria-label=&quot;Faculty:[A-z ]+&quot;&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">match</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;a aria-label=&#34;Faculty:Bernard Badzioch&#34;
+&lt;a aria-label=&#34;Faculty:Maxim Bichuch&#34;
+&lt;a aria-label=&#34;Faculty:Gino Biondini&#34;
+&lt;a aria-label=&#34;Faculty:Robert Busch&#34;
+&lt;a aria-label=&#34;Faculty:Michael Casper&#34;
+&lt;a aria-label=&#34;Faculty:Alexandr Chernyavski&#34;
+&lt;a aria-label=&#34;Faculty:Alexandru Chirvasitu&#34;
+&lt;a aria-label=&#34;Faculty:Ching Chou&#34;
+&lt;a aria-label=&#34;Faculty:Thomas Cusick&#34;
+&lt;a aria-label=&#34;Faculty:Jintao Deng&#34;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Matching-with-groups">Matching with groups<a class="anchor-link" href="#Matching-with-groups">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: Our pattern for identification included extra text that we don't actually want. We just the names. We can use parentheses <code>()</code> inside our pattern to denote match groups.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;My name is Jon Lottes. I am 35 years old.&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;My name is ([A-z ]+)&#39;</span>
+
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[48]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Jon Lottes&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;I am (\d+ years) old&#39;</span>
+
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[50]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;35 years&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;a aria-label=&quot;Faculty:([A-z ]+)&quot;&#39;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">match</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Bernard Badzioch
+Maxim Bichuch
+Gino Biondini
+Robert Busch
+Michael Casper
+Alexandr Chernyavski
+Alexandru Chirvasitu
+Ching Chou
+Thomas Cusick
+Jintao Deng
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Can we find phone numbers?</p>
+<p>It looks like my information is contained in a block of HTML code. Can we use regular expressions to identify these blocks?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It looks like <code>&lt;div class="clearfix"&gt;</code> comes after each block of information, and <code>&lt;div class="profileinfo-teaser teaser-block"&gt;</code> comes before each block.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We want to match any number of any characters between these starting and ending strings. One way to do this is to use opposites in square brackets, e.g. <code>[\w\W]*</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">block_start</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;profileinfo-teaser teaser-block&quot;&gt;&#39;</span>
+<span class="n">block_end</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;clearfix&quot;&gt;&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">block_start</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;[\w\W]*&#39;</span> <span class="o">+</span> <span class="n">block_end</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[54]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: By default, regular expressions will search for the largest possible match.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a test! Hello to you! Goodbye!&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s find characters that end in exclamation points.</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;[\w\W]+!&#39;</span>
+
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[59]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;This is a test! Hello to you! Goodbye!&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If we want to stop each match as soon as there's a match, we can use a question mark following the <code>+</code> quantifier (and similar for <code>*</code>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;[\w\W]+?!&#39;</span>
+
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[60]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;This is a test!&#39;, &#39; Hello to you!&#39;, &#39; Goodbye!&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the HTML information blocks, we want to stop as soon as we find a suitable match.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">block_start</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;profileinfo-teaser teaser-block&quot;&gt;&#39;</span>
+<span class="n">block_end</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;clearfix&quot;&gt;&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">block_start</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;[\w\W]*?&#39;</span> <span class="o">+</span> <span class="n">block_end</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[62]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>52</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's try to pick out name information, phone number information, and email address information from each block.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">match</span> <span class="o">=</span> <span class="n">matches</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span>
+<span class="c1">#print(match)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;alt=&quot;([\w ,\._]+)\. &quot;&#39;</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">name_pattern</span><span class="p">,</span><span class="n">match</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Jonathan Lottes
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">email_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;[\w\d\.]+@[\w\d]+\.[\w\d]+&#39;</span>
+<span class="n">email</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">email_pattern</span><span class="p">,</span> <span class="n">match</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>jllottes@buffalo.edu
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">phone_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;Phone: (\(\d</span><span class="si">{3}</span><span class="s1">\) \d</span><span class="si">{3}</span><span class="s1">-\d{,4})&#39;</span>
+<span class="n">phone</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">phone_pattern</span><span class="p">,</span> <span class="n">match</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(716) 645-8775
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can iterate through each block and pull out the name, email, and phone.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">block_start</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;profileinfo-teaser teaser-block&quot;&gt;&#39;</span>
+<span class="n">block_end</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&lt;div class=&quot;clearfix&quot;&gt;&#39;</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">block_start</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;[\w\W]*?&#39;</span> <span class="o">+</span> <span class="n">block_end</span>
+
+<span class="n">faculty_blocks</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">phones</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">emails</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">faculty_block</span> <span class="ow">in</span> <span class="n">faculty_blocks</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">name_pattern</span><span class="p">,</span><span class="n">faculty_block</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">email_pattern</span><span class="p">,</span> <span class="n">faculty_block</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">phone</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">phone_pattern</span><span class="p">,</span> <span class="n">faculty_block</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">phones</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phone</span><span class="p">)</span>
+    <span class="n">emails</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">phone</span><span class="p">,</span> <span class="n">email</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">phones</span><span class="p">,</span> <span class="n">emails</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">phone</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Daniel Sage
+(716) 645-8781
+dsage@buffalo.edu
+
+James Faran
+(716) 645-8776
+jjfaran@buffalo.edu
+
+Johanna Mangahas
+(716) 645-8767
+mangahas@buffalo.edu
+
+Naoki Masuda
+(716) 645-8804
+naokimas@buffalo.edu
+
+Bernard Badzioch
+(716) 645-8798
+badzioch@buffalo.edu
+
+Maxim Bichuch, PhD
+(716) 645-8803
+mbichuch@buffalo.edu
+
+Gino Biondini
+(716) 645-8810
+biondini@buffalo.edu
+
+Robert Busch
+(716) 645-8760
+rlbusch@buffalo.edu
+
+Michael Casper
+(716) 645-8779
+mjcasper@buffalo.edu
+
+Alexandr Chernyavskiy
+(716) 645-8814
+chernyav@buffalo.edu
+
+Alexandru Chirvasitu
+(716) 645-8831
+achirvas@buffalo.edu
+
+Ching Chou
+(716) 645-8806
+chouc@buffalo.edu
+
+Thomas Cusick
+(716) 645-8801
+cusick@buffalo.edu
+
+Jintao Deng
+(716) 645-6284
+jintaode@buffalo.edu
+
+Sergey Dyachenko, PhD
+(716) 645-8797
+sergeydy@buffalo.edu
+
+James Faran
+(716) 645-8776
+jjfaran@buffalo.edu
+
+Daniel Gendin
+(716) 645-8808
+dgendin@buffalo.edu
+
+Daozhi Han
+(716) 645-8789
+daozhiha@buffalo.edu
+
+Tara Hudson, PhD
+(716) 645-8769
+tarahuds@buffalo.edu
+
+Joseph Hundley
+(716) 645-8771
+jahundle@buffalo.edu
+
+Kimberly E. Javor
+(716) 645-8826
+kejavor@buffalo.edu
+
+Cagatay Kutluhan
+(716) 645-8768
+kutluhan@buffalo.edu
+
+Jonathan Lottes
+(716) 645-8775
+jllottes@buffalo.edu
+
+Hanfeng Li
+(716) 645-8762
+hfli@buffalo.edu
+
+Xiaoqing Li
+(716) 645-8770
+xl29@buffalo.edu
+
+Yiqiang Li
+(716) 645-8830
+yiqiang@buffalo.edu
+
+Johanna Mangahas
+(716) 645-8767
+mangahas@buffalo.edu
+
+Mark Marino
+(716) 645-8778
+mrmarino@buffalo.edu
+
+Naoki Masuda
+(716) 645-8804
+naokimas@buffalo.edu
+
+William W. Menasco
+(716) 645-8765
+menasco@buffalo.edu
+
+Sarah F. Muldoon
+(716) 645-8774
+smuldoon@buffalo.edu
+
+Nicholas Ossi
+(904) 891-0164
+nossi@buffalo.edu
+
+Corey Placito
+(716) 645-8778
+coreypla@buffalo.edu
+
+Barbara Prinari
+(716) 645-8799
+bprinari@buffalo.edu
+
+Math Building
+(716) 645-8812
+arai22@buffalo.edu
+
+Pasquale Raico
+(716) 645-8780
+ppraico@buffalo.edu
+
+Mohan Ramachandran
+(716) 645-8772
+m@buffalo.edu
+
+Jie_Ren
+(716) 645-
+jren5@buffalo.edu
+
+John Ringland
+(716) 645-8781
+ringland@buffalo.edu
+
+Michael A. Rosas
+(716) 645-8777
+marosas@buffalo.edu
+
+Daniel Sage
+(716) 645-8781
+dsage@buffalo.edu
+
+Mathematics Building, UB North Campus
+(716) 645-2394
+asamul@buffalo.edu
+
+Adam S. Sikora
+(716) 645-6362
+asikora@buffalo.edu
+
+Brian Spencer
+(716) 645-8805
+spencerb@buffalo.edu
+
+Vasudevan Srinivas
+(716) 645-8763
+vs74@buffalo.edu
+
+Kathlene Stephen, PhD
+(716) 645-8778
+hockaday@buffalo.edu
+
+Jakob Streipel
+(716) 645-8796
+jstreipe@buffalo.edu
+
+Jacquie Suddaby
+(716) 645-2394
+jmsuddab@buffalo.edu
+
+UB Math
+(716) 645-8761
+vijaylax@buffalo.edu
+
+Jingbo Xia
+(716) 645-8788
+jxia@buffalo.edu
+
+Xingru Zhang
+(716) 645-8764
+xinzhang@buffalo.edu
+
+Mathematics Building, UB North Campus
+(716) 645-8811
+hjzhu@buffalo.edu
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It looks like we need to revisit our name matching pattern to make some adjustments. It's based on the picture included for each faculty member, but not every member has a picture.</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
