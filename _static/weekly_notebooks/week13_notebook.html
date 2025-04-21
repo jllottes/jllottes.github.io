@@ -13127,7 +13127,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13160,26 +13160,76 @@ A value of <code>1</code> will signify that a cell is alive while a value of <co
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">starting_state</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">cells</span><span class="p">[</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">cells</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's visualize this configuration with <code>plt.imshow</code>:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">cells</span> <span class="o">=</span> <span class="n">starting_state</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.image.AxesImage at 0x18a99c09460&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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"
+>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13222,12 +13272,36 @@ In the Game of Life, each cell interacts with its eight neighbors (i.e. the hori
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For image denoising, we discussed padding our array before constructing <code>3</code> by <code>3</code> grids centered at each pixel:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">count_live_neighbors</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span>
+    <span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">padded_cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">padded_cells</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">cells</span>
+
+    <span class="c1"># Recall: The [i,j]th index of cells corresponds to</span>
+    <span class="c1"># the [i+1, j+1]st index of padded_cells</span>
+    
+    <span class="c1"># We want a 3 by 3 grid centered at the [i,j]th cell of cells</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">padded_cells</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span>
+
+    <span class="c1"># We can subtract cells[i,j] from the sum</span>
+    <span class="c1"># to either remove a wrongly counted live neighbor</span>
+    <span class="c1"># or do nothing if cells[i,j] is not alive</span>
+    <span class="n">live_neighbors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span> <span class="o">-</span> <span class="n">cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">live_neighbors</span>
 </pre></div>
 
     </div>
@@ -13235,15 +13309,87 @@ In the Game of Life, each cell interacts with its eight neighbors (i.e. the hori
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's test our function on the starting configuration previously defined:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">count_live_neighbors</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count_live_neighbors</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count_live_neighbors</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count_live_neighbors</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+1
+2
+3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13262,7 +13408,8 @@ In the Game of Life, each cell interacts with its eight neighbors (i.e. the hori
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">cells</span><span class="p">):</span>
+    
 </pre></div>
 
     </div>
