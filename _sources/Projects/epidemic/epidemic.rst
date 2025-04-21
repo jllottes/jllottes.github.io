@@ -1,9 +1,9 @@
-:orphan:
-
 Epidemic
 ========
 
-.. rubric:: due: Tuesday, December 10th, 11:59pm
+.. 
+    Comment
+    .. rubric:: due: Tuesday, December 10th, 11:59pm
 
 In this project we will be working with the following model of a spread of
 a contagious disease.
@@ -103,3 +103,4 @@ cell will have the value -1, and such cell will never get sick.
 Investigate how the spread of the disease will be affected if a given percentage
 of randomly selected cells in the population gets vaccinated.
 
+**Note.** It is very useful to think of ways to present the dynamics of the epidemic with static plots. We will discuss some ideas in class that would be useful to include in your report.

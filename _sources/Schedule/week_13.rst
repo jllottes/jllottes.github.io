@@ -1,13 +1,22 @@
-:orphan:
-
-Week 13: Nov 18 - Nov 22
+Week 13: Apr 21 - Apr 25
 ========================
+
+.. rubric:: Wednesday, April 21st
+
+* :download:`Sample Quiz 9 <../Quizzes/quiz09_sample.pdf>`
+
+What is covered:
+
+* Regular expressions
 
 Python
 ~~~~~~
+* Animation with Python
 
-* Requests
-* `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
+Mathematics
+~~~~~~~~~~~
+* `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
+
 
 Project 7
 ~~~~~~~~~~
