@@ -28,6 +28,9 @@ This is free software.
 Even if you have Python already installed on your computer you should install this distribution since it includes Jupyter Notebook and several Python libraries we will need.
 If you have a different version of Python installed, please re-install so that you don't run into possible compatibility issues.
 
+Note: You do not need to make any accounts to use Anaconda.
+If you do create an account and are using the cloud version of Anaconda, you may run into issues later in the semester.
+
 
 **Textbook.** There is no required textbook. There are a lot of online resources (documentation of Python libraries etc.) that may be helpful in this course. Some of them are listed on the :doc:`Useful Links <useful_links>` page.
 
