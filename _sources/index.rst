@@ -23,16 +23,10 @@ Course Resources
 **Laptop.** We will be programming during all class meetings, so you should bring a laptop to every class. 
 Any operating system (Windows/Mac/Linux) is fine.
 
-**Software.** We will be using a slightly older version of the Anaconda distribution of Python.
+**Software.** We will using the `Anaconda distribution <https://www.anaconda.com/download/success>`__ of Python.
 This is free software. 
 Even if you have Python already installed on your computer you should install this distribution since it includes Jupyter Notebook and several Python libraries we will need.
-If you have a different version of Python installed, please replace it with the version below so you don't run into possible compatibility issues.
-
- - `Anaconda distribution for Windows (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-Windows-x86_64.exe>`_
- - `Anaconda distribution for MacOSX (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-MacOSX-x86_64.pkg>`_
- - `Anaconda distribution for Linux (x86_64) <https://repo.anaconda.com/archive/Anaconda3-2023.07-0-Linux-x86_64.sh>`_
-
-
+If you have a different version of Python installed, please re-install so that you don't run into possible compatibility issues.
 
 
 **Textbook.** There is no required textbook. There are a lot of online resources (documentation of Python libraries etc.) that may be helpful in this course. Some of them are listed on the :doc:`Useful Links <useful_links>` page.
@@ -102,10 +96,10 @@ Useful Information
 Important Dates
 ===============
 
-    * January 22: first day of classes
-    * January 29: last day to drop/add
-    * April 15: last day to resign
-    * May 5: last day of classes
+    * August 25: first day of classes
+    * September 2: last day to drop/add
+    * November 12: last day to resign
+    * December 8: last day of classes
 
 
 Incomplete Grades
@@ -126,6 +120,7 @@ The academic integrity policy is available at:
     `Academic Integrity <https://www.buffalo.edu/academic-integrity.html>`_
 
 While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. Any outside resource that is used during the project (this includes code taken from class notes or other sources) or while writing the report must be properly cited in the report.
+You may be asked to explain in detail what your code does and how it works if there are questions about the integrity of your work.
 
 Collaboration of any kind on the quizzes is forbidden, as is the use of any materials not approved of by the instructor.
 

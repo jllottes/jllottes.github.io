@@ -1,6 +1,7 @@
 Project Report Guide
 ====================
 
+.. Comment
     `Example report <../../_static/projects/twin_primes.html>`_
 
 Checklist
@@ -26,17 +27,27 @@ in the failing grade on a report, and possibly in additional sanctions (an F gra
 the course, an academic disciplinary action etc.).
 
 
+
+
 Using external resources
 ------------------------
 
-There are two types of resources that may be relevant. First, there are plenty of books and websites devoted to Python programming. You should take advantage of this. If you have a programming question then in most cases a quick google search will get you an answer.
+There are two types of resources that may be relevant. 
+First, there are plenty of books and websites devoted to Python programming. 
+You should take advantage of this. 
+There are many Python features that we will not have time to cover in class.
+If you have a programming question then in most cases a quick google search will get you an answer.
 
-Second, most of the projects you will be working on are based on mathematical problems and ideas that are described somewhere. However, you should not start your work on a project by doing a web or library search. The goal of each project is for you to explore a problem on your own. Description of your explorations and experimentation must be the main part of your project report. It is fine to include some background information on the project (properly referencing books and websites it comes from) but it is not necessary, and you can get a perfect score without it. Moreover, projects are open-ended so there is no “complete solution” you should be looking for. Have fun, explore, and put in the report what you came up with.
+**Note**: You must understand and be able to explain in detail what your code does and how it works.
+You must not copy code snippets that you found somewhere and that somehow seem to be doing what you need.
+Any code that you cannot fully explain will result in an F on the project.
 
-Additional Python features
---------------------------
-
-We will not be able to cover all features of Python in this course. You are free (and encouraged!) to explore additional Python tools on your own and use them in your code. The only condition is that you must understand your own code and be able to explain it in detail if asked. You must not copy code snippets that you found somewhere and that somehow seem to be doing what you need.
+Second, most of the projects you will be working on are based on mathematical problems and ideas that are described somewhere. 
+However, you should not start your work on a project by doing a web or library search. 
+The goal of each project is for you to explore a problem on your own. 
+Descriping your exploration and experimentation must be the main part of your project report. 
+The projects are open-ended so there is no “complete solution” you should be looking for. 
+Have fun, explore, and put in the report what you came up with.
 
 
 Report grading rubrics

@@ -1,3 +1,5 @@
+:orphan:
+
 Pythagorean triples
 ===================
 
