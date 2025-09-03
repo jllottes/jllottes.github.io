@@ -20,6 +20,9 @@ Python
 * Basic mathematical operations
 * Numbers in Python: integers and floats
 * Variable assignment
+* Strings and string formatting
+* The ``print()`` function
+* :doc:`Lists and "for" loops </PT/PT-lists>`
 
 Week 1 notebook
 ~~~~~~~~~~~~~~~

@@ -1,6 +1,4 @@
-:orphan:
-
-Week 2: Jan 27 - Jan 31
+Week 2: Sep 2 - Sep 6
 =======================
 
 .. Comment
@@ -24,15 +22,11 @@ Jupyter Notebook
 
 Python
 ~~~~~~
-* Strings and string formatting
-* The ``print()`` function
+* The ``range()`` function
 * Boolean expressions
 * The ``if`` statement
-* Boolean expressions
-* :doc:`Lists and "for" loops </PT/PT-lists>`
-* ``range()``
-* ``while`` loops
 * Fine-tuning loops: ``break`` and ``continue``
+* ``while`` loops
 
 
 Mathematics
@@ -47,7 +41,6 @@ Mathematics
     .. rubric:: Due: Saturday, February 18, 11:59 PM.
 
     * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
-
 
 Week 2 notebook
 ~~~~~~~~~~~~~~~
