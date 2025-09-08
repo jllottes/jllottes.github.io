@@ -1,12 +1,10 @@
-:orphan:
-
-Week 3: Feb 3 - Feb 7
-=====================
+Week 3: Sep 8 - Sep 12
+======================
 
 Quiz 1
 ~~~~~~
 
-.. rubric:: Wednesday, February 5th
+.. rubric:: Wednesday, September 10th
 
 * :download:`Sample Quiz 1 <../Quizzes/quiz01_sample.pdf>`
 
@@ -21,16 +19,20 @@ What is covered:
 
 Logistics
 ~~~~~~~~~
-
 * Project Report Guide
+
+Jupyter Notebook
+~~~~~~~~~~~~~~~~
+* LaTeX
 
 Python
 ~~~~~~
+* Fine-tuning loops: ``break`` and ``continue``
+* ``while`` loops
 * :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`Importing modules </PT/PT-importing_modules>`
 * Logical operators ``not``, ``and``, ``or``
 * Documenting code: comments and docstrings
-
 
 Mathematics
 ~~~~~~~~~~~
@@ -41,7 +43,8 @@ Mathematics
 Project 1
 ~~~~~~~~~
 
-.. rubric:: due: Friday, February 14th at 11:59 PM
+.. Comment
+    .. rubric:: due: Friday, February 14th at 11:59 PM
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 

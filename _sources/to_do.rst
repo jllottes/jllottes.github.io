@@ -3,8 +3,9 @@
 Current Tasks
 =============
 
- * Read the Syllabus and Project Report Guide.
-
+ * Prepare for Quiz 1.
+ * Read the Project Report Guide.
+ * Work on Project 1, :doc:`A prime or not a prime</Projects/prime_or_not/prime_or_not>`.
 
 ..
     Comment:

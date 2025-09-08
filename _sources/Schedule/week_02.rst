@@ -1,4 +1,4 @@
-Week 2: Sep 2 - Sep 6
+Week 2: Sep 1 - Sep 5
 =======================
 
 .. Comment
@@ -16,24 +16,11 @@ Week 2: Sep 2 - Sep 6
     * Variable assignment.
     * Importing modules.
 
-Jupyter Notebook
-~~~~~~~~~~~~~~~~
-* LaTeX
-
 Python
 ~~~~~~
 * The ``range()`` function
 * Boolean expressions
 * The ``if`` statement
-* Fine-tuning loops: ``break`` and ``continue``
-* ``while`` loops
-
-
-Mathematics
-~~~~~~~~~~~
-
-* Primary decomposition of integers
-* Congruences
 
 .. Comment
     Project 1

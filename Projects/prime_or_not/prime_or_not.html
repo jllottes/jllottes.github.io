@@ -27,7 +27,8 @@
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="NetworkX Graphs" href="../../PT/PT-networkx_graphs/PT-networkx_graphs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,6 +57,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A prime or not a prime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prime-numbers">Prime numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#primes-and-false-primes">Primes and false primes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#congruences">Congruences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#congruences-and-prime-numbers">Congruences and prime numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -112,8 +126,6 @@
              
   <section id="a-prime-or-not-a-prime">
 <h1>A prime or not a prime<a class="headerlink" href="#a-prime-or-not-a-prime" title="Link to this heading"></a></h1>
-<p><a class="reference external" href="../../_static/projects/Project01_example.html">Example report</a></p>
-<p class="rubric">due: Friday, February 14th at 11:59 PM</p>
 <section id="prime-numbers">
 <h2>Prime numbers<a class="headerlink" href="#prime-numbers" title="Link to this heading"></a></h2>
 <p>A <em>prime number</em> is an integer greater than 1 which is divisible only by
@@ -131,16 +143,16 @@ primes</p>
 product called the <em>primary decomposition</em> of <span class="math notranslate nohighlight">\(n\)</span>. For example:
 <span class="math notranslate nohighlight">\(12 = 2\cdot 2\cdot 3\)</span>, <span class="math notranslate nohighlight">\(25 = 5\cdot 5\)</span>,
 <span class="math notranslate nohighlight">\(90 = 2\cdot 3\cdot 3\cdot 5\)</span>.</p>
-<p><strong>Exercise 1.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">my_primes(n)</span></code> that returns the
+<p><strong>Exercise 1.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">get_primes(n)</span></code> that returns the
 list of all primes smaller or equal to <code class="docutils literal notranslate"><span class="pre">n</span></code>, ordered from the smallest
 to the largest:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_primes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">get_primes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output docutils container">
 <p>[2, 3, 5, 7]</p>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_primes</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">get_primes</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output docutils container">
@@ -231,7 +243,7 @@ false prime is 561.</p>
 <p><strong>Part 1.</strong> Write a Python script to find the first 20 false primes.</p>
 <p><strong>Hint.</strong> Call a number <span class="math notranslate nohighlight">\(p\)</span> <em>prime-like</em> if <span class="math notranslate nohighlight">\(p\geq 2\)</span> and the formula
 <span class="math notranslate nohighlight">\(a^{p} \equiv a \ (\text{mod } p)\)</span> holds for all <span class="math notranslate nohighlight">\(0 \leq a &lt; p\)</span>.
-You can start your work on part 1  by writing a function <code class="docutils literal notranslate"><span class="pre">is_prime_like(n)</span></code> that returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code> is
+You can start your work on part 1 by writing a function <code class="docutils literal notranslate"><span class="pre">is_prime_like(n)</span></code> that returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code> is
 prime-like and returns <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.</p>
 <p><strong>Part 2.</strong> Compute the primary decomposition of each false prime you found.</p>
@@ -275,13 +287,20 @@ as that of <code class="docutils literal notranslate"><span class="pre">(a**n)%k
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../PT/PT-networkx_graphs/PT-networkx_graphs.html" class="btn btn-neutral float-left" title="NetworkX Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Sep 03, 2025.
+        Last updated on Sep 08, 2025.
       </span>
 
     </p>

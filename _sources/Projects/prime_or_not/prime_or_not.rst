@@ -1,11 +1,10 @@
-:orphan:
-
 A prime or not a prime
 ======================
 
-`Example report <../../_static/projects/Project01_example.html>`_
-    
-.. rubric:: due: Friday, February 14th at 11:59 PM
+.. Comment
+    `Example report <../../_static/projects/Project01_example.html>`_
+        
+    .. rubric:: due: Friday, February 14th at 11:59 PM
 
 Prime numbers
 -------------
@@ -29,13 +28,13 @@ product called the *primary decomposition* of :math:`n`. For example:
 :math:`90 = 2\cdot 3\cdot 3\cdot 5`.
 
 
-**Exercise 1.** Write a Python function ``my_primes(n)`` that returns the
+**Exercise 1.** Write a Python function ``get_primes(n)`` that returns the
 list of all primes smaller or equal to ``n``, ordered from the smallest
 to the largest:
 
 .. code:: python
 
-    my_primes(10)
+    get_primes(10)
 
 
 .. container:: output
@@ -45,7 +44,7 @@ to the largest:
 
 .. code:: python
 
-    my_primes(29)
+    get_primes(29)
 
 .. container:: output
 
@@ -161,7 +160,7 @@ Project
 
 **Hint.** Call a number :math:`p` *prime-like* if :math:`p\geq 2` and the formula
 :math:`a^{p} \equiv a \ (\text{mod } p)` holds for all :math:`0 \leq a < p`.
-You can start your work on part 1  by writing a function ``is_prime_like(n)`` that returns ``True`` if ``n`` is
+You can start your work on part 1 by writing a function ``is_prime_like(n)`` that returns ``True`` if ``n`` is
 prime-like and returns ``False`` otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.
 
