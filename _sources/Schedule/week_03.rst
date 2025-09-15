@@ -17,10 +17,6 @@ What is covered:
 * ``for`` loops, ``while`` loops and ``break``.
 * The ``range()`` function.
 
-Logistics
-~~~~~~~~~
-* Project Report Guide
-
 Jupyter Notebook
 ~~~~~~~~~~~~~~~~
 * Documenting code: LaTeX
@@ -33,20 +29,6 @@ Python
 * :doc:`Importing modules </PT/PT-importing_modules>`
 * Logical operators ``not``, ``and``, ``or``
 * Documenting code: comments
-
-Mathematics
-~~~~~~~~~~~
-
-* Primary decomposition of integers
-* Congruences
-
-Project 1
-~~~~~~~~~
-
-.. Comment
-    .. rubric:: due: Friday, February 14th at 11:59 PM
-
-* :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
 
 Week 3 notebook

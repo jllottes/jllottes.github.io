@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
- * Prepare for Quiz 1.
+ * Prepare for Quiz 2.
  * Read the Project Report Guide.
  * Work on Project 1, :doc:`A prime or not a prime</Projects/prime_or_not/prime_or_not>`.
 

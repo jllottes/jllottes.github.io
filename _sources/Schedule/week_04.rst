@@ -1,12 +1,10 @@
-:orphan:
-
-Week 4: Feb 10 - Feb 14
+Week 4: Sep 15 - Sep 19
 =======================
 
 Quiz 2
 ~~~~~~
 
-.. rubric:: Wednesday, February 12th
+.. rubric:: Wednesday, September 17th
 
 * :download:`Sample Quiz 2 </Quizzes/quiz02_sample.pdf>`
 
@@ -15,35 +13,31 @@ What is covered:
 * Logical operators ``not``, ``and``, ``or``
 * Functions: positional, keyword, and default arguments.
 
-.. 
-    Comment
-    Logistics
-    ~~~~~~~~~
-    * Project 1 feedback
+Logistics
+~~~~~~~~~
+* Project Report Guide
 
 Python
 ~~~~~~
+* :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
 * :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
+* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 
 Mathematics
 ~~~~~~~~~~~
-
+* Primary decomposition of integers
+* Congruences
 * Pythagorean triples
 * The greatest common divisor
 
-..
-    Comment:
-    Project 2
-    ~~~~~~~~~
+Project 1
+~~~~~~~~~
 
-    .. Comment    
-        .. rubric:: Due: Saturday, March 4, 11:59 PM.
+.. rubric:: due: Wednesday, September 24th at 11:59 PM
 
-    * :doc:`Pythagorean triples </Projects/pythagorean_triples/pythagorean_triples>`.
-
+* :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
 Week 4 notebook
 ~~~~~~~~~~~~~~~
