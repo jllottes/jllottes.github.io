@@ -1,5 +1,3 @@
-:orphan:
-
 Pythagorean triples
 ===================
 
@@ -28,7 +26,7 @@ find a couple of positive integers :math:`(a, b)` such that
 :math:`\sqrt{a^2 + b^2}` is also an integer. This gives a
 Pythagorean triple :math:`(a, b, c)` where
 :math:`c = \sqrt{a^2 + b^2}`. We will say in such case that
-:math:`(a, b)` is a *Pythagorean tuple*.
+:math:`(a, b)` is a *Pythagorean double*.
 
 The goal of this project is to investigate the structure of Pythagorean
 triples.
@@ -68,9 +66,9 @@ where :math:`1 \leq a, b \leq n`:
 
 
 
-**Part 2.** Plot all Pythagorean tuples :math:`(a, b)` where
+**Part 2.** Plot all Pythagorean doubles :math:`(a, b)` where
 :math:`1\leq a, b \leq n` for various values of :math:`n`.
 
-**Part 3.** Describe and analyze the structure of Pythagorean tuples.
+**Part 3.** Describe and analyze the structure of Pythagorean doubles.
 
-**Note.** There are many possible directions to take to analyze the structure of Pythagorean tuples. One possibility is to look into "primitive Pythagorean tuples", which we will discuss in class.
+**Note.** There are many possible directions to take to analyze the structure of Pythagorean doubles. One possibility is to look into "primitive Pythagorean doubles", which we will discuss in class.

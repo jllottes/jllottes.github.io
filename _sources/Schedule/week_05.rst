@@ -1,12 +1,10 @@
-:orphan:
-
-Week 5: Feb 17 - Feb 21
+Week 5: Sep 22 - Sep 26
 =======================
 
 Quiz 3
 ~~~~~~
 
-.. rubric:: Wednesday, February 19th
+.. rubric:: Wednesday, September 24th
 
 * :download:`Sample Quiz 3 <../Quizzes/quiz03_sample.pdf>`
 
@@ -18,7 +16,6 @@ What is covered:
 Python
 ~~~~~~
 
-* :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
 * :doc:`numpy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
 * methods of creating numpy arrays
 * vectorization
@@ -34,8 +31,6 @@ Project 2
 ~~~~~~~~~
 
 * :doc:`Pythagorean Triples </Projects/pythagorean_triples/pythagorean_triples>`
-
-
 
 .. Comment
 
