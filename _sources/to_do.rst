@@ -3,9 +3,7 @@
 Current Tasks
 =============
 
- * Prepare for Quiz 3.
- * Read the Project Report Guide.
- * Finish Project 1, :doc:`A prime or not a prime</Projects/prime_or_not/prime_or_not>`.
+ * Prepare for Quiz 4.
  * Work on Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
 
 ..

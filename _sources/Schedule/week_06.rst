@@ -1,12 +1,10 @@
-:orphan:
-
-Week 6: Feb 24 - Feb 28
+Week 6: Sep 29 - Oct 3
 =======================
 
 Quiz 4
 ~~~~~~
 
-.. rubric:: Wednesday, October 2nd
+.. rubric:: Wednesday, October 1st
 
 * :download:`Sample Quiz 4 <../Quizzes/quiz04_sample.pdf>`
 
@@ -19,9 +17,9 @@ Python
 ~~~~~~
 
 * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
-* :doc:`The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>`
-* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
+* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
+* :doc:`The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>`
 
 .. 
     Comment
