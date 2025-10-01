@@ -6,7 +6,7 @@ Week 7: Mar 3 - Mar 7
 Python
 ~~~~~~
 
-* Colors in Matplotlib
+* RGB(A) values and image files (e.g. `mario.png <../_static/downloads/mario.png>`_)
 * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
 
 Mathematics

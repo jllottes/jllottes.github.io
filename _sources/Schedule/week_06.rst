@@ -18,8 +18,7 @@ Python
 
 * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
-* RGB(A) values and image files (e.g. `mario.png <../_static/downloads/mario.png>`_)
-
+* Colors in Matplotlib
 
 Week 6 notebook
 ~~~~~~~~~~~~~~~
