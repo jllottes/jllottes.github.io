@@ -1,29 +1,32 @@
-:orphan:
-
-Week 7: Mar 3 - Mar 7
+Week 7: Oct 6 - Oct 10
 =======================
+
+.. Comment
+    Quiz 5
+    ~~~~~~
+
+    .. rubric:: Wednesday, October 8th
+
+    * :download:`Sample Quiz 5 <../Quizzes/quiz05_sample.pdf>`
+
+    What is covered:
+
+    * Subplots
+    * Multidimensional arrays
+    * `Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays.html>`_
 
 Python
 ~~~~~~
 
 * RGB(A) values and image files (e.g. `mario.png <../_static/downloads/mario.png>`_)
-* :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
+* Broadcasting
+* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 
-Mathematics
-~~~~~~~~~~~
-
-* Population models
 
 Project 3
 ~~~~~~~~~
 
-* :doc:`The mayfly model </Projects/mayfly_model/mayfly_model>`
-
-..
-    Comment:
-    Project 4
-    ~~~~~~~~~
-    * :doc:`Tartans </Projects/tartans/tartans>`
+* :doc:`Tartans </Projects/tartans/tartans>`
     
 
 Week 7 notebook

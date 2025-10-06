@@ -20,13 +20,11 @@ Weekly Schedule
    
    Schedule/week_06
    
+   Schedule/week_07
+   
 ..
    Comment:  
-       
-       
-       
-       Schedule/week_07
-       
+              
        Schedule/week_08
        
        Schedule/week_09
