@@ -44,7 +44,7 @@ Any code that you cannot fully explain will result in an F on the project.
 Second, most of the projects you will be working on are based on mathematical problems and ideas that are described somewhere. 
 However, you should not start your work on a project by doing a web or library search. 
 The goal of each project is for you to explore a problem on your own. 
-Descriping your exploration and experimentation must be the main part of your project report. 
+Describing your personal exploration and experimentation must be the main part of your project report. 
 The projects are open-ended so there is no “complete solution” you should be looking for. 
 Have fun, explore, and put in the report what you came up with.
 

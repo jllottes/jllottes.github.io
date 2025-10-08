@@ -36,4 +36,4 @@ Week 3 notebook
 - `View online <../_static/weekly_notebooks/week03_notebook.html>`_
 - `Download <../_static/weekly_notebooks/week03_notebook.ipynb>`_
 - `View online (day 2) <../_static/weekly_notebooks/week03_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week03_notebook_day2.ipynb>`_
+- `Download (day 2) <../_static/weekly_notebooks/week03_notebook_day2.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)

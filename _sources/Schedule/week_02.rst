@@ -32,4 +32,4 @@ Python
 Week 2 notebook
 ~~~~~~~~~~~~~~~
 - `View online <../_static/weekly_notebooks/week02_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week02_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+- `Download <../_static/weekly_notebooks/week02_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)

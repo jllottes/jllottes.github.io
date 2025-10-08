@@ -20,7 +20,8 @@ Python
 
 * RGB(A) values and image files (e.g. `mario.png <../_static/downloads/mario.png>`_)
 * Broadcasting
-* :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
+* :doc:`Boolean NumPy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
+* Boolean masks
 
 
 Project 3
@@ -32,4 +33,6 @@ Project 3
 Week 7 notebook
 ~~~~~~~~~~~~~~~
 - `View online <../_static/weekly_notebooks/week07_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week07_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+- `Download <../_static/weekly_notebooks/week07_notebook.ipynb>`_
+- `View online (day 2) <../_static/weekly_notebooks/week07_notebook_day2.html>`_
+- `Download (day 2) <../_static/weekly_notebooks/week07_notebook_day2.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)

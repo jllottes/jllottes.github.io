@@ -1,11 +1,11 @@
 
-Numpy arrays
+NumPy arrays
 ============
 
-Numpy array basics
+NumPy array basics
 ------------------
 
-Numpy is the standard module for doing numerical computations
+NumPy is the standard module for doing numerical computations
 in Python. It provides tools for writing code which is both easier to
 develop and usually a lot faster than it would be without numpy.
 

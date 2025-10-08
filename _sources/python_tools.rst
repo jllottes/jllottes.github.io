@@ -15,8 +15,8 @@ Python tools
    Matplotlib plots </PT/PT-matplotlib_plots/PT-matplotlib_plots>
    Matplotlib subplots </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>
    The slider widget </PT/PT-matplotlib_slider/PT-matplotlib_slider>
-   Numpy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>
+   NumPy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>
    Multidimensional arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>
-   Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>
+   Boolean NumPy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>
    Image processing </PT/PT-image_processing/PT-image_processing>
    NetworkX library </PT/PT-networkx_graphs/PT-networkx_graphs>

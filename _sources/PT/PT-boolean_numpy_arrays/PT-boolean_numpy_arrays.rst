@@ -1,12 +1,12 @@
 
-Boolean numpy arrays
+Boolean NumPy arrays
 ====================
 
 Boolean arrays
 --------------
 
 A boolean array is a numpy array with boolean (True/False) values. Such
-array can be obtained by applying a logical operator to another numpy
+arrays can be obtained by applying a logical operator to another numpy
 array:
 
 .. code:: python
