@@ -3,8 +3,8 @@
 Current Tasks
 =============
 
- * Prepare for Quiz 4.
- * Work on Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
+ * Prepare for Quiz 5.
+ * Finish Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
 
 ..
     Comment:
