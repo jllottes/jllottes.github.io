@@ -4,10 +4,11 @@ Current Tasks
 =============
 
  * Prepare for Quiz 5.
- * Finish Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
+ * Work on Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
 
 ..
     Comment:
+    * Finish Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
     * Finish Project 3, :doc:`Mayfly model</Projects/mayfly_model/mayfly_model>`
     * Finish Project 4, :doc:`Tartans</Projects/tartans/tartans>`
     * Finish Project 5, :doc:`Image denoising</Projects/image_denoising/image_denoising>` 

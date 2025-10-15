@@ -14,24 +14,12 @@ What is covered:
 * Multidimensional arrays
 * Boolean numpy arrays
 
-.. Comment
-    Python
-    ~~~~~~
+Python
+~~~~~~
+* String processing
+* Dictionaries
 
-    * Broadcasting for numpy arrays.
-    * :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
-    * String processing
-
-    Project 4
-    ~~~~~~~~~
-    * :doc:`Tartans </Projects/tartans/tartans>`
-
-    .. Comment:
-        Project 5
-        ~~~~~~~~~
-        * :doc:`Image denoising </Projects/image_denoising/image_denoising>`
-
-    Week 8 notebook
-    ~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week08_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week08_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+Week 8 notebook
+~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week08_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week08_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
