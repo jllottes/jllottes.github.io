@@ -1,6 +1,4 @@
-:orphan:
-
-Week 9: Mar 24 - Mar 28
+Week 9: Oct 20 - Oct 24
 =======================
 
 Quiz 6
@@ -17,7 +15,6 @@ What is covered:
 Python
 ~~~~~~
 * :doc:`Image processing </PT/PT-image_processing/PT-image_processing>`
-* Boolean masks
 
 .. Comment:
 	Python
@@ -27,9 +24,9 @@ Python
 	* File operations
 	* Requests
 
-Project 5
+Project 4
 ~~~~~~~~~
-* :doc:`Tartans </Projects/image_denoising/image_denoising>`
+* :doc:`Image denoising </Projects/image_denoising/image_denoising>`
 
 
 Week 9 notebook

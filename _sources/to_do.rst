@@ -3,8 +3,8 @@
 Current Tasks
 =============
 
- * Prepare for Quiz 5.
- * Work on Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
+ * Prepare for Quiz 6.
+ * Finish Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
 
 ..
     Comment:
