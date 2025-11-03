@@ -1,19 +1,18 @@
-:orphan:
-
-Week 11: Apr 7 - Apr 11
+Week 11: Nov 3 - Nov 7
 ========================
 
-Quiz 7
-~~~~~~
-.. rubric:: Wednesday, April 9th
+.. Comment
+    Quiz 7
+    ~~~~~~
+    .. rubric:: Wednesday, April 9th
 
-* :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
+    * :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
 
-What is covered:
+    What is covered:
 
-* Boolean masks and multi-dimensional arrays
-* Random arrays
-* RGB arrays
+    * Boolean masks and multi-dimensional arrays
+    * Random arrays
+    * RGB arrays
 
 Python
 ~~~~~~
@@ -22,7 +21,7 @@ Python
 * Dictionaries
 * List sorting
 
-Project 6
+Project 5
 ~~~~~~~~~
 * :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 

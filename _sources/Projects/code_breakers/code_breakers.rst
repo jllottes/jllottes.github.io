@@ -3,7 +3,8 @@
 Code breakers
 =============
 
-.. rubric:: due: Wednesday, April 30th ats 11:59 PM
+.. comment
+    .. rubric:: due: Wednesday, April 30th ats 11:59 PM
 
 
 ASCII codes
@@ -17,25 +18,25 @@ obtained using the ``ord()`` function:
 .. code:: python
 
     for c in "This is MTH 337":
-        print('{:>3} {}'.format(ord(c), "'"+c+"'"))
+        print("'{}'  ->  {}".format(c, ord(c)))
 
 .. container:: output
 
-      \  84 'T'
-      104 'h'
-      105 'i'
-      115 's'
-      \  32 ' '
-      105 'i'
-      115 's'
-      \  32 ' '
-      \  77 'M'
-      \  84 'T'
-      \  72 'H'
-      \  32 ' '
-      \  51 '3'
-      \  51 '3'
-      \  55 '7'
+      'T'  ->  84
+      'h'  ->  104
+      'i'  ->  105
+      's'  ->  115
+      ' '  ->  32
+      'i'  ->  105
+      's'  ->  115
+      ' '  ->  32
+      'M'  ->  77
+      'T'  ->  84
+      'H'  ->  72
+      ' '  ->  32
+      '3'  ->  51
+      '3'  ->  51
+      '7'  ->  55
 
 
 
@@ -71,7 +72,7 @@ encryption scheme:
    then the secret key sequence is extended by repeating it as many times as
    necessary until it matches the length of the message.
 -  Let :math:`c_i` be the reminder from the division of
-   :math:`m_i+k_i` by 128. The sequence of numbers
+   :math:`m_i+k_i` by :math:`128`. The sequence of numbers
    :math:`(c_1, c_2, \dots, c_s)` is the encrypted message.
 
 For example, if the message is 'Top secret!' and the secret key is 'buffalo'
@@ -82,7 +83,7 @@ then the encrypted message is:
 
 
 In order to decrypt the message we work backwards: for each number :math:`c_i`
-we compute the reminder from the division of :math:`c_i-k_i` by 128. This
+we compute the reminder from the division of :math:`c_i-k_i` by :math:`128`. This
 number is equal to :math:`m_i`, so converting it into a character
 we get the :math:`i`-th letter of the message.
 
@@ -103,34 +104,35 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-- :download:`aevicker.txt<txtfiles/aevicker.txt>`
-- :download:`alecjens.txt<txtfiles/alecjens.txt>`
-- :download:`amritaga.txt<txtfiles/amritaga.txt>`
-- :download:`anrao4.txt<txtfiles/anrao4.txt>`
-- :download:`asnewbur.txt<txtfiles/asnewbur.txt>`
-- :download:`azumpano.txt<txtfiles/azumpano.txt>`
-- :download:`cmpretna.txt<txtfiles/cmpretna.txt>`
-- :download:`cr226.txt<txtfiles/cr226.txt>`
-- :download:`ctrennel.txt<txtfiles/ctrennel.txt>`
-- :download:`dheredia.txt<txtfiles/dheredia.txt>`
-- :download:`eliascol.txt<txtfiles/eliascol.txt>`
-- :download:`elifelds.txt<txtfiles/elifelds.txt>`
-- :download:`emilytap.txt<txtfiles/emilytap.txt>`
-- :download:`gsrich.txt<txtfiles/gsrich.txt>`
-- :download:`ianmcmee.txt<txtfiles/ianmcmee.txt>`
-- :download:`jiongliu.txt<txtfiles/jiongliu.txt>`
-- :download:`msmith37.txt<txtfiles/msmith37.txt>`
-- :download:`omarjaff.txt<txtfiles/omarjaff.txt>`
-- :download:`qmgibbon.txt<txtfiles/qmgibbon.txt>`
-- :download:`ramateja.txt<txtfiles/ramateja.txt>`
-- :download:`rmortiz2.txt<txtfiles/rmortiz2.txt>`
-- :download:`rtsaucke.txt<txtfiles/rtsaucke.txt>`
-- :download:`ryansaab.txt<txtfiles/ryansaab.txt>`
-- :download:`skylagre.txt<txtfiles/skylagre.txt>`
-- :download:`sswu2.txt<txtfiles/sswu2.txt>`
-- :download:`xichenzh.txt<txtfiles/xichenzh.txt>`
-- :download:`xtstanto.txt<txtfiles/xtstanto.txt>`
-- :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
+.. comment:
+    - :download:`aevicker.txt<txtfiles/aevicker.txt>`
+    - :download:`alecjens.txt<txtfiles/alecjens.txt>`
+    - :download:`amritaga.txt<txtfiles/amritaga.txt>`
+    - :download:`anrao4.txt<txtfiles/anrao4.txt>`
+    - :download:`asnewbur.txt<txtfiles/asnewbur.txt>`
+    - :download:`azumpano.txt<txtfiles/azumpano.txt>`
+    - :download:`cmpretna.txt<txtfiles/cmpretna.txt>`
+    - :download:`cr226.txt<txtfiles/cr226.txt>`
+    - :download:`ctrennel.txt<txtfiles/ctrennel.txt>`
+    - :download:`dheredia.txt<txtfiles/dheredia.txt>`
+    - :download:`eliascol.txt<txtfiles/eliascol.txt>`
+    - :download:`elifelds.txt<txtfiles/elifelds.txt>`
+    - :download:`emilytap.txt<txtfiles/emilytap.txt>`
+    - :download:`gsrich.txt<txtfiles/gsrich.txt>`
+    - :download:`ianmcmee.txt<txtfiles/ianmcmee.txt>`
+    - :download:`jiongliu.txt<txtfiles/jiongliu.txt>`
+    - :download:`msmith37.txt<txtfiles/msmith37.txt>`
+    - :download:`omarjaff.txt<txtfiles/omarjaff.txt>`
+    - :download:`qmgibbon.txt<txtfiles/qmgibbon.txt>`
+    - :download:`ramateja.txt<txtfiles/ramateja.txt>`
+    - :download:`rmortiz2.txt<txtfiles/rmortiz2.txt>`
+    - :download:`rtsaucke.txt<txtfiles/rtsaucke.txt>`
+    - :download:`ryansaab.txt<txtfiles/ryansaab.txt>`
+    - :download:`skylagre.txt<txtfiles/skylagre.txt>`
+    - :download:`sswu2.txt<txtfiles/sswu2.txt>`
+    - :download:`xichenzh.txt<txtfiles/xichenzh.txt>`
+    - :download:`xtstanto.txt<txtfiles/xtstanto.txt>`
+    - :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
 
 
 
