@@ -1,5 +1,3 @@
-:orphan:
-
 Code breakers
 =============
 
@@ -104,35 +102,34 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-.. comment:
-    - :download:`aevicker.txt<txtfiles/aevicker.txt>`
-    - :download:`alecjens.txt<txtfiles/alecjens.txt>`
-    - :download:`amritaga.txt<txtfiles/amritaga.txt>`
-    - :download:`anrao4.txt<txtfiles/anrao4.txt>`
-    - :download:`asnewbur.txt<txtfiles/asnewbur.txt>`
-    - :download:`azumpano.txt<txtfiles/azumpano.txt>`
-    - :download:`cmpretna.txt<txtfiles/cmpretna.txt>`
-    - :download:`cr226.txt<txtfiles/cr226.txt>`
-    - :download:`ctrennel.txt<txtfiles/ctrennel.txt>`
-    - :download:`dheredia.txt<txtfiles/dheredia.txt>`
-    - :download:`eliascol.txt<txtfiles/eliascol.txt>`
-    - :download:`elifelds.txt<txtfiles/elifelds.txt>`
-    - :download:`emilytap.txt<txtfiles/emilytap.txt>`
-    - :download:`gsrich.txt<txtfiles/gsrich.txt>`
-    - :download:`ianmcmee.txt<txtfiles/ianmcmee.txt>`
-    - :download:`jiongliu.txt<txtfiles/jiongliu.txt>`
-    - :download:`msmith37.txt<txtfiles/msmith37.txt>`
-    - :download:`omarjaff.txt<txtfiles/omarjaff.txt>`
-    - :download:`qmgibbon.txt<txtfiles/qmgibbon.txt>`
-    - :download:`ramateja.txt<txtfiles/ramateja.txt>`
-    - :download:`rmortiz2.txt<txtfiles/rmortiz2.txt>`
-    - :download:`rtsaucke.txt<txtfiles/rtsaucke.txt>`
-    - :download:`ryansaab.txt<txtfiles/ryansaab.txt>`
-    - :download:`skylagre.txt<txtfiles/skylagre.txt>`
-    - :download:`sswu2.txt<txtfiles/sswu2.txt>`
-    - :download:`xichenzh.txt<txtfiles/xichenzh.txt>`
-    - :download:`xtstanto.txt<txtfiles/xtstanto.txt>`
-    - :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
+- :download:`abrarnav.txt<txtfiles/abrarnav.txt>`
+- :download:`aidansum.txt<txtfiles/aidansum.txt>`
+- :download:`awoods3.txt<txtfiles/awoods3.txt>`
+- :download:`bjperez4.txt<txtfiles/bjperez4.txt>`
+- :download:`bvlagos.txt<txtfiles/bvlagos.txt>`
+- :download:`carolpac.txt<txtfiles/carolpac.txt>`
+- :download:`cjmclaur.txt<txtfiles/cjmclaur.txt>`
+- :download:`ehkukmye.txt<txtfiles/ehkukmye.txt>`
+- :download:`hli237.txt<txtfiles/hli237.txt>`
+- :download:`irenemae.txt<txtfiles/irenemae.txt>`
+- :download:`jacksayr.txt<txtfiles/jacksayr.txt>`
+- :download:`jakeburd.txt<txtfiles/jakeburd.txt>`
+- :download:`jaypilla.txt<txtfiles/jaypilla.txt>`
+- :download:`jeevajac.txt<txtfiles/jeevajac.txt>`
+- :download:`joannezh.txt<txtfiles/joannezh.txt>`
+- :download:`jwschert.txt<txtfiles/jwschert.txt>`
+- :download:`katemurp.txt<txtfiles/katemurp.txt>`
+- :download:`lingjunc.txt<txtfiles/lingjunc.txt>`
+- :download:`louislod.txt<txtfiles/louislod.txt>`
+- :download:`mareyf.txt<txtfiles/mareyf.txt>`
+- :download:`msingh43.txt<txtfiles/msingh43.txt>`
+- :download:`nghiale.txt<txtfiles/nghiale.txt>`
+- :download:`rdflores.txt<txtfiles/rdflores.txt>`
+- :download:`spark48.txt<txtfiles/spark48.txt>`
+- :download:`sswu2.txt<txtfiles/sswu2.txt>`
+- :download:`teellis.txt<txtfiles/teellis.txt>`
+- :download:`tfbabbit.txt<txtfiles/tfbabbit.txt>`
+- :download:`zhenyuti.txt<txtfiles/zhenyuti.txt>`
 
 
 
