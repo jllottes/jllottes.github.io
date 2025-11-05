@@ -3,9 +3,7 @@
 Current Tasks
 =============
 
- * Prepare for Quiz 7.
- * Finish edits for Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
- * Finish edits for Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
+ * Finish Project 4, :doc:`Image denoising</Projects/image_denoising/image_denoising>` 
 
 ..
     Comment:
