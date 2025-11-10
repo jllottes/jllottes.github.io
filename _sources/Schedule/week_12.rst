@@ -30,8 +30,8 @@ Mathematics
 ~~~~~~~~~~~
 * `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
 
-.. comment
-    Week 12 notebook
-    ~~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week12_notebook.html>`_
-    - `Download <../_static/weekly_notebooks/week12_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+
+Week 12 notebook
+~~~~~~~~~~~~~~~~
+- `View online <../_static/weekly_notebooks/week12_notebook.html>`_
+- `Download <../_static/weekly_notebooks/week12_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
