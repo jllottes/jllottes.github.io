@@ -1,15 +1,14 @@
-:orphan:
-
-Week 13: Apr 21 - Apr 25
+Week 13: Nov 17 - Nov 21
 ========================
 
-.. rubric:: Wednesday, April 21st
+.. comment
+    .. rubric:: Wednesday, April 21st
 
-* :download:`Sample Quiz 9 <../Quizzes/quiz09_sample.pdf>`
+    * :download:`Sample Quiz 9 <../Quizzes/quiz09_sample.pdf>`
 
-What is covered:
+    What is covered:
 
-* Regular expressions
+    * Regular expressions
 
 Python
 ~~~~~~
@@ -20,7 +19,7 @@ Mathematics
 * `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
 
 
-Project 7
+Project 6
 ~~~~~~~~~~
 
 * :doc:`Epidemic </Projects/epidemic/epidemic>`
