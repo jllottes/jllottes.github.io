@@ -1,15 +1,12 @@
-:orphan:
-
-Week 14: Apr 28 - May 2
+Week 14: Nov 24
 ========================
 
 Python
 ~~~~~~
 
 * Data visualization
-* Using ``np.roll``
 
-Project 7
+Project 6
 ~~~~~~~~~~
 
 * :doc:`Epidemic </Projects/epidemic/epidemic>`

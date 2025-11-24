@@ -13,6 +13,7 @@ Week 13: Nov 17 - Nov 21
 Python
 ~~~~~~
 * Animation with Python
+* Data visualization
 
 Mathematics
 ~~~~~~~~~~~
