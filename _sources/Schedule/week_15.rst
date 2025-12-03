@@ -1,18 +1,12 @@
-:orphan:
-
-:orphan:
-
-Week 15: Dec 2 - Dec 6
+Week 15: Dec 1 - Dec 5
 ========================
 
 Python
 ~~~~~~
 
-* `Regular expressions <https://www.debuggex.com/cheatsheet/regex/python>`_.
-* Pandas
-* `Everton.csv <../_static/downloads/Everton.csv>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+* Data visualization
 
-Project 7
+Project 6
 ~~~~~~~~~~
 
 * :doc:`Epidemic </Projects/epidemic/epidemic>`

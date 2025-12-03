@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
- * Work on Project 6, :doc:`Epidemic </Projects/epidemic/epidemic>`
+ * Finish Project 6, :doc:`Epidemic </Projects/epidemic/epidemic>`
 
 ..
     Comment:

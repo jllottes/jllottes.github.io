@@ -36,10 +36,9 @@ Weekly Schedule
    
    Schedule/week_14
    
+   Schedule/week_15
+   
 ..
    Comment:  
-       
-   
-       Schedule/week_15
        
        Schedule/week_16
