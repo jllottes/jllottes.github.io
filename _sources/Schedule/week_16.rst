@@ -1,7 +1,5 @@
 :orphan:
 
-:orphan:
-
 Week 16: Dec 9 - Dec 13
 ========================
 

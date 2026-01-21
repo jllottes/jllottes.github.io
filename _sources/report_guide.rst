@@ -1,7 +1,8 @@
 Project Report Guide
 ====================
 
-`Example report <../../_static/projects/twin_primes.html>`_
+.. Comment
+    `Example report <../../_static/projects/twin_primes.html>`_
 
 Checklist
 ---------
@@ -24,29 +25,30 @@ all Python code. Plagiarism of any kind (copying from other students, or permitt
 someone to copy your work, copying from the internet etc.) will result at the minimum
 in the failing grade on a report, and possibly in additional sanctions (an F grade for
 the course, an academic disciplinary action etc.).
-
-
+You may be asked to explain in detail what your code does and how it works if there 
+are questions about the integrity of your work.
 
 
 Using external resources
 ------------------------
 
 There are two types of resources that may be relevant. 
-First, there are plenty of books and websites devoted to Python programming. 
-You should take advantage of this. 
-There are many Python features that we will not have time to cover in class.
-If you have a programming question then in most cases a quick google search will get you an answer.
+First, there are many Python features that we will not have time to cover in class.
+If you are having difficulty implementing some of your ideas in Python, please
+ask me for assistance so that I can provide resources for any
+additional Python features that may be helpful.
 
 **Note**: You must understand and be able to explain in detail what your code does and how it works.
 You must not copy code snippets that you found somewhere and that somehow seem to be doing what you need.
-Any code that you cannot fully explain will result in an F on the project.
+Any code that you cannot fully explain will result in an F on the project. **You are responsible for checking
+with me before using any Python tools that have not been discussed in class**.
 
-Second, most of the projects you will be working on are based on mathematical problems and ideas that are described somewhere. 
-However, you should not start your work on a project by doing a web or library search. 
-The goal of each project is for you to explore a problem on your own. 
+Second, most of the projects you will be working on are based on mathematical problems and ideas that have been explored and described elsewhere. 
+However, in working on your projects you should absolutely **NOT** search for such resources. 
+The goal of each project is for you to explore a problem on your own and develop these research skills. 
 Describing your personal exploration and experimentation must be the main part of your project report. 
 The projects are open-ended so there is no “complete solution” you should be looking for. 
-Have fun, explore, and put in the report what you came up with.
+Have fun, explore, and put in the report what you come up with.
 
 
 Report grading rubrics
@@ -96,6 +98,11 @@ A+ or A++.
 Report Style Guide
 ------------------
 
+Each project report is a narrative work.
+It should tell the story of what you did and what you discovered during your exploration of each topic.
+The report should be written for an imaginary reader that is competent with math and Python, but is not part of our class.
+Everything that you do in the report should be explained and justified (e.g. by defining any relevant terms, providing
+motivation for each step of the process, etc.).
 
 Report introduction
 ~~~~~~~~~~~~~~~~~~~

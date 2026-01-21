@@ -1,9 +1,12 @@
+:orphan:
+
 A prime or not a prime
 ======================
 
-`Example report <../../_static/projects/Project01_example.html>`_
-        
-.. rubric:: due: Wednesday, September 24th at 11:59 PM
+.. Comment
+    `Example report <../../_static/projects/Project01_example.html>`_
+            
+    .. rubric:: due: Wednesday, September 24th at 11:59 PM
 
 Prime numbers
 -------------

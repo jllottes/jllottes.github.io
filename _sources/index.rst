@@ -14,7 +14,10 @@ Instructor
 | Jon Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** Fri 11:00 AM - 11:50 AM and by appointment.
+| **Office Hours:** TDB 
+
+.. comment
+    Fri 10:00 AM - 11:00 AM and by appointment.
 
 
 Course Resources
@@ -47,6 +50,9 @@ Grading
 There will be no exams in this course. Instead, grades will be assigned based on the following components:
 
     * Project Reports 70%
+    * In-class assignments 30%
+    
+.. Comment
     * Quizzes 20%
     * Class Participation 10%
 
@@ -66,19 +72,22 @@ Your project report must be original, even if you worked on some components of t
 More information about project reports is posted :doc:`here <report_guide>`.
 The lowest project score will be dropped at the end of the semester.
 
+.. Comment
+    Quizzes
+    =======
+    Each Wednesday there will be a short quiz testing your knowledge of Python.
+    Sample quizzes will be posted ahead of time with the :doc:`weekly class schedule <weekly_schedule>`.
+    The lowest two quiz scores will be dropped.
 
-Quizzes
-=======
-
-Each Wednesday there will be a short quiz testing your knowledge of Python.
-Sample quizzes will be posted ahead of time with the :doc:`weekly class schedule <weekly_schedule>`.
-The lowest two quiz scores will be dropped.
-
-Class Participation
-===================
-
-This includes class attendance, asking and answering questions in class and during office hours, and submitting weekly notebook files.
-Class participation will be evaluated weekly.
+    Class Participation
+    ===================
+    This includes class attendance, asking and answering questions in class and during office hours, and submitting weekly notebook files.
+    Class participation will be evaluated weekly.
+    
+In-class assignments
+====================
+There will be regular in-class assignments throughout the semester.
+These assignments may include quizzes, code snippets to be completed, explanation/documentation of existing code, etc.
 
 
 Useful Information
@@ -99,10 +108,10 @@ Useful Information
 Important Dates
 ===============
 
-    * August 25: first day of classes
-    * September 2: last day to drop/add
-    * November 12: last day to resign
-    * December 8: last day of classes
+    * January 21: first day of classes
+    * January 28: last day to drop/add
+    * April 14: last day to resign
+    * May 4: last day of class
 
 
 Incomplete Grades
@@ -122,10 +131,13 @@ The academic integrity policy is available at:
 
     `Academic Integrity <https://www.buffalo.edu/academic-integrity.html>`_
 
-While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. Any outside resource that is used during the project (this includes code taken from class notes or other sources) or while writing the report must be properly cited in the report.
+All work submitted for this course must be your own. 
+As a result, any use of generative AI (e.g., ChatGPT or Grammarly) is prohibited in this class and will be considered a violation of UB’s academic integrity policy. 
+If you are unsure whether a resource or tool is allowable, be sure to ask in advance. 
+
+While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. 
 You may be asked to explain in detail what your code does and how it works if there are questions about the integrity of your work.
 
-Collaboration of any kind on the quizzes is forbidden, as is the use of any materials not approved of by the instructor.
 
 Accessibility Resources
 =======================
