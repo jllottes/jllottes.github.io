@@ -29,8 +29,8 @@ Python
 Week 1 notebook
 ~~~~~~~~~~~~~~~
 - `View online <../_static/weekly_notebooks/week01_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week01_notebook.ipynb>`_ 
+- `Download <../_static/weekly_notebooks/week01_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
 
 .. Comment
     - `View online (day 2) <../_static/weekly_notebooks/week01_notebook_day2.html>`_
-    - `Download (day 2) <../_static/weekly_notebooks/week01_notebook_day2.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
+    - `Download (day 2) <../_static/weekly_notebooks/week01_notebook_day2.ipynb>`_ 
