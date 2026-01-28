@@ -19,9 +19,9 @@ Python
 
 * Basic mathematical operations
 * Numbers in Python: integers and floats
-* Variable assignment
 
 .. Comment
+    * Variable assignment
     * Strings and string formatting
     * The ``print()`` function
     * :doc:`Lists and "for" loops </PT/PT-lists>`
