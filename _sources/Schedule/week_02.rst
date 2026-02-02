@@ -21,10 +21,6 @@ Python
 * Variable assignment
 * Strings and string formatting
 * The ``print()`` function
-* :doc:`Lists and "for" loops </PT/PT-lists>`
-* The ``range()`` function
-* Boolean expressions
-* The ``if`` statement
 
 .. Comment
     Project 1

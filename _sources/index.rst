@@ -14,10 +14,7 @@ Instructor
 | Jon Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** TDB 
-
-.. comment
-    Fri 10:00 AM - 11:00 AM and by appointment.
+| **Office Hours:** Fri 10:00 AM - 11:00 AM and by appointment.
 
 
 Course Resources
