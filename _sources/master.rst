@@ -15,9 +15,10 @@ MTH 337 Introduction to Scientific and Mathematical Computing
    :maxdepth: 3
    :caption: Projects
    
+   Projects/prime_or_not/prime_or_not
+   
 ..
     Comment:
-       Projects/prime_or_not/prime_or_not
        Projects/pythagorean_triples/pythagorean_triples
        Projects/tartans/tartans
        Projects/image_denoising/image_denoising

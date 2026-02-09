@@ -27,7 +27,8 @@
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="NetworkX Graphs" href="../../PT/PT-networkx_graphs/PT-networkx_graphs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,6 +57,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../report_guide.html">Project Report Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A prime or not a prime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prime-numbers">Prime numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#primes-and-false-primes">Primes and false primes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#congruences">Congruences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#congruences-and-prime-numbers">Congruences and prime numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -126,7 +140,7 @@ primes</p>
 <div class="math notranslate nohighlight">
 \[n = p_{1}\cdot p_{2} \cdot {\dots} \cdot p_{m}\]</div>
 <p>such that <span class="math notranslate nohighlight">\(p_{1} \leq p_{2} \leq {\dots} \leq p_{m}\)</span>. This
-product called the <em>primary decomposition</em> of <span class="math notranslate nohighlight">\(n\)</span>. For example:
+product called the <em>prime decomposition</em> of <span class="math notranslate nohighlight">\(n\)</span>. For example:
 <span class="math notranslate nohighlight">\(12 = 2\cdot 2\cdot 3\)</span>, <span class="math notranslate nohighlight">\(25 = 5\cdot 5\)</span>,
 <span class="math notranslate nohighlight">\(90 = 2\cdot 3\cdot 3\cdot 5\)</span>.</p>
 <p><strong>Exercise 1.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">get_primes(n)</span></code> that returns the
@@ -144,20 +158,20 @@ to the largest:</p>
 <div class="output docutils container">
 <p>[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]</p>
 </div>
-<p><strong>Exercise 2.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">primary(n)</span></code> that for each
+<p><strong>Exercise 2.</strong> Write a Python function <code class="docutils literal notranslate"><span class="pre">prime_decomp(n)</span></code> that for each
 integer <code class="docutils literal notranslate"><span class="pre">n</span></code> greater than 1 returns a list</p>
 <div class="math notranslate nohighlight">
 \[[p_{1}, p_{2}, \dots, p_{m}]\]</div>
 <p>where <span class="math notranslate nohighlight">\(p_{1}, \dots, p_{m}\)</span> are primes such that
 <span class="math notranslate nohighlight">\(p_{1} \leq p_{2} \leq {\dots} \leq p_{m}\)</span> and
 <span class="math notranslate nohighlight">\(n = p_{1}\cdot p_{2} \cdot {\dots} \cdot p_{m}\)</span>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">primary</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prime_decomp</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output docutils container">
 <p>[2, 5]</p>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">primary</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prime_decomp</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output docutils container">
@@ -232,7 +246,7 @@ false prime is 561.</p>
 You can start your work on part 1 by writing a function <code class="docutils literal notranslate"><span class="pre">is_prime_like(n)</span></code> that returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code> is
 prime-like and returns <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.</p>
-<p><strong>Part 2.</strong> Compute the primary decomposition of each false prime you found.</p>
+<p><strong>Part 2.</strong> Compute the prime decomposition of each false prime you found.</p>
 <p><strong>Part 3.</strong> What can you say or conjecture about properties of false
 primes?</p>
 <p><strong>Note.</strong> In order to compute with Python the reminder from division of
@@ -273,13 +287,20 @@ as that of <code class="docutils literal notranslate"><span class="pre">(a**n)%k
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../PT/PT-networkx_graphs/PT-networkx_graphs.html" class="btn btn-neutral float-left" title="NetworkX Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Feb 04, 2026.
+        Last updated on Feb 09, 2026.
       </span>
 
     </p>

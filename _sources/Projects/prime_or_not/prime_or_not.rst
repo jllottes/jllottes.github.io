@@ -1,5 +1,3 @@
-:orphan:
-
 A prime or not a prime
 ======================
 
@@ -25,7 +23,7 @@ primes
 .. math:: n = p_{1}\cdot p_{2} \cdot {\dots} \cdot p_{m}
 
 such that :math:`p_{1} \leq p_{2} \leq {\dots} \leq p_{m}`. This
-product called the *primary decomposition* of :math:`n`. For example:
+product called the *prime decomposition* of :math:`n`. For example:
 :math:`12 = 2\cdot 2\cdot 3`, :math:`25 = 5\cdot 5`,
 :math:`90 = 2\cdot 3\cdot 3\cdot 5`.
 
@@ -53,7 +51,7 @@ to the largest:
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
 
-**Exercise 2.** Write a Python function ``primary(n)`` that for each
+**Exercise 2.** Write a Python function ``prime_decomp(n)`` that for each
 integer ``n`` greater than 1 returns a list
 
 .. math:: [p_{1}, p_{2}, \dots, p_{m}]
@@ -64,7 +62,7 @@ where :math:`p_{1}, \dots, p_{m}` are primes such that
 
 .. code:: python
 
-    primary(10)
+    prime_decomp(10)
 
 .. container:: output
 
@@ -74,7 +72,7 @@ where :math:`p_{1}, \dots, p_{m}` are primes such that
 
 .. code:: python
 
-    primary(90)
+    prime_decomp(90)
 
 .. container:: output
 
@@ -166,7 +164,7 @@ You can start your work on part 1 by writing a function ``is_prime_like(n)`` tha
 prime-like and returns ``False`` otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.
 
-**Part 2.** Compute the primary decomposition of each false prime you found.
+**Part 2.** Compute the prime decomposition of each false prime you found.
 
 **Part 3.** What can you say or conjecture about properties of false
 primes?
