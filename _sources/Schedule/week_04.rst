@@ -14,18 +14,11 @@ Week 4: Feb 9 - Feb 13
     * Logical operators ``not``, ``and``, ``or``
     * Functions: positional, keyword, and default arguments.
 
-Logistics
-~~~~~~~~~
-* Project Report Guide
-
 Python
 ~~~~~~
 * Fine-tuning loops: ``break`` and ``continue``
 * ``while`` loops
-* :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
-* :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
+* :doc:`Functions</PT/PT-functions>`
 
 .. Comment
     * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
@@ -34,8 +27,6 @@ Mathematics
 ~~~~~~~~~~~
 * Primary decomposition of integers
 * Congruences
-* Pythagorean triples
-* The greatest common divisor
 
 Project 1
 ~~~~~~~~~

@@ -4,9 +4,11 @@ Current Tasks
 =============
 
  * Read through the Project Report Guide
+ * Work on Project 1, :doc:`Pythagorean triples</Projects/prime_or_not/prime_or_not>`.
 
 ..
     Comment:
+    * Finish Project 1, :doc:`Pythagorean triples</Projects/prime_or_not/prime_or_not>`.
     * Finish Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
     * Finish Project 3, :doc:`Mayfly model</Projects/mayfly_model/mayfly_model>`
     * Finish Project 4, :doc:`Tartans</Projects/tartans/tartans>`

@@ -17,7 +17,7 @@ What is covered:
 
 Python
 ~~~~~~
-
+* :doc:`More about functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
 * Colors in Matplotlib
