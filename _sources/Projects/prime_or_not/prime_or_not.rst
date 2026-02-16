@@ -4,7 +4,7 @@ A prime or not a prime
 .. Comment
     `Example report <../../_static/projects/Project01_example.html>`_
             
-rubric:: due: Monday, February 23rd at 11:59 PM
+.. rubric:: due: Monday, February 23rd at 11:59 PM
 
 Prime numbers
 -------------
