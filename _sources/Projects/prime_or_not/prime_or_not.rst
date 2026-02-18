@@ -4,15 +4,15 @@ A prime or not a prime
 .. Comment
     `Example report <../../_static/projects/Project01_example.html>`_
             
-.. rubric:: due: Monday, February 23rd at 11:59 PM
+.. rubric:: due: Wednesday, February 25th at 11:59 PM
 
 Prime numbers
 -------------
 
-A *prime number* is an integer greater than 1 which is divisible only by
-1 and by itself. For example, 5 is a prime but 6 is not since 6 is
-divisible by 1, 2, 3, and 6. There are infinitely many prime numbers.
-Here is the list of all primes smaller than 50:
+A *prime number* is an integer greater than :math:`1` which is divisible only by
+:math:`1` and by itself. For example, :math:`5` is a prime but :math:`6` is not since :math:`6` is
+divisible by :math:`1`, :math:`2`, :math:`3`, and :math:`6`. There are infinitely many prime numbers.
+Here is the list of all primes smaller than :math:`50`:
 
 .. math:: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
 
@@ -28,8 +28,8 @@ product called the *prime decomposition* of :math:`n`. For example:
 :math:`90 = 2\cdot 3\cdot 3\cdot 5`.
 
 
-**Exercise 1.** Write a Python function ``get_primes(n)`` that returns the
-list of all primes smaller or equal to ``n``, ordered from the smallest
+**Exercise 1.** Write a Python function ``get_primes`` that takes in an integer ``n`` and returns the
+list of all primes less than or equal to ``n``, ordered from the smallest
 to the largest:
 
 .. code:: python
@@ -51,8 +51,8 @@ to the largest:
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
 
-**Exercise 2.** Write a Python function ``prime_decomp(n)`` that for each
-integer ``n`` greater than 1 returns a list
+**Exercise 2.** Write a Python function ``get_prime_decomp`` that for each
+integer ``n`` greater than :math:`1` returns a list
 
 .. math:: [p_{1}, p_{2}, \dots, p_{m}]
 
@@ -62,7 +62,7 @@ where :math:`p_{1}, \dots, p_{m}` are primes such that
 
 .. code:: python
 
-    prime_decomp(10)
+    get_prime_decomp(10)
 
 .. container:: output
 
@@ -72,7 +72,7 @@ where :math:`p_{1}, \dots, p_{m}` are primes such that
 
 .. code:: python
 
-    prime_decomp(90)
+    get_prime_decomp(90)
 
 .. container:: output
 
@@ -102,7 +102,7 @@ Given integers :math:`m, n` and :math:`k` we say that :math:`m` and
 
 .. math:: 19 = 2\cdot 7 + 5 \ \ \ \ \ \ \ 47 = 6\cdot 7 + 5
 
-so the reminder from division of both 19 and 47 by 7 is 5.
+so the reminder from division of both :math:`19` and :math:`47` by :math:`7` is :math:`5`.
 
 
 **Note.** The congruence relation is preserved by the arithmetic
@@ -138,7 +138,7 @@ holds for :math:`a= 1, 2, 3, 4`.
 
 The formula from the above theorem does not hold in general if :math:`p`
 is not a prime number. For example for :math:`p = 4` and :math:`a = 2`
-we have :math:`2^{4}= 16` which is not congruent to 2 modulo 4.
+we have :math:`2^{4}= 16` which is not congruent to :math:`2` modulo :math:`4`.
 
 If it would turn out that the only numbers :math:`p` that satisfy the
 formula :math:`a^{p} \equiv a \ (\text{mod } p)` for all :math:`0 \leq a < p` are
@@ -149,8 +149,8 @@ prime. It turns out, however, that there are numbers :math:`p\geq 2` such that:
 -  the formula :math:`a^{p} \equiv a \ (\text{mod } p)` holds for all
    :math:`0 \leq a < p`
 
-We will call such numbers *false primes*. The smallest number (besides 1) which is a
-false prime is 561.
+We will call such numbers *false primes*. The smallest number (besides :math:`1`) which is a
+false prime is :math:`561`.
 
 
 Project
