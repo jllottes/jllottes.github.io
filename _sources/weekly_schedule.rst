@@ -18,11 +18,11 @@ Weekly Schedule
    
    Schedule/week_05
    
+   Schedule/week_06
+   
    
 ..
    Comment:  
-       
-       Schedule/week_06
        
        Schedule/week_07
        

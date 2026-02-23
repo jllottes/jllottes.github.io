@@ -58,9 +58,9 @@ Logistics
 
 Python
 ~~~~~~
+* :doc:`Working with modules </PT/PT-importing_modules>`
+* The ``zip`` function
 * :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
 
 .. Comment
     * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
@@ -73,7 +73,7 @@ Python
 
 Week 5 notebook
 ~~~~~~~~~~~~~~~
-    - `View online <../_static/weekly_notebooks/week05_notebook_day1.html>`_
-    - `Download <../_static/weekly_notebooks/week05_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
+    - `View online (day 1) <../_static/weekly_notebooks/week05_notebook_day1.html>`_
+    - `Download (day 1) <../_static/weekly_notebooks/week05_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
     - `View online (day 2) <../_static/weekly_notebooks/week05_notebook_day2.html>`_
     - `Download (day 2) <../_static/weekly_notebooks/week05_notebook_day2.ipynb>`_ 
