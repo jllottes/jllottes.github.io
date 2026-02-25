@@ -40,7 +40,5 @@ Week 6 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week06_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week06_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-
-.. Comment
-    - `View online (day 2) <../_static/weekly_notebooks/week06_notebook_day2.html>`_
-    - `Download (day 2) <../_static/weekly_notebooks/week06_notebook_day2.ipynb>`_
+- `View online (day 2) <../_static/weekly_notebooks/week06_notebook_day2.html>`_
+- `Download (day 2) <../_static/weekly_notebooks/week06_notebook_day2.ipynb>`_
