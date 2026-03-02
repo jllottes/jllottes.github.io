@@ -14,15 +14,6 @@ Week 6: Feb 23 - Feb 27
     * NumPy arrays
     * Matplotlib plots
 
-Project 2
-~~~~~~~~~
-* :doc:`Pythagorean Triples </Projects/pythagorean_triples/pythagorean_triples>`
-
-Mathematics
-~~~~~~~~~~~
-* Pythagorean triples
-* The greatest common divisor
-
 Python
 ~~~~~~
 * :doc:`List indexing and slicing </PT/PT-lists>`
