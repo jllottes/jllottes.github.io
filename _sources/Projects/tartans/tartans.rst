@@ -1,9 +1,8 @@
-:orphan:
-
 Tartans
 =======
 
-.. rubric:: due: Wednesday, October 22nd at 11:59 PM
+.. Comment
+    .. rubric:: due: Wednesday, October 22nd at 11:59 PM
 
 
 Tartan is a traditional Scottish fabric pattern consisting of
@@ -113,27 +112,27 @@ coincide with the labeling choices made in this page.
 
 
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/tfbabbit.png | | **Babbitt, Thomas**                                                  |
+| .. image:: assignments/elaryaaz.png | | **Azab, Elarya**                                                     |
 |    :width:  150px                   | | R4 K2 R56 K48 R2 K12 R2 K48 R56 K2 R4                                |
 |                                     |                                                                        |
 |                                     | | R : [200, 0, 0]                                                      |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/jakeburd.png | | **Burdick, Jake**                                                    |
+| .. image:: assignments/mujingab.png | | **Bondo, Daniella**                                                  |
 |    :width:  150px                   | | B2 K8 B8 G18 K4 G18 B8 K8 B2                                         |
 |                                     |                                                                        |
 |                                     | | B : [44, 44, 128]                                                    |
 |                                     | | K : [16, 16, 16]                                                     |
 |                                     | | G : [0, 104, 24]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/lingjunc.png | | **Chen, Lingjun**                                                    |
+| .. image:: assignments/cachurch.png | | **Church, Connor**                                                   |
 |    :width:  150px                   | | T4 W44 T40 LT6 T6 LT6 T6 LT48 T6 LT6 T6 LT6 T40 W44 T4               |
 |                                     |                                                                        |
 |                                     | | T : [96, 64, 0]                                                      |
 |                                     | | W : [224, 224, 224]                                                  |
 |                                     | | LT : [160, 136, 88]                                                  |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/teellis.png  | | **Ellis, Timothy**                                                   |
+| .. image:: assignments/mtcragan.png | | **Cragan, Michael**                                                  |
 |    :width:  150px                   | | N2 T4 N30 T4 W20 LT30 T4 LT4 T4 LT30 W20 T4 N30 T4 N2                |
 |                                     |                                                                        |
 |                                     | | W : [224, 224, 224]                                                  |
@@ -141,21 +140,21 @@ coincide with the labeling choices made in this page.
 |                                     | | LT : [160, 136, 88]                                                  |
 |                                     | | N : [136, 136, 136]                                                  |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/rdflores.png | | **Flores, Robert**                                                   |
+| .. image:: assignments/teellis.png  | | **Ellis, Timothy**                                                   |
 |    :width:  150px                   | | WY5 DY64 AK64 DY10 AK64 DY64 WY5                                     |
 |                                     |                                                                        |
 |                                     | | WY : [224, 224, 224]                                                 |
 |                                     | | AK : [28, 28, 28]                                                    |
 |                                     | | DY : [232, 192, 0]                                                   |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/irenemae.png | | **Hrab, MJ**                                                         |
+| .. image:: assignments/chiomaem.png | | **Emelisi, Chioma**                                                  |
 |    :width:  150px                   | | C128 B36 C4 B6 C4 B6 C28 L16 C4 L8 C4 L8 C4 L16 C28 B6 C4 B6 C4 B36  |
 |                                     |                                                                        |
 |                                     | | L : [40, 136, 196]                                                   |
 |                                     | | B : [32, 32, 96]                                                     |
 |                                     | | C : [160, 0, 72]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/ehkukmye.png | | **Htoo, Eh Ku**                                                      |
+| .. image:: assignments/skhess.png   | | **Hess, Sophia**                                                     |
 |    :width:  150px                   | | XR8 A6 DY52 DB8 DY4 DB10 XR6 DB18 DY10 DB18 XR6 DB10 DY4 DB8 DY52 A6 |
 |                                     |                                                                        |
 |                                     | | DY : [232, 192, 0]                                                   |
@@ -163,20 +162,20 @@ coincide with the labeling choices made in this page.
 |                                     | | DB : [32, 32, 96]                                                    |
 |                                     | | A : [92, 140, 168]                                                   |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/jeevajac.png | | **Jacob, Jeeva Elsa**                                                |
+| .. image:: assignments/hlkadera.png | | **Kaderabeck, Hannah**                                               |
 |    :width:  150px                   | | K5 R60 K28 Y2 K28 R10 K28 Y2 K28 R60 K5                              |
 |                                     |                                                                        |
 |                                     | | R : [220, 0, 0]                                                      |
 |                                     | | Y : [232, 192, 0]                                                    |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/bvlagos.png  | | **Lagos, Benjamin**                                                  |
+| .. image:: assignments/adwoakis.png | | **Kissi, Adwoa**                                                     |
 |    :width:  150px                   | | K8 W8 K64 W64 K8 W64 K64 W8 K8                                       |
 |                                     |                                                                        |
 |                                     | | W : [224, 224, 224]                                                  |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/nghiale.png  | | **Le, Nghia**                                                        |
+| .. image:: assignments/zmkocher.png | | **Kocher, Zachary**                                                  |
 |    :width:  150px                   | | YT44 DR6 YT6 DR6 YT6 DR6 YT6 DR6 YT44 FSB3 YT3 G3 YT3 LN3            |
 |                                     |                                                                        |
 |                                     | | DR : [136, 0, 0]                                                     |
@@ -185,7 +184,7 @@ coincide with the labeling choices made in this page.
 |                                     | | FSB : [36, 116, 232]                                                 |
 |                                     | | G : [0, 104, 24]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/hli237.png   | | **Li, Aaron**                                                        |
+| .. image:: assignments/smlevy.png   | | **Levy, Sammy**                                                      |
 |    :width:  150px                   | | K2 R54 G8 R4 G8 R8 G18 W2 G18 R16 G18 W2 G18 R8 G8 R4 G8 R54 K2      |
 |                                     |                                                                        |
 |                                     | | G : [0, 104, 24]                                                     |
@@ -193,7 +192,7 @@ coincide with the labeling choices made in this page.
 |                                     | | W : [224, 224, 224]                                                  |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/louislod.png | | **Lodovico, Louis**                                                  |
+| .. image:: assignments/kli89.png    | | **Li, Kaicheng**                                                     |
 |    :width:  150px                   | | R6 K6 LSB14 RY52 K52 WW10 K52 RY52 LSB14 K6                          |
 |                                     |                                                                        |
 |                                     | | WW : [252, 252, 252]                                                 |
@@ -202,14 +201,14 @@ coincide with the labeling choices made in this page.
 |                                     | | RY : [188, 140, 0]                                                   |
 |                                     | | R : [200, 0, 0]                                                      |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/cjmclaur.png | | **McLaurin, Calvin**                                                 |
+| .. image:: assignments/darenliu.png | | **Liu, Daren**                                                       |
 |    :width:  150px                   | | K6 R2 K60 R56 K2 R2 W6 R2 K2 R56 K60 R2 K6                           |
 |                                     |                                                                        |
 |                                     | | K : [16, 16, 16]                                                     |
 |                                     | | W : [224, 224, 224]                                                  |
 |                                     | | R : [220, 0, 0]                                                      |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/katemurp.png | | **Murphy, Kate**                                                     |
+| .. image:: assignments/henryma.png  | | **Ma, Henry**                                                        |
 |    :width:  150px                   | | O3 Y24 O24 WW6 Y4 FG52 O6 Y2 O6 FG52 Y4 WW6 O24 Y24 O3               |
 |                                     |                                                                        |
 |                                     | | WW : [248, 248, 248]                                                 |
@@ -217,7 +216,7 @@ coincide with the labeling choices made in this page.
 |                                     | | O : [248, 132, 16]                                                   |
 |                                     | | Y : [232, 192, 0]                                                    |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/abrarnav.png | | **Navel, Abrar**                                                     |
+| .. image:: assignments/yuleisim.png | | **Martinez, Yuleisi**                                                |
 |    :width:  150px                   | | R4 B24 R8 G24 R48 W8 R48 G24 R8 B24 R4                               |
 |                                     |                                                                        |
 |                                     | | G : [0, 104, 24]                                                     |
@@ -225,14 +224,14 @@ coincide with the labeling choices made in this page.
 |                                     | | R : [220, 0, 0]                                                      |
 |                                     | | W : [224, 224, 224]                                                  |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/carolpac.png | | **Pachar, Carol**                                                    |
+| .. image:: assignments/jimerril.png | | **Merrill, Jessica**                                                 |
 |    :width:  150px                   | | B10 R4 B20 R32 W4 R32 B20 R4 B10                                     |
 |                                     |                                                                        |
 |                                     | | B : [44, 44, 128]                                                    |
 |                                     | | R : [220, 0, 0]                                                      |
 |                                     | | W : [184, 184, 184]                                                  |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/spark48.png  | | **Park, Sam**                                                        |
+| .. image:: assignments/cgmillen.png | | **Millen, Cecilia**                                                  |
 |    :width:  150px                   | | D50 B4 R50 G20 R8 D50 R4 G4 R50 G4 R4 G4 R50 G4 R4 D50 R8 G20 R50 B4 |
 |                                     |                                                                        |
 |                                     | | B : [44, 44, 128]                                                    |
@@ -240,7 +239,7 @@ coincide with the labeling choices made in this page.
 |                                     | | D : [32, 32, 96]                                                     |
 |                                     | | G : [0, 104, 24]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/bjperez4.png | | **Perez, Brendan**                                                   |
+| .. image:: assignments/aidennac.png | | **Nachtmann, Aiden**                                                 |
 |    :width:  150px                   | | DR3 R6 LN46 R6 DR6 R46 K4 R6 K4 R46 DR6 R6 LN46 R6 DR3               |
 |                                     |                                                                        |
 |                                     | | K : [16, 16, 16]                                                     |
@@ -248,34 +247,34 @@ coincide with the labeling choices made in this page.
 |                                     | | R : [200, 0, 0]                                                      |
 |                                     | | DR : [136, 0, 0]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/jaypilla.png | | **Pillai, Jay**                                                      |
+| .. image:: assignments/ahopalin.png | | **Opalinski, Abigail**                                               |
 |    :width:  150px                   | | K3 W32 K32 DN4 K4 DN4 K4 DN44 K4 DN4 K4 DN4 K32 W32 K3               |
 |                                     |                                                                        |
 |                                     | | DN : [92, 92, 92]                                                    |
 |                                     | | W : [224, 224, 224]                                                  |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/mareyf.png   | | **Reyf, Michael**                                                    |
+| .. image:: assignments/nmpascel.png | | **Pascell, Nicholas**                                                |
 |    :width:  150px                   | | B4 LB8 B20 LB20 W4 LB20 B10 LB20 W4 LB20 B20 LB8 B4                  |
 |                                     |                                                                        |
 |                                     | | LB : [40, 136, 196]                                                  |
 |                                     | | B : [44, 44, 128]                                                    |
 |                                     | | W : [224, 224, 224]                                                  |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/jacksayr.png | | **Sayre, Jack**                                                      |
+| .. image:: assignments/ppatel43.png | | **Patel, Pratyush Jayeshkumar**                                      |
 |    :width:  150px                   | | K6 Y4 K42 Y4 K12 Y48 K4 Y12 K4 Y48 K12 Y4 K42 Y4 K6                  |
 |                                     |                                                                        |
 |                                     | | Y : [232, 192, 0]                                                    |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/jwschert.png | | **Schertzer, Josh**                                                  |
+| .. image:: assignments/ethanrup.png | | **Ruppe, Ethan**                                                     |
 |    :width:  150px                   | | K16 Y4 K32 Y48 R4 Y48 K32 Y4 K16                                     |
 |                                     |                                                                        |
 |                                     | | K : [16, 16, 16]                                                     |
 |                                     | | Y : [216, 176, 0]                                                    |
 |                                     | | R : [200, 0, 0]                                                      |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/msingh43.png | | **Singh, Manpreet**                                                  |
+| .. image:: assignments/marcseba.png | | **Sebaaly, Marc**                                                    |
 |    :width:  150px                   | | A2 K24 A24 B8 R48 A8 R48 B8 A24 K24 A2                               |
 |                                     |                                                                        |
 |                                     | | A : [60, 130, 175]                                                   |
@@ -283,7 +282,7 @@ coincide with the labeling choices made in this page.
 |                                     | | R : [220, 0, 0]                                                      |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/aidansum.png | | **Sumrall, Aidan**                                                   |
+| .. image:: assignments/gaelenlo.png | | **Sicat, Lorenzo**                                                   |
 |    :width:  150px                   | | DG56 W8 DB12 LG28 DG8 LG28 DB12 W8 DG56 A8                           |
 |                                     |                                                                        |
 |                                     | | W : [224, 224, 224]                                                  |
@@ -292,7 +291,7 @@ coincide with the labeling choices made in this page.
 |                                     | | LG : [152, 180, 128]                                                 |
 |                                     | | DG : [0, 56, 32]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/zhenyuti.png | | **Tian, Damian**                                                     |
+| .. image:: assignments/csummere.png | | **Summerell, Claire**                                                |
 |    :width:  150px                   | | Y2 DG48 DB14 DR52 DB14 DR52 DB14 DG48 Y2                             |
 |                                     |                                                                        |
 |                                     | | DB : [32, 32, 96]                                                    |
@@ -300,7 +299,7 @@ coincide with the labeling choices made in this page.
 |                                     | | DG : [0, 56, 32]                                                     |
 |                                     | | DR : [136, 0, 0]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/awoods3.png  | | **Woods, Arianna**                                                   |
+| .. image:: assignments/xsun22.png   | | **Sun, Xiaoxiang**                                                   |
 |    :width:  150px                   | | DR4 DB12 G30 BL18 DB60 BL18 G12 MY4 G12 BL18 DB60 BL18 G30 DB12      |
 |                                     |                                                                        |
 |                                     | | G : [20, 100, 0]                                                     |
@@ -309,7 +308,7 @@ coincide with the labeling choices made in this page.
 |                                     | | DB : [0, 0, 80]                                                      |
 |                                     | | DR : [140, 0, 0]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/sswu2.png    | | **Wu, Sydney**                                                       |
+| .. image:: assignments/zhenyuti.png | | **Tian, Damian**                                                     |
 |    :width:  150px                   | | RB8 MY4 RB24 DR4 RB8 DR8 K8 G24 A4 G8 A4 G24 K8 DR8 RB8 DR4 RB24 MY4 |
 |                                     |                                                                        |
 |                                     | | A : [92, 140, 168]                                                   |
@@ -319,11 +318,28 @@ coincide with the labeling choices made in this page.
 |                                     | | RB : [28, 0, 112]                                                    |
 |                                     | | K : [16, 16, 16]                                                     |
 +-------------------------------------+------------------------------------------------------------------------+
-| .. image:: assignments/joannezh.png | | **Zhou, Joanne**                                                     |
+| .. image:: assignments/colewomb.png | | **Wombwell, Cole**                                                   |
 |    :width:  150px                   | | B3 K4 T32 O50 B12 O50 T32 K4 B3                                      |
 |                                     |                                                                        |
 |                                     | | B : [44, 44, 128]                                                    |
 |                                     | | K : [16, 16, 16]                                                     |
 |                                     | | T : [96, 64, 0]                                                      |
 |                                     | | O : [216, 124, 0]                                                    |
++-------------------------------------+------------------------------------------------------------------------+
+| .. image:: assignments/awong75.png  | | **Wong, Alex**                                                       |
+|    :width:  150px                   | | R4 G4 R4 K10 NB44 W4 NB44 K10 R4 G4 R4                               |
+|                                     |                                                                        |
+|                                     | | G : [0, 104, 24]                                                     |
+|                                     | | NB : [0, 60, 100]                                                    |
+|                                     | | R : [200, 0, 0]                                                      |
+|                                     | | W : [224, 224, 224]                                                  |
+|                                     | | K : [16, 16, 16]                                                     |
++-------------------------------------+------------------------------------------------------------------------+
+| .. image:: assignments/weitaozh.png | | **Zheng, Weitao**                                                    |
+|    :width:  150px                   | | G4 R64 B18 R12 B4 R6 B4 R24 WW6 R24 B4 R6 B4 R12 B18 R64 G4          |
+|                                     |                                                                        |
+|                                     | | WW : [252, 252, 252]                                                 |
+|                                     | | B : [44, 44, 128]                                                    |
+|                                     | | G : [0, 104, 24]                                                     |
+|                                     | | R : [200, 0, 0]                                                      |
 +-------------------------------------+------------------------------------------------------------------------+
