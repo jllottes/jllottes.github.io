@@ -6,7 +6,7 @@ Python
 * :doc:`Boolean NumPy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * Boolean masks
 * String operations (``split``, ``replace``, ``join``, etc.)
-* :doc:`Image processing </PT/PT-image_processing/PT-image_processing>`
+* Dictionaries
 
 Project 3
 ~~~~~~~~~
@@ -30,6 +30,8 @@ Project 3
         * String operations
         * File operations
         * Requests
+        
+    * :doc:`Image processing </PT/PT-image_processing/PT-image_processing>`
 
 .. Comment
     Project 4
@@ -41,7 +43,5 @@ Week 9 notebook
 ~~~~~~~~~~~~~~~
 - `View online <../_static/weekly_notebooks/week09_notebook_day1.html>`_
 - `Download <../_static/weekly_notebooks/week09_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-
-.. Comment
-    - `View online (day 2) <../_static/weekly_notebooks/week09_notebook_day2.html>`_
-    - `Download (day 2) <../_static/weekly_notebooks/week09_notebook_day2.ipynb>`_ 
+- `View online (day 2) <../_static/weekly_notebooks/week09_notebook_day2.html>`_
+- `Download (day 2) <../_static/weekly_notebooks/week09_notebook_day2.ipynb>`_ 
