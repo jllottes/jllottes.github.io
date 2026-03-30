@@ -21,7 +21,7 @@ replaced by black.
        :width: 500px
        :align: center
        
-.. figure:: noisy_image.png
+.. figure:: noisy_img.png
    :width: 700px
    :align: center
 
