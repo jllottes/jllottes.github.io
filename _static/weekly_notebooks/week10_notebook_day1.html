@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>week09_notebook_day2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>week10_notebook_day1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7517,7 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Wednesday,-March-25th,-2026">Wednesday, March 25th, 2026<a class="anchor-link" href="#Wednesday,-March-25th,-2026">¶</a></h1><p>Last class, we started working on creating tartan pattern images.</p>
+<h1 id="Monday,-March-30th,-2026">Monday, March 30th, 2026<a class="anchor-link" href="#Monday,-March-30th,-2026">¶</a></h1><p>Last class, we worked on creating tartan pattern images.</p>
 </div>
 </div>
 </div>
@@ -7526,7 +7526,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7543,7 +7543,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Project-3:-Tartans--(cont.)"><a href="https://jllottes.github.io/Projects/tartans/tartans.html">Project 3: Tartans</a>  (cont.)<a class="anchor-link" href="#Project-3:-Tartans--(cont.)">¶</a></h2><p>Last class, we worked with the following example tartan recipe.</p>
+<h2 id="Project-3:-Tartans--(cont.)"><a href="https://jllottes.github.io/Projects/tartans/tartans.html">Project 3: Tartans</a>  (cont.)<a class="anchor-link" href="#Project-3:-Tartans--(cont.)">¶</a></h2><p>We've been working with the following example tartan recipe.</p>
 <p>Pattern :</p>
 <blockquote>
 <p>B14 K6 B6 K6 B6 K32 OG32</p>
@@ -7554,133 +7554,29 @@ a.anchor-link {
 K : [16, 16, 16]<br/>
 OG : [92, 100, 40]</p>
 </blockquote>
-<p>We used the given recipe to generate an array containing the vertical stripes.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=313982cb-ab03-4d8f-8236-b6e65b79660c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="p">(</span><span class="mi">52</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">K</span> <span class="o">=</span> <span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-<span class="n">OG</span> <span class="o">=</span> <span class="p">(</span><span class="mi">92</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
-
-<span class="n">total_width</span> <span class="o">=</span> <span class="mi">14</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">32</span> <span class="o">+</span> <span class="mi">32</span>
-
-<span class="n">vertical_stripes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">102</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">14</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="n">K</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">20</span><span class="p">:</span><span class="mi">26</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">26</span><span class="p">:</span><span class="mi">32</span><span class="p">]</span> <span class="o">=</span> <span class="n">K</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">32</span><span class="p">:</span><span class="mi">38</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">38</span><span class="p">:</span><span class="mi">70</span><span class="p">]</span> <span class="o">=</span> <span class="n">K</span>
-<span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="mi">70</span><span class="p">:</span><span class="mi">102</span><span class="p">]</span> <span class="o">=</span> <span class="n">OG</span>
-</pre></div>
+<p>In particular, we worked to create code that would take lists <code>widths</code> and <code>colors</code> and use them to produce</p>
+<ul>
+<li>a <code>vertical_stripes</code> RGB image array,</li>
+<li>a <code>horizontal_stripes</code> RGB image array,</li>
+<li>a <code>checkerboard_tartan</code> RGB image array, and (possibly)</li>
+<li>an <code>authentic_tartan</code> RGB image array.</li>
+</ul>
+<p>Last week, we manually generated the <code>widths</code> and <code>colors</code> lists. It would be convenient if we could use Python to automatically generate these lists directly from the tartan recipe.</p>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1a89a880-86a1-48cd-9796-78a53d8a9c65">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=149fe62c-53ae-4262-afaf-90c766d38e8f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We used the <code>np.transpose</code> function to "flip" the rows/columns of the vertical stripes array and create an array of corresponding horizontal stripes.</p>
+<h3 id="String-processing">String processing<a class="anchor-link" href="#String-processing">¶</a></h3><p>In generating our tartan images, we interpreted the tartan recipe by defining lists for the widths and colors. It would be nice if we could use Python to generate the list of widths and colors automatically. In other words, it would be convenient if we could define a string like <code>tartan_recipe = 'B14 K6 B6 K6 B6 K32 OG32'</code> and process this string to pull out these two lists.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=631e9f99-e314-406a-bde5-1f866f170567">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">horizontal_stripes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ce1921f-1d9d-4bad-a634-93813b1e539e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Let's check that the two arrays look correct.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=700059c4-2e76-4ccc-8bb7-42f689ff51af">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Vertical stripes'</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">horizontal_stripes</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Horizontal stripes'</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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UaRjatSokQIDA/XUU09p3rx52rt3b5Gen++3v/3tdY+95557dO+993qs69u3r7KysrRlyxZJv/Ty+vXrq1GjRh79pFOnTnI4HO5+kv9x5V69eumDDz7Q4cOHb6h++B5CBYpVjx49FBoa6v4I04oVK3Ts2DGPL2gfO3ZMn332mQICAjyWe+65R5IKfIehWrVqVjXlf6fgWh+PysvLU1xcnJYuXapRo0ZpzZo12rRpk7755htJ//6CYFEsWbJEAwYM0F/+8he1bNlSYWFh6t+/v9LT0697H0U9dpfL5fHY399f4eHh7o9c5d/Ot3nz5gXmf8mSJe65dzgcWrNmjTp16qSpU6eqSZMmuv322/X000/rzJkzRaoJQOl21113qVmzZgWW0NBQj3EnT56Uv79/gY/lOBwOuVwu9/tUvqK+/61bt04DBw5U//799dJLLxV47cL2FxkZ6d5+ufDwcI/H+R/Lup5esGnTJsXFxUmS5syZo//7v/9Tamqqxo0bd937uFzdunW1evVqVa1aVcOGDVPdunVVt25dvf7660XaT1Hm88pecvm6y/vJ9u3bC/SSkJAQGWPc/eT+++/XJ5984j6hVaNGDdWvX1+LFi0qUv3wPXynAsUqODhYffr00Zw5c3T06FG9++67CgkJUc+ePd1jqlSpooYNG2rKlCmF7iP/TT6f7T208xvYTz/9VOAsVb6dO3fqu+++03vvvacBAwa41//www83/LpVqlTRjBkzNGPGDB08eFDLly/XmDFjlJGRoZUrV17XPop67Onp6apevbr78aVLl3Ty5El3g6xSpYok6aOPPnJfhbmaqKgo9xfZ9+zZow8++ECJiYnKycnR22+/XaS6ACA8PFyXLl3S8ePHPYKFMUbp6enuM9r5ivL+t337dj388MOKjY3VnDlzCn3to0ePFlh/5MgRSf9+b/SGxYsXKyAgQJ9//rmCgoLc6z/55JMb3mfbtm3Vtm1b5ebm6ttvv9Wbb76phIQERUREqHfv3te1j6LMZ2Env/LXXd5PgoODr3rXx8vntFu3burWrZuys7P1zTffKDk5WX379lXt2rXVsmXL664LvoUrFSh2gwYNUm5urqZNm6YVK1aod+/eKl++vHt7ly5dtHPnTtWtW7fQs1tXhorCFOWsUVxcnPz8/DRr1qyrjsl/s738S4KS9D//8z//cf/Xo1atWho+fLg6duzovnSc/3o3chXkahYsWODx+IMPPtClS5fcP67UqVMn+fv768cffyx07ps1a1bofu+44w6NHz9eDRo08KgfAK5X+/btJUnz58/3WP/xxx/r559/dm8vqoMHD6pz586qU6eOPv7440I/Mtq+fXutXbvWHSLyvf/++ypfvvwN3Vb1au/fDodD/v7+8vPzc687f/68/vrXvxb5Na7k5+enFi1a6M9//rMkud+Pi9ITr0daWpq+++47j3ULFy5USEiImjRpIumXXv7jjz8qPDy80F5S2A8fOp1OxcbG6tVXX5WkAncdxK2FKxUods2aNVPDhg01Y8YMGWMK/DbF5MmTlZKSolatWunpp5/WnXfeqQsXLmj//v1asWKF3n777Wt+VEn65XJwcHCwFixYoLvuuksVK1ZUZGRkoYGkdu3aeuGFF/TSSy/p/Pnz6tOnj0JDQ7Vr1y6dOHFCkyZNUr169VS3bl2NGTNGxhiFhYXps88+U0pKyg3NQWZmph544AH17dtX9erVU0hIiFJTU7Vy5Up1797dPa5BgwZaunSpZs2apaZNm6pcuXJX/R/767F06VL5+/urY8eO7rs/3XvvverVq5d7LiZPnqxx48Zp7969+s1vfqPKlSvr2LFj2rRpkypUqKBJkyZp+/btGj58uHr27KmYmBgFBgZq7dq12r59u8aMGXPD9QEouzp27KhOnTpp9OjRysrKUuvWrd13f2rcuLEef/zxG9pv586ddfr0ac2cOVNpaWke2+rWravbb79dEydOdH+fb8KECQoLC9OCBQv0t7/9TVOnTi3wUa3rcbX37/j4eE2fPl19+/bVU089pZMnT+q1114rcNLqer399ttau3at4uPjVatWLV24cMF9daBDhw6SpJCQEEVFRenTTz9V+/btFRYWpipVqtzwL5pHRkbqoYceUmJioqpVq6b58+crJSVFr776qvskYUJCgj7++GPdf//9euaZZ9SwYUPl5eXp4MGDWrVqlZ577jm1aNFCEyZM0E8//aT27durRo0aOn36tF5//XUFBAQoNjb2huqDjyjZ74mjrHj99deNJHP33XcXuv348ePm6aefNtHR0SYgIMCEhYWZpk2bmnHjxpmzZ88aY/59l6Np06YVuo9FixaZevXqmYCAAI+7XhR2NwtjjHn//fdN8+bNTVBQkKlYsaJp3Lixxx2Udu3aZTp27GhCQkJM5cqVTc+ePc3BgwcL3FHjeu7+dOHCBTNkyBDTsGFDU6lSJRMcHGzuvPNOM3HiRPedM4wx5l//+pfp0aOHue2224zD4XDXfa1jv9bdnzZv3my6du1qKlasaEJCQkyfPn3MsWPHCuzjk08+MQ888ICpVKmScTqdJioqyvTo0cOsXr3aGGPMsWPHzMCBA029evVMhQoVTMWKFU3Dhg3Nn/70J3Pp0qWrHjeAsiP/vfDKu//kK+zuSOfPnzejR482UVFRJiAgwFSrVs384Q9/MKdOnfIYFxUVZeLj4wvd75V3f9I17j51+fvkjh07TNeuXU1oaKgJDAw09957b4E7CObf/enDDz/0WF/Y++7V3r+NMebdd981d955p3E6naZOnTomOTnZvPPOOwV6x/Xc/Wnjxo3mkUceMVFRUcbpdJrw8HATGxtrli9f7jFu9erVpnHjxsbpdBpJ7jnK7w/Hjx8vsO+r3f0pPj7efPTRR+aee+4xgYGBpnbt2mb69OkFnn/27Fkzfvx4c+edd5rAwEATGhpqGjRoYJ555hmTnp5ujDHm888/N507dzbVq1c3gYGBpmrVqubBBx80X3311TWPG77PYcwN/vIKAJ+VmJioSZMm6fjx4179bDAAoGypXbu26tevr88//7ykS4GP4zsVAAAAAKwQKgAAAABY4eNPAAAAAKxwpQIAAACAlRINFW+99Zaio6MVFBSkpk2b6quvvirJcgAAPoL+AAC3lhILFUuWLFFCQoLGjRunrVu3qm3bturcubMOHjxYUiUBAHwA/QEAbj0l9p2KFi1aqEmTJh6/anzXXXfp4YcfVnJy8jWfm5eXpyNHjigkJKRIPzMPAGWNMUZnzpxRZGSkypW7NT7xatMfJHoEAFwvb/aIEvlF7ZycHG3evLnAL/HGxcVpw4YN//H5R44cUc2aNYurPAAodQ4dOvQff5neF9j2B4keAQBF5Y0eUSKh4sSJE8rNzVVERITH+oiICKWnpxcYn52drezsbPfj/IsrDeN6yy8gsHiL9bK9X3/qtX3VadPNa/uSyk5t8L5O3aqWdAm4ios5uVq2eK9CQkJKupTrUtT+IJWuHgEAN1PuxRxtX7XYKz2iREJFvisvSxtjCr1UnZycrEmTJhVY7xcQeMs1DG9eivf2sZeV2uB9gYF+JV0C/oNb7b+h6+0PUunqEQBQErzRI0rkA7ZVqlSRn59fgbNOGRkZBc5OSdLYsWOVmZnpXg4dOnSzSgUA3ERF7Q8SPQIAfEGJhIrAwEA1bdpUKSkpHutTUlLUqlWrAuOdTqcqVarksQAASp+i9geJHgEAvqDEPv707LPP6vHHH1ezZs3UsmVLzZ49WwcPHtSQIUNKqiQAgA+gPwDArafEQsWjjz6qkydPavLkyTp69Kjq16+vFStWKCoqqqRKAgD4APoDANx6SvSL2kOHDtXQoUNLsgQAgA+iPwDAreXW+CUkAAAAAD6LUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKz4l3QBAAAUh71ffyqHw1HSZQCAzzLGeG1fXKkAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACw4vVQkZycrObNmyskJERVq1bVww8/rN27d3uMMcYoMTFRkZGRCg4OVrt27ZSWlubtUgAAPoT+AACll9dDxfr16zVs2DB98803SklJ0aVLlxQXF6eff/7ZPWbq1KmaPn26Zs6cqdTUVLlcLnXs2FFnzpzxdjkAAB9BfwCA0svf2ztcuXKlx+O5c+eqatWq2rx5s+6//34ZYzRjxgyNGzdO3bt3lyTNmzdPERERWrhwoQYPHuztkgAAPuBm94c6bbrJLyDQa/UDQGmTezFHW//2vlf2VezfqcjMzJQkhYWFSZL27dun9PR0xcXFucc4nU7FxsZqw4YNhe4jOztbWVlZHgsA4Nbmjf4g0SMAwBcUa6gwxujZZ59VmzZtVL9+fUlSenq6JCkiIsJjbEREhHvblZKTkxUaGupeatasWZxlAwCKmbf6g0SPAABfUKyhYvjw4dq+fbsWLVpUYJvD4fB4bIwpsC7f2LFjlZmZ6V4OHTpULPUCAG4Ob/UHiR4BAL7A69+pyDdixAgtX75cX375pWrUqOFe73K5JP1yRqpatWru9RkZGQXOTuVzOp1yOp3FVSoA4CbyZn+Q6BEA4Au8fqXCGKPhw4dr6dKlWrt2raKjoz22R0dHy+VyKSUlxb0uJydH69evV6tWrbxdDgDAR9AfAKD08vqVimHDhmnhwoX69NNPFRIS4v4cbGhoqIKDg+VwOJSQkKCkpCTFxMQoJiZGSUlJKl++vPr27evtcgAAPoL+AACll9dDxaxZsyRJ7dq181g/d+5cDRw4UJI0atQonT9/XkOHDtWpU6fUokULrVq1SiEhId4uBwDgI+gPAFB6eT1UGGP+4xiHw6HExEQlJiZ6++UBAD6K/gAApVex/04FAAAAgNKNUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBX/ki4AAIDisPfrT+VwOEq6DADwWcYYr+2LKxUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFjxL+kCAAAoDnXadJNfQGBJlwEAPiv3Yo62/u19r+yLKxUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACw4l/SBQAAUBz2fv2pHA5HSZcBAD7LGOO1fXGlAgAAAIAVQgUAAAAAK4QKAAAAAFaKPVQkJyfL4XAoISHBvc4Yo8TEREVGRio4OFjt2rVTWlpacZcCAPAh9AcAKD2KNVSkpqZq9uzZatiwocf6qVOnavr06Zo5c6ZSU1PlcrnUsWNHnTlzpjjLAQD4CPoDAJQuxRYqzp49q379+mnOnDmqXLmye70xRjNmzNC4cePUvXt31a9fX/PmzdO5c+e0cOHC4ioHAOAj6A8AUPoUW6gYNmyY4uPj1aFDB4/1+/btU3p6uuLi4tzrnE6nYmNjtWHDhkL3lZ2draysLI8FAHBr8mZ/kOgRAOALiuV3KhYvXqwtW7YoNTW1wLb09HRJUkREhMf6iIgIHThwoND9JScna9KkSd4vFABwU3m7P0j0CADwBV6/UnHo0CGNHDlS8+fPV1BQ0FXHXfmDRMaYq/5I0dixY5WZmeleDh065NWaAQDFrzj6g0SPAABf4PUrFZs3b1ZGRoaaNm3qXpebm6svv/xSM2fO1O7duyX9ckaqWrVq7jEZGRkFzk7lczqdcjqd3i4VAHATFUd/kOgRAOALvH6lon379tqxY4e2bdvmXpo1a6Z+/fpp27ZtqlOnjlwul1JSUtzPycnJ0fr169WqVStvlwMA8BH0BwAovbx+pSIkJET169f3WFehQgWFh4e71yckJCgpKUkxMTGKiYlRUlKSypcvr759+3q7HACAj6A/AEDpVSxf1P5PRo0apfPnz2vo0KE6deqUWrRooVWrVikkJKQkygEA+Aj6AwDcmm5KqPjiiy88HjscDiUmJioxMfFmvDwAwEfRHwCgdCjWX9QGAAAAUPoRKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgJViCRWHDx/WY489pvDwcJUvX16NGjXS5s2b3duNMUpMTFRkZKSCg4PVrl07paWlFUcpAAAfQn8AgNLJ66Hi1KlTat26tQICAvS///u/2rVrl/77v/9bt912m3vM1KlTNX36dM2cOVOpqalyuVzq2LGjzpw54+1yAAA+gv4AAKWXv7d3+Oqrr6pmzZqaO3eue13t2rXd/2yM0YwZMzRu3Dh1795dkjRv3jxFRERo4cKFGjx4sLdLAgD4APoDAJReXr9SsXz5cjVr1kw9e/ZU1apV1bhxY82ZM8e9fd++fUpPT1dcXJx7ndPpVGxsrDZs2FDoPrOzs5WVleWxAABuLcXRHyR6BAD4Aq+Hir1792rWrFmKiYnR3//+dw0ZMkRPP/203n//fUlSenq6JCkiIsLjeREREe5tV0pOTlZoaKh7qVmzprfLBgAUs+LoDxI9AgB8gddDRV5enpo0aaKkpCQ1btxYgwcP1u9//3vNmjXLY5zD4fB4bIwpsC7f2LFjlZmZ6V4OHTrk7bIBAMWsOPqDRI8AAF/g9VBRrVo13X333R7r7rrrLh08eFCS5HK5JKnAWaeMjIwCZ6fyOZ1OVapUyWMBANxaiqM/SPQIAPAFXg8VrVu31u7duz3W7dmzR1FRUZKk6OhouVwupaSkuLfn5ORo/fr1atWqlbfLAQD4CPoDAJReXr/70zPPPKNWrVopKSlJvXr10qZNmzR79mzNnj1b0i+XtRMSEpSUlKSYmBjFxMQoKSlJ5cuXV9++fb1dDgDAR9AfAKD08nqoaN68uZYtW6axY8dq8uTJio6O1owZM9SvXz/3mFGjRun8+fMaOnSoTp06pRYtWmjVqlUKCQnxdjkAAB9BfwCA0sthjDElXURRZWVlKTQ0VI3j+8svILCkyymSH774yGv7+lW7Hl7bl1R2aoP3denhKukScBU5Obn64P1/KjMzs8x81yC/R4SGhl7zC94AUNYZY9w3ubDtEV7/TgUAAACAsoVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACw4l/SBQAAUBw6dauqwEC/ki4DAHxWTk6uPng/0yv74koFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACw4vVQcenSJY0fP17R0dEKDg5WnTp1NHnyZOXl5bnHGGOUmJioyMhIBQcHq127dkpLS/N2KQAAH0J/AIDSy+uh4tVXX9Xbb7+tmTNn6vvvv9fUqVM1bdo0vfnmm+4xU6dO1fTp0zVz5kylpqbK5XKpY8eOOnPmjLfLAQD4CPoDAJReXg8VGzduVLdu3RQfH6/atWurR48eiouL07fffivpl7NQM2bM0Lhx49S9e3fVr19f8+bN07lz57Rw4UJvlwMA8BH0BwAovbweKtq0aaM1a9Zoz549kqTvvvtOX3/9tR588EFJ0r59+5Senq64uDj3c5xOp2JjY7Vhw4ZC95mdna2srCyPBQBwaymO/iDRIwDAF/h7e4ejR49WZmam6tWrJz8/P+Xm5mrKlCnq06ePJCk9PV2SFBER4fG8iIgIHThwoNB9Jicna9KkSd4uFQBwExVHf5DoEQDgC7x+pWLJkiWaP3++Fi5cqC1btmjevHl67bXXNG/ePI9xDofD47ExpsC6fGPHjlVmZqZ7OXTokLfLBgAUs+LoDxI9AgB8gdevVPzxj3/UmDFj1Lt3b0lSgwYNdODAASUnJ2vAgAFyuVySfjkjVa1aNffzMjIyCpydyud0OuV0Or1dKgDgJiqO/iDRIwDAF3j9SsW5c+dUrpznbv38/Ny3DIyOjpbL5VJKSop7e05OjtavX69WrVp5uxwAgI+gPwBA6eX1KxVdu3bVlClTVKtWLd1zzz3aunWrpk+frieeeELSL5e1ExISlJSUpJiYGMXExCgpKUnly5dX3759vV0OAMBH0B8AoPTyeqh488039eKLL2ro0KHKyMhQZGSkBg8erAkTJrjHjBo1SufPn9fQoUN16tQptWjRQqtWrVJISIi3ywEA+Aj6AwCUXg5jjCnpIooqKytLoaGhahzfX34BgSVdTpH88MVHXtvXr9r18Nq+pLJTG7yvSw9XSZeAq8jJydUH7/9TmZmZqlSpUkmXc1Pk94he/WMUGOhX0uUAgM/yZo/w+ncqAAAAAJQthAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGCFUAEAAADACqECAAAAgBVCBQAAAAArhAoAAAAAVggVAAAAAKwQKgAAAABYIVQAAAAAsEKoAAAAAGClyKHiyy+/VNeuXRUZGSmHw6FPPvnEY7sxRomJiYqMjFRwcLDatWuntLQ0jzHZ2dkaMWKEqlSpogoVKuihhx7STz/9ZHUgAICSRX8AgLKryKHi559/1r333quZM2cWun3q1KmaPn26Zs6cqdTUVLlcLnXs2FFnzpxxj0lISNCyZcu0ePFiff311zp79qy6dOmi3NzcGz8SAECJoj8AQNnlX9QndO7cWZ07dy50mzFGM2bM0Lhx49S9e3dJ0rx58xQREaGFCxdq8ODByszM1DvvvKO//vWv6tChgyRp/vz5qlmzplavXq1OnTpZHA4AoKTQHwCg7PLqdyr27dun9PR0xcXFudc5nU7FxsZqw4YNkqTNmzfr4sWLHmMiIyNVv35995grZWdnKysry2MBANw6iqs/SPQIAPAFXg0V6enpkqSIiAiP9REREe5t6enpCgwMVOXKla865krJyckKDQ11LzVr1vRm2QCAYlZc/UGiRwCALyiWuz85HA6Px8aYAuuudK0xY8eOVWZmpns5dOiQ12oFANw83u4PEj0CAHyBV0OFy+WSpAJnlDIyMtxnp1wul3JycnTq1KmrjrmS0+lUpUqVPBYAwK2juPqDRI8AAF/g1VARHR0tl8ullJQU97qcnBytX79erVq1kiQ1bdpUAQEBHmOOHj2qnTt3uscAAEoX+gMAlG5FvvvT2bNn9cMPP7gf79u3T9u2bVNYWJhq1aqlhIQEJSUlKSYmRjExMUpKSlL58uXVt29fSVJoaKgGDRqk5557TuHh4QoLC9Pzzz+vBg0auO/28Z8YYyRJuRdzilp+icuv3Ru8ffxlpTZ4X04Ot/v0VRf//7+bm/HfkC/0B+nfx3qRv0sAuCav9ghTROvWrTOSCiwDBgwwxhiTl5dnJk6caFwul3E6neb+++83O3bs8NjH+fPnzfDhw01YWJgJDg42Xbp0MQcPHrzuGg4dOlRoDSwsLCwshS+HDh0q6tt9kflCfzCGHsHCwsJS1MUbPcJhzK13CjgvL09HjhyRMUa1atXSoUOHyuxnaLOyslSzZk3mgDlgDpiDQufAGKMzZ84oMjJS5coVy705fE5eXp52796tu+++u0z/PUj8dyExBxJzIDEHUvH3iCJ//MkXlCtXTjVq1HDfi5wv5jEHEnMgMQcScyAVnIPQ0NASrObmK1eunKpXry6Jv4d8zANzIDEHEnMgFV+PKBunrQAAAAAUG0IFAAAAACu3dKhwOp2aOHGinE5nSZdSYpgD5kBiDiTmQGIOLsdc/IJ5YA4k5kBiDqTin4Nb8ovaAAAAAHzHLX2lAgAAAEDJI1QAAAAAsEKoAAAAAGCFUAEAAADAyi0bKt566y1FR0crKChITZs21VdffVXSJRWb5ORkNW/eXCEhIapataoefvhh7d6922OMMUaJiYmKjIxUcHCw2rVrp7S0tBKquPglJyfL4XAoISHBva4szMHhw4f12GOPKTw8XOXLl1ejRo20efNm9/bSPgeXLl3S+PHjFR0dreDgYNWpU0eTJ09WXl6ee0xpnIMvv/xSXbt2VWRkpBwOhz755BOP7ddzzNnZ2RoxYoSqVKmiChUq6KGHHtJPP/10E4/i5qJHlN0eUVb7g0SPKIs9wqf6g7kFLV682AQEBJg5c+aYXbt2mZEjR5oKFSqYAwcOlHRpxaJTp05m7ty5ZufOnWbbtm0mPj7e1KpVy5w9e9Y95pVXXjEhISHm448/Njt27DCPPvqoqVatmsnKyirByovHpk2bTO3atU3Dhg3NyJEj3etL+xz861//MlFRUWbgwIHmH//4h9m3b59ZvXq1+eGHH9xjSvscvPzyyyY8PNx8/vnnZt++febDDz80FStWNDNmzHCPKY1zsGLFCjNu3Djz8ccfG0lm2bJlHtuv55iHDBliqlevblJSUsyWLVvMAw88YO69915z6dKlm3w0xY8eUXZ7RFntD8bQI4wpmz3Cl/rDLRkq7rvvPjNkyBCPdfXq1TNjxowpoYpuroyMDCPJrF+/3hhjTF5ennG5XOaVV15xj7lw4YIJDQ01b7/9dkmVWSzOnDljYmJiTEpKiomNjXU3jbIwB6NHjzZt2rS56vayMAfx8fHmiSee8FjXvXt389hjjxljysYcXNk0rueYT58+bQICAszixYvdYw4fPmzKlStnVq5cedNqv1noEWWzR5Tl/mAMPcIYekRJ94db7uNPOTk52rx5s+Li4jzWx8XFacOGDSVU1c2VmZkpSQoLC5Mk7du3T+np6R5z4nQ6FRsbW+rmZNiwYYqPj1eHDh081peFOVi+fLmaNWumnj17qmrVqmrcuLHmzJnj3l4W5qBNmzZas2aN9uzZI0n67rvv9PXXX+vBBx+UVDbm4ErXc8ybN2/WxYsXPcZERkaqfv36pW5e6BFlt0eU5f4g0SMkesSVbnZ/8PdO2TfPiRMnlJubq4iICI/1ERERSk9PL6Gqbh5jjJ599lm1adNG9evXlyT3cRc2JwcOHLjpNRaXxYsXa8uWLUpNTS2wrSzMwd69ezVr1iw9++yzeuGFF7Rp0yY9/fTTcjqd6t+/f5mYg9GjRyszM1P16tWTn5+fcnNzNWXKFPXp00dS2fg7uNL1HHN6eroCAwNVuXLlAmNK2/smPaJs9oiy3h8keoREj7jSze4Pt1yoyOdwODweG2MKrCuNhg8fru3bt+vrr78usK00z8mhQ4c0cuRIrVq1SkFBQVcdV5rnIC8vT82aNVNSUpIkqXHjxkpLS9OsWbPUv39/97jSPAdLlizR/PnztXDhQt1zzz3atm2bEhISFBkZqQEDBrjHleY5uJobOebSPC9l8W9AKps9gv7wC3oEPeJqblZ/uOU+/lSlShX5+fkVSE8ZGRkFklhpM2LECC1fvlzr1q1TjRo13OtdLpckleo52bx5szIyMtS0aVP5+/vL399f69ev1xtvvCF/f3/3cZbmOahWrZruvvtuj3V33XWXDh48KKls/B388Y9/1JgxY9S7d281aNBAjz/+uJ555hklJydLKhtzcKXrOWaXy6WcnBydOnXqqmNKC3pE2esR9Idf0CPoEVe62f3hlgsVgYGBatq0qVJSUjzWp6SkqFWrViVUVfEyxmj48OFaunSp1q5dq+joaI/t0dHRcrlcHnOSk5Oj9evXl5o5ad++vXbs2KFt27a5l2bNmqlfv37atm2b6tSpU+rnoHXr1gVuE7lnzx5FRUVJKht/B+fOnVO5cp5vW35+fu7bBZaFObjS9Rxz06ZNFRAQ4DHm6NGj2rlzZ6mbF3pE2esR9Idf0CPoEVe66f2hSF/r9hH5twt85513zK5du0xCQoKpUKGC2b9/f0mXViz+8Ic/mNDQUPPFF1+Yo0ePupdz5865x7zyyismNDTULF261OzYscP06dPnlr5F2vW4/O4expT+Odi0aZPx9/c3U6ZMMf/85z/NggULTPny5c38+fPdY0r7HAwYMMBUr17dfbvApUuXmipVqphRo0a5x5TGOThz5ozZunWr2bp1q5Fkpk+fbrZu3eq+Rer1HPOQIUNMjRo1zOrVq82WLVvMf/3Xf5X6W8rSI8pujyhr/cEYeoQxZbNH+FJ/uCVDhTHG/PnPfzZRUVEmMDDQNGnSxH3rvNJIUqHL3Llz3WPy8vLMxIkTjcvlMk6n09x///1mx44dJVf0TXBl0ygLc/DZZ5+Z+vXrG6fTaerVq2dmz57tsb20z0FWVpYZOXKkqVWrlgkKCjJ16tQx48aNM9nZ2e4xpXEO1q1bV+h7wIABA4wx13fM58+fN8OHDzdhYWEmODjYdOnSxRw8eLAEjubmoEeU7R5RFvuDMfSIstgjfKk/OIwxpmjXNgAAAADg326571QAAAAA8C2ECgAAAABWCBUAAAAArBAqAAAAAFghVAAAAACwQqgAAAAAYIVQAQAAAMAKoQIAAACAFUIFAAAAACuECgAAAABWCBUAAAAArBAqAAAAAFj5f1V+DWrypVOmAAAAAElFTkSuQmCC"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5fa5681b-d2e6-44fb-986b-70215412ce9b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Creating-a-tartan-from-vertical-and-horizontal-arrays">Creating a tartan from vertical and horizontal arrays<a class="anchor-link" href="#Creating-a-tartan-from-vertical-and-horizontal-arrays">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ef747f56-71a5-45f6-b3b5-9201d3232fd2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For the project, we need to generate the authentic tartan pattern. As a warmup, can we generate a checkerboard pattern to interleave these horizontal/vertical stripes? To do so, we want to go row by row, column by column, and alternatingly select a color from the <code>vertical_stripes</code> and <code>horizontal_stripes</code> arrays.</p>
-<p><strong>Exercise:</strong> Create a <code>checkerboard_tartan</code> array that combines the <code>vertical_stripes</code> and <code>horizontal_stripes</code> arrays in checkerboard pattern.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bcfedfca-8569-4e47-abf5-6a446af66cde">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=212d0ddc-e84f-40ff-b0be-cb601b10b55c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7688,27 +7584,33 @@ OG : [92, 100, 40]</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">checkerboard_tartan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">102</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">vertical_stripes</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">tartan_recipe</span> <span class="o">=</span> <span class="s1">'B14 K6 B6 K6 B6 K32 OG32'</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a4399584-4283-4038-ba3a-d9214040661b">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4e61e687-70cf-4d7a-8db9-dd489d007b63">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">checkerboard_tartan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">vertical_stripes</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We have already seen some useful tools for working with strings in Python. For example:</p>
+<ul>
+<li>The <code>.join</code> method allows us to concatenate a list of strings using a given string as a separator.</li>
+<li>The <code>.format</code> method allows us to plug values into a string template.</li>
+</ul>
+<p>Another helpful tool is the <code>.split</code> method, which allows us to separate a string into a list of substrings. The syntax is something like:</p>
+<blockquote>
+<p><code>some_string.split(some_separator)</code></p>
+</blockquote>
+<p>This will separate the <code>some_string</code> string into a list of substrings, where each separation occurs whenever the <code>some_separator</code> string is found within <code>some_string</code>.</p>
 </div>
 </div>
 </div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b83a7d0f-9fd0-4df7-9596-5db67d37c6e4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=04fe7451-74cb-4c8a-9672-f6e55723d038">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7716,869 +7618,1317 @@ OG : [92, 100, 40]</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">checkerboard_tartan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=82a2b9d5-7d31-4a0b-a247-9e93e823964b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">checkerboard_tartan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">total_width</span><span class="p">,</span> <span class="n">total_width</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">checkerboard_tartan</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">row</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">col</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>   <span class="c1"># If row and column are even</span>
-            <span class="n">checkerboard_tartan</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">vertical_stripes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span>
-        <span class="k">elif</span> <span class="n">row</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">col</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># If row and column are odd</span>
-            <span class="n">checkerboard_tartan</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">vertical_stripes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span>
-        <span class="k">else</span><span class="p">:</span>                               <span class="c1"># If row odd and column even or </span>
-                                            <span class="c1"># row even and column odd</span>
-            <span class="n">checkerboard_tartan</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">horizontal_stripes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bf9caed5-b483-4986-90f4-ae510d599325">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">checkerboard_tartan</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x26e364e4f50&gt;</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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tzfWrVvnfpfEZz7zmXj++efjueeeq7ymTp0aV111VTz33HNx2mmnuccld+655+73dW0vvvhinHrqqRHhv+N68NZbb8Uxx/StDkOGDKl87ZN7XF8O5n5OmTIlhg0b1ifz2muvxS9+8YuB3fOaR7EysHr16mLYsGHFt7/97eKFF14o5s2bVxx33HHF//7v/6ZeGgP0J3/yJ0VTU1Px+OOPF6+99lrl9dZbb1Uy3/jGN4qmpqbikUceKZ5//vniiiuuKMaNG1f09PQkXDmH4r1T9kXhHpfdU089VQwdOrS4++67i5deeqn4+7//+2LkyJHFQw89VMm4x+V27bXXFr/1W79VfP/73y+2bNlSPPLII8WYMWOK+fPnVzLucbns3Lmz2LhxY7Fx48YiIoolS5YUGzduLLZu3VoUxcHdzxtuuKE4+eSTix/96EfFs88+W/zO7/xOcfbZZxfvvPPOQa+j1IW0KIrib//2b4tTTz21GD58ePGxj32s8jVBlEtE9Pt64IEHKpm9e/cWX/va14qWlpaisbGx+NSnPlU8//zz6RbNIXt/IXWPy+973/teMWnSpKKxsbGYOHFisXz58j6fu8fl1tPTU9xyyy3FKaecUhx77LHFaaedVixcuLDYvXt3JeMel8tPfvKTfv/399prry2K4uDu565du4qbbrqpOPHEE4sRI0YUc+bMKV5++eUBraOhKIrikJ7nAgDAISjtvyEFAKA+KKQAACSlkAIAkJRCCgBAUgopAABJKaQAACSlkAIAkJRCCgBAUgopAABJKaQAACSlkAIAkJRCCgBAUv8fxTCRJFZ4XVsAAAAASUVORK5CYII="/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3bbfed34-37af-4b75-a7be-1455dc410b8e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ad595a64-d367-413d-b86d-329e1432536e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Where to go from here:</p>
+<p>Note: If we call the <code>.split</code> method with no input variable, by default the string will be split anywhere there is white space (e.g. spaces, tabs, line breaks, etc.).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e5ce4e74-a256-4825-b35e-9644b7dddbf6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9e0b20f3-d1d2-4def-8246-40dbd8e122f2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can then apply the <code>.split</code> method to the <code>tartan_recipe</code> string to get a sequence of substrings, each of which represents a particular stripe.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1881e530-026b-44b2-a7d0-add5634e4bd7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=012ff080-af24-4578-8fe7-d7b2cd0e09b4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Can we iterate through each of these stripe recipes and pick out the color and width?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=34f57907-c602-4edb-90bf-5234a695bc96">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e9acca61-77f4-4956-8c7b-4c747db8a3dd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Problem: We can't just take the first character from <code>stripe_recipe</code> as the color code, because some color codes have two characters (e.g. <code>'OG'</code>).</p>
+<p>It would be very helpful if we could pick out which parts of a string are letters and which parts of a string are numbers. The following methods (called on a string) can help with this:</p>
 <ul>
-<li>We need a better way of generating the <code>vertical_stripes</code> array.</li>
-<li>We need to generate the more authentic tartan pattern described in the project page.</li>
-<li>We need to pad our tartan pattern to be <code>500</code> by <code>500</code> rows/columns.</li>
-</ul>
-<h3 id="Generating-the-vertical_stripes-array-algorithmically">Generating the <code>vertical_stripes</code> array algorithmically<a class="anchor-link" href="#Generating-the-vertical_stripes-array-algorithmically">¶</a></h3><p>As mentioned last class, we would like to come up with a better way to generate the <code>vertical_stripes</code> array. That is, we don't want to have to manually define each stripe line-by-line, and we don't want to have to calculate appropriate slices by hand.</p>
-<p>As a first step, let's focus on converting the given tartan pattern into something type of data that we can iterate through.</p>
-<p>Pattern :</p>
-<blockquote>
-<p>B14 K6 B6 K6 B6 K32 OG32</p>
-</blockquote>
-<p>where the colors B, K, and OG are given by the RGB triples:</p>
-<blockquote>
-<p>B : [52, 80, 100]<br/>
-K : [16, 16, 16]<br/>
-OG : [92, 100, 40]</p>
-</blockquote>
-<p>Can we code this information as some sort of Python list(s)?</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd7bdd7d-296d-40cd-a3d6-41d051024cbd">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
-<span class="n">K</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
-<span class="n">OG</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
-
-<span class="n">widths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">]</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">B</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">OG</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cfe907a5-6a43-44f2-84d0-03b16bafc1b2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Can we find the total width of the pattern without manually adding the widths by hand?</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=52ef9ce5-1b7a-48f3-8c53-b678e1765932">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">total_width</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">widths</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total_width</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>102
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f99cd3d7-236a-4cb1-9bb7-369d2ec1dfb6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>With the total width calculated, we can intialize the <code>vertical_stripes</code> array that we will then fill with colored stripes.</p>
-<p><strong>Exercise:</strong> Use a <code>for</code> loop to iterate through each width/RGB pair and add the corresponding stripe to the <code>vertical_stripes</code> array.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b65a453e-ad82-473a-ad87-18786979107d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">vertical_stripes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">total_width</span><span class="p">,</span> <span class="n">total_width</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-
-<span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">width</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">widths</span><span class="p">,</span> <span class="n">colors</span><span class="p">):</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="n">width</span>
-    <span class="n">vertical_stripes</span><span class="p">[:,</span> <span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">end</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b185ebea-ae25-4d3b-82d0-cd72fbaa7077">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x26e384c0e10&gt;</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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GNmIGADALCIGADCLiAEAzDIdsaeeekpZWVkaM2aMcnNz9eabbyZ7pKQoLy/XVVddpUAgoIkTJ+q2227T/v3749Y45xSJRBQOh5Wenq7CwkI1NzcnaeLkKi8vl8/nU0lJiXeM/ZEOHTqke+65R+PHj1dGRoauuOIKNTY2eudH8h4dO3ZMjz76qLKyspSenq7p06dr7dq1GhgY8NaMtP154403dPPNNyscDsvn8+mFF16IO38m+9Hb26vly5drwoQJGjt2rG655RZ9+OGHZzeIM2rr1q1u9OjRbtOmTe69995zK1ascGPHjnWtra3JHu2cu+GGG9zmzZvdu+++65qamtzcuXPd1KlT3ZEjR7w1jz/+uAsEAu755593+/btc3feeaebNGmS6+rqSuLk597u3bvdhRde6C677DK3YsUK7/hI359//etfbtq0ae7+++93f/3rX11LS4t7+eWX3fvvv++tGcl79KMf/ciNHz/e/eEPf3AtLS3ut7/9rfvKV77iKisrvTUjbX9efPFFV1ZW5p5//nknyW3fvj3u/Jnsx5IlS9wFF1zgamtr3Z49e9y1117rLr/8cnfs2LEznsNsxL72ta+5JUuWxB2bMWOGW716dZIm+u/R3t7uJLm6ujrnnHMDAwMuFAq5xx9/3Fvzn//8x2VmZrqnn346WWOec93d3S47O9vV1ta6goICL2Lsj3OPPPKImz179inPj/Q9mjt3rnvggQfijs2fP9/dc889zjn258SIncl+/Pvf/3ajR492W7du9dYcOnTIjRo1yr300ktn/LFNvpzY19enxsZGFRUVxR0vKipSfX19kqb679HZ2SlJGjdunKTPfudbLBaL2y+/36+CgoIRtV9Lly7V3LlzB/3eOvZH2rFjh/Ly8nT77bdr4sSJmjlzpjZt2uSdH+l7NHv2bL3yyis6cOCAJOntt9/Wrl27dNNNN0lif050JvvR2NioTz/9NG5NOBxWTk7OWe2ZyR8A/PHHH6u/v1/BYDDueDAYVCwWS9JU/x2cc1q5cqVmz56tnJwcSfL25GT71draes5nTIatW7dqz549amhoGHSO/ZE++OADbdiwQStXrtT3v/997d69Ww8++KD8fr/uu+++Eb9HjzzyiDo7OzVjxgylpKSov79f69at09133y2JP0MnOpP9iMViSktL0/nnnz9ozdn8O24yYsf5fL64+865QcdGmmXLlumdd97Rrl27Bp0bqfvV1tamFStWaOfOnRozZswp143U/ZE++/VGeXl5ikajkqSZM2equblZGzZs0H333eetG6l79Nxzz2nLli2qqanRJZdcoqamJpWUlCgcDmvRokXeupG6P6fyRfbjbPfM5MuJEyZMUEpKyqBat7e3Dyr/SLJ8+XLt2LFDr732WtwvmQuFQpI0YversbFR7e3tys3NVWpqqlJTU1VXV6ef//znSk1N9fZgpO6PJE2aNEkXX3xx3LGLLrpIBw8elMSfoYcfflirV6/WXXfdpUsvvVT33nuvHnroIZWXl0tif050JvsRCoXU19enjo6OU645EyYjlpaWptzcXNXW1sYdr62tVX5+fpKmSh7nnJYtW6Zt27bp1VdfVVZWVtz5rKwshUKhuP3q6+tTXV3diNiv6667Tvv27VNTU5N3y8vL08KFC9XU1KTp06eP6P2RpKuvvnrQt2UcOHBA06ZNk8SfoaNHjw76xY0pKSneW+xH+v6c6Ez2Izc3V6NHj45bc/jwYb377rtnt2df+O0oSXb8LfbPPPOMe++991xJSYkbO3as+8c//pHs0c6573znOy4zM9O9/vrr7vDhw97t6NGj3prHH3/cZWZmum3btrl9+/a5u+++e1i//fd0/v+7E51jf3bv3u1SU1PdunXr3N///nf361//2mVkZLgtW7Z4a0byHi1atMhdcMEF3lvst23b5iZMmOBWrVrlrRlp+9Pd3e327t3r9u7d6yS5iooKt3fvXu/bnM5kP5YsWeImT57sXn75Zbdnzx73zW9+c+S8xd45537xi1+4adOmubS0NHfllVd6bykfaSSd9LZ582ZvzcDAgHvsscdcKBRyfr/fXXPNNW7fvn3JGzrJTowY++Pc73//e5eTk+P8fr+bMWOG27hxY9z5kbxHXV1dbsWKFW7q1KluzJgxbvr06a6srMz19vZ6a0ba/rz22msn/Xdn0aJFzrkz24+enh63bNkyN27cOJeenu7mzZvnDh48eFZz8KtYAABmmfyaGAAAEhEDABhGxAAAZhExAIBZRAwAYBYRAwCYRcQAAGYRMQCAWUQMAGAWEQMAmEXEAABmETEAgFn/A/wIBYe5sRGnAAAAAElFTkSuQmCC"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=278021f2-ce5e-4b73-9a8e-b89444dfb9eb">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This is a huge improvement on our previous code. Can we do better? It would be nice if we could use Python to automatically process the "recipe" to generate the lists of widths and colors. We will talk next week about how to process strings in a way that will help with this task.</p>
-<p>We also need to tackle the following challenges for the project:</p>
-<ul>
-<li>We need to generate the more authentic tartan pattern described in the project page.</li>
-<li>We need to repeat our tartan pattern to fill a <code>500</code> by <code>500</code> image.</li>
-</ul>
-<h2 id="Boolean-NumPy-arrays">Boolean NumPy arrays<a class="anchor-link" href="#Boolean-NumPy-arrays">¶</a></h2><p>A Boolean array is just a NumPy array that contains <code>True</code> and <code>False</code> values. That is, the <code>dtype</code> of the array is <code>Bool</code>. We can easily contruct Boolean arrays using Boolean expressions with arrays.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5bf22941-01e9-402c-9451-662ec146ae9a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">my_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_array</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[0 1 2 3 4 5 6 7 8 9]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=48196a8d-89b1-4c7d-9e0b-9b8747f7c045">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">my_bool_array</span> <span class="o">=</span> <span class="n">my_array</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_bool_array</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[False  True False False  True False False  True False False]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d4ba877b-126c-4413-8525-02b998910c87">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can use logical operators on Boolean arrays:</p>
-<ul>
-<li><code>~</code> will negate a Boolean array (that is, <code>True</code> becomes <code>False</code> and vice-versa),</li>
-<li><code>&amp;</code> works like <code>and</code> for two Boolean arrays, and</li>
-<li><code>|</code> works like <code>or</code> for two Boolean arrays.</li>
+<li>The <code>.isalpha</code> method will return <code>True</code> if the string contains only alphabetic characters (i.e. letters).</li>
+<li>The <code>.isnumeric</code> method will return <code>True</code> if the string contains only numeric characters (i.e. numbers).</li>
 </ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=265cf154-cbc1-47ba-a64e-851af34e0a75">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=46fe47bb-c210-4679-9585-f7ffd88a7451">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="o">~</span><span class="n">my_bool_array</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[ True False  True  True False  True  True False  True  True]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=454f1347-e382-4eab-b5f0-b8d03cc361ca">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f4042b81-33b8-438c-9939-e756631e5752">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">my_bool_array2</span> <span class="o">=</span> <span class="n">my_array</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">my_bool_array</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_bool_array2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[False  True False False  True False False  True False False]
-[ True False  True False  True False  True False  True False]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=39ea75a7-a7ec-4ec6-b30a-85c750f731e3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0a04ee76-6790-430d-ad45-45b98c5abf24">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_bool_array</span> <span class="o">&amp;</span> <span class="n">my_bool_array2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[False False False False  True False False False False False]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b27f0ac7-a67f-44a8-bd85-cc268107cc0d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_bool_array</span> <span class="o">|</span> <span class="n">my_bool_array2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[ True  True  True False  True False  True  True  True False]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e08ee723-215d-48e3-a9d7-5850cab39897">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=384b2418-befc-4d5b-ae68-aa7d670af4fe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Boolean-masks">Boolean masks<a class="anchor-link" href="#Boolean-masks">¶</a></h3><p>One of the biggest strengths of using Boolean arrays is that they can be used as slicing tools for other arrays. For example, if <code>a</code> is an array (of any type) and <code>mask</code> is a Boolean array of the same shape, then <code>a[mask]</code> is a slice of the <code>a</code> array containing only the values where the corresponding value of <code>mask</code> is <code>True</code>.</p>
-<p>We call this type of slicing <em>masking</em>, and the Boolean array the <em>mask</em>.</p>
+<p><strong>Exercise:</strong> Write a function that takes in a tartan recipe string and returns a list of color codes (e.g. <code>['B', 'K', 'B', ...]</code>) and widths.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=80e71552-e4e4-44f8-8659-9be3b2f84fad">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=428d63b0-479c-47fa-ae15-5ecf4f754168">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e72de50e-f76c-4555-bfb4-6c99e5eee33f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[ 0  1  2  3  4]
- [ 5  6  7  8  9]
- [10 11 12 13 14]
- [15 16 17 18 19]
- [20 21 22 23 24]]
-</pre>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fe3d8816-8b18-4421-af0a-2cd44a0a8def">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5923cbe0-7b8f-4843-8ccb-2e0bf0ad9e38">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Suppose we want to identify the elements of the <code>a</code> array that have remainder <code>1</code> after division by <code>3</code>.</p>
+<p><strong>Exercise:</strong> Write a function that takes in a tartan recipe string and returns a list of color codes (e.g. <code>['B', 'K', 'B', ...]</code>) and widths using list comprehensions.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2d4c61b2-09a1-435b-bb26-ea5da53535f8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=610b6100-ba46-43b8-be43-a05a2031c3af">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c1ba9e7b-e4fc-454e-97b9-f11f7e9c477d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b7f2f9bd-d588-475a-a9a0-a1d2ee3ab79f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Note: When masking, the resulting array slice is flattened into a 1D array (regardless of the shape of the original array). However, since the changes to the slice propogate back to the original array, we can make changes to this slice while preserving the layout of the data in the original array.</em></p>
-<p>For example, suppose we want to subtract <code>100</code> from each value of the <code>a</code> matrix which has remainder <code>1</code> after division by <code>3</code>.</p>
+<p>From the above, we can pick out the color code strings from the tartan recipe. On the other hand, in order to generate our <code>vertical_stripes</code> array, we need to get the corresponding RGB triples (not just the color code strings). How can accomplish this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1064e901-0dad-4a63-b234-8365e543f0e7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c3388370-abcb-4311-a5e5-b8ecba7cf151">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[ 0  1  2  3  4]
- [ 5  6  7  8  9]
- [10 11 12 13 14]
- [15 16 17 18 19]
- [20 21 22 23 24]]
-[[False  True False False  True]
- [False False  True False False]
- [ True False False  True False]
- [False  True False False  True]
- [False False  True False False]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=47badab8-ced6-4e3f-8c4f-5e91823f421a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fdbd0861-b4b3-4c58-aa0c-2695b98239dd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">mask</span><span class="p">])</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[ 1  4  7 10 13 16 19 22]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9daeb626-7705-443f-a136-a58d83486a25">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">100</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[  0 -99   2   3 -96]
- [  5   6 -93   8   9]
- [-90  11  12 -87  14]
- [ 15 -84  17  18 -81]
- [ 20  21 -78  23  24]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ae6313a-8c88-4454-adea-b982729f0bae">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e094e1f-ba91-4eba-9eb5-a66096076370">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Back-to-tartans:-Masking-(optional)">Back to tartans: Masking (optional)<a class="anchor-link" href="#Back-to-tartans:-Masking-(optional)">¶</a></h2><p><strong>Exercise:</strong> Write a function <code>checkerboard_mask(n)</code> that takes in an integer <code>n</code> and constructs an <code>n</code> by <code>n</code> Boolean array that alternates <code>True</code>/<code>False</code> everytime you move through a row or column. For example, <code>checkerboard_mask(6)</code> should return an array that looks like:
-$$
-\begin{bmatrix} 
-\text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False}
-\\
-\text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True}
-\\
-\text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False}
-\\
-\text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True}
-\\
-\text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False}
-\\
-\text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True} &amp; \text{False} &amp; \text{True}
-\end{bmatrix}$$</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cd67bb53-16b6-498c-ba0f-83f8908bf576">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_checkerboard_mask</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">checkerboard_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">row</span> <span class="o">+</span> <span class="n">col</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">checkerboard_mask</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="k">return</span> <span class="n">checkerboard_mask</span>
-</pre></div>
+<p>It would be convenient if we could define a mapping that maps each color code to its respective RGB triple.</p>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=205212dc-1f11-41bc-ba54-b627d629b974">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">6</span>
-
-<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-
-<span class="n">ROWS</span><span class="p">,</span> <span class="n">COLS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span><span class="n">cols</span><span class="p">)</span>
-<span class="n">mask</span><span class="p">[(</span><span class="n">ROWS</span> <span class="o">+</span> <span class="n">COLS</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[ True False  True False  True False]
- [False  True False  True False  True]
- [ True False  True False  True False]
- [False  True False  True False  True]
- [ True False  True False  True False]
- [False  True False  True False  True]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3b6f9557-65e1-47da-a394-7b11269372ca">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">COLS</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([[0, 0, 0, 0, 0],
-       [1, 1, 1, 1, 1],
-       [2, 2, 2, 2, 2],
-       [3, 3, 3, 3, 3],
-       [4, 4, 4, 4, 4]])</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=60906155-a571-4c5a-b208-463bc8050582">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">block</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
-                  <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[ True False]
- [False  True]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=705da4aa-1a47-4b98-bca3-f2c47cf2d4dc">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">get_checkerboard_mask</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[ True False  True False  True]
- [False  True False  True False]
- [ True False  True False  True]
- [False  True False  True False]
- [ True False  True False  True]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7397a2a9-f62d-48c8-af64-06483a981f83">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8022d099-7ef2-417a-9c3d-3d8e1f42dc42">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Use a Boolean array generated by the <code>checkerboard_mask</code> function as a mask to create the checkerboard tartan pattern from the <code>vertical_stripes</code> and <code>horizontal_stripes</code> arrays.</p>
+<h3 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">¶</a></h3><p>Let's consider a list, <code>my_list</code>.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fc70a31b-c874-4fa2-86cb-0188e5df8a8d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e68d24c9-01f9-437f-a82c-accfa66e5027">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">checkerboard_mask</span> <span class="o">=</span> <span class="n">get_checkerboard_mask</span><span class="p">(</span><span class="n">total_width</span><span class="p">)</span>
-
-<span class="n">checkerboard_tartan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">vertical_stripes</span><span class="p">)</span>
-
-<span class="n">checkerboard_tartan</span><span class="p">[</span><span class="n">checkerboard_mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">vertical_stripes</span><span class="p">[</span><span class="n">checkerboard_mask</span><span class="p">]</span>
-<span class="n">checkerboard_tartan</span><span class="p">[</span><span class="o">~</span><span class="n">checkerboard_mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">horizontal_stripes</span><span class="p">[</span><span class="o">~</span><span class="n">checkerboard_mask</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Hello'</span><span class="p">,</span> <span class="s1">'World'</span><span class="p">,</span> <span class="s1">'Goodbye'</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0a196ae4-6b9e-4cca-b416-82667a17959b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">checkerboard_tartan</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x26e3867c050&gt;</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbEAAAGhCAYAAADvBooqAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjAsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvlHJYcgAAAAlwSFlzAAAPYQAAD2EBqD+naQAAI9tJREFUeJzt3X9wVNX9//HXEsiS0BAEhl0iPww2M4jxRwTLNKYSq8RRVCxj/QEKjp0ONIDEtCI0tgZGEqUtzVQqDo6DsTRiW9FaP9YSf0UZ2hITUIwt6ED5JTsZ2zQJSrMQzvcPJvt1NxCy5G52z97nYyYz7j03931z6vjuved1Eo8xxggAAAsNiPcNAABwrmhiAABr0cQAANaiiQEArEUTAwBYiyYGALAWTQwAYC2aGADAWjQxAIC1aGIAAGvFtYk9+eSTys7O1uDBgzV58mS999578bwdAIBl4tbEXnjhBZWUlKisrEw7duzQt771Ld1www06cOBAvG4JAGAZT7x+AfDUqVN1xRVXaN26daFjF110kW699VZVVlb2+L0nT57UZ599poyMDHk8nljfKgDAYcYYtbe3KysrSwMGnPvz1EAH76nXgsGgGhoatGzZsrDjRUVF2rZtW7fzOzo61NHREfp8+PBhTZo0Keb3CQCIrYMHD2rMmDHn/P1xaWKff/65Ojs75fP5wo77fD4FAoFu51dWVmrFihXdjl9adKdSBqXG7D77y96tfwz984SCmWccixzvaSxWzlaztz9Lf9xrNPcTOR6rn7M/akZzXdtq5oz4a9jnT/79zT6PRY73NEZN52p2Hg/qwy2blJGRob6ISxPrEvkq0Bhz2teDy5cvV2lpaehzW1ubxo4dq5RBqUnRxL76M0f+PJHz8dXxnsZi5Ww1e/uz9Nf/brGa23P9OfujZjTXta1mamrKGb/3XMcix6nZfzWl7v8+RCsuTWzkyJFKSUnp9tTV3Nzc7elMkrxer7xeb3/dXr/7euFtoX/+9J0/nHEscrynsdONOyGamuc65qT+mNu+/JyxqBnNdW2rqYjvnThya+if//l5wTmNRY73NEZN52oGg53aob6LSzoxNTVVkydPVm1tbdjx2tpa5efnx+OWAAAWitvrxNLSUt1zzz2aMmWKvvnNb2r9+vU6cOCAFixYEK9bAgBYJm5N7I477tC///1vrVy5UkeOHFFubq5ee+01jR8/Pl63FDexer0TC7F6pRQrNr86S9bXnX2pea6vx5x6dUZN52p2Hg9K+kR9FddgR3FxsYqLi+N5CwAAi/G7EwEA1qKJAQCsFdfXiTiFiD0ReydrRnNd22oSsU+emlZH7AEAcAJNDABgLZoYAMBarIklAPaJxY7N6z/JumbHPjFqSs7tE+NJDABgLZoYAMBavE5MAETsidg7WTOa69pWk4h98tQkYg8AcD2aGADAWjQxAIC1WBNLAETsY8fm9Z9kXbMjYk9NiYg9AAA0MQCAvXidmACI2BOxd7JmNNe1rSYR++SpScQeAOB6NDEAgLVoYgAAa7EmlgCI2MeOzes/ybpmR8SemhIRewAAaGIAAHvRxAAA1mJNLAGwT4x9Yk7WjOa6ttVkn1jy1GSfGADA9WhiAABr8ToxARCxjx2bX50l6+tOIvbUlIjYAwBAEwMA2IsmBgCwFmtiCYCIPRF7J2tGc13bahKxT56aROwBAK5HEwMAWIsmBgCwFmtiCYB9YrFj8/pPsq7ZsU+MmhL7xAAAoIkBAOzF68QEQMSeiL2TNaO5rm01idgnT00i9gAA16OJAQCsRRMDAFjLY4wx8b6JaLW1tSkzM1N5M+YqZVCqJLvXM2IlFj9nrNg2t4iPm27zh31+9Q+BPo9Fjvc0Rk3nahpj1NraqtbWVg0dOlTniicxAIC1aGIAAGtZ/ToxMzNTHo9HUuJFgfty3Viw7XWdTXOL+Ont6zGnXp1R07mawWCnfvfcJ7xOBAC4F00MAGAtmhgAwFpW/9qpCQUzidj3gIg9ko0bouduqelUHIMnMQCAtWhiAABr0cQAANZinxj7xBJyzcmmuUX8JOP+KbfUZJ8YAMD1aGIAAGsRsSdiT8Qe1nBD9NwtNYnYAwBcjyYGALAWTQwAYC0i9kTsE3LNyaa5RfwkY/TcLTUTNmJfWVmpK6+8UhkZGRo1apRuvfVW7d69O+wcY4zKy8uVlZWltLQ0FRYWqqmpyelbAQAkOcebWF1dnRYuXKi//e1vqq2t1YkTJ1RUVKQvvvgidM7q1au1Zs0arV27VvX19fL7/Zo+fbra29udvh0AQBJzPGL/+uuvh33esGGDRo0apYaGBl199dUyxqiqqkplZWWaNWuWJKm6ulo+n081NTWaP3++07cEAEhSMV8T+/TTT5WTk6Ndu3YpNzdXe/fu1YUXXqjGxkbl5eWFzps5c6aGDRum6urqs16za00sb8bc0D4xm8VqHS4WYrXeGCvxXuOM17pqou2FdKrmxJFbwz7/8/OCPo9Fjvc0Rk3nanYeD2rH/z3X5zWxmG52NsaotLRUBQUFys3NlSQFAqcW+Xw+X9i5Pp9P+/fvP+11Ojo61NHREfrc1tYWozsGANgkphH7RYsW6cMPP9Tzzz/fbawrVdjFGNPtWJfKyspQGjEzM1Njx46Nyf0CAOwSsyexxYsX65VXXtG7776rMWPGhI77/aciloFAQKNHjw4db25u7vZ01mX58uUqLS0NfW5ra0uqRtYfr3ec0l+vlJxi86uzZH3d2actHT28XuyPV2fUdK5mMNipHeo7x5/EjDFatGiRNm/erLfeekvZ2dlh49nZ2fL7/aqtrQ0dCwaDqqurU35+/mmv6fV6NXTo0LAvAAAcfxJbuHChampq9Mc//lEZGRmhNbDMzEylpaXJ4/GopKREFRUVysnJUU5OjioqKpSenq7Zs2c7fTsAgCTmeBNbt26dJKmwsDDs+IYNG3TvvfdKkpYuXapjx46puLhYLS0tmjp1qrZs2aKMjAynbwcAkMSs/rVTROyJ2J+Nzes/ybpmR8SempJzEXt+ATAAwFo0MQCAtWK62Rm9Q8SeiL2TNaO5rm01idgnT82EjdgDANBfaGIAAGvRxAAA1mJNLAEQsY8dm9d/knXNjog9NaVTEXvpE/UVT2IAAGvRxAAA1qKJAQCsxZpYAmCfGPvEnKwZzXVtq8k+seSpyT4xAIDr0cQAANZKmt9ib/OroFiJxc8ZK7bNLeLjptv8YZ9f/UOgz2OR4z2NUdO5msYYtba28lvsAQDuRRMDAFiLJgYAsJbVa2KZmZnyeDySEi8K3JfrxoJta042zS3ip7drPE6t/1DTuZrBYKd+99wnrIkBANyLJgYAsBZNDABgLat/7dSEgpnsE+sB+8SQbNywf8otNZ2KY/AkBgCwFk0MAGAtIvZE7BPydZ1Nc4v4ScbouVtqErEHALgeTQwAYC2aGADAWkTsidgTsYc13BA9d0tNIvYAANejiQEArEXEnoh9Qr6us2luET/JGD13S00i9gAA16OJAQCsRRMDAFjL6jWxvBlzQxF7m8VqHS4WYrXeGCvxXuOM17pqom0jcarmxJFbwz7/8/OCPo9Fjvc0Rk3nanYeD2rH/z3HmhgAwL1oYgAAa9HEAADWsvrXTiWL/lijcEp/rYs4xeb1n2Rds+vTvsQe1sj6Y/2Hms7VDAY7tUN9x5MYAMBaNDEAgLV4nZgAiNjHjs2vzpL1dScRe2pKpyL20ifqK57EAADWookBAKxFEwMAWIs1sQRAxJ6IvZM1o7mubTWJ2CdPTSL2AADXo4kBAKxFEwMAWIs1sQTAPrHYsXn9J1nX7NgnRk2JfWIAANDEAAD24nViAiBiT8TeyZrRXNe2mkTsk6cmEXsAgOvRxAAA1qKJAQCs5THGmHjfRLTa2tqUmZmpvBlzlTIoVZLd6xmxEoufM1Zsm1vEx023+cM+v/qHQJ/HIsd7GqOmczWNMWptbVVra6uGDh2qc8WTGADAWjQxAIC1rH6dmJmZKY/HIynxosB9uW4s2Pa6zqa5Rfz09vWYU6/OqOlczWCwU7977hNeJwIA3CvmTayyslIej0clJSWhY8YYlZeXKysrS2lpaSosLFRTU1OsbwUAkGRi2sTq6+u1fv16XXrppWHHV69erTVr1mjt2rWqr6+X3+/X9OnT1d7eHsvbAQAkmZj92qmjR49qzpw5evrpp/Xoo4+GjhtjVFVVpbKyMs2aNUuSVF1dLZ/Pp5qaGs2fP7/XNSYUzCRi3wMi9kg2boieu6WmU3GMmD2JLVy4UDNmzNB1110Xdnzfvn0KBAIqKioKHfN6vZo2bZq2bdt22mt1dHSora0t7AsAgJg8iW3atEmNjY2qr6/vNhYInOrEPp8v7LjP59P+/ftPe73KykqtWLHC+RsFAFjN8SexgwcPasmSJdq4caMGDx58xvO6ovFdjDHdjnVZvnx5aGd3a2urDh486Og9AwDs5Pg+sZdfflnf+c53lJKSEjrW2dkpj8ejAQMGaPfu3fr617+uxsZG5eXlhc6ZOXOmhg0bpurq6rPWYJ9Y9Gxbc7JpbhE/ybh/yi01E3af2LXXXqtdu3Zp586doa8pU6Zozpw52rlzpyZMmCC/36/a2trQ9wSDQdXV1Sk/P9/p2wEAJDHH18QyMjKUm5sbdmzIkCEaMWJE6HhJSYkqKiqUk5OjnJwcVVRUKD09XbNnz3b6dgAASSwuf9l56dKlOnbsmIqLi9XS0qKpU6dqy5YtysjIiOo6ROx7RsQeycYN0XO31HRqJatfmtg777wT9tnj8ai8vFzl5eX9UR4AkKT43YkAAGvRxAAA1uJPsRCxT8g1J5vmFvGTjNFzt9RM2Ig9AAD9hSYGALAWTQwAYK247BNzCvvEesY+MSQbN+yfckvNhP9TLAAAxBpNDABgLSL2ROwT8nWdTXOL+EnG6LlbahKxBwC4Hk0MAGAtmhgAwFpE7InYE7GHNdwQPXdLTSL2AADXo4kBAKxFxJ6IfUK+rrNpbhE/yRg9d0tNIvYAANejiQEArEUTAwBYi4g9EXsi9rCGG6LnbqlJxB4A4Ho0MQCAtWhiAABrsU+MfWIJueZk09wifpJx/5RbarJPDADgejQxAIC1iNgTsSdiD2u4IXrulppE7AEArkcTAwBYiyYGALAWEXsi9gm55mTT3CJ+kjF67paaROwBAK5HEwMAWIsmBgCwFvvE2CfGPjFYww37p9xSk31iAADXo4kBAKxFxJ6IfUK+rrNpbhE/yRg9d0tNIvYAANejiQEArEUTAwBYi4g9EXsi9rCGG6LnbqlJxB4A4Ho0MQCAtWhiAABrsU+MfWIJueZk09wifpJx/5RbarJPDADgejQxAIC1iNgTsSdiD2u4IXrulppE7AEArkcTAwBYiyYGALAWEXsi9gm55mTT3CJ+kjF67paaROwBAK5HEwMAWIuIPRF7Ivawhhui526pScQeAOB6NDEAgLVoYgAAaxGxJ2KfkGtONs0t4icZo+duqZnQEfvDhw/r7rvv1ogRI5Senq7LL79cDQ0NoXFjjMrLy5WVlaW0tDQVFhaqqakpFrcCAEhijjexlpYWXXXVVRo0aJD+/Oc/6+OPP9YvfvELDRs2LHTO6tWrtWbNGq1du1b19fXy+/2aPn262tvbnb4dAEASczxi//jjj2vs2LHasGFD6NgFF1wQ+mdjjKqqqlRWVqZZs2ZJkqqrq+Xz+VRTU6P58+c7fUsAgCTl+JrYpEmTdP311+vQoUOqq6vT+eefr+LiYn3/+9+XJO3du1cXXnihGhsblZeXF/q+mTNnatiwYaqurj5rja41sbwZc9kn1gP2iSHZuGH/lFtqGmPU2tqaeGtie/fu1bp165STk6O//OUvWrBgge6//34999xzkqRA4NQP4fP5wr7P5/OFxiJ1dHSora0t7AsAAMdfJ548eVJTpkxRRUWFJCkvL09NTU1at26d5s6dGzqvK1XYxRjT7ViXyspKrVixwulbBQBYzvEmNnr0aE2aNCns2EUXXaQXX3xRkuT3n3q0DAQCGj16dOic5ubmbk9nXZYvX67S0tLQ57a2No0dO1Z7t/6RiH0P+uPndIptc4v4cEP03C01T0XsW9VXjr9OvOqqq7R79+6wY3v27NH48eMlSdnZ2fL7/aqtrQ2NB4NB1dXVKT8//7TX9Hq9Gjp0aNgXAACOP4k98MADys/PV0VFhW6//XZt375d69ev1/r16yWdeo1YUlKiiooK5eTkKCcnRxUVFUpPT9fs2bOdvh0AQBJzvIldeeWVeumll7R8+XKtXLlS2dnZqqqq0pw5c0LnLF26VMeOHVNxcbFaWlo0depUbdmyRRkZGU7fDgAgiVn9a6eI2PeMiD2SjRui526pmbARewAA+gtNDABgLZoYAMBaVq+J8adYes+2NSeb5hbxk4z7p9xSM6H/FAsAAP2BJgYAsJbj+8T604SCmUTse0DEHsnGDdFzt9R0aiWLJzEAgLVoYgAAa9HEAADWImJPxD4h15xsmlvETzJGz91Sk4g9AMD1aGIAAGsRsSdiT8Qe1nBD9NwtNYnYAwBcjyYGALAWTQwAYC0i9kTsE3LNyaa5RfwkY/TcLTWJ2AMAXI8mBgCwFk0MAGAt9omxT4x9YrCGG/ZPuaUm+8QAAK5HEwMAWIuIPRH7hHxdZ9PcIn6SMXrulppE7AEArkcTAwBYiyYGALCW1WtieTPmhiL2E0duDY3/8/OCsPO/OhY5fq5jTtaMVUQ2Fj9nrGK5ts1tIkeeo7mubTWRPFgTAwC4Hk0MAGAtmhgAwFpW/9qpnBF/VWpqiqTYrGU5tbZ2tuvedJvza06R13Xq5/zqNc92v9GN2Ta3ibvmFM11ba8J8CQGALAWTQwAYC2rXyd+8u9vErE/w9jZahKxt+/VWbK87iRiDyfxJAYAsBZNDABgLZoYAMBaVq+JEbEnYh85TsQ+uuvaXhPgSQwAYC2aGADAWla/TiRiT8Q+cpyIfXTXta0mEIknMQCAtWhiAABr0cQAANayek2MiD0R+8hxIvbRXdf2mgBPYgAAa9HEAADWookBAKxl9ZoY+8TYJxY5zj6x6K5rW00gEk9iAABr0cQAANay+nUiEXsi9pHjROyju67tNQGexAAA1qKJAQCsRRMDAFjL6jUxIvZE7CPHidhHd13bagKReBIDAFiLJgYAsBZNDABgLavXxNgnxj6xyHH2iUV3XdtrAo4/iZ04cUIPP/ywsrOzlZaWpgkTJmjlypU6efJk6BxjjMrLy5WVlaW0tDQVFhaqqanJ6VsBACQ5x5vY448/rqeeekpr167VP/7xD61evVo/+9nP9MQTT4TOWb16tdasWaO1a9eqvr5efr9f06dPV3t7u9O3AwBIYo6/TvzrX/+qmTNnasaMGZKkCy64QM8//7zef/99SaeewqqqqlRWVqZZs2ZJkqqrq+Xz+VRTU6P58+f3uhYReyL2keNE7KO7rm01gUiOP4kVFBTozTff1J49eyRJH3zwgbZu3aobb7xRkrRv3z4FAgEVFRWFvsfr9WratGnatm3baa/Z0dGhtra2sC8AABx/EnvooYfU2tqqiRMnKiUlRZ2dnVq1apXuuusuSVIgcOr/Zfl8vrDv8/l82r9//2mvWVlZqRUrVjh9qwAAyzn+JPbCCy9o48aNqqmpUWNjo6qrq/Xzn/9c1dXVYed5PJ6wz8aYbse6LF++XK2traGvgwcPOn3bAAALOf4k9uCDD2rZsmW68847JUmXXHKJ9u/fr8rKSs2bN09+/6l33IFAQKNHjw59X3Nzc7ensy5er1der7fbcSL2ROwjx4nYR3dd22sCjj+JffnllxowIPyyKSkpoYh9dna2/H6/amtrQ+PBYFB1dXXKz893+nYAAEnM8Sexm2++WatWrdK4ceN08cUXa8eOHVqzZo3uu+8+SadeI5aUlKiiokI5OTnKyclRRUWF0tPTNXv2bKdvBwCQxBxvYk888YR+8pOfqLi4WM3NzcrKytL8+fP105/+NHTO0qVLdezYMRUXF6ulpUVTp07Vli1blJGREVUtIvZE7CPHidhHd13bagKRHG9iGRkZqqqqUlVV1RnP8Xg8Ki8vV3l5udPlAQAuwi8ABgBYiyYGALAWv8WeiD0R+9OMJ8L6T7Ku2RGxh5N4EgMAWIsmBgCwFk0MAGAtq9fE2CfGPrHIcfaJRXdd22oCkXgSAwBYiyYGALCW1a8TidgTsY8cJ2If3XVtrwnwJAYAsBZNDABgLZoYAMBaVq+JEbEnYh85TsQ+uuvaVhOIxJMYAMBaNDEAgLVoYgAAa1m9JsY+MfaJRY6zTyy669peE+BJDABgLZoYAMBaVr9OJGJPxD5ynIh9dNe1rSYQiScxAIC1aGIAAGvRxAAA1rJ6TYyIPRH7yHEi9tFd1/aaAE9iAABr0cQAANay+nUiEXsi9pHjROyju65tNYFIPIkBAKxFEwMAWIsmBgCwltVrYkTsidhHjhOxj+66ttcEeBIDAFiLJgYAsBZNDABgLavXxNgnxj6xyHH2iUV3XdtqApF4EgMAWIsmBgCwltWvE4nYE7GPHCdiH911ba8J8CQGALAWTQwAYC2aGADAWlaviRGxJ2IfOU7EPrrr2lYTiMSTGADAWjQxAIC1aGIAAGtZvSbGPjH2iUWOs08suuvaXhPgSQwAYC2aGADAWla/TiRiT8Q+cpyIfXTXta0mEIknMQCAtWhiAABr0cQAANayek2MiD0R+8hxIvbRXdf2mgBPYgAAa9HEAADWsvp1IhF7IvaR40Tso7uubTWBSDyJAQCsRRMDAFiLJgYAsJbVa2JE7InYR44TsY/uurbXBKJ+Env33Xd18803KysrSx6PRy+//HLYuDFG5eXlysrKUlpamgoLC9XU1BR2TkdHhxYvXqyRI0dqyJAhuuWWW3To0KE+/SAAAPeJuol98cUXuuyyy7R27drTjq9evVpr1qzR2rVrVV9fL7/fr+nTp6u9vT10TklJiV566SVt2rRJW7du1dGjR3XTTTeps7Pz3H8SAIDrRP068YYbbtANN9xw2jFjjKqqqlRWVqZZs2ZJkqqrq+Xz+VRTU6P58+ertbVVzzzzjH7zm9/ouuuukyRt3LhRY8eO1RtvvKHrr7++Dz8OAMBNHF0T27dvnwKBgIqKikLHvF6vpk2bpm3btmn+/PlqaGjQ8ePHw87JyspSbm6utm3bFlUTY58Y+8Qix9knFt11basJRHK0iQUCp/7l8/l8Ycd9Pp/2798fOic1NVXnnXdet3O6vj9SR0eHOjo6Qp/b2tqcvG0AgKViErH3eDxhn40x3Y5F6umcyspKZWZmhr7Gjh3r2L0CAOzl6JOY33/q0T8QCGj06NGh483NzaGnM7/fr2AwqJaWlrCnsebmZuXn55/2usuXL1dpaWnoc1tbm8aOHUvEnoh9t3Ei9tFd1/aagKNPYtnZ2fL7/aqtrQ0dCwaDqqurCzWoyZMna9CgQWHnHDlyRB999NEZm5jX69XQoUPDvgAAiPpJ7OjRo/r0009Dn/ft26edO3dq+PDhGjdunEpKSlRRUaGcnBzl5OSooqJC6enpmj17tiQpMzNT3/ve9/TDH/5QI0aM0PDhw/WjH/1Il1xySSitCABAb0TdxN5//31dc801oc9dr/nmzZunZ599VkuXLtWxY8dUXFyslpYWTZ06VVu2bFFGRkboe375y19q4MCBuv3223Xs2DFde+21evbZZ5WSktKrezDGSJKOB///vrLO48HQPweD4fvNvjoWOX6uY7Gq2fWznem6Xx3vaSyamn35OXuqea5jZ6uZaHPbl58zFjWjua7tNWGvrv9+R/5vHC2P6esV4uDQoUOEOwAgCRw8eFBjxow55++3somdPHlSn332mYwxGjdunA4ePMg62Rl0hWCYo9Njfs6OOeoZ83N2p5sjY4za29uVlZWlAQPOPZ5h5S8AHjBggMaMGRPaL0bY4+yYo54xP2fHHPWM+Tm7yDnKzMzs8zX5UywAAGvRxAAA1rK6iXm9Xj3yyCPyer3xvpWExRz1jPk5O+aoZ8zP2cVyjqwMdgAAIFn+JAYAcDeaGADAWjQxAIC1aGIAAGtZ3cSefPJJZWdna/DgwZo8ebLee++9eN9SXFRWVurKK69URkaGRo0apVtvvVW7d+8OO8cYo/LycmVlZSktLU2FhYVqamqK0x3HV2VlpTwej0pKSkLHmB/p8OHDuvvuuzVixAilp6fr8ssvV0NDQ2jczXN04sQJPfzww8rOzlZaWpomTJiglStX6uTJk6Fz3DY/7777rm6++WZlZWXJ4/Ho5ZdfDhvvzXx0dHRo8eLFGjlypIYMGaJbbrlFhw4diu5GjKU2bdpkBg0aZJ5++mnz8ccfmyVLlpghQ4aY/fv3x/vW+t31119vNmzYYD766COzc+dOM2PGDDNu3Dhz9OjR0DmPPfaYycjIMC+++KLZtWuXueOOO8zo0aNNW1tbHO+8/23fvt1ccMEF5tJLLzVLliwJHXf7/PznP/8x48ePN/fee6/5+9//bvbt22feeOMN8+mnn4bOcfMcPfroo2bEiBHm1VdfNfv27TO///3vzde+9jVTVVUVOsdt8/Paa6+ZsrIy8+KLLxpJ5qWXXgob7818LFiwwJx//vmmtrbWNDY2mmuuucZcdtll5sSJE72+D2ub2De+8Q2zYMGCsGMTJ040y5Yti9MdJY7m5mYjydTV1RljjDl58qTx+/3mscceC53zv//9z2RmZpqnnnoqXrfZ79rb201OTo6pra0106ZNCzUx5seYhx56yBQUFJxx3O1zNGPGDHPfffeFHZs1a5a5++67jTHMT2QT6818/Pe//zWDBg0ymzZtCp1z+PBhM2DAAPP666/3uraVrxODwaAaGhpUVFQUdryoqEjbtm2L010ljtbWVknS8OHDJZ36m2+BQCBsvrxer6ZNm+aq+Vq4cKFmzJjR7e/WMT/SK6+8oilTpui73/2uRo0apby8PD399NOhcbfPUUFBgd58803t2bNHkvTBBx9o69atuvHGGyUxP5F6Mx8NDQ06fvx42DlZWVnKzc2Nas6s/AXAn3/+uTo7O+Xz+cKO+3w+BQKBM3yXOxhjVFpaqoKCAuXm5kpSaE5ON1/79+/v93uMh02bNqmxsVH19fXdxpgfae/evVq3bp1KS0v14x//WNu3b9f9998vr9eruXPnun6OHnroIbW2tmrixIlKSUlRZ2enVq1apbvuuksS/w5F6s18BAIBpaam6rzzzut2TjT/HbeyiXXxeDxhn40x3Y65zaJFi/Thhx9q69at3cbcOl8HDx7UkiVLtGXLFg0ePPiM57l1fqRTf95oypQpqqiokCTl5eWpqalJ69at09y5c0PnuXWOXnjhBW3cuFE1NTW6+OKLtXPnTpWUlCgrK0vz5s0LnefW+TmTc5mPaOfMyteJI0eOVEpKSrdu3dzc3K3zu8nixYv1yiuv6O233w77I3N+v1+SXDtfDQ0Nam5u1uTJkzVw4EANHDhQdXV1+tWvfqWBAweG5sCt8yNJo0eP1qRJk8KOXXTRRTpw4IAk/h168MEHtWzZMt1555265JJLdM899+iBBx5QZWWlJOYnUm/mw+/3KxgMqqWl5Yzn9IaVTSw1NVWTJ09WbW1t2PHa2lrl5+fH6a7ixxijRYsWafPmzXrrrbeUnZ0dNp6dnS2/3x82X8FgUHV1da6Yr2uvvVa7du3Szp07Q19TpkzRnDlztHPnTk2YMMHV8yNJV111VbdtGXv27NH48eMl8e/Ql19+2e0PN6akpIQi9m6fn0i9mY/Jkydr0KBBYeccOXJEH330UXRzds5xlDjritg/88wz5uOPPzYlJSVmyJAh5l//+le8b63f/eAHPzCZmZnmnXfeMUeOHAl9ffnll6FzHnvsMZOZmWk2b95sdu3aZe66666kjv+ezVfTicYwP9u3bzcDBw40q1atMp988on57W9/a9LT083GjRtD57h5jubNm2fOP//8UMR+8+bNZuTIkWbp0qWhc9w2P+3t7WbHjh1mx44dRpJZs2aN2bFjR2ibU2/mY8GCBWbMmDHmjTfeMI2Njebb3/62eyL2xhjz61//2owfP96kpqaaK664IhQpdxtJp/3asGFD6JyTJ0+aRx55xPj9fuP1es3VV19tdu3aFb+bjrPIJsb8GPOnP/3J5ObmGq/XayZOnGjWr18fNu7mOWprazNLliwx48aNM4MHDzYTJkwwZWVlpqOjI3SO2+bn7bffPu1/d+bNm2eM6d18HDt2zCxatMgMHz7cpKWlmZtuuskcOHAgqvvgT7EAAKxl5ZoYAAASTQwAYDGaGADAWjQxAIC1aGIAAGvRxAAA1qKJAQCsRRMDAFiLJgYAsBZNDABgLZoYAMBaNDEAgLX+H/h0su3ogHElAAAAAElFTkSuQmCC"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ef9952d-cdb6-449c-ab75-1c26a8e84597">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cd8665f6-ff9e-4baa-b225-2544973b450a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Write a function <code>authentic_mask(n)</code> that takes in an integer <code>n</code> and constructs an <code>n</code> by <code>n</code> Boolean array consisting of the sequences:</p>
+<p>We can think of <code>my_list</code> as a mapping between indices <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, and values <code>'Hello'</code>, <code>'World'</code>, <code>'Goodbye'</code>, <code>7</code>. That is, we have the following mappings:</p>
 <ul>
-<li><code>[True, True, False, False, True, True, False, ...]</code> in the first row,</li>
-<li><code>[False, True, True, False, False, True, True, ...]</code> in the second row,</li>
-<li><code>[False, False, True, True, False, False, True, ...]</code> in the third row,</li>
-<li><code>[True, False, False, True, True, False, False, ...]</code> in the fourth row,</li>
-<li>...</li>
+<li>index <code>0</code> maps to value <code>'Hello'</code>,</li>
+<li>index <code>1</code> maps to value <code>'World'</code>,</li>
+<li>index <code>2</code> maps to value <code>'Goodbye'</code>,</li>
+<li>index <code>3</code> maps to value <code>7</code>.</li>
 </ul>
-<p>For example, <code>authentic_mask(6)</code> should return an array that looks like:
-$$
-\begin{bmatrix} 
-\text{True} &amp; \text{True} &amp; \text{False} &amp; \text{False} &amp; \text{True} &amp; \text{True}
-\\
-\text{False} &amp; \text{True} &amp; \text{True} &amp; \text{False} &amp; \text{False} &amp; \text{True}
-\\
-\text{False} &amp; \text{False} &amp; \text{True} &amp; \text{True} &amp; \text{False} &amp; \text{False}
-\\
-\text{True} &amp; \text{False} &amp; \text{False} &amp; \text{True} &amp; \text{True} &amp; \text{False}
-\\
-\text{True} &amp; \text{True} &amp; \text{False} &amp; \text{False} &amp; \text{True} &amp; \text{True}
-\\
-\text{False} &amp; \text{True} &amp; \text{True} &amp; \text{False} &amp; \text{False} &amp; \text{True}
-\end{bmatrix}$$</p>
+<p>To retrieve values of a list, we can "plug in" an index using square brackets <code>[]</code>:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c08c68a4-dac3-4627-b10a-dec9ab76b78b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dc0f593a-f6ca-4892-8876-bcc2f8e9353d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3a4d2cd8-852f-4e36-935d-41b739d14876">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b49ea500-09d4-48ba-822e-d24a2e90f269">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Use a Boolean array generated by the <code>authentic_mask</code> function as a mask to create the authentic tartan pattern from the <code>vertical_stripes</code> and <code>horizontal_stripes</code> arrays.</p>
+<p>A Python <em>dictionary</em> works very similarly, except that instead of a map from indices to values, we have a map from <em>keys</em> to values. These keys do not need to be integers <code>0</code>, <code>1</code>, <code>2</code>, ..., but are more flexible. Dictionary keys can include integers, floats, strings, tuples, functions, and many other types (anything that is <em>immutable</em>).</p>
+<p>To define a dictionary, we can use curly braces <code>{}</code> containing a comma-separated sequence of <code>&lt;key&gt;:&lt;value&gt;</code> mappings. For example, suppose we want to construct a dictionary with the following mappings:</p>
+<ul>
+<li>key <code>5</code> maps to value <code>'Hello!'</code>,</li>
+<li>key <code>(0,255,0)</code> maps to <code>'Green'</code>,</li>
+<li>key <code>'Good'</code> maps to value <code>10</code>,</li>
+<li>key <code>'Bad'</code> maps to value <code>0</code>,</li>
+<li>key <code>'Red'</code> maps to value <code>(255,0,0)</code>.</li>
+</ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=39a0c78d-d97e-4d97-9fe4-a85a08788840">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=459f7941-cd4d-4357-b61e-f535f7915c0f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a1232769-d4de-4bad-922b-f0bd0d642378">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Just like with lists, we can "plug in" a key to the dictionary and retrieve the corresponding value using square brackets <code>[]</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5812f103-9b91-4c3c-9287-b4ef9b4dc656">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6d6b44b-2b3f-4c3a-a38c-ef227c4b85ab">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Note: unlike lists , we cannot use slicing with dictionaries. This is because the dictionaries do not have any inherent order in Python.</p>
+<p>If desired, we can access the keys of a dictionary using the <code>.keys</code> method. Similarly, we can access the values using the <code>.values</code> method. Finally, we can access key/value pairs using the <code>.items</code> method.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=599b6fcc-0db7-4b12-af4d-219ebbb6d143">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dec15487-4daf-4896-9018-261f44da1554">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=600bbd41-cab4-42a1-9363-21a6b4bc65b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4405431-2772-49db-b92c-6b278fb3a0e2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This allows us to iterate through dictionaries in several ways:</p>
+<ul>
+<li><code>for key in my_dictionary.keys()</code> will iterate through each key of the dictionary. We can also write <code>for key in my_dictionary</code>, which will still iterate through the keys.</li>
+<li><code>for value in my_dictionary.values()</code> will iterate through each value of the dictionary.</li>
+<li><code>for key, value in my_dictionary.items()</code> will iterate through each key/value pair.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=889a25cc-f3d8-4344-8bcd-b36186557792">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a17cec24-c42c-4ea9-a0eb-357f63d5f6bf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=990905c7-9a74-48c5-bb55-e1b891f35ea7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f0b9970d-ceaf-40a1-9039-411b1f30b2c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Write a dictionary whose keys are the color codes <code>'B'</code>, <code>'K'</code>, and <code>'OG'</code> and whose values are the corresponding RGB triples.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9a487e33-2c9f-4ff2-97b1-2495500a498e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=909f4d6d-098e-4965-be97-d364080c4b2f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Use the <code>color_codes</code> list and the above dictionary to construct a list <code>colors</code> containing the RGB triples for each stripe in the tartan recipe.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9bd45929-fc7a-43c6-b3de-5a566c6945a3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=710d2104-bbdd-4b62-9cc7-2c6d55cf662e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e5d050c1-fce8-4a4c-98ad-ea7c13718068">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Remaining-tasks-to-be-addressed-for-Project-3:">Remaining tasks to be addressed for Project 3:<a class="anchor-link" href="#Remaining-tasks-to-be-addressed-for-Project-3:">¶</a></h3><ul>
+<li>We have explicitly discussed how to combine the <code>vertical_stripes</code> and <code>horizontal_stripes</code> arrays in a checkerboard pattern. For the project, we will need to use the more authentic pattern described on the project page to combine these arrays and generate our tartan image.</li>
+<li>We are told to recreate a tartan image that is <code>500</code> rows by <code>500</code> columns. On the other hand, the tartan recipe does not add up to a total width of <code>500</code>. We will need to think about how to repeat the pattern to fill the entire <code>(500, 500, 3)</code> array.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=829810ee-e828-4e76-b908-bf94e27ca0a6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Project-4:-Image-denoising"><a href="https://jllottes.github.io/Projects/image_denoising/image_denoising.html">Project 4: Image denoising</a><a class="anchor-link" href="#Project-4:-Image-denoising">¶</a></h2><p>In recent weeks, we've been working with images using <code>(m,n,3)</code>-shaped NumPy RGB arrays and visualizing them with <code>plt.imshow</code>. The cell below will download an example image file from the course webpage into your Jupyter notebook directory with the file name <code>noisy_img.png</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=70934bdf-f26a-45ff-89e8-afb7ca43f7e8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'noisy_img.png'</span><span class="p">,</span><span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">r</span><span class="s1">'https://jllottes.github.io/_images/noisy_img.png'</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12ff8a56-bb0f-424f-884f-878a4969186b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Let's read this image in as a NumPy array using <code>plt.imread</code> and plot it using <code>plt.imshow</code>:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=87f5817d-ef3b-4b26-81aa-df16d6620e16">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">noisy_img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'noisy_img.png'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">noisy_img</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c91915ab-a5d3-4f11-85b6-45434bacaef0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Notice that the image looks to have been affected by some kind of noise. In particular, some pixels seem to have mistakenly been colored white, while others have been colored black. Let's take a closer look to see this more clearly.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=00b8f641-95ed-468f-b51c-8538ff50a3e3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">noisy_img</span><span class="p">[</span><span class="mi">130</span><span class="p">:</span><span class="mi">180</span><span class="p">,</span><span class="mi">265</span><span class="p">:</span><span class="mi">315</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9a88e6fc-20d0-493d-8608-7e0834457c53">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This type of noise is called <em>salt and pepper noise</em>, where some pixels have been replaced with white (salt) pixels and other pixels have been replaced with black (pepper) pixels. For our next project, we are interested in exploring strategies to try to filter and remove this type of noise.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc3489f8-3e9a-4a2a-952f-df96e6b686c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Loading-in-sample-images">Loading in sample images<a class="anchor-link" href="#Loading-in-sample-images">¶</a></h3><p>In order to explore filtering salt and pepper noise, it's useful to first be able to generate this kind of noise ourselves. That is, it will be helpful to have some Python code that can take an image and randomly assign some pixels to be salt noise and others to be pepper noise.</p>
+<p>There are several example images available on the project page that can be used for this exploration. Pick whichever you like, download it, and place it into your Jupyter notebook directory. Then, read it into a NumPy array using <code>np.imread</code>.</p>
+<p>For example, I've downloaded <code>circuit.png</code> into my Jupyter notebook directory. Now, I will read it into a NumPy array:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bc48d01b-4a9c-4504-89be-56bf68e65b92">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd9a44fc-eb73-4dd8-a6d6-b1e14adb4dfc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Let's use <code>plt.imshow</code> to see what this image looks like.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9e9aa67a-5a95-4a85-aadd-306ac56e9fd8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8e99936d-ce86-435e-8221-85461149eda5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9393de94-b9f8-4e2e-a756-1c2838aec725">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Before proceeding, let's take a look at the structure of the <code>img</code> array. For example, does it contain RGB values or RGBA values (with transparency)? Does it contain floats between <code>0</code> and <code>1</code> or does it contain integers between <code>0</code> and <code>255</code>?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=536a3319-18d2-4ae7-8115-8d45c05f2ff9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=40b1c6a0-92af-4a9f-b917-5f627abf0314">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=362566d2-37a1-429c-a441-8f36350b8471">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=14e7d731-fa37-4805-8dc1-d0730804cd7b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We see that the <code>circuit.png</code> image contains floating point RGB values (without transparency). If your chosen image has a different format, transform it so that it also contains floating point RGB values. As a reminder:</p>
+<ul>
+<li><code>img[:,:,:3]</code> will produce a slice consisting of only the RGB parts of the image and will drop any transparency information, and</li>
+<li><code>img / 255</code> produce a floating point RGB array from an integer RGB array.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=add5b02c-73c7-4aa7-8dba-d9295d89f3a2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=82a1ed2d-6ba4-465f-959e-6bb2a6ee1909">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Grayscale-images">Grayscale images<a class="anchor-link" href="#Grayscale-images">¶</a></h3><p>For this project, we will be working with grayscale images. That is, each image contains only shades of gray.</p>
+<p>Note: we get a shade of gray when the red, green, and blue channels match for a given pixel. Let's confirm that our image file contains only gray pixels.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0d201417-087b-4934-9a9e-d3a2b3675691">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8292f9a6-452b-4e1d-893d-6cbb625ce1cc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79f99fe9-1cd7-4f27-a277-2d966568ae81">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can represent grayscale images as <code>(m,n)</code> arrays (rather than <code>(m,n,3)</code>) without any loss of information, since all three color channels give the same <code>(m,n)</code> array. In the case of the <code>img</code> array, we could take <code>img[:,:,0]</code> (the red channel) to represent the grayscale values.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6b1409ad-8102-413e-a9fc-ef87a85a41a6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f2cec295-8c43-4c7e-82f6-60ef92f13643">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Let's confirm that there's no loss of information:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b9d7e041-adf1-43f1-9489-9c2f9b2fcd14">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cd8c7d18-c4f7-442a-9249-0611deb0ce66">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Recall: when <code>plt.imshow</code> is passed a grayscale array, it defaults to the <code>viridis</code> colormap. Let's override this choice to use the <code>gray</code> colormap. It would also be helpful to specify <code>vmin=0</code> and <code>vmax=1</code> (or <code>vmax=255</code> if working with integer data) to ensure that <code>plt.imshow</code> is correctly assigning colors to the values in the array.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=535d73fe-13a8-47be-8057-328978674cc7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6f1ea1ab-b28c-4b19-96f2-608ac1d5f6df">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>What could we do if we started from a color image that we want to convert to a grayscale image, like <code>mario.png</code>?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b1c25cab-4e0e-436e-9ceb-eda61e0b2317">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mario</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'mario.png'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mario</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=94b64f0e-f6bc-4c99-9b5f-74165de3ae96">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The above image does not contain purely grayscale data, since the red/green/blue values do not match for at least some of the pixels. Can we construct a reasonable grayscale version of this image?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f11117ef-37ef-4ff4-b53b-3fb10ddc1fa2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c5a0665b-a86a-460c-afcc-8579a124c710">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd19d60e-dc44-4461-a117-b94a152fbb93">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The <code>np.mean</code> function can be used to compute averages of an array.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=adbe3b4c-bdc0-4898-8d85-1b44bc6bbc58">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#help(np.mean)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f084d62-ee7f-45ab-89ae-80a898a8c4ec">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mario</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9f6aa91f-2579-41f6-960f-1776d45fb96e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>For our purposes, we don't want to take the average value of every value in the <code>mario</code> array. Instead, we want to average the RGB triples separately for each pixel in the image.</p>
+<p>We can include an optional argument <code>axis</code> to specify the dimension through which means should be calculated. In particular, including the argument <code>axis=2</code> tells NumPy to compute the average through the color channel only (i.e. axis <code>2</code> of the <code>(m,n,3)</code> array). In other words, this will average the RGB triple separately for each pixel.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=52bf494c-c63f-419b-843a-56ec7d36dc60">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=edd84d3f-f7f2-4d53-a31a-dad2ce373076">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f36f521f-ba71-4073-8098-67c87a5df2d8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Adding-salt-and-pepper-noise">Adding salt and pepper noise<a class="anchor-link" href="#Adding-salt-and-pepper-noise">¶</a></h3><p>Before adding noise to our image, let's make a copy of the array to preserve the original image array. Let's call this copy <code>noisy_img</code> (we will come back to add noise to this image later).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b0872aee-477a-4007-95db-327a392a277f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c04b626-9250-46d6-b3ce-23e08cfe353e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We would like a method for randomly selecting pixels of the <code>noisy_img</code> array to which we can add salt/pepper noise. The <code>np.random.random</code> function will be useful for this task, which works as follows:</p>
+<ul>
+<li><code>np.random.random()</code> will return a randomly selected float in the interval $[0,1)$.</li>
+<li><code>np.random.random(shape)</code> will return an array with shape <code>shape</code>, where each entry contains a randomly selected float in the interval $[0,1)$.</li>
+</ul>
+<p>Strategy: let's generate an array of the same shape as our image filled with randomly drawn values between <code>0</code> and <code>1</code>. If the randomly drawn value is greater than, say <code>.9</code>, we'll add salt noise in that position.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7938ddbb-4144-4473-89d9-bca4006072fe">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c6309d39-05d3-49fb-a69c-6e93a76528f1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=444963fd-4d8e-4110-914e-3ffa26169f3a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8e8f57ab-25ff-4a78-ab0e-9241835d7888">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4cb44754-4f9d-4d4c-a098-3bf5196447a7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>What if we want to add pepper noise as well?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c38b6ebe-ee69-4a7a-82f0-75dfda9cc5ed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=64026ebc-5815-4ef1-bdd2-bd9625ae0c00">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=77f49a63-264b-4e31-8ce8-b8f81209c460">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Note: the implementation above gives a preference to pepper noise, since it's possible for salt pixels to be overwritten as pepper (but not the reverse). Instead, let's use a single random array, but select select different subintervals between <code>0</code> and <code>1</code> to identify salt/pepper noise:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=003ff900-2067-4c17-8e15-1bf6a2386a19">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=47f05a91-a075-4e97-9d9d-e0adbfc4ac4a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7d88dbd8-b65f-4d9e-8778-a13b8cbb3e2f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Note</em>: In the example code above, we iterated through every row and column and decided for each entry whether or not to add salt and pepper noise. This is perfect case to use Boolean arrays.</p>
+<p><em>Idea</em>: create a <code>salt_mask</code> Boolean array containing <code>True</code> in each entry that we wish to hit with salt noise. That is, <code>salt_mask</code> should contain <code>True</code> everywhere that the <code>random_array</code> is less than, say, <code>0.1</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f019d549-ed63-49ef-801d-1ba4f28623c9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e9cae0ae-fa41-4692-bc56-89ea84a46566">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=25809331-a17e-4ea2-ac4c-65ce83d980fd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Exercise.</strong> Use the above sample code to write a function <code>sp_noise(img, noise)</code> that adds salt and pepper noise to an image. Its first argument <code>img</code> should be a 2-dimensional numpy array representing the image and the second argument <code>noise</code> should be the fraction of pixels that are to be replaced by noise (for example, with <code>noise = 0.05</code> about 5% of pixels should be noise, consisting in roughly equal parts of white and black pixels). The function should return a 2-dimensional numpy array representing the original image with noise added.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=04572d34-22de-43bd-896a-5e3b6347ffa7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
