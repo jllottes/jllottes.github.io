@@ -27,7 +27,8 @@
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Tartans" href="../tartans/tartans.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,10 +59,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../python_tools.html">Python tools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../prime_or_not/prime_or_not.html">A prime or not a prime</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pythagorean_triples/pythagorean_triples.html">Pythagorean triples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tartans/tartans.html">Tartans</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Image denoising</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#image-noise">Image noise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mean-filter">Mean filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#median-filter">Median filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edge-pixels">Edge pixels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -118,7 +127,6 @@
              
   <section id="image-denoising">
 <h1>Image denoising<a class="headerlink" href="#image-denoising" title="Link to this heading"></a></h1>
-<p class="rubric">due: Friday, November 7th at 11:59 PM</p>
 <section id="image-noise">
 <h2>Image noise<a class="headerlink" href="#image-noise" title="Link to this heading"></a></h2>
 <p>Image noise is a random distortion in the brightness or color in an
@@ -130,7 +138,7 @@ salt and pepper noise which occurs when the color of some random pixels in
 the image is replaced by white, and the color of some other random pixels is
 replaced by black.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/image_denoising-1.png"><img alt="../../_images/image_denoising-1.png" src="../../_images/image_denoising-1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/noisy_image.png"><img alt="../../_images/noisy_image.png" src="../../_images/noisy_image.png" style="width: 700px;" /></a>
 <figcaption>
 <p><span class="caption-text"><em>Image with salt and pepper noise.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
@@ -284,43 +292,12 @@ your work. You can add salt and pepper noise to these images using the
 function <code class="docutils literal notranslate"><span class="pre">sp_noise()</span></code> defined in Part 1 of the project.</p>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="../../_downloads/97a0c31f2a8a371dc2b704df1a082bf5/face.png"><code class="xref download docutils literal notranslate"><span class="pre">face.png</span></code></a> (resolution: 400 <span class="math notranslate nohighlight">\(\times\)</span> 266)</p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/47a7163244a52d68c38cb8afbc30e537/boston.png"><code class="xref download docutils literal notranslate"><span class="pre">boston.png</span></code></a> (resolution: 1000 <span class="math notranslate nohighlight">\(\times\)</span> 666)</p></li>
 <li><p><a class="reference download internal" download="" href="../../_downloads/45f865b91b02fb924532bfca66ed9f33/circuit.png"><code class="xref download docutils literal notranslate"><span class="pre">circuit.png</span></code></a> (resolution: 640 <span class="math notranslate nohighlight">\(\times\)</span> 426)</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/91b8fe1f3a5535372c4574c281797b55/everton.png"><code class="xref download docutils literal notranslate"><span class="pre">everton.png</span></code></a> (resolution: 700 <span class="math notranslate nohighlight">\(\times\)</span> 495)</p></li>
 <li><p><a class="reference download internal" download="" href="../../_downloads/d05505a0b9d8d3119f563b8a9a83ebb8/motorbike.png"><code class="xref download docutils literal notranslate"><span class="pre">motorbike.png</span></code></a> (resolution: 640 <span class="math notranslate nohighlight">\(\times\)</span> 552)</p></li>
 <li><p><a class="reference download internal" download="" href="../../_downloads/cde6570a3e47572a103811fcdd789464/hamburg.png"><code class="xref download docutils literal notranslate"><span class="pre">hamburg.png</span></code></a> (resolution: 900 <span class="math notranslate nohighlight">\(\times\)</span> 600)</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/47a7163244a52d68c38cb8afbc30e537/boston.png"><code class="xref download docutils literal notranslate"><span class="pre">boston.png</span></code></a> (resolution: 1000 <span class="math notranslate nohighlight">\(\times\)</span> 666)</p></li>
 <li><p><a class="reference download internal" download="" href="../../_downloads/a879ba154906bdac3d8ab4138bfb1f40/sign.png"><code class="xref download docutils literal notranslate"><span class="pre">sign.png</span></code></a> (resolution: 1000 <span class="math notranslate nohighlight">\(\times\)</span> 984)</p></li>
-</ul>
-</section>
-<section id="extra-credit">
-<h2>Extra credit<a class="headerlink" href="#extra-credit" title="Link to this heading"></a></h2>
-<p>Below are links to four photos taken at various places on
-campus, which were obscured by salt and pepper noise. For extra credit
-(grade increase to the next higher grade for this report: A- to A etc.) reduce
-noise in these images, find locations where the photos were taken, take photos
-showing you at the same locations, and include these photos in your report.</p>
-<ul class="simple">
-<li><p><a class="reference download internal" download="" href="../../_downloads/1e802b6131c1360cea154f70355628eb/ub_noisy1.png"><code class="xref download docutils literal notranslate"><span class="pre">ub_noisy1.png</span></code></a></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/696cdc6a20afccd50ab538e9d6d05d58/ub_noisy2.png"><code class="xref download docutils literal notranslate"><span class="pre">ub_noisy2.png</span></code></a></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/04c1df9ea40f40df382d1481c991f979/ub_noisy3.png"><code class="xref download docutils literal notranslate"><span class="pre">ub_noisy3.png</span></code></a></p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/b7e01e8d2ab433402766ba9a64c00cc1/ub_noisy4.png"><code class="xref download docutils literal notranslate"><span class="pre">ub_noisy4.png</span></code></a></p></li>
-</ul>
-<p><strong>Note 1.</strong> To qualify for the extra credit your report must include
-both code producing images with noise removed to the extent that they are
-recognizable, and your own photos. You must successfully denoise all four images.</p>
-<p><strong>Note 2.</strong> In order to include your photos in the report do the following:</p>
-<ul class="simple">
-<li><p>Place the files with your photos in the folder with your report notebook.</p></li>
-<li><p>For each photo create a code cell in your notebook. In this code cell
-enter the following code, replacing <code class="docutils literal notranslate"><span class="pre">&quot;my_photo.png&quot;</span></code> with the name of your
-photo file:</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="n">Image</span><span class="p">(</span><span class="s2">&quot;my_photo.png&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>When you execute this cell the photo should be displayed.</p></li>
-<li><p>Once you embed all photos in this way you can submit the notebook file.</p></li>
 </ul>
 </section>
 </section>
@@ -330,13 +307,20 @@ photo file:</p></li>
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../tartans/tartans.html" class="btn btn-neutral float-left" title="Tartans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Mar 25, 2026.
+        Last updated on Mar 30, 2026.
       </span>
 
     </p>

@@ -1,21 +1,21 @@
-:orphan:
-
-Week 10: Oct 27 - Oct 31
+Week 10: Mar 30 - Apr 3
 ========================
 
-Quiz 7
-~~~~~~
+.. Comment
 
-.. rubric:: Wednesday, October 29th
+    Quiz 7
+    ~~~~~~
 
-* :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
+    .. rubric:: Wednesday, October 29th
 
-What is covered:
+    * :download:`Sample Quiz 7 <../Quizzes/quiz07_sample.pdf>`
 
-* Multidimemsional arrays
-* Boolean arrays
-* Random arrays
-* RGB-arrays and `plt.imshow`
+    What is covered:
+
+    * Multidimemsional arrays
+    * Boolean arrays
+    * Random arrays
+    * RGB-arrays and `plt.imshow`
 
 .. Comment
     Python
@@ -24,6 +24,12 @@ What is covered:
     * File operations
     * Dictionaries
     * List sorting
+
+Python
+~~~~~~
+* String operations (``split``, ``replace``, ``join``, etc.)
+* Dictionaries
+* :doc:`Image processing </PT/PT-image_processing/PT-image_processing>`
 
 Project 4
 ~~~~~~~~~
@@ -35,10 +41,11 @@ Project 4
     ~~~~~~~~~
     * :doc:`Code breakers </Projects/code_breakers/code_breakers>`
 
+.. Comment
 
-Week 10 notebook
-~~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week10_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week10_notebook.ipynb>`_
-- `View online (day 2) <../_static/weekly_notebooks/week10_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week10_notebook_day2.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
+    Week 10 notebook
+    ~~~~~~~~~~~~~~~~
+        - `View online (day 1) <../_static/weekly_notebooks/week10_notebook_day1.html>`_
+        - `Download (day 1) <../_static/weekly_notebooks/week10_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
+        - `View online (day 2) <../_static/weekly_notebooks/week10_notebook_day2.html>`_
+        - `Download (day 2) <../_static/weekly_notebooks/week10_notebook_day2.ipynb>`_ 

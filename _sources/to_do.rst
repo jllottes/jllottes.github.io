@@ -3,8 +3,7 @@
 Current Tasks
 =============
 
-* Finish Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
-
+* Work on Project 3, :doc:`Tartans</Projects/tartans/tartans>`
 
 ..
     Comment:

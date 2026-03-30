@@ -1,9 +1,8 @@
-:orphan:
-
 Image denoising
 ===============
 
-.. rubric:: due: Friday, November 7th at 11:59 PM
+.. Comment
+    .. rubric:: due: Friday, November 7th at 11:59 PM
 
 Image noise
 -----------
@@ -17,9 +16,13 @@ salt and pepper noise which occurs when the color of some random pixels in
 the image is replaced by white, and the color of some other random pixels is
 replaced by black.
 
-
-.. figure:: image_denoising-1.png
-   :width: 500px
+.. Comment
+    .. figure:: image_denoising-1.png
+       :width: 500px
+       :align: center
+       
+.. figure:: noisy_image.png
+   :width: 700px
    :align: center
 
    *Image with salt and pepper noise.*
@@ -224,43 +227,45 @@ your work. You can add salt and pepper noise to these images using the
 function ``sp_noise()`` defined in Part 1 of the project.
 
 -  :download:`face.png <face.png>` (resolution: 400 :math:`\times` 266)
--  :download:`boston.png <boston.png>` (resolution: 1000 :math:`\times` 666)
 -  :download:`circuit.png <circuit.png>` (resolution: 640 :math:`\times` 426)
+-  :download:`everton.png <everton.png>` (resolution: 700 :math:`\times` 495)
 -  :download:`motorbike.png <motorbike.png>` (resolution: 640 :math:`\times` 552)
 -  :download:`hamburg.png <hamburg.png>` (resolution: 900 :math:`\times` 600)
+-  :download:`boston.png <boston.png>` (resolution: 1000 :math:`\times` 666)
 -  :download:`sign.png <sign.png>` (resolution: 1000 :math:`\times` 984)
 
 
+.. Comment
 
-Extra credit
-------------
+    Extra credit
+    ------------
 
-Below are links to four photos taken at various places on
-campus, which were obscured by salt and pepper noise. For extra credit
-(grade increase to the next higher grade for this report: A- to A etc.) reduce
-noise in these images, find locations where the photos were taken, take photos
-showing you at the same locations, and include these photos in your report.
+    Below are links to four photos taken at various places on
+    campus, which were obscured by salt and pepper noise. For extra credit
+    (grade increase to the next higher grade for this report: A- to A etc.) reduce
+    noise in these images, find locations where the photos were taken, take photos
+    showing you at the same locations, and include these photos in your report.
 
--  :download:`ub\_noisy1.png <ub_noisy1.png>`
--  :download:`ub\_noisy2.png <ub_noisy2.png>`
--  :download:`ub\_noisy3.png <ub_noisy3.png>`
--  :download:`ub\_noisy4.png <ub_noisy4.png>`
+    -  :download:`ub\_noisy1.png <ub_noisy1.png>`
+    -  :download:`ub\_noisy2.png <ub_noisy2.png>`
+    -  :download:`ub\_noisy3.png <ub_noisy3.png>`
+    -  :download:`ub\_noisy4.png <ub_noisy4.png>`
 
-**Note 1.** To qualify for the extra credit your report must include
-both code producing images with noise removed to the extent that they are
-recognizable, and your own photos. You must successfully denoise all four images.
+    **Note 1.** To qualify for the extra credit your report must include
+    both code producing images with noise removed to the extent that they are
+    recognizable, and your own photos. You must successfully denoise all four images.
 
-**Note 2.** In order to include your photos in the report do the following:
+    **Note 2.** In order to include your photos in the report do the following:
 
-- Place the files with your photos in the folder with your report notebook.
-- For each photo create a code cell in your notebook. In this code cell
-  enter the following code, replacing ``"my_photo.png"`` with the name of your
-  photo file:
+    - Place the files with your photos in the folder with your report notebook.
+    - For each photo create a code cell in your notebook. In this code cell
+      enter the following code, replacing ``"my_photo.png"`` with the name of your
+      photo file:
 
-.. code:: python
+    .. code:: python
 
-    from IPython.display import Image
-    Image("my_photo.png")
+        from IPython.display import Image
+        Image("my_photo.png")
 
-- When you execute this cell the photo should be displayed.
-- Once you embed all photos in this way you can submit the notebook file.
+    - When you execute this cell the photo should be displayed.
+    - Once you embed all photos in this way you can submit the notebook file.
