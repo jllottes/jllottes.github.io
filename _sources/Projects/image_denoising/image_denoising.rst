@@ -210,7 +210,7 @@ the second argument ``s`` is the size of squares used by the filter.
 salt and pepper noise in images and describe your observations. Here are
 some questions you may consider:
 
--  Which filter, mean or median works better for reducing noise and why?
+-  Which filter, mean or median, works better for reducing noise and why?
 -  What happens as the value of ``s`` in these filters is increased?
 -  What happens as the level of noise in an image is increased?
 

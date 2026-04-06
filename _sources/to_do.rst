@@ -3,7 +3,8 @@
 Current Tasks
 =============
 
-* Work on Project 3, :doc:`Tartans</Projects/tartans/tartans>`
+* Finish Project 3, :doc:`Tartans</Projects/tartans/tartans>`
+* Work on Project 4, :doc:`Image denoising</Projects/image_denoising/image_denoising>`
 
 ..
     Comment:

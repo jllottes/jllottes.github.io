@@ -8,7 +8,10 @@ Python
 
 Project 3
 ~~~~~~~~~
-* :doc:`Image denoising </Projects/image_denoising/image_denoising>`
+
+.. rubric:: due: Wednesday, April 8th at 11:59 PM
+
+* :doc:`Tartans </Projects/tartans/tartans>`
 
 .. Comment
     Quiz 6
