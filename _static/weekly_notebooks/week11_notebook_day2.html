@@ -7511,280 +7511,165 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=634e0f10-6e06-443a-afb0-7ef4f6a918bc">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=368814d8-328f-433f-84d8-0482e2be7180">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Wednesday,-November-5th,-2025">Wednesday, November 5th, 2025<a class="anchor-link" href="#Wednesday,-November-5th,-2025">¶</a></h1><p>Last class, we were exploring the text of <em>Frankenstein; Or, The Modern Prometheus</em> by Mary Shelley.</p>
+<h1 id="Wednesday,-April-8th,-2026">Wednesday, April 8th, 2026<a class="anchor-link" href="#Wednesday,-April-8th,-2026">¶</a></h1><p>Last class, we continued work on applying the mean/median filter to remove noise from a grayscale image.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c3ff2ffb-78e6-4bce-914f-53fb2a22e149">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=99b474b4-b99d-47fc-a37a-cce804f708c3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'frankenstein.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8-sig'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>  <span class="c1"># Opens the file for reading</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>                                             <span class="c1"># Reads the content into a string</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e2524870-5617-46ab-85ba-b3b69be310cd">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=829810ee-e828-4e76-b908-bf94e27ca0a6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In particular, we had constructed a dictionary <code>word_count_dict</code> whose keys were words appearing in <em>Frankenstein</em> and whose values counted the number of times that word appeared in the text.</p>
+<h2 id="Project-4:-Image-denoising"><a href="https://jllottes.github.io/Projects/image_denoising/image_denoising.html">Project 4: Image denoising</a><a class="anchor-link" href="#Project-4:-Image-denoising">¶</a></h2><p>If you have a working <code>sp_noise</code> function, then you can use any grayscale image you'd like and add salt and pepper noise to generate a corresponding <code>noisy_img</code> array. Since I've not written such a function in class, I will use the pre-noised image (and the corresponding clean version) from the project page.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b9183ff2-ec41-4fde-b075-d4f9b2eb6472">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9905f93b-7ef2-4322-a46b-67efd8cbe144">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>                  <span class="c1"># Separate the text by white space to get a list of words.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'everton.png'</span><span class="p">)[:,:,:</span><span class="mi">3</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">noisy_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'noisy_img.png'</span><span class="p">)[:,:,:</span><span class="mi">3</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c9d38d0b-e933-4af9-a82f-b410f6e3084a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We previously developed some code that would apply the mean filter. If you've already written a <code>mean_filter</code> function, you should use that instead.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c91c140c-0025-4130-bfec-056a089724ec">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">shape</span>
 
-<span class="n">word_count_dict</span> <span class="o">=</span> <span class="p">{}</span>                  <span class="c1"># Initialize an empty dictionary.</span>
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>                    <span class="c1"># Iterate through each word in *Frankenstein*.</span>
-    <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word_count_dict</span><span class="p">:</span>   <span class="c1"># If it's a new word,</span>
-        <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>     <span class="c1"># add it to our dictionary with an appearance count of 1.</span>
-    <span class="k">else</span><span class="p">:</span>                             <span class="c1"># Otherwise,</span>
-        <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>    <span class="c1"># increase the appearance count by 1.</span>
+<span class="n">mean_filtered_img</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">nrows</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">ncols</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">grid</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">mean_filtered_img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=660fd998-2345-4b86-8f34-d9686136d203">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=25fa9b57-bae4-4b62-a268-bda8cfe5df8f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We also discussed how to use a custom key function when sorting (or finding maximums/minimums) in order to find the most commonly appearing words.</p>
+<p>The median filter works in much the same way. If you've already written a <code>median_filter</code> function, you should use that instead.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ac2ebfe1-62c8-4cd3-b8ef-f16e28d99479">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e8cb8468-a100-43f9-9bae-baf24396a109">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">word_count_key</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=994251c7-49d2-40ed-8703-9ff7d0d7c4a6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">word_count_dict</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">word_count_key</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">shape</span>
 
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sorted_words</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">])</span>
+<span class="n">median_filtered_img</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">nrows</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">ncols</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">grid</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">median_filtered_img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>the 4263
-and 2966
-of 2902
-I 2794
-to 2234
-my 1680
-a 1447
-in 1175
-was 1030
-that 1012
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da01ffd2-6300-4865-bcc9-5867e1557a87">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e901531-c8b4-4625-8748-f8047abe9347">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Pre-processing-text-for-analysis">Pre-processing text for analysis<a class="anchor-link" href="#Pre-processing-text-for-analysis">¶</a></h2><p>Last class, we noticed that some words appear as several distinct keys in our dictionary. For example, the strings <code>for</code>, <code>For</code>, and <code>FOR</code> each appear as separate keys in <code>word_count_dict</code>.</p>
+<p>Last class, we also discussed using a padded version of our image array to deal with pixels along the edge.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c5d1e001-5a98-4906-94b0-a3b2bbff406d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c87ae33f-fa04-4d39-82f9-429de3c54dc3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'for'</span><span class="p">,</span> <span class="s1">'For'</span><span class="p">,</span> <span class="s1">'FOR'</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'The word "</span><span class="si">{}</span><span class="s1">" appears </span><span class="si">{}</span><span class="s1"> times in Frankenstein.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>The word "for" appears 500 times in Frankenstein.
-The word "For" appears 23 times in Frankenstein.
-The word "FOR" appears 3 times in Frankenstein.
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=096c078e-796e-4d3a-85bc-9947b939923e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We discussed how we can use the <code>.lower</code> method to convert a string to all uppercase letters to lowercase to address this issue.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=31747559-db09-4722-a70b-dd8163e853f6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>                            <span class="c1"># Separate the text by white space to get a list of words.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">shape</span>
 
-<span class="n">word_count_dict</span> <span class="o">=</span> <span class="p">{}</span>                            <span class="c1"># Initialize an empty dictionary.</span>
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>                              <span class="c1"># Iterate through each word in *Frankenstein*.</span>
-    <span class="n">lowercase_word</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>               <span class="c1"># Convert all uppercase letters in word to lowercase.</span>
-    <span class="k">if</span> <span class="n">lowercase_word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word_count_dict</span><span class="p">:</span>   <span class="c1"># If it's a new word,</span>
-        <span class="n">word_count_dict</span><span class="p">[</span><span class="n">lowercase_word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>     <span class="c1"># add it to our dictionary with an appearance count of 1.</span>
-    <span class="k">else</span><span class="p">:</span>                                       <span class="c1"># Otherwise,</span>
-        <span class="n">word_count_dict</span><span class="p">[</span><span class="n">lowercase_word</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>    <span class="c1"># increase the appearance count by 1.</span>
+<span class="n">padded_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span> <span class="o">+</span> <span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">+</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># Initialize padded array with two extra rows/columns</span>
+<span class="n">padded_img</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">noisy_img</span>              <span class="c1"># Set the noisy_img array into the center of padded_img</span>
+
+<span class="n">median_filtered_img</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>
+        <span class="n">grid</span> <span class="o">=</span> <span class="n">padded_img</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">median_filtered_img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=749a04c2-eee4-4a13-98da-7df2fbf47889">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">word_count_dict</span><span class="p">[</span><span class="s1">'for'</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>526</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c0a74fab-d48e-4713-9015-ae4d2b8f03f9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ff2e5055-d667-4ac1-8aba-27e988c37b10">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For another issue with our code above is with the handling of puncutation. For example, the word strings <code>'study'</code> and <code>'study,'</code> appear as distinct keys in <code>word_count_dict</code>.</p>
+<p>Let's see how this filter peforms.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=61a837d9-afb8-4cff-a155-cd1fe56efb37">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'study'</span><span class="p">,</span> <span class="s1">'study,'</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'The word "</span><span class="si">{}</span><span class="s1">" appears </span><span class="si">{}</span><span class="s1"> times in Frankenstein.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">word_count_dict</span><span class="p">[</span><span class="n">word</span><span class="p">]))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>The word "study" appears 13 times in Frankenstein.
-The word "study," appears 5 times in Frankenstein.
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d53cf90b-e504-42c9-8235-f5c10c1a0d82">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can use the <code>.replace</code> method to replace all instances of <code>',</code>' with an empty string before calculating word counts. This is illustrated in the example below.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=25ed5c01-ee2e-478e-876a-92238dc2147b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=90b8dfcf-9c2f-45b8-a6ff-b2e8935fe0a9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7792,331 +7677,69 @@ The word "study," appears 5 times in Frankenstein.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">"This is a string, it contains some punctuation. Here's some more: !?.,"</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">','</span><span class="p">,</span><span class="s1">''</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">noisy_img</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Noisy image'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">median_filtered_img</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Median filtered image'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3cffb5eb-40c7-4801-a118-a20f1db85c94">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=114b429c-1891-4245-a46f-ad623546de29">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can expect that this might happen with several other types of punctuation, such as <code>'.'</code>, <code>'!'</code>, <code>'?'</code>, <code>'('</code>, <code>')'</code>, <code>"'"</code>, <code>'"'</code>, <code>'#'</code>, <code>'@'</code>, <code>'%'</code>, etc.</p>
-<p><strong>Exercise:</strong> Use the <code>.replace</code> method to remove punctuation marks and other non-letter characters from the text of <em>Frankenstein</em>. Also user the <code>.lower</code> method to convert all uppercase letters to lowercase, and save this modified text to a new variable <code>cleaned_text</code>. Finally, re-compute <code>word_count_dict</code> using <code>cleaned_text</code> in place of <code>text</code>.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=927743bb-5cfc-45d5-b3c2-553a244d840a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a311ca8b-4d5b-4f6d-a5be-313181f72132">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Project-5---Code-breakers"><a href="https://jllottes.github.io/Projects/code_breakers/code_breakers.html">Project 5 - Code breakers</a><a class="anchor-link" href="#Project-5---Code-breakers">¶</a></h2><p>Our next project deals with trying to break an encryption to discover the meaning of a secret message. Let's look at how the encryption process works.</p>
-<h3 id="Background:--ASCII-codes">Background:  ASCII codes<a class="anchor-link" href="#Background:--ASCII-codes">¶</a></h3><p>Each character on a computer keyboard is assigned an <a href="http://www.theasciicode.com.ar/">ASCII code</a>, which is an integer in the range <code>0</code>-<code>127</code>. The ASCII code of a character can be obtained using the <code>ord()</code> function:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=20d684f1-bec8-4cfe-a563-7a7897866877">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">"This is MTH 337"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"'</span><span class="si">{}</span><span class="s2">'  -&gt;  </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>'T'  -&gt;  84
-'h'  -&gt;  104
-'i'  -&gt;  105
-'s'  -&gt;  115
-' '  -&gt;  32
-'i'  -&gt;  105
-'s'  -&gt;  115
-' '  -&gt;  32
-'M'  -&gt;  77
-'T'  -&gt;  84
-'H'  -&gt;  72
-' '  -&gt;  32
-'3'  -&gt;  51
-'3'  -&gt;  51
-'7'  -&gt;  55
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=82a6d14b-4ad2-4800-873e-2448b32f7272">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Conversely, the function <code>chr()</code> converts ASCII codes into characters:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d87257c6-7f6b-4cb0-9b9d-0f5f6a15da42">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">char_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">104</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">111</span><span class="p">]:</span>
-    <span class="n">char_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
-    
-<span class="n">txt</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>hello
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11e3fe5d-8032-428b-8313-190f59f5e550">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>It will be helpful to be able to convert easily between strings of characters and lists of their corresponding ASCII codes.</p>
-<p><strong>Exercise:</strong> Write functions <code>str_to_ascii</code> and <code>ascii_to_str</code> that will convert between strings and lists of ASCII codes. We can use the <code>ord()</code> and <code>chr()</code> functions to convert any particular character or ASCII code.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=616d94ea-f5e9-4844-886b-1ad658ca376b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=85bc3f76-aad4-41fc-b4d3-93180eb8a56b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=34de7645-5781-4592-a31d-2b2392a66bdd">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Text-encryption">Text encryption<a class="anchor-link" href="#Text-encryption">¶</a></h3><p>In order to securely send a confidential message one usually needs to encrypt it in some way to conceal its content. Here we consider the following encryption scheme:</p>
+<p>Reminder: The exercises from previous classes ask you to create functions to accomplish the above tasks. For example:</p>
 <ul>
-<li>One selects a secret key, which is sequence of characters. This key is used to both encrypt and decrypt the message.</li>
-<li>Characters of the secret key and characters of the message are converted into ASCII codes. In this way the key is transformed into a sequence of integers $(k_1, k_2, \dots, k_r)$, and the message becomes another sequence of integers $(m_1, m_2, \dots, m_s)$. If $r&lt;s$, then the secret key sequence is extended by repeating it as many times as necessary until it matches the length of the message.</li>
-<li>Let $c_i$ be the reminder from the division of $m_i + k_i$ by $128$. The sequence of numbers $(c_1, c_2, \dots, c_s)$ is the encrypted message.</li>
+<li>The <code>sp.noise</code> function should take in a grayscale image array and a <code>noise</code> parameter and create a copy of the image array with salt and pepper noise added (with approximately $100\cdot$<code>noise</code>% of the pixels being hit with salt/pepper noise).</li>
+<li>The <code>get_padded_img</code> function should take in a grayscale array and a desired <code>pad</code> size  and create a padded array with <code>pad</code> additional rows at the top/bottom and <code>pad</code> additional columns at the left/right of the image array.</li>
+<li>The <code>mean_filter</code> function should take in a grayscale image array and apply the mean filter, accounting for edge pixels (using the <code>get_padded_img</code> function).</li>
+<li>The <code>median_filter</code> function should take in a grayscale image array and apply the median filter, accounting for edge pixels (using the <code>get_padded_img</code> function).</li>
+<li>You may choose to combine the <code>mean_filter</code> and <code>median_filter</code> functions into a single function, which takes in an additional argument <code>filter_func</code> that controls the type of filter (e.g. <code>filter_func = np.mean</code> or <code>filter_func = np.median</code>).</li>
 </ul>
-<p>For example, if the message is <code>'Top secret!'</code> and the secret key is <code>'buffalo'</code> then the encrypted message is: <code>[54, 100, 86, 6, 84, 81, 82, 84, 90, 90, 7]</code>. Let's develop some code that will allow us to perform this encryption ourselves.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73f47bdc-0a0b-4c28-b51e-24a9981a635c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s1">'Top secret!'</span>
-<span class="n">key</span> <span class="o">=</span> <span class="s1">'buffalo'</span>
-</pre></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6d0f0631-99e5-406f-b7c7-cca1b8541497">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d6ad949e-c4d4-4957-8b86-1bff2a915f90">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>First, let's convert both to lists of ASCII codes using the <code>str_to_ascii</code> function.</p>
+<h3 id="Handling-different-grid-sizes">Handling different grid sizes<a class="anchor-link" href="#Handling-different-grid-sizes">¶</a></h3><p>So far, we've been applying the mean/median filters using specifically a <code>3</code> by <code>3</code> grid centered on each pixel. What if we wan to use grids of different sizes, say <code>s=3</code>, <code>s=5</code>, <code>s=7</code>,...?</p>
+<p>Let's think through how we would change our code to treat <code>5</code> by <code>5</code> grids. For now, let's again ignore the filtering of edge pixels.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3138b916-ca8c-4050-b3d5-8a81d604a001">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=80b6145b-0415-406b-ba52-7eda6c1641ae">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"'</span><span class="si">{}</span><span class="s2">'  -&gt;  </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)))</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>'T'  -&gt;  84
-'o'  -&gt;  111
-'p'  -&gt;  112
-' '  -&gt;  32
-'s'  -&gt;  115
-'e'  -&gt;  101
-'c'  -&gt;  99
-'r'  -&gt;  114
-'e'  -&gt;  101
-'t'  -&gt;  116
-'!'  -&gt;  33
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9417e0bd-bf74-4256-b345-33b332ab9d6c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"'</span><span class="si">{}</span><span class="s2">'  -&gt;  </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>'b'  -&gt;  98
-'u'  -&gt;  117
-'f'  -&gt;  102
-'f'  -&gt;  102
-'a'  -&gt;  97
-'l'  -&gt;  108
-'o'  -&gt;  111
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7968e900-b89a-42fd-b751-8c34133b16f9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">84</span> <span class="o">+</span> <span class="mi">98</span><span class="p">)</span> <span class="o">%</span> <span class="mi">128</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>54</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5cd94c4-65c7-472c-a401-90784a9d1d7f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Problem: Our message has more characters than our key, so we need to duplicate our key enough times to match the length of the message.</p>
-<p>One idea: use a <code>while</code> loop to keep duplicating <code>key_ascii</code> until it matches or exceeds the length of <code>message_asii</code>.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=766fe2bf-9d58-42bb-969b-99a22fa191c1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d7170acf-41d4-4d4d-a069-ff1c2edc4b87">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8131,17 +7754,31 @@ The word "study," appears 5 times in Frankenstein.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=905fc217-e139-4543-985d-d21af0224888">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=40b5d935-f646-4c8b-a4b3-f1fe9cf80740">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Another idea: Use integer division to count how many times we need to duplicate the <code>key_ascii</code> list to match or exceed the length of <code>message_ascii</code>.</p>
+<p>What about <code>7</code> by <code>7</code> grids?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=37a01e98-2c2b-46d0-ba65-3723ee268a6d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=83776cc4-c9fc-4b17-a9ad-1c4d89f90245">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b2b6f9bd-e20d-4971-b162-43f01acc04a5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8156,17 +7793,42 @@ The word "study," appears 5 times in Frankenstein.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=70fe6fd3-ecbf-46af-bbe3-3284eedca4a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b11cc889-6d9e-4ef6-8594-4f95b798bd89">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Another idea: use modular arithmetic on the index of <code>key_ascii</code>, dividing by the length of <code>key_ascii</code> to keep looping through <code>key_ascii</code> until we enough entries.</p>
+<p><em>Note</em>: The grid size <code>s</code> and the pad size <code>pad</code> are related by <code>pad = (s-1)//2</code> or <code>s = 2*pad + 1</code>.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6c168956-df18-41ef-b66f-e4556f4c9ec2">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c99e2ec-8c19-4c41-9274-bc1cdc691f95">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Modify the examples above to take in a parameter <code>s</code>, which is an odd integer, and apply the mean/median filter using an <code>s</code> by <code>s</code> grid. You can skip filtering any rows/columns along the edge as necessary.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=163dcc58-d504-4c75-88f4-87782e89eab6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=18a023bc-9537-4bcd-ae3d-f25d72ade33c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8181,17 +7843,42 @@ The word "study," appears 5 times in Frankenstein.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=52fc0af9-7edd-452b-aa9b-867e0b502193">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9a8bca34-d9ed-46f6-93fd-b81dc3013144">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Write a function <code>get_padded_key_ascii</code> that takes in arguments <code>key_ascii</code> and <code>length</code> and returns a padded version of <code>key_ascii</code> of length <code>length</code>, obtained by repeating <code>key_ascii</code> as many times as necessary.</p>
+<h3 id="Putting-things-together">Putting things together<a class="anchor-link" href="#Putting-things-together">¶</a></h3><p>We've discussed how to deal with edge pixels (for the special case of <code>3</code> by <code>3</code> grids) and how to deal with varying grid sizes. We want to be able to handle both at the same time.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=95c31826-8410-416d-9eb7-ac1e61504504">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=059c7f03-852e-452f-b518-ba7a820b50ae">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Exercise:</strong> Combine the two discussions (dealing with different grid sizes and dealing with edge pixels) to write functions <code>mean_filter(img, s)</code> and <code>median_filter(img,s)</code> that apply the mean/median filters to an input 2D array <code>img</code> using <code>s</code> by <code>s</code> grids, including all edge pixels.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b1de9fab-59e4-4832-8470-3dd33c1f8fec">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ff4136c6-c1dc-40a0-aa3e-498f66b3d24f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8206,17 +7893,30 @@ The word "study," appears 5 times in Frankenstein.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d81cc48a-7adc-4cbd-a7fd-97b197bad429">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6b0b76b8-536f-4885-9516-357b4c5266fc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Write a function <code>encrypt(message_ascii, key_ascii)</code> that return the encrypted version of <code>message_ascii</code> using the secret key <code>key_ascii</code> (based on the code above).</p>
+<h2 id="Remaining-tasks-to-be-addressed-for-Project-4">Remaining tasks to be addressed for Project 4<a class="anchor-link" href="#Remaining-tasks-to-be-addressed-for-Project-4">¶</a></h2><p>Once you have working mean/median filters that deal with edge pixels using any odd-sized grid, you can explore how well they work on images with varying levels of noise. Does the noise level affect which filter works better? What about the grid size? Does the "best" grid size change when the amount of noise changes?</p>
+<p>Additionally, try to think of other ways the images could be filtered. You can start from the mean/median filters and think of ways to modify or improve them, or come up with something new altogether.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0de50a2a-eaeb-4361-b79e-29382f06763d">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b88427c-3bc9-4f1b-a9e3-345e98563877">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Speed---%22NumPy-ifying%22-the-process">Speed - "NumPy-ifying" the process<a class="anchor-link" href="#Speed---%22NumPy-ifying%22-the-process">¶</a></h2><p>For large images, the median filter code above is somewhat slow. It would be nice if we could use NumPy to avoid the nested <code>for</code> loop iteration through every row and column.</p>
+<p>For reference, let's time how long it takes to apply the median filter to an image. I will use the sample code at the top of the notebook, but you should use your <code>median_filter</code> function instead.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=554671b0-2cfe-43bb-9ea3-d0a2faccb9cd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8224,35 +7924,13 @@ The word "study," appears 5 times in Frankenstein.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">time</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=58628a1d-c052-4c25-9ebf-c626092256e9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In order to decrypt the message we work backwards: for each number $c_i$, we compute the reminder from the division of $c_i - k_i$ by $128$. This number is equal to $m_i$, so converting it into a character we get the $i$-th letter of the message.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=17e94190-0338-4c63-a1ff-8d922a981251">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise:</strong> Write a function <code>decrypt(encrypted_ascii, key_ascii)</code> that returns the decrypted message.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=103b322c-c86b-4bfc-8f29-d6bdcd7d427b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4908c89d-87f1-4740-b6aa-258f010eeb16">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8260,56 +7938,52 @@ The word "study," appears 5 times in Frankenstein.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=250e8d52-9406-4fa7-b14a-8a8500f51c04">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cabb6669-11a7-4f08-9ea5-b7ea5f89ba1c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Image-denoising-thoughts">Image denoising thoughts<a class="anchor-link" href="#Image-denoising-thoughts">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aa45cb23-b0c5-4c22-b4da-9c7a7d9536b5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
 
-<span class="c1">#grid = noisy_img[i-1:i+2, j-1:j+2]</span>
-<span class="n">grid</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">shape</span>
+
+<span class="n">padded_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span> <span class="o">+</span> <span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">+</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># Initialize padded array with two extra rows/columns</span>
+<span class="n">padded_img</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">noisy_img</span>              <span class="c1"># Set the noisy_img array into the center of padded_img</span>
+
+<span class="n">median_filtered_img</span> <span class="o">=</span> <span class="n">noisy_img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>
+        <span class="n">grid</span> <span class="o">=</span> <span class="n">padded_img</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">median_filtered_img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+
+<span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Execution time:'</span><span class="p">,</span> <span class="n">t1</span><span class="o">-</span><span class="n">t0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dc503e89-51a3-468a-a49a-238561d33dd7">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b0c5a435-578b-4357-94cf-1c005337ac79">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Idea</em>: Let's construct nine versions of our array. In particular, we want the following variations of the <code>noisy_img</code> array:</p>
+<ol>
+<li>The <code>noisy_img</code> array,</li>
+<li>The <code>noisy_img</code> array shifted down by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted up by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted left by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted right by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted up by one pixel and left by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted up by one pixel and right by one pixel,</li>
+<li>The <code>noisy_img</code> array shifted down by one pixel and left by one pixel, and</li>
+<li>The <code>noisy_img</code> array shifted down by one pixel and right by one pixel.</li>
+</ol>
+<p>Then if we collect the <code>[i,j]</code>th entry of each of these shifted versions, we have all the values that makeup our <code>3</code> by <code>3</code> grid to compute a median.</p>
+<p>How can we construct each of these shifted versions? We will again want to use a padded version of our array to make room for each of these shifts. We can then just take various slices of the <code>padded_img</code> array to construct these shifted versions.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=997df811-8c58-4beb-9c5b-7c6429a444c6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8317,13 +7991,126 @@ The word "study," appears 5 times in Frankenstein.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_padded_img</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">pad</span><span class="p">)</span>
-    <span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span>
-    
-    <span class="n">padded_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">nrows</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">pad</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">pad</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>  <span class="c1"># Create an array of 0.5 that will store our padded image</span>
-    <span class="n">padded_img</span><span class="p">[</span><span class="n">pad</span><span class="p">:</span><span class="o">-</span><span class="n">pad</span><span class="p">,</span> <span class="n">pad</span><span class="p">:</span><span class="o">-</span><span class="n">pad</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span>
-
-    <span class="k">return</span> <span class="n">padded_img</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=937db0a9-a68e-4f59-a475-ebad26d1981f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now that we have all of these shifted versions, we need some way to compute medians element-wise through these nine shifts. The <code>np.stack</code> function can stack several arrays together into a new dimension. The desired new dimension can be specified with the <code>axis</code> input argument. For example, calling <code>np.stack</code> with <code>axis=-1</code> will place the new dimension after any existing dimensions.</p>
+<p>In particular, we can use <code>np.stack</code> with <code>axis=-1</code> to combine these nine shifted arrays into a 3-dimensional array with shape <code>(num_rows,num_cols, 9)</code>, and then use <code>np.median</code> to compute the median through <code>axis=-1</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a105393e-84f0-4f8b-8155-9fe11ae0b842">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=704e0c2c-2c03-40ed-98b1-841e7abb38fa">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ddd7714c-29ea-4ad5-b81d-1bd2986239c9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We see that this is <em>way</em> faster than our previous approach!</p>
+<p><em>Note</em>: In this implementation, we manually wrote out each of the nine shifted arrays that were used. Can we do this in a more algorithmic way? That is, can we have Python automatically generate these shifts? One idea is to again use a pair of nested <code>for</code> loops, but this time we iterate through lists of horizontal and vertical shifts (instead of rows and columns).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=60f18589-a534-48fa-aab3-c864aa72f02b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1a1d3b9e-67cb-4e4a-9b5a-9ea177261ed8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c5ac22db-fb4a-4525-9d90-88ac0bfa93e7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Note</em>: This implementation is hard-coded to use <code>3</code> by <code>3</code> grid sizes. Can we modify it to work with any odd-sized grid?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4993c152-b3cc-4634-bdce-a1f0b0dc95a2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=555e5eed-72f5-4625-82b3-97829c158c78">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>

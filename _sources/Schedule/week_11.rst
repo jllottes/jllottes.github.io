@@ -18,12 +18,17 @@ Project 4
 ~~~~~~~~~
 * :doc:`Image denoising </Projects/image_denoising/image_denoising>`
 
+.. Comment
+    Python
+    ~~~~~~
+    * String operations
+    * File operations
+    * Dictionaries
+    * List sorting
+    
 Python
 ~~~~~~
-* String operations
-* File operations
-* Dictionaries
-* List sorting
+* "NumPy-ification"
 
 .. Comment
     Project 5
@@ -34,7 +39,5 @@ Week 11 notebook
 ~~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week11_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week11_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-
-.. Comment
-    - `View online (day 2) <../_static/weekly_notebooks/week11_notebook_day2.html>`_
-    - `Download (day 2) <../_static/weekly_notebooks/week11_notebook_day2.ipynb>`_ 
+- `View online (day 2) <../_static/weekly_notebooks/week11_notebook_day2.html>`_
+- `Download (day 2) <../_static/weekly_notebooks/week11_notebook_day2.ipynb>`_ 
