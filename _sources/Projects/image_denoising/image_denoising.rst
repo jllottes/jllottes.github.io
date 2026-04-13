@@ -1,8 +1,7 @@
 Image denoising
 ===============
 
-.. Comment
-    .. rubric:: due: Friday, November 7th at 11:59 PM
+.. rubric:: due: Monday, April 20th at 11:59 PM
 
 Image noise
 -----------
