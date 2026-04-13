@@ -42,7 +42,7 @@ Python
 Week 12 notebook
 ~~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week12_notebook_day1.html>`_
-- `Download (day 1) <../_static/weekly_notebooks/week12_notebook_day2.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
+- `Download (day 1) <../_static/weekly_notebooks/week12_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
 
 .. Comment
     - `View online (day 2) <../_static/weekly_notebooks/week12_notebook_day2.html>`_
