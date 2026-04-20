@@ -1,9 +1,8 @@
-:orphan:
-
 Code breakers
 =============
 
-.. rubric:: due: Monday, November 17th at 11:59 PM
+
+.. rubric:: due: Friday, May 1st at 11:59 PM
 
 
 ASCII codes
@@ -103,34 +102,36 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-- :download:`abrarnav.txt<txtfiles/abrarnav.txt>`
-- :download:`aidansum.txt<txtfiles/aidansum.txt>`
-- :download:`awoods3.txt<txtfiles/awoods3.txt>`
-- :download:`bjperez4.txt<txtfiles/bjperez4.txt>`
-- :download:`bvlagos.txt<txtfiles/bvlagos.txt>`
-- :download:`carolpac.txt<txtfiles/carolpac.txt>`
-- :download:`cjmclaur.txt<txtfiles/cjmclaur.txt>`
-- :download:`ehkukmye.txt<txtfiles/ehkukmye.txt>`
-- :download:`hli237.txt<txtfiles/hli237.txt>`
-- :download:`irenemae.txt<txtfiles/irenemae.txt>`
-- :download:`jacksayr.txt<txtfiles/jacksayr.txt>`
-- :download:`jakeburd.txt<txtfiles/jakeburd.txt>`
-- :download:`jaypilla.txt<txtfiles/jaypilla.txt>`
-- :download:`jeevajac.txt<txtfiles/jeevajac.txt>`
-- :download:`joannezh.txt<txtfiles/joannezh.txt>`
-- :download:`jwschert.txt<txtfiles/jwschert.txt>`
-- :download:`katemurp.txt<txtfiles/katemurp.txt>`
-- :download:`lingjunc.txt<txtfiles/lingjunc.txt>`
-- :download:`louislod.txt<txtfiles/louislod.txt>`
-- :download:`mareyf.txt<txtfiles/mareyf.txt>`
-- :download:`msingh43.txt<txtfiles/msingh43.txt>`
-- :download:`nghiale.txt<txtfiles/nghiale.txt>`
-- :download:`rdflores.txt<txtfiles/rdflores.txt>`
-- :download:`spark48.txt<txtfiles/spark48.txt>`
-- :download:`sswu2.txt<txtfiles/sswu2.txt>`
+- :download:`adwoakis.txt<txtfiles/adwoakis.txt>`
+- :download:`ahopalin.txt<txtfiles/ahopalin.txt>`
+- :download:`aidennac.txt<txtfiles/aidennac.txt>`
+- :download:`awong75.txt<txtfiles/awong75.txt>`
+- :download:`cachurch.txt<txtfiles/cachurch.txt>`
+- :download:`cgmillen.txt<txtfiles/cgmillen.txt>`
+- :download:`chiomaem.txt<txtfiles/chiomaem.txt>`
+- :download:`colewomb.txt<txtfiles/colewomb.txt>`
+- :download:`csummere.txt<txtfiles/csummere.txt>`
+- :download:`darenliu.txt<txtfiles/darenliu.txt>`
+- :download:`elaryaaz.txt<txtfiles/elaryaaz.txt>`
+- :download:`ethanrup.txt<txtfiles/ethanrup.txt>`
+- :download:`gaelenlo.txt<txtfiles/gaelenlo.txt>`
+- :download:`henryma.txt<txtfiles/henryma.txt>`
+- :download:`hlkadera.txt<txtfiles/hlkadera.txt>`
+- :download:`jimerril.txt<txtfiles/jimerril.txt>`
+- :download:`kli89.txt<txtfiles/kli89.txt>`
+- :download:`marcseba.txt<txtfiles/marcseba.txt>`
+- :download:`mtcragan.txt<txtfiles/mtcragan.txt>`
+- :download:`mujingab.txt<txtfiles/mujingab.txt>`
+- :download:`nmpascel.txt<txtfiles/nmpascel.txt>`
+- :download:`ppatel43.txt<txtfiles/ppatel43.txt>`
+- :download:`skhess.txt<txtfiles/skhess.txt>`
+- :download:`smlevy.txt<txtfiles/smlevy.txt>`
 - :download:`teellis.txt<txtfiles/teellis.txt>`
-- :download:`tfbabbit.txt<txtfiles/tfbabbit.txt>`
+- :download:`weitaozh.txt<txtfiles/weitaozh.txt>`
+- :download:`xsun22.txt<txtfiles/xsun22.txt>`
+- :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
 - :download:`zhenyuti.txt<txtfiles/zhenyuti.txt>`
+- :download:`zmkocher.txt<txtfiles/zmkocher.txt>`
 
 
 

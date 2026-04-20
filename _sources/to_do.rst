@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Work on Project 4, :doc:`Image denoising</Projects/image_denoising/image_denoising>`
+* Finish Project 4, :doc:`Image denoising</Projects/image_denoising/image_denoising>`
 
 ..
     Comment:
