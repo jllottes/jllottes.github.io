@@ -120,7 +120,6 @@
              
   <section id="epidemic">
 <h1>Epidemic<a class="headerlink" href="#epidemic" title="Link to this heading"></a></h1>
-<p class="rubric">due: Wednesday, December 10th, 11:59pm</p>
 <p>In this project we will be working with the following model of a spread of
 a contagious disease.</p>
 <p>We start with a rectangular grid of cells (i.e. small squares).
@@ -178,7 +177,7 @@ the next day is <span class="math notranslate nohighlight">\(p_R\)</span>.</p></
 <section id="project">
 <h2>Project<a class="headerlink" href="#project" title="Link to this heading"></a></h2>
 <p><strong>Part 1.</strong> Consider a 200x200 cells grid, starting with 16 (4x4 grid) infected cells at its center.
-Develop a functions <cite>update_spread</cite> that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.</p>
+Develop a function <code class="docutils literal notranslate"><span class="pre">update_spread</span></code> that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.</p>
 <p><strong>Part 2.</strong> The following code produces an animation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
 
@@ -186,22 +185,25 @@ Develop a functions <cite>update_spread</cite> that takes a 200x200 grid of cell
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">int</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">im</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="n">x</span><span class="p">[:,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[:,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">.05</span>
     <span class="n">im</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">im</span>
 
-<span class="n">anim</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span><span class="n">animate</span><span class="p">)</span>
+<span class="n">anim</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span><span class="n">animate</span><span class="p">,</span><span class="n">save_count</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Modify the code to produce an animation of the evolving epidemic.</p>
-<p><strong>Part 3.</strong> Explore the effect the model parameters <span class="math notranslate nohighlight">\(p_I\)</span> and <span class="math notranslate nohighlight">\(p_R\)</span> on the spread of the disease.</p>
+<p><strong>Note</strong>: The animation is a useful tool to qualitatively illustrate how the infection spreads over time.
+However, the bulk of the plots in your report should be static inline plots that show different analysis of the dynamics.</p>
+<p><strong>Part 3.</strong> Explore the effect the model parameters <span class="math notranslate nohighlight">\(p_I\)</span> and <span class="math notranslate nohighlight">\(p_R\)</span> on the spread of the disease.
+You can also explore changing the starting configuration (e.g. changing the number of initially infected cells, changing their location, etc.).</p>
 <p><strong>Part 4.</strong> Suppose that a vaccine has been invented for the disease. A vaccinated
 cell will have the value -1, and such cell will never get sick.</p>
 <figure class="align-center" id="id3">
@@ -227,7 +229,7 @@ of randomly selected cells in the population gets vaccinated.</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated"><br/>
-        Last updated on Apr 22, 2026.
+        Last updated on Apr 27, 2026.
       </span>
 
     </p>

@@ -3,7 +3,8 @@
 Epidemic
 ========
 
-.. rubric:: due: Wednesday, December 10th, 11:59pm
+.. comment
+    .. rubric:: due: Wednesday, December 10th, 11:59pm
 
 In this project we will be working with the following model of a spread of
 a contagious disease.
@@ -61,35 +62,38 @@ Project
 -------
 
 **Part 1.** Consider a 200x200 cells grid, starting with 16 (4x4 grid) infected cells at its center.
-Develop a functions `update_spread` that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.
+Develop a function ``update_spread`` that takes a 200x200 grid of cells with given states (0,1,2) and returns the grid showing the states of the cells on the next days.
 
 **Part 2.** The following code produces an animation.
 
 .. code:: python
-
-
-	%matplotlib qt
-
-	import numpy as np
-	import matplotlib.pyplot as plt
-	from matplotlib.animation import FuncAnimation
-
-	x = np.zeros((200,200), dtype = int)
-
-	fig = plt.figure()
-	im = plt.imshow(x,vmin=0,vmax=1)
     
-	def animate(i):    
-	    x[:,:] = np.random.random(x.shape)
-	    im.set_data(x)
-	    return im
-
-	anim = FuncAnimation(fig,animate)
-	plt.show()
+    %matplotlib qt
+    
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from matplotlib.animation import FuncAnimation
+    
+    x = np.zeros((200,200), dtype=int)
+    
+    fig = plt.figure()
+    im = plt.imshow(x,vmin=0,vmax=1)
+    
+    def animate(i):
+        x[:,:] = np.random.random(x.shape) < .05
+        im.set_data(x)
+        return im
+    
+    anim = FuncAnimation(fig,animate,save_count=100)
+    plt.show()
     
 Modify the code to produce an animation of the evolving epidemic.
 
+**Note**: The animation is a useful tool to qualitatively illustrate how the infection spreads over time. 
+However, the bulk of the plots in your report should be static inline plots that show different analysis of the dynamics.
+
 **Part 3.** Explore the effect the model parameters :math:`p_I` and :math:`p_R` on the spread of the disease.
+You can also explore changing the starting configuration (e.g. changing the number of initially infected cells, changing their location, etc.).
 
 **Part 4.** Suppose that a vaccine has been invented for the disease. A vaccinated
 cell will have the value -1, and such cell will never get sick.

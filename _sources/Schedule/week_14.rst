@@ -1,20 +1,23 @@
-:orphan:
-
-Week 14: Nov 24
+Week 14: Apr 27 - May 1
 ========================
 
 Python
 ~~~~~~
-
+* Animation with Python
 * Data visualization
 
-Project 6
-~~~~~~~~~~
+Mathematics
+~~~~~~~~~~~
+* `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
 
-* :doc:`Epidemic </Projects/epidemic/epidemic>`
+.. Comment
+    Project 6
+    ~~~~~~~~~~
+
+    * :doc:`Epidemic </Projects/epidemic/epidemic>`
 
 
 Week 14 notebook
 ~~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week14_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week14_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+- `View online (day 1) <../_static/weekly_notebooks/week14_notebook_day1.html>`_
+- `Download (day 1) <../_static/weekly_notebooks/week14_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)

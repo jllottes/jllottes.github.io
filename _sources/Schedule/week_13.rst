@@ -10,14 +10,7 @@ Week 13: Apr 20 - Apr 24
 
     * Regular expressions
 
-    Python
-    ~~~~~~
-    * Animation with Python
-    * Data visualization
-
-    Mathematics
-    ~~~~~~~~~~~
-    * `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
+    
 
 
     Project 6
@@ -29,15 +22,6 @@ Week 13: Apr 20 - Apr 24
 Project 5
 ~~~~~~~~~~
 * :doc:`Code breakers </Projects/code_breakers/code_breakers>`
-
-
-Python
-~~~~~~
-* Animation with Python
-
-Mathematics
-~~~~~~~~~~~
-* `Conway's Game of Life <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>`_
 
 
 Week 13 notebook
