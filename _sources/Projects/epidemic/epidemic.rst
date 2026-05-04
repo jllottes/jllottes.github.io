@@ -1,10 +1,7 @@
-:orphan:
-
 Epidemic
 ========
 
-.. comment
-    .. rubric:: due: Wednesday, December 10th, 11:59pm
+.. rubric:: due: Wednesday, May 13th, 11:59pm
 
 In this project we will be working with the following model of a spread of
 a contagious disease.

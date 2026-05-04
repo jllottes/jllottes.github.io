@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Work on Project 5, :doc:`Code breakers </Projects/code_breakers/code_breakers>`
+* Work on Project 6, :doc:`Epidemic </Projects/epidemic/epidemic>`
 
 ..
     Comment:

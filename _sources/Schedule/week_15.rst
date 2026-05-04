@@ -1,6 +1,4 @@
-:orphan:
-
-Week 15: Dec 1 - Dec 5
+Week 15: May 4 - May 8
 ========================
 
 Python
@@ -16,5 +14,5 @@ Project 6
 
 Week 15 notebook
 ~~~~~~~~~~~~~~~~
-- `View online <../_static/weekly_notebooks/week15_notebook.html>`_
-- `Download <../_static/weekly_notebooks/week15_notebook.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks).
+- `View online (day 1) <../_static/weekly_notebooks/week15_notebook_day1.html>`_
+- `Download (day 1) <../_static/weekly_notebooks/week15_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
