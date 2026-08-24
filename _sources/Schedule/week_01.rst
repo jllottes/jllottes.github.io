@@ -1,4 +1,4 @@
-Week 1: Jan 21 - Jan 23
+Week 1: Aug 24 - Aug 28
 =======================
 
 Logistics
@@ -19,6 +19,7 @@ Python
 
 * Basic mathematical operations
 * Numbers in Python: integers and floats
+* Variable assignment
 
 .. Comment
     * Variable assignment

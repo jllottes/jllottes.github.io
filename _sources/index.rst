@@ -14,7 +14,7 @@ Instructor
 | Jon Lottes
 | **Office:** 211 Mathematics Building
 | **E-mail:** `jllottes@buffalo.edu <jllottes@buffalo.edu>`_
-| **Office Hours:** Fri 10:00 AM - 11:00 AM and by appointment.
+| **Office Hours:** Fri 11:00 AM - 12:00 PM and by appointment.
 
 
 Course Resources
@@ -105,10 +105,10 @@ Useful Information
 Important Dates
 ===============
 
-    * January 21: first day of classes
-    * January 28: last day to drop/add
-    * April 14: last day to resign
-    * May 4: last day of class
+    * Monday, August 24th: first day of classes
+    * Monday, August 31st: last day to drop/add
+    * Wednesday, November 11th: last day to resign
+    * Monday, December 7th: last day of class
 
 
 Incomplete Grades
@@ -128,13 +128,22 @@ The academic integrity policy is available at:
 
     `Academic Integrity <https://www.buffalo.edu/academic-integrity.html>`_
 
+While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. 
+You may be asked to explain in detail what your code does and how it works if there are questions about the integrity of your work.
+
+A note on use of AI
+===================
 All work submitted for this course must be your own. 
 As a result, any use of generative AI (e.g., ChatGPT or Grammarly) is prohibited in this class and will be considered a violation of UB’s academic integrity policy. 
 If you are unsure whether a resource or tool is allowable, be sure to ask in advance. 
 
-While you are encouraged to collaborate with your peers to problem solve while working on the projects, each student is responsible for producing an original project report on their own. 
-You may be asked to explain in detail what your code does and how it works if there are questions about the integrity of your work.
-
+While AI can be a useful tool, it has limitations.
+Asking an AI questions about a topic you know very well can quickly reveal how often it can make mistakes.
+For this reason, it is critical to develop your own understanding instead of blindly relying on AI to do things for you.
+The purpose of this class is to develop your ability to write Python code, your ability to use Python to explore mathematical concepts, and your ability to write a technical report detailing your experience.
+**Any use of AI is a great detriment to this purpose.**
+If at any point you feel lost with the material and feel tempted to consult an AI tool, please reach out to me.
+I am more than happy to help in any way that I can.
 
 Accessibility Resources
 =======================
