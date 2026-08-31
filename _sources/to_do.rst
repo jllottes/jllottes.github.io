@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Install Anaconda Python, read Syllabus and Project Report Guide
+* Read Project Report Guide
 
 ..
     Comment:

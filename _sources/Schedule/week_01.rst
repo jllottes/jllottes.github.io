@@ -26,6 +26,7 @@ Python
 
 .. Comment
     * Variable assignment
+    * :doc:`Lists and "for" loops </PT/PT-lists>`
     
 
 Week 1 notebook

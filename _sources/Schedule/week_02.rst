@@ -1,6 +1,4 @@
-:orphan:
-
-Week 2: Jan 26 - Jan 30
+Week 2: Aug 31 - Sep 4
 =======================
 
 .. Comment
@@ -20,9 +18,11 @@ Week 2: Jan 26 - Jan 30
 
 Python
 ~~~~~~
-* Variable assignment
-* Strings and string formatting
-* The ``print()`` function
+* :doc:`Lists and "for" loops </PT/PT-lists>`
+* The ``range()`` function
+* Boolean expressions
+* Logical operators ``not``, ``and``, ``or``
+* The ``if`` statement
 
 .. Comment
     Project 1
