@@ -1,6 +1,4 @@
-:orphan:
-
-Week 3: Feb 2 - Feb 6
+Week 3: Sep 7 - Sep 11
 ======================
 
 .. Comment
@@ -20,18 +18,27 @@ Week 3: Feb 2 - Feb 6
     * ``for`` loops, ``while`` loops and ``break``.
     * The ``range()`` function.
 
+Mathematics
+~~~~~~~~~~~
+* Primary decomposition of integers
+* Congruences
+
+Project 1
+~~~~~~~~~
+
 .. Comment
-    Jupyter Notebook
-    ~~~~~~~~~~~~~~~~
-    * Documenting code: LaTeX
+    .. rubric:: due: Wednesday, September 24th at 11:59 PM
+
+* :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
+
+Jupyter Notebook
+~~~~~~~~~~~~~~~~
+* Documenting code: LaTeX
 
 Python
 ~~~~~~
-* :doc:`Lists and "for" loops </PT/PT-lists>`
-* The ``range()`` function
-* Boolean expressions
-* Logical operators ``not``, ``and``, ``or``
-* The ``if`` statement
+* :doc:`Functions </PT/PT-functions>`
+* Documenting code: comments
 
 .. Comment
     
@@ -44,5 +51,7 @@ Week 3 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week03_notebook_day1.html>`_
 - `Download (day 1)  <../_static/weekly_notebooks/week03_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week03_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week03_notebook_day2.ipynb>`_ 
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week03_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week03_notebook_day2.ipynb>`_ 

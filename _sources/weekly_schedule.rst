@@ -12,10 +12,10 @@ Weekly Schedule
    
    Schedule/week_02
    
+   Schedule/week_03
+   
 ..
    Comment:  
-   
-	   Schedule/week_03
 	   
 	   Schedule/week_04
 	   
