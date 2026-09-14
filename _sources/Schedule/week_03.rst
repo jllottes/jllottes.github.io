@@ -18,31 +18,14 @@ Week 3: Sep 7 - Sep 11
     * ``for`` loops, ``while`` loops and ``break``.
     * The ``range()`` function.
 
-Mathematics
-~~~~~~~~~~~
-* Primary decomposition of integers
-* Congruences
 
-Project 1
-~~~~~~~~~
-
-.. Comment
-    .. rubric:: due: Wednesday, September 24th at 11:59 PM
-
-* :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
-
-Jupyter Notebook
-~~~~~~~~~~~~~~~~
-* Documenting code: LaTeX
 
 Python
 ~~~~~~
 * :doc:`Functions </PT/PT-functions>`
-* Documenting code: comments
 
 .. Comment
     
-    * :doc:`Functions </PT/PT-functions>`
     * :doc:`Importing modules </PT/PT-importing_modules>`
     * Documenting code: comments
 

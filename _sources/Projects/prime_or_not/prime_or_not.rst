@@ -28,6 +28,7 @@ product called the *prime decomposition* of :math:`n`. For example:
 :math:`12 = 2\cdot 2\cdot 3`, :math:`25 = 5\cdot 5`,
 :math:`90 = 2\cdot 3\cdot 3\cdot 5`.
 
+*Note: Your report should not include "Exercise 1" or similar. Instead, completing these exercises is meant to help you develop the code that will be used in your report.*
 
 **Exercise 1.** Write a Python function ``get_primes`` that takes in an integer ``n`` and returns the
 list of all primes less than or equal to ``n``, ordered from the smallest
@@ -156,6 +157,8 @@ false prime is :math:`561`.
 
 Project
 -------
+
+*Note: Your report should not include "Part 1" or similar. Instead, the tasks outlined in each of the parts below should be addressed through the narrative of your report.*
 
 **Part 1.** Write a Python script to find the first 20 false primes.
 

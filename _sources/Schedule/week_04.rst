@@ -1,7 +1,5 @@
-:orphan:
-
-Week 4: Feb 9 - Feb 13
-======================
+Week 4: Sep 14 - Sep 18
+=======================
 
 .. Comment
     Quiz 2
@@ -16,15 +14,6 @@ Week 4: Feb 9 - Feb 13
     * Logical operators ``not``, ``and``, ``or``
     * Functions: positional, keyword, and default arguments.
 
-Python
-~~~~~~
-* Fine-tuning loops: ``break`` and ``continue``
-* ``while`` loops
-* :doc:`Functions</PT/PT-functions>`
-
-.. Comment
-    * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
-
 Mathematics
 ~~~~~~~~~~~
 * Primary decomposition of integers
@@ -38,9 +27,20 @@ Project 1
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
+Jupyter Notebook
+~~~~~~~~~~~~~~~~
+* Documenting code: LaTeX
+
+Python
+~~~~~~
+* Documenting code: comments
+* :doc:`Importing modules </PT/PT-importing_modules>`
+
 Week 4 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week04_notebook_day1.html>`_
 - `Download (day 1)  <../_static/weekly_notebooks/week04_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week04_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week04_notebook_day2.ipynb>`_ 
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week04_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week04_notebook_day2.ipynb>`_ 
