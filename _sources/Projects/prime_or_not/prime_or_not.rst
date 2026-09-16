@@ -123,7 +123,7 @@ congruences:
 
 .. math:: a^{p} \equiv a \ (\text{mod } p)
 
-for any integer :math:`0 \leq a < p`.
+for any integer :math:`a`.
 
 For example, for :math:`p=3` we have
 
@@ -142,17 +142,20 @@ The formula from the above theorem does not hold in general if :math:`p`
 is not a prime number. For example for :math:`p = 4` and :math:`a = 2`
 we have :math:`2^{4}= 16` which is not congruent to :math:`2` modulo :math:`4`.
 
-If it would turn out that the only numbers :math:`p` that satisfy the
-formula :math:`a^{p} \equiv a \ (\text{mod } p)` for all :math:`0 \leq a < p` are
-prime numbers we would get a new way of recognizing which numbers are
-prime. It turns out, however, that there are numbers :math:`p\geq 2` such that:
+If it would turn out that the only numbers :math:`n` that satisfy the
+formula :math:`a^{n} \equiv a \ (\text{mod } n)` for all integers :math:`a` are
+prime numbers, then we would get a new way of recognizing which numbers are
+prime. It turns out, however, that there are numbers :math:`n\geq 2` such that:
 
--  :math:`p` is not a prime
--  the formula :math:`a^{p} \equiv a \ (\text{mod } p)` holds for all
-   :math:`0 \leq a < p`
+-  :math:`n` is not a prime
+-  the formula :math:`a^{n} \equiv a \ (\text{mod } n)` holds for all
+   integers :math:`a`
 
 We will call such numbers *false primes*. The smallest number (besides :math:`1`) which is a
 false prime is :math:`561`.
+
+Note: Due to properties of modular congruences, it is enough to check whether :math:`a^{n} \equiv a \ (\text{mod } n)` only for all integers :math:`0 \leq a < n`.
+That is, if this property holds for all :math:`0 \leq a < n`, then it will also hold for any integer :math:`a`.
 
 
 Project
@@ -162,8 +165,8 @@ Project
 
 **Part 1.** Write a Python script to find the first 20 false primes.
 
-**Hint.** Call a number :math:`p` *prime-like* if :math:`p\geq 2` and the formula
-:math:`a^{p} \equiv a \ (\text{mod } p)` holds for all :math:`0 \leq a < p`.
+**Hint.** Call a number :math:`n` *prime-like* if :math:`n\geq 2` and the formula
+:math:`a^{n} \equiv a \ (\text{mod } n)` holds for all :math:`0 \leq a < n`.
 You can start your work on part 1 by writing a function ``is_prime_like(n)`` that returns ``True`` if ``n`` is
 prime-like and returns ``False`` otherwise. Once you know that an integer is prime-like you just need to
 check that it is not a prime number.

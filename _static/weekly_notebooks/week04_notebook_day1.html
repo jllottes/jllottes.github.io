@@ -7632,6 +7632,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A number is prime if it is divisible only by 1 and itself.</p>
 </div>
 </div>
 </div>
@@ -7642,6 +7643,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>An integer greater than 1 is prime if it is divisible only by 1 and itself.</p>
 </div>
 </div>
 </div>
@@ -7652,6 +7654,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>An integer greater than 1 is prime if the only positive integer divisors are 1 and itself.</p>
 </div>
 </div>
 </div>
@@ -7701,6 +7704,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>An integer greater than $1$ is prime if the only positive integer divisors are $1$ and itself.</p>
 </div>
 </div>
 </div>
@@ -7743,17 +7747,23 @@ $$\cos^2 \theta + \sin^2\theta = 1.$$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=04ba59f5-7455-45f8-91d1-f2eef860fc37">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46c0a80d-6005-4033-b106-934dbc9848ce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79e4549f-4ce4-47dc-980f-25dfdec08be5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -7811,10 +7821,17 @@ This should <strong>always</strong> be done when referring to explicit pieces of
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">is_prime</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">num_is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">num_is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">break</span>
+    
+    <span class="k">return</span> <span class="n">num_is_prime</span>
 </pre></div>
 </div>
 </div>
@@ -7946,30 +7963,46 @@ It is also helpful to vertically align code comments to aid with readability.</p
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9b15eeb4-4f89-4736-bd04-4fe09e63a2bd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9b15eeb4-4f89-4736-bd04-4fe09e63a2bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">div</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">div</span> <span class="o">=</span> <span class="mi">4</span>                   <span class="c1"># Set the divisor</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>                  <span class="c1"># Set the number of cubes to be found</span>
 
-<span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">cubes</span> <span class="o">=</span> <span class="p">[]</span>                <span class="c1"># Initialize an empty list that will store cubes</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>    <span class="c1"># Iterate integers from 1 to N</span>
+    <span class="n">cubes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>    <span class="c1"># Add cube to list of cubes</span>
 
 <span class="n">str_template</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1"> of the first </span><span class="si">{}</span><span class="s1"> cubes have remainder </span><span class="si">{}</span><span class="s1"> after division by </span><span class="si">{}</span><span class="s1">.'</span>
-<span class="k">for</span> <span class="n">rem</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">div</span><span class="p">):</span>
-    <span class="n">cubes_with_remainder</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">rem</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">div</span><span class="p">):</span>                         <span class="c1"># Iterate through all possible remainders after division by div</span>
+    <span class="n">cubes_with_remainder</span> <span class="o">=</span> <span class="p">[]</span>                  <span class="c1"># Initialize an empty list of cubes with designated remainder</span>
     <span class="k">for</span> <span class="n">cube</span> <span class="ow">in</span> <span class="n">cubes</span><span class="p">:</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cube</span> <span class="o">%</span> <span class="n">div</span> <span class="o">==</span> <span class="n">rem</span><span class="p">):</span>
-            <span class="n">cubes_with_remainder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">cube</span> <span class="o">%</span> <span class="n">div</span> <span class="o">==</span> <span class="n">rem</span><span class="p">):</span>                <span class="c1"># If cube has remainder rem after division by div</span>
+            <span class="n">cubes_with_remainder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>  <span class="c1"># add cube to list</span>
     <span class="n">num_cubes_with_remainder</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cubes_with_remainder</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">str_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_cubes_with_remainder</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">rem</span><span class="p">,</span><span class="n">div</span><span class="p">))</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>500 of the first 1000 cubes have remainder 0 after division by 4.
+250 of the first 1000 cubes have remainder 1 after division by 4.
+0 of the first 1000 cubes have remainder 2 after division by 4.
+250 of the first 1000 cubes have remainder 3 after division by 4.
+</pre>
 </div>
 </div>
 </div>
@@ -7985,17 +8018,13 @@ It is also helpful to vertically align code comments to aid with readability.</p
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fdce8a96-ea47-44f0-9cc0-1834d05f8954">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e1b4ebe8-6d1e-4b05-9b65-1c7c107ca49f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -8007,7 +8036,14 @@ It is also helpful to vertically align code comments to aid with readability.</p
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">is_prime</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">num_is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">num_is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">break</span>
+    
+    <span class="k">return</span> <span class="n">num_is_prime</span>
 </pre></div>
 </div>
 </div>
