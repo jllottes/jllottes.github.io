@@ -19,11 +19,15 @@ Mathematics
 * Primary decomposition of integers
 * Congruences
 
+Logistics
+~~~~~~~~~
+* Project Report Guide
+* Documenting code
+
 Project 1
 ~~~~~~~~~
 
-.. Comment
-    .. rubric:: due: Wednesday, September 24th at 11:59 PM
+.. rubric:: due: Friday, September 25th at 11:59 PM
 
 * :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
 
