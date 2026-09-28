@@ -1,6 +1,4 @@
-:orphan:
-
-Week 6: Feb 23 - Feb 27
+Week 6: Sep 28 - Oct 2
 =======================
 
 .. Comment
@@ -16,13 +14,23 @@ Week 6: Feb 23 - Feb 27
     * NumPy arrays
     * Matplotlib plots
 
+Project 2
+~~~~~~~~~
+
+.. Comment
+    .. rubric:: due: Wednesday, March 11th at 11:59 PM
+
+* :doc:`Pythagorean Triples </Projects/pythagorean_triples/pythagorean_triples>`
+
+Mathematics
+~~~~~~~~~~~
+* Pythagorean triples
+* The greatest common divisor
+
 Python
 ~~~~~~
-* :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`List comprehensions </PT/PT-list_comprehensions/PT-list_comprehensions>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
-* :doc:`More about functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots//PT-matplotlib_plots>`
+* :doc:`NumPy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
 
 .. Comment
     * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
@@ -33,5 +41,7 @@ Week 6 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week06_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week06_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week06_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week06_notebook_day2.ipynb>`_
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week06_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week06_notebook_day2.ipynb>`_
