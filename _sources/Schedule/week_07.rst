@@ -1,6 +1,4 @@
-:orphan:
-
-Week 7: Mar 2 - Mar 6
+Week 7: Oct 5 - Oct 9
 =======================
 
 .. Comment
@@ -20,18 +18,17 @@ Week 7: Mar 2 - Mar 6
 Project 2
 ~~~~~~~~~
 
-.. rubric:: due: Wednesday, March 11th at 11:59 PM
+.. rubric:: due: Friday, October 9th at 11:59 PM
 
 * :doc:`Pythagorean Triples </Projects/pythagorean_triples/pythagorean_triples>`
 
 Mathematics
 ~~~~~~~~~~~
-* Pythagorean triples
 * The greatest common divisor
+* Primitive Pythagorean triples
 
 Python
 ~~~~~~
-* :doc:`NumPy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
 * :doc:`Matplotlib subplots and axes objects </PT/PT-matplotlib_subplots/PT-matplotlib_subplots>`
 * :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
 * :doc:`Boolean NumPy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
@@ -53,5 +50,7 @@ Week 7 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week07_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week07_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week07_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week07_notebook_day2.ipynb>`_ 
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week07_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week07_notebook_day2.ipynb>`_ 

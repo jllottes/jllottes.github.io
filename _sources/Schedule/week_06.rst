@@ -25,7 +25,6 @@ Project 2
 Mathematics
 ~~~~~~~~~~~
 * Pythagorean triples
-* The greatest common divisor
 
 Python
 ~~~~~~

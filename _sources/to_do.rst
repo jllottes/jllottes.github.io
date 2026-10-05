@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Work on Project 1, :doc:`Pythagorean triples</Projects/prime_or_not/prime_or_not>`.
+* Work on Project 2, :doc:`Pythagorean triples</Projects/pythagorean_triples/pythagorean_triples>`.
 
 ..
     Comment:
