@@ -1,6 +1,4 @@
-:orphan:
-
-Week 9: Mar 23 - Mar 27
+Week 9: Oct 19 - Oct 23
 =======================
 
 Python
@@ -11,7 +9,8 @@ Python
 Project 3
 ~~~~~~~~~
 
-.. rubric:: due: Wednesday, April 8th at 11:59 PM
+..
+    .. rubric:: due: Wednesday, April 8th at 11:59 PM
 
 * :doc:`Tartans </Projects/tartans/tartans>`
 
@@ -46,5 +45,7 @@ Week 9 notebook
 ~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week09_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week09_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week09_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week09_notebook_day2.ipynb>`_ 
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week09_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week09_notebook_day2.ipynb>`_ 
