@@ -5,8 +5,6 @@ Python
 ~~~~~~
 * :doc:`Boolean NumPy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * Boolean masks
-* String processing (``split``, ``replace``, ``join``)
-* Dictionaries
 
 
 Project 3
