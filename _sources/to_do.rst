@@ -3,7 +3,7 @@
 Current Tasks
 =============
 
-* Work on Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
+* Finish Project 3, :doc:`Tartans</Projects/tartans/tartans>`.
 
 ..
     Comment:

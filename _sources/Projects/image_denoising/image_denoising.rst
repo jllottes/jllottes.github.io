@@ -1,9 +1,8 @@
-:orphan:
-
 Image denoising
 ===============
 
-.. rubric:: due: Friday, April 24th at 11:59 PM
+.. Comment
+    .. rubric:: due: Friday, April 24th at 11:59 PM
 
 Image noise
 -----------
