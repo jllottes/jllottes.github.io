@@ -1,6 +1,4 @@
-:orphan:
-
-Week 11: Apr 6 - Apr 10
+Week 11: Nov 2 - Nov 6
 ========================
 
 .. Comment
