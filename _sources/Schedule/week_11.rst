@@ -26,9 +26,9 @@ Project 4
     * Dictionaries
     * List sorting
     
-    Python
-    ~~~~~~
-    * "NumPy-ification"
+Python
+~~~~~~
+* "NumPy-ification"
 
 .. Comment
     Project 5
