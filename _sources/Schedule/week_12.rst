@@ -1,6 +1,4 @@
-:orphan:
-
-Week 12: Apr 13 - Apr 17
+Week 12: Nov 9 - Nov 13
 ========================
 
 .. Comment
@@ -36,6 +34,7 @@ Week 12: Apr 13 - Apr 17
 
 Python
 ~~~~~~
+* "NumPy-ification"
 * String operations
 * File operations
 * Dictionaries
