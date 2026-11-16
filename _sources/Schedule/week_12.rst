@@ -39,6 +39,7 @@ Python
 * File operations
 * Dictionaries
 * List sorting
+* `frankenstein.txt <../_static/downloads/frankenstein.txt>`_
 
 Week 12 notebook
 ~~~~~~~~~~~~~~~~
