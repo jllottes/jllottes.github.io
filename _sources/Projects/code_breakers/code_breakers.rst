@@ -1,10 +1,8 @@
-:orphan:
-
 Code breakers
 =============
 
-
-.. rubric:: due: Friday, May 1st at 11:59 PM
+.. Comment
+    .. rubric:: due: Friday, May 1st at 11:59 PM
 
 
 ASCII codes
@@ -104,36 +102,37 @@ be graded according to the following rubrics:
 * Code that successfully decrypts the text file: 70%
 * Report organization and code documentation: 30%
 
-- :download:`adwoakis.txt<txtfiles/adwoakis.txt>`
-- :download:`ahopalin.txt<txtfiles/ahopalin.txt>`
-- :download:`aidennac.txt<txtfiles/aidennac.txt>`
-- :download:`awong75.txt<txtfiles/awong75.txt>`
-- :download:`cachurch.txt<txtfiles/cachurch.txt>`
-- :download:`cgmillen.txt<txtfiles/cgmillen.txt>`
-- :download:`chiomaem.txt<txtfiles/chiomaem.txt>`
-- :download:`colewomb.txt<txtfiles/colewomb.txt>`
-- :download:`csummere.txt<txtfiles/csummere.txt>`
-- :download:`darenliu.txt<txtfiles/darenliu.txt>`
-- :download:`elaryaaz.txt<txtfiles/elaryaaz.txt>`
-- :download:`ethanrup.txt<txtfiles/ethanrup.txt>`
-- :download:`gaelenlo.txt<txtfiles/gaelenlo.txt>`
-- :download:`henryma.txt<txtfiles/henryma.txt>`
-- :download:`hlkadera.txt<txtfiles/hlkadera.txt>`
-- :download:`jimerril.txt<txtfiles/jimerril.txt>`
-- :download:`kli89.txt<txtfiles/kli89.txt>`
-- :download:`marcseba.txt<txtfiles/marcseba.txt>`
-- :download:`mtcragan.txt<txtfiles/mtcragan.txt>`
-- :download:`mujingab.txt<txtfiles/mujingab.txt>`
-- :download:`nmpascel.txt<txtfiles/nmpascel.txt>`
-- :download:`ppatel43.txt<txtfiles/ppatel43.txt>`
-- :download:`skhess.txt<txtfiles/skhess.txt>`
-- :download:`smlevy.txt<txtfiles/smlevy.txt>`
-- :download:`teellis.txt<txtfiles/teellis.txt>`
-- :download:`weitaozh.txt<txtfiles/weitaozh.txt>`
-- :download:`xsun22.txt<txtfiles/xsun22.txt>`
-- :download:`yuleisim.txt<txtfiles/yuleisim.txt>`
-- :download:`zhenyuti.txt<txtfiles/zhenyuti.txt>`
-- :download:`zmkocher.txt<txtfiles/zmkocher.txt>`
+- :download:`aasamit.txt<txtfiles/aasamit.txt>`
+- :download:`ajparlat.txt<txtfiles/ajparlat.txt>`
+- :download:`bgdykas.txt<txtfiles/bgdykas.txt>`
+- :download:`bli55.txt<txtfiles/bli55.txt>`
+- :download:`bmoreira.txt<txtfiles/bmoreira.txt>`
+- :download:`bpdalfon.txt<txtfiles/bpdalfon.txt>`
+- :download:`catsum.txt<txtfiles/catsum.txt>`
+- :download:`cduong2.txt<txtfiles/cduong2.txt>`
+- :download:`dilyetda.txt<txtfiles/dilyetda.txt>`
+- :download:`ecemkucu.txt<txtfiles/ecemkucu.txt>`
+- :download:`gecollin.txt<txtfiles/gecollin.txt>`
+- :download:`iahidalg.txt<txtfiles/iahidalg.txt>`
+- :download:`isaachos.txt<txtfiles/isaachos.txt>`
+- :download:`isiahsmi.txt<txtfiles/isiahsmi.txt>`
+- :download:`jamesjud.txt<txtfiles/jamesjud.txt>`
+- :download:`krbrydal.txt<txtfiles/krbrydal.txt>`
+- :download:`lching.txt<txtfiles/lching.txt>`
+- :download:`masudkab.txt<txtfiles/masudkab.txt>`
+- :download:`maxkoan.txt<txtfiles/maxkoan.txt>`
+- :download:`mjmeacha.txt<txtfiles/mjmeacha.txt>`
+- :download:`mshafiul.txt<txtfiles/mshafiul.txt>`
+- :download:`omargeba.txt<txtfiles/omargeba.txt>`
+- :download:`ryanmaig.txt<txtfiles/ryanmaig.txt>`
+- :download:`summerti.txt<txtfiles/summerti.txt>`
+- :download:`sunbinmo.txt<txtfiles/sunbinmo.txt>`
+- :download:`tanatale.txt<txtfiles/tanatale.txt>`
+- :download:`taseenis.txt<txtfiles/taseenis.txt>`
+- :download:`wjiang8.txt<txtfiles/wjiang8.txt>`
+- :download:`wyang48.txt<txtfiles/wyang48.txt>`
+- :download:`zsdoxtat.txt<txtfiles/zsdoxtat.txt>`
+
 
 
 

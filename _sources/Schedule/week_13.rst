@@ -1,6 +1,4 @@
-:orphan:
-
-Week 13: Apr 20 - Apr 24
+Week 13: Nov 16 - Nov 20
 ========================
 
 .. comment
@@ -12,14 +10,15 @@ Week 13: Apr 20 - Apr 24
 
     * Regular expressions
 
-    
-
-
     Project 6
     ~~~~~~~~~~
 
     * :doc:`Epidemic </Projects/epidemic/epidemic>`
 
+Python
+~~~~~~
+* ASCII codes
+* Sets
 
 Project 5
 ~~~~~~~~~~
@@ -30,5 +29,7 @@ Week 13 notebook
 ~~~~~~~~~~~~~~~~
 - `View online (day 1) <../_static/weekly_notebooks/week13_notebook_day1.html>`_
 - `Download (day 1) <../_static/weekly_notebooks/week13_notebook_day1.ipynb>`_ (after downloading put it in the directory where you keep your Jupyter notebooks)
-- `View online (day 2) <../_static/weekly_notebooks/week13_notebook_day2.html>`_
-- `Download (day 2) <../_static/weekly_notebooks/week13_notebook_day2.ipynb>`_ 
+
+.. Comment
+    - `View online (day 2) <../_static/weekly_notebooks/week13_notebook_day2.html>`_
+    - `Download (day 2) <../_static/weekly_notebooks/week13_notebook_day2.ipynb>`_ 
