@@ -1,8 +1,7 @@
 Code breakers
 =============
 
-.. Comment
-    .. rubric:: due: Friday, May 1st at 11:59 PM
+.. rubric:: due: Wednesday, December 2nd at 11:59 PM
 
 
 ASCII codes
